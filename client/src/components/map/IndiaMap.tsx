@@ -7,6 +7,8 @@ import {
 
 import {
   Canvas,
+  useFrame,
+  useThree,
 } from "@react-three/fiber"
 
 import type {
@@ -14,7 +16,6 @@ import type {
 } from "@react-three/fiber"
 
 import {
-  Line,
   OrbitControls,
   PerspectiveCamera,
 } from "@react-three/drei"
@@ -308,6 +309,7 @@ function createShapeFromRing(
 
 function createExtrudedGeometry(
   geometry: StateGeometry,
+  depth: number = 0.32,
 ): THREE.ExtrudeGeometry | null {
 
   const shapes: THREE.Shape[] =
@@ -467,17 +469,9 @@ function createExtrudedGeometry(
     new THREE.ExtrudeGeometry(
       shapes,
       {
-        depth: 0.30,
+        depth,
 
-        bevelEnabled: true,
-
-        bevelSegments: 2,
-
-        bevelSize: 0.035,
-
-        bevelThickness: 0.035,
-
-        curveSegments: 2,
+        bevelEnabled: false,
       },
     )
 
@@ -504,6 +498,7 @@ function createExtrudedGeometry(
 
 function ringToLinePoints(
   ring: Coordinate[],
+  height: number = 0.323,
 ): THREE.Vector3[] {
 
   const points: THREE.Vector3[] =
@@ -525,13 +520,13 @@ function ringToLinePoints(
 
     /*
      * Border is raised slightly above
-     * the map surface so it remains
-     * clearly visible.
+     * the map surface (0.32) so it remains
+     * clearly visible without z-fighting.
      */
     points.push(
       new THREE.Vector3(
         x,
-        0.385,
+        height,
         -y,
       ),
     )
@@ -583,6 +578,50 @@ function getBorderRings(
 
 
 /* =========================================================
+   STATE BORDER LINES
+========================================================= */
+
+function StateBorderLines({
+  borderRings,
+  color,
+  surfaceHeight = 0.323,
+}: {
+  borderRings: Coordinate[][]
+  color: string
+  surfaceHeight?: number
+}) {
+  const geometries = useMemo(() => {
+    return borderRings
+      .filter((ring) => ring.length >= 2)
+      .map((ring) => {
+        const points = ringToLinePoints(ring, surfaceHeight)
+        return new THREE.BufferGeometry().setFromPoints(points)
+      })
+  }, [borderRings, surfaceHeight])
+
+  useEffect(() => {
+    return () => {
+      geometries.forEach((geom) => geom.dispose())
+    }
+  }, [geometries])
+
+  return (
+    <group renderOrder={10}>
+      {geometries.map((geometry, index) => (
+        <lineLoop key={index} geometry={geometry}>
+          <lineBasicMaterial
+            color={color}
+            depthTest={true}
+            depthWrite={false}
+          />
+        </lineLoop>
+      ))}
+    </group>
+  )
+}
+
+
+/* =========================================================
    STATE 3D OBJECT
 ========================================================= */
 
@@ -613,6 +652,21 @@ function StateShape({
   ) => void
 }) {
 
+  const isLakshadweep =
+    state.name.toLowerCase().includes("lakshadweep")
+
+  const isAndaman =
+    state.name.toLowerCase().includes("andaman")
+
+  const isIsland =
+    isLakshadweep || isAndaman
+
+  const depth =
+    isLakshadweep ? 0.12 : isAndaman ? 0.16 : 0.32
+
+  const surfaceHeight =
+    depth + 0.003
+
   /* =======================================================
      EXTRUDED GEOMETRY
   ======================================================= */
@@ -622,9 +676,11 @@ function StateShape({
       () =>
         createExtrudedGeometry(
           state.geometry,
+          depth,
         ),
       [
         state.geometry,
+        depth,
       ],
     )
 
@@ -711,7 +767,9 @@ function StateShape({
           geometry
         }
 
-        castShadow
+        castShadow={
+          !isIsland
+        }
 
         receiveShadow
 
@@ -791,6 +849,18 @@ function StateShape({
           side={
             THREE.DoubleSide
           }
+
+          polygonOffset={
+            true
+          }
+
+          polygonOffsetFactor={
+            1
+          }
+
+          polygonOffsetUnits={
+            1
+          }
         />
 
 
@@ -822,75 +892,124 @@ function StateShape({
 
 
       {/* =================================================
-         COLORED STATE BOUNDARIES
-         
-         Each state gets its own color.
+         STATE BOUNDARIES
       ================================================= */}
 
-      {borderRings.map(
-        (
-          ring,
-          index,
-        ) => {
+      <StateBorderLines
+        borderRings={
+          borderRings
+        }
 
-          if (
-            ring.length < 2
-          ) {
-            return null
-          }
+        surfaceHeight={
+          surfaceHeight
+        }
+
+        color={
+          hovered ||
+          selected
+            ? "#c2410c"
+            : borderColor
+        }
+      />
+
+    </group>
+  )
+}
 
 
-          const points =
-            ringToLinePoints(
-              ring,
-            )
+/* =========================================================
+   MAP ENTRANCE CAMERA CONTROLLER
+========================================================= */
+
+function MapEntranceController({
+  animateEntrance,
+}: {
+  animateEntrance: boolean
+}) {
+  const { camera } = useThree()
+  const progressRef = useRef(animateEntrance ? 0 : 1)
+  const isAnimatingRef = useRef(animateEntrance)
+
+  useFrame((_, delta) => {
+    if (!isAnimatingRef.current) return
+
+    progressRef.current = Math.min(progressRef.current + delta * 1.15, 1)
+    const t = progressRef.current
+    const ease = 1 - Math.pow(1 - t, 3)
+
+    camera.position.x = 0
+    camera.position.y = 10.4 + (7.6 - 10.4) * ease
+    camera.position.z = 4.0 + (5.1 - 4.0) * ease
+    camera.lookAt(0, 0, 0)
+
+    if (t >= 1) {
+      isAnimatingRef.current = false
+    }
+  })
+
+  return null
+}
 
 
-          return (
-            <Line
-              key={
-                `${state.id}-border-${index}`
-              }
+/* =========================================================
+   STATES ELEVATION GROUP
+========================================================= */
 
-              points={
-                points
-              }
+function StatesElevationGroup({
+  states,
+  selectedState,
+  onHover,
+  onLeave,
+  onSelect,
+  animateEntrance,
+}: {
+  states: StateData[]
+  selectedState: string | null
+  onHover: (
+    event: ThreeEvent<PointerEvent>,
+    name: string,
+  ) => void
+  onLeave: () => void
+  onSelect: (
+    event: ThreeEvent<MouseEvent>,
+    name: string,
+  ) => void
+  animateEntrance: boolean
+}) {
+  const groupRef = useRef<THREE.Group>(null)
+  const progressRef = useRef(animateEntrance ? 0 : 1)
+  const isDoneRef = useRef(!animateEntrance)
 
-              color={
-                borderColor
-              }
+  useFrame((_, delta) => {
+    if (isDoneRef.current || !groupRef.current) return
 
-              /*
-               * Clear but not overly thick.
-               */
-              lineWidth={
-                2.4
-              }
+    progressRef.current = Math.min(progressRef.current + delta * 1.25, 1)
+    const t = progressRef.current
+    const ease = 1 - Math.pow(1 - t, 3)
 
-              transparent={
-                false
-              }
+    // Smoothly elevate 3D depth from 0.04 up to full 1.0 height
+    const currentYScale = Math.max(0.04, ease)
+    groupRef.current.scale.set(1, currentYScale, 1)
 
-              opacity={
-                1
-              }
+    if (t >= 1) {
+      isDoneRef.current = true
+      groupRef.current.scale.set(1, 1, 1)
+    }
+  })
 
-              /*
-               * Keep borders visible
-               * over the white surface.
-               */
-              depthTest={
-                false
-              }
-
-              depthWrite={
-                false
-              }
-            />
-          )
-        },
-      )}
-
+  return (
+    <group ref={groupRef} position={[0, -0.2, 0]}>
+      {states.map((state, index) => (
+        <StateShape
+          key={state.id}
+          state={state}
+          stateIndex={index}
+          selected={selectedState === state.name}
+          onHover={onHover}
+          onLeave={onLeave}
+          onSelect={onSelect}
+        />
+      ))}
     </group>
   )
 }
@@ -906,6 +1025,7 @@ function IndiaScene({
   onHover,
   onLeave,
   onSelect,
+  animateEntrance = false,
 }: {
   states: StateData[]
 
@@ -924,6 +1044,8 @@ function IndiaScene({
     event: ThreeEvent<MouseEvent>,
     name: string,
   ) => void
+
+  animateEntrance?: boolean
 }) {
 
   return (
@@ -938,11 +1060,11 @@ function IndiaScene({
       <PerspectiveCamera
         makeDefault
 
-        position={[
-          0,
-          7.6,
-          5.1,
-        ]}
+        position={
+          animateEntrance
+            ? [0, 10.4, 4.0]
+            : [0, 7.6, 5.1]
+        }
 
         fov={
           34
@@ -956,6 +1078,8 @@ function IndiaScene({
           100
         }
       />
+
+      <MapEntranceController animateEntrance={animateEntrance} />
 
 
       {/* =================================================
@@ -1076,58 +1200,17 @@ function IndiaScene({
 
 
       {/* =================================================
-         INDIA
+         INDIA ELEVATION GROUP
       ================================================= */}
 
-      <group
-        position={[
-          0,
-          -0.2,
-          0,
-        ]}
-      >
-
-        {states.map(
-          (
-            state,
-            index,
-          ) => (
-
-            <StateShape
-              key={
-                state.id
-              }
-
-              state={
-                state
-              }
-
-              stateIndex={
-                index
-              }
-
-              selected={
-                selectedState ===
-                state.name
-              }
-
-              onHover={
-                onHover
-              }
-
-              onLeave={
-                onLeave
-              }
-
-              onSelect={
-                onSelect
-              }
-            />
-
-          ),
-        )}
-
-      </group>
+      <StatesElevationGroup
+        states={states}
+        selectedState={selectedState}
+        onHover={onHover}
+        onLeave={onLeave}
+        onSelect={onSelect}
+        animateEntrance={animateEntrance}
+      />
 
 
       {/* =================================================
@@ -1241,10 +1324,138 @@ function IndiaScene({
 
 
 /* =========================================================
+   OPTIMIZE ISLAND GEOMETRY
+   Filters sub-pixel micro specks that cast tall needle
+   shadows and gently scales the primary islands so they
+   render with recognizable land area and clean outlines.
+========================================================= */
+
+function optimizeIslandGeometry(
+  geometry: StateGeometry,
+  isLakshadweep: boolean,
+): StateGeometry {
+  const coords: Coordinate[][][] =
+    geometry.type === "Polygon" ? [geometry.coordinates] : geometry.coordinates
+
+  const minArea = isLakshadweep ? 0.000003 : 0.00002
+  const scaleMult = isLakshadweep ? 3.0 : 1.35
+  const minHalfWidth = isLakshadweep ? 0.006 : 0.002
+
+  const newPolygons: Coordinate[][][] = []
+
+  for (const polygon of coords) {
+    if (polygon.length === 0) continue
+    const outerRing = polygon[0]
+    if (outerRing.length < 5) continue
+
+    let minX = Infinity
+    let maxX = -Infinity
+    let minY = Infinity
+    let maxY = -Infinity
+    let sumX = 0
+    let sumY = 0
+
+    for (const c of outerRing) {
+      const [x, y] = projectCoordinate(c)
+      sumX += x
+      sumY += y
+      if (x < minX) minX = x
+      if (x > maxX) maxX = x
+      if (y < minY) minY = y
+      if (y > maxY) maxY = y
+    }
+
+    const area = (maxX - minX) * (maxY - minY)
+    if (area < minArea) continue
+
+    const cx = sumX / outerRing.length
+    const cy = sumY / outerRing.length
+    const halfWidth = Math.max(maxX - minX, 0.0001) / 2
+    const widthBoost = halfWidth < minHalfWidth ? minHalfWidth / halfWidth : 1
+
+    const scaledRing: Coordinate[] = outerRing.map((c) => {
+      const [x, y] = projectCoordinate(c)
+      const nx = cx + (x - cx) * scaleMult * widthBoost
+      const ny = cy + (y - cy) * scaleMult
+      return [nx / SCALE + CENTER_LON, ny / SCALE + CENTER_LAT]
+    })
+
+    newPolygons.push([scaledRing])
+  }
+
+  return {
+    type: "MultiPolygon",
+    coordinates: newPolygons,
+  }
+}
+
+
+/* =========================================================
+   GEOJSON PRELOADING & IN-MEMORY CACHE
+========================================================= */
+
+let cachedStatesData: StateData[] | null = null
+let stateLoadPromise: Promise<StateData[]> | null = null
+
+export function preloadIndiaMapData(): Promise<StateData[]> {
+  if (cachedStatesData) {
+    return Promise.resolve(cachedStatesData)
+  }
+  if (stateLoadPromise) {
+    return stateLoadPromise
+  }
+  stateLoadPromise = fetch("/data/india-states.geojson")
+    .then((res) => {
+      if (!res.ok) throw new Error(`Failed to load India GeoJSON: ${res.status}`)
+      return res.json() as Promise<IndiaGeoJSON>
+    })
+    .then((data) => {
+      const loadedStates: StateData[] = data.features
+        .map((feature, index) => {
+          const name = getStateName(feature.properties, index)
+          let geometry = feature.geometry
+
+          if (name.toLowerCase().includes("lakshadweep")) {
+            geometry = optimizeIslandGeometry(geometry, true)
+          } else if (name.toLowerCase().includes("andaman")) {
+            geometry = optimizeIslandGeometry(geometry, false)
+          }
+
+          return {
+            id: `state-${index}`,
+            name,
+            geometry,
+          }
+        })
+        .filter(
+          (state) =>
+            state.geometry.type === "Polygon" ||
+            state.geometry.type === "MultiPolygon",
+        )
+
+      cachedStatesData = loadedStates
+      return loadedStates
+    })
+    .catch((err) => {
+      stateLoadPromise = null
+      throw err
+    })
+
+  return stateLoadPromise
+}
+
+
+/* =========================================================
    MAIN INDIA MAP
 ========================================================= */
 
-export default function IndiaMap() {
+export interface IndiaMapProps {
+  animateEntrance?: boolean
+}
+
+export default function IndiaMap({
+  animateEntrance = false,
+}: IndiaMapProps) {
 
   /* =======================================================
      STATES
@@ -1253,10 +1464,7 @@ export default function IndiaMap() {
   const [
     states,
     setStates,
-  ] =
-    useState<StateData[]>(
-      [],
-    )
+  ] = useState<StateData[]>(() => cachedStatesData || [])
 
 
   /* =======================================================
@@ -1266,10 +1474,7 @@ export default function IndiaMap() {
   const [
     loading,
     setLoading,
-  ] =
-    useState(
-      true,
-    )
+  ] = useState(() => !cachedStatesData)
 
 
   /* =======================================================
@@ -1401,136 +1606,33 @@ export default function IndiaMap() {
   ======================================================= */
 
   useEffect(() => {
+    let cancelled = false
 
-    let cancelled =
-      false
-
-
-    async function loadIndiaMap() {
-
-      try {
-
-        setLoading(
-          true,
-        )
-
-
-        const response =
-          await fetch(
-            "/data/india-states.geojson",
-          )
-
-
-        if (
-          !response.ok
-        ) {
-
-          throw new Error(
-            `Failed to load India GeoJSON: ${response.status}`,
-          )
-
-        }
-
-
-        const data =
-          (await response.json()) as IndiaGeoJSON
-
-
-        if (
-          cancelled
-        ) {
-          return
-        }
-
-
-        const loadedStates:
-          StateData[] =
-          data.features
-            .map(
-              (
-                feature,
-                index,
-              ) => {
-
-                return {
-                  id:
-                    `state-${index}`,
-
-                  name:
-                    getStateName(
-                      feature.properties,
-                      index,
-                    ),
-
-                  geometry:
-                    feature.geometry,
-                }
-              },
-            )
-            .filter(
-              (
-                state,
-              ) =>
-                state.geometry
-                  .type ===
-                  "Polygon" ||
-                state.geometry
-                  .type ===
-                  "MultiPolygon",
-            )
-
-
-        setStates(
-          loadedStates,
-        )
-
-
-        console.log(
-          "India map loaded:",
-          loadedStates.map(
-            (
-              state,
-            ) =>
-              state.name,
-          ),
-        )
-
-      } catch (
-        error
-      ) {
-
-        console.error(
-          "Unable to load India map:",
-          error,
-        )
-
-      } finally {
-
-        if (
-          !cancelled
-        ) {
-
-          setLoading(
-            false,
-          )
-
-        }
-
-      }
-
+    if (cachedStatesData) {
+      setStates(cachedStatesData)
+      setLoading(false)
+      return
     }
 
+    setLoading(true)
 
-    loadIndiaMap()
-
+    preloadIndiaMapData()
+      .then((loaded) => {
+        if (!cancelled) {
+          setStates(loaded)
+          setLoading(false)
+        }
+      })
+      .catch((error) => {
+        console.error("Unable to load India map:", error)
+        if (!cancelled) {
+          setLoading(false)
+        }
+      })
 
     return () => {
-
-      cancelled =
-        true
-
+      cancelled = true
     }
-
   }, [])
 
 
@@ -1961,6 +2063,10 @@ export default function IndiaMap() {
 
             onSelect={
               handleSelect
+            }
+
+            animateEntrance={
+              animateEntrance
             }
           />
 

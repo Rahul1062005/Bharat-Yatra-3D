@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import {
   ArrowDown,
@@ -9,6 +9,8 @@ import {
   Sparkles,
 } from "lucide-react"
 
+import earthTexture from "../../assets/textures/earth.png"
+import { preloadIndiaMapData } from "../../components/map/IndiaMap"
 import "../../App.css"
 import "./HomePage.css"
 
@@ -16,14 +18,22 @@ function HomePage() {
   const navigate = useNavigate()
   const [isLeaving, setIsLeaving] = useState(false)
 
+  // Preload assets for instantaneous 3D experience
+  useEffect(() => {
+    const img = new Image()
+    img.src = earthTexture
+    preloadIndiaMapData()
+  }, [])
+
   const goToExplore = () => {
     if (isLeaving) return
 
     setIsLeaving(true)
 
+    // Snappy, responsive transition (380ms instead of 700ms)
     setTimeout(() => {
       navigate("/explore")
-    }, 700)
+    }, 380)
   }
 
   return (
