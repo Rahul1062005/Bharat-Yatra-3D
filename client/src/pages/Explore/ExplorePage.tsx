@@ -156,18 +156,20 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
 
       {stage === "india" && (
         <>
-          <button
-            type="button"
-            className="home-back-button"
-            onClick={handleBackToGlobe}
-          >
-            <span className="home-button-icon">
-              <Globe size={17} />
-            </span>
-            <span className="home-button-text">Earth</span>
-          </button>
+          {/* ================= LEFT ACTIONS DOCK ================= */}
+          <div className="explore-top-left-dock">
+            <button
+              type="button"
+              className="home-back-button"
+              onClick={handleBackToGlobe}
+              title="Return to 3D Earth Globe"
+            >
+              <span className="home-button-icon">
+                <Globe size={15} />
+              </span>
+              <span className="home-button-text">Earth</span>
+            </button>
 
-          <div className="explore-top-right-dock">
             <button
               type="button"
               className="quiz-launcher-btn"
@@ -175,7 +177,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               title="Play Guess the State 3D Quiz Challenge"
             >
               <span className="quiz-launcher-icon">
-                <Gamepad2 size={16} />
+                <Gamepad2 size={15} />
               </span>
               <span className="quiz-launcher-text">Play Quiz</span>
             </button>
@@ -187,11 +189,14 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               title="Explore 36 Greetings of Bharat"
             >
               <span className="greetings-launcher-icon">
-                <MessageCircle size={16} />
+                <MessageCircle size={15} />
               </span>
               <span className="greetings-launcher-text">Greetings</span>
             </button>
+          </div>
 
+          {/* ================= RIGHT ACTIONS DOCK ================= */}
+          <div className="explore-top-right-dock">
             <button
               type="button"
               className="journey-launcher-btn"
@@ -199,7 +204,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               title="Plan your custom route across Bharat"
             >
               <span className="journey-launcher-icon">
-                <Route size={16} />
+                <Route size={15} />
               </span>
               <span className="journey-launcher-text">My Yatra</span>
             </button>
@@ -211,7 +216,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               title="3D Architectural Monuments Inspector"
             >
               <span className="monuments-launcher-icon">
-                <Landmark size={16} />
+                <Landmark size={15} />
               </span>
               <span className="monuments-launcher-text">3D Monuments</span>
             </button>
@@ -223,7 +228,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               title="National Cultural Mastery Tracker"
             >
               <span className="mastery-launcher-icon">
-                <Award size={16} />
+                <Award size={15} />
               </span>
               <span className="mastery-launcher-text">Mastery Tracker</span>
             </button>

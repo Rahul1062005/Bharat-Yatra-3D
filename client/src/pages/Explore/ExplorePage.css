@@ -213,247 +213,161 @@
 /* HOME BUTTON */
 /* ===================================================== */
 
-.home-back-button {
+/* ===================================================== */
+/* TOP NAVIGATION DOCKS (BALANCED LEFT & RIGHT) */
+/* ===================================================== */
+
+.explore-top-left-dock {
   position: absolute;
-
-  top: 30px;
-  left: 28px;
-
-  z-index: 100;
-
+  top: 20px;
+  left: 20px;
+  z-index: 60;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+}
 
-  height: 48px;
+.explore-top-right-dock {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-  padding: 5px 18px 5px 6px;
-
-  border: 1px solid rgba(96, 165, 250, 0.4);
-
+/* Base Pill Launcher Button */
+.home-back-button,
+.quiz-launcher-btn,
+.greetings-launcher-btn,
+.journey-launcher-btn,
+.monuments-launcher-btn,
+.mastery-launcher-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 3px 14px 3px 5px;
   border-radius: 999px;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(15, 35, 70, 0.95),
-      rgba(5, 15, 35, 0.95)
-    );
-
-  color: #e2e8f0;
-
   font-family: inherit;
-
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-
   cursor: pointer;
-
-  box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.3),
-    0 0 18px rgba(37, 99, 235, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
   transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
+    transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+  white-space: nowrap;
 }
 
+.home-back-button:hover,
+.quiz-launcher-btn:hover,
+.greetings-launcher-btn:hover,
+.journey-launcher-btn:hover,
+.monuments-launcher-btn:hover,
+.mastery-launcher-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Home / Earth Button */
+.home-back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  border: 1px solid rgba(96, 165, 250, 0.45);
+  background: linear-gradient(135deg, rgba(15, 35, 70, 0.95), rgba(5, 15, 35, 0.95));
+  color: #e2e8f0;
+}
+
+.explore-top-left-dock .home-back-button {
+  position: relative;
+  top: auto;
+  left: auto;
+  z-index: auto;
+}
 
 .home-back-button:hover {
-  transform: translateX(-3px);
-
-  border-color: rgba(96, 165, 250, 0.8);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(25, 55, 105, 0.98),
-      rgba(7, 20, 45, 0.98)
-    );
-
-  box-shadow:
-    0 10px 35px rgba(37, 99, 235, 0.22),
-    0 0 25px rgba(59, 130, 246, 0.12);
+  border-color: rgba(96, 165, 250, 0.85);
+  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.3), 0 0 20px rgba(59, 130, 246, 0.2);
 }
 
-
 .home-button-icon {
-  width: 36px;
-  height: 36px;
-
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
-  background:
-    linear-gradient(
-      135deg,
-      #60a5fa,
-      #2563eb
-    );
-
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
   color: white;
-
-  box-shadow:
-    0 4px 16px rgba(37, 99, 235, 0.4);
-
-  transition:
-    transform 0.25s ease;
+  box-shadow: 0 3px 12px rgba(37, 99, 235, 0.45);
+  flex-shrink: 0;
 }
-
-
-.home-back-button:hover .home-button-icon {
-  transform: translateX(-2px);
-}
-
 
 .home-button-text {
   letter-spacing: 0.2px;
 }
 
-/* ===================================================== */
-/* TOP RIGHT ACTIONS DOCK (DESKTOP) */
-/* ===================================================== */
-
-.explore-top-right-dock {
-  position: absolute;
-  top: 28px;
-  right: 32px;
-  z-index: 50;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
+/* Quiz Launcher Button */
 .quiz-launcher-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  height: 50px;
-  padding: 5px 16px 5px 8px;
-
   border: 1px solid rgba(16, 185, 129, 0.45);
-  border-radius: 999px;
-
-  background: linear-gradient(
-    135deg,
-    rgba(6, 32, 22, 0.95),
-    rgba(4, 18, 12, 0.95)
-  );
-
+  background: linear-gradient(135deg, rgba(6, 32, 22, 0.95), rgba(4, 18, 12, 0.95));
   color: #6ee7b7;
-  font-family: inherit;
-  font-size: 13.5px;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.35),
-    0 0 20px rgba(16, 185, 129, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
-  transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
 }
 
 .quiz-launcher-btn:hover {
-  transform: translateY(-2px);
   border-color: rgba(16, 185, 129, 0.85);
-  box-shadow:
-    0 12px 35px rgba(16, 185, 129, 0.25),
-    0 0 25px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 10px 28px rgba(16, 185, 129, 0.3), 0 0 20px rgba(16, 185, 129, 0.2);
 }
 
 .quiz-launcher-icon {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background: linear-gradient(135deg, #10b981, #059669);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.45);
+  box-shadow: 0 3px 12px rgba(5, 150, 105, 0.45);
+  flex-shrink: 0;
 }
 
 .quiz-launcher-text {
   letter-spacing: 0.2px;
 }
 
+/* Greetings Launcher Button */
 .greetings-launcher-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  height: 50px;
-  padding: 5px 16px 5px 8px;
-
   border: 1px solid rgba(245, 158, 11, 0.45);
-  border-radius: 999px;
-
-  background: linear-gradient(
-    135deg,
-    rgba(35, 24, 10, 0.95),
-    rgba(18, 14, 8, 0.95)
-  );
-
+  background: linear-gradient(135deg, rgba(35, 24, 10, 0.95), rgba(18, 14, 8, 0.95));
   color: #fef08a;
-  font-family: inherit;
-  font-size: 13.5px;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.35),
-    0 0 20px rgba(245, 158, 11, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
-  transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
 }
 
 .greetings-launcher-btn:hover {
-  transform: translateY(-2px);
   border-color: rgba(245, 158, 11, 0.85);
-  box-shadow:
-    0 12px 35px rgba(245, 158, 11, 0.25),
-    0 0 25px rgba(245, 158, 11, 0.2);
+  box-shadow: 0 10px 28px rgba(245, 158, 11, 0.3), 0 0 20px rgba(245, 158, 11, 0.2);
 }
 
 .greetings-launcher-icon {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background: linear-gradient(135deg, #f59e0b, #d97706);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(217, 119, 6, 0.45);
+  box-shadow: 0 3px 12px rgba(217, 119, 6, 0.45);
+  flex-shrink: 0;
 }
 
 .greetings-launcher-text {
@@ -462,119 +376,89 @@
 
 /* Journey Planner Launcher */
 .journey-launcher-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 50px;
-  padding: 5px 16px 5px 8px;
   border: 1px solid rgba(56, 189, 248, 0.45);
-  border-radius: 999px;
   background: linear-gradient(135deg, rgba(8, 28, 48, 0.95), rgba(4, 16, 30, 0.95));
   color: #bae6fd;
-  font-family: inherit;
-  font-size: 13.5px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35), 0 0 20px rgba(56, 189, 248, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .journey-launcher-btn:hover {
-  transform: translateY(-2px);
   border-color: rgba(56, 189, 248, 0.85);
-  box-shadow: 0 12px 35px rgba(56, 189, 248, 0.25), 0 0 25px rgba(56, 189, 248, 0.2);
+  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.3), 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
 .journey-launcher-icon {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background: linear-gradient(135deg, #0284c7, #0369a1);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.45);
+  box-shadow: 0 3px 12px rgba(2, 132, 199, 0.45);
+  flex-shrink: 0;
+}
+
+.journey-launcher-text {
+  letter-spacing: 0.2px;
 }
 
 /* 3D Monuments Inspector Launcher */
 .monuments-launcher-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 50px;
-  padding: 5px 16px 5px 8px;
   border: 1px solid rgba(244, 63, 94, 0.45);
-  border-radius: 999px;
   background: linear-gradient(135deg, rgba(42, 14, 24, 0.95), rgba(22, 6, 12, 0.95));
   color: #fecdd3;
-  font-family: inherit;
-  font-size: 13.5px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35), 0 0 20px rgba(244, 63, 94, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .monuments-launcher-btn:hover {
-  transform: translateY(-2px);
   border-color: rgba(244, 63, 94, 0.85);
-  box-shadow: 0 12px 35px rgba(244, 63, 94, 0.25), 0 0 25px rgba(244, 63, 94, 0.2);
+  box-shadow: 0 10px 28px rgba(244, 63, 94, 0.3), 0 0 20px rgba(244, 63, 94, 0.2);
 }
 
 .monuments-launcher-icon {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background: linear-gradient(135deg, #f43f5e, #be123c);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(244, 63, 94, 0.45);
+  box-shadow: 0 3px 12px rgba(244, 63, 94, 0.45);
+  flex-shrink: 0;
+}
+
+.monuments-launcher-text {
+  letter-spacing: 0.2px;
 }
 
 /* National Mastery Tracker Launcher */
 .mastery-launcher-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 50px;
-  padding: 5px 16px 5px 8px;
   border: 1px solid rgba(168, 85, 247, 0.45);
-  border-radius: 999px;
   background: linear-gradient(135deg, rgba(32, 14, 48, 0.95), rgba(16, 6, 26, 0.95));
   color: #e9d5ff;
-  font-family: inherit;
-  font-size: 13.5px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35), 0 0 20px rgba(168, 85, 247, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .mastery-launcher-btn:hover {
-  transform: translateY(-2px);
   border-color: rgba(168, 85, 247, 0.85);
-  box-shadow: 0 12px 35px rgba(168, 85, 247, 0.25), 0 0 25px rgba(168, 85, 247, 0.2);
+  box-shadow: 0 10px 28px rgba(168, 85, 247, 0.3), 0 0 20px rgba(168, 85, 247, 0.2);
 }
 
 .mastery-launcher-icon {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background: linear-gradient(135deg, #a855f7, #7e22ce);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+  box-shadow: 0 3px 12px rgba(168, 85, 247, 0.45);
+  flex-shrink: 0;
+}
+
+.mastery-launcher-text {
+  letter-spacing: 0.2px;
 }
 
 
@@ -673,15 +557,53 @@
 
 
 /* ===================================================== */
-/* MOBILE */
+/* RESPONSIVE DOCKS (TABLET & MOBILE) */
 /* ===================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .quiz-launcher-text,
+  .greetings-launcher-text,
+  .journey-launcher-text,
+  .monuments-launcher-text,
+  .mastery-launcher-text,
+  .home-button-text {
+    display: none;
+  }
+
+  .quiz-launcher-btn,
+  .greetings-launcher-btn,
+  .journey-launcher-btn,
+  .monuments-launcher-btn,
+  .mastery-launcher-btn,
   .home-back-button {
-    top: 18px;
-    left: 16px;
-    width: 42px;
-    height: 42px;
+    padding: 3px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-top-left-dock {
+    top: 16px;
+    left: 14px;
+    gap: 6px;
+  }
+
+  .explore-top-left-dock .quiz-launcher-btn,
+  .explore-top-left-dock .greetings-launcher-btn {
+    display: none;
+  }
+
+  .explore-top-right-dock {
+    display: none;
+  }
+
+  .home-back-button {
+    top: 16px;
+    left: 14px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     justify-content: center;
     border-radius: 50%;
@@ -693,10 +615,6 @@
   }
 
   .home-button-text {
-    display: none;
-  }
-
-  .explore-top-right-dock {
     display: none;
   }
 
