@@ -84,6 +84,40 @@ const DISTRICT_PALETTE = [
    3D LANDMARK PIN
 ========================================================= */
 
+function getPinTheme(category?: string) {
+  switch (category) {
+    case "nature":
+      return {
+        color: "#10b981",
+        hoverColor: "#6ee7b7",
+        emissive: "#059669",
+        haloColor: "#34d399",
+      }
+    case "spiritual":
+      return {
+        color: "#ea580c",
+        hoverColor: "#fdba74",
+        emissive: "#c2410c",
+        haloColor: "#fed7aa",
+      }
+    case "university":
+      return {
+        color: "#2563eb",
+        hoverColor: "#93c5fd",
+        emissive: "#1d4ed8",
+        haloColor: "#bfdbfe",
+      }
+    case "monument":
+    default:
+      return {
+        color: "#f59e0b",
+        hoverColor: "#fef08a",
+        emissive: "#d97706",
+        haloColor: "#fbbf24",
+      }
+  }
+}
+
 function LandmarkMarker({
   pin,
   onSelect,
@@ -93,20 +127,22 @@ function LandmarkMarker({
 }) {
   const [x, y] = projectBiharCoord([pin.lon, pin.lat])
   const [hovered, setHovered] = useState(false)
+  const pinTheme = useMemo(() => getPinTheme(pin.category), [pin.category])
   const pulseRef = useRef<THREE.Mesh>(null)
 
   useFrame((state) => {
     if (pulseRef.current) {
       const t = state.clock.getElapsedTime()
-      const s = 1 + Math.sin(t * 4 + pin.lat) * 0.25
+      const s = 1 + Math.sin(t * 3.5 + pin.lat) * 0.25
       pulseRef.current.scale.set(s, s, s)
     }
   })
 
   return (
-    <group position={[x, y, 0.28]}>
+    <group position={[x, y, 0.34]} scale={hovered ? [1.25, 1.25, 1.25] : [1, 1, 1]}>
       {/* Pin base hover target */}
       <mesh
+        position={[0, 0, 0.06]}
         onClick={(e) => {
           e.stopPropagation()
           onSelect(pin)
@@ -121,31 +157,31 @@ function LandmarkMarker({
           document.body.style.cursor = "default"
         }}
       >
-        <sphereGeometry args={[0.07, 16, 16]} />
+        <sphereGeometry args={[0.065, 20, 20]} />
         <meshStandardMaterial
-          color={hovered ? "#fbbf24" : "#f59e0b"}
-          emissive={hovered ? "#f59e0b" : "#d97706"}
-          emissiveIntensity={hovered ? 0.8 : 0.3}
+          color={hovered ? "#ffffff" : pinTheme.color}
+          emissive={hovered ? pinTheme.hoverColor : pinTheme.emissive}
+          emissiveIntensity={hovered ? 0.95 : 0.6}
           roughness={0.2}
-          metalness={0.4}
+          metalness={0.6}
         />
       </mesh>
 
       {/* Pulsing beacon halo */}
-      <mesh ref={pulseRef} position={[0, 0, -0.02]}>
-        <ringGeometry args={[0.06, 0.11, 24]} />
+      <mesh ref={pulseRef} position={[0, 0, -0.05]}>
+        <ringGeometry args={[0.07, 0.12, 28]} />
         <meshBasicMaterial
-          color={hovered ? "#fef08a" : "#fbbf24"}
+          color={pinTheme.haloColor}
           transparent
-          opacity={hovered ? 0.9 : 0.6}
+          opacity={hovered ? 0.95 : 0.65}
           side={THREE.DoubleSide}
         />
       </mesh>
 
       {/* Upright pin stalk */}
-      <mesh position={[0, 0, 0.08]} rotation={[Math.PI / 2, 0, 0]}>
-        <cylinderGeometry args={[0.01, 0.01, 0.16, 8]} />
-        <meshBasicMaterial color="#ffffff" />
+      <mesh position={[0, 0, -0.02]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.012, 0.012, 0.16, 8]} />
+        <meshStandardMaterial color="#ffffff" metalness={0.8} roughness={0.2} />
       </mesh>
     </group>
   )

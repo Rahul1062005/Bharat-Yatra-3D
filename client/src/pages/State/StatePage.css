@@ -596,6 +596,171 @@ html {
   color: #475569;
 }
 
+/* =========================================================
+   SELECTED LANDMARK FLOATING DIALOG (ROYAL PARCHMENT THEME)
+========================================================= */
+
+.selected-landmark-toast {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  z-index: 45;
+  width: 360px;
+  max-width: calc(100vw - 56px);
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(circle at 100% 0%, rgba(217, 119, 6, 0.08), transparent 60%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b45309' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M30 0L60 30L30 60L0 30zM30 10L50 30L30 50L10 30zM30 20L40 30L30 40L20 30z'/%3E%3C/g%3E%3C/svg%3E");
+  border: 1px solid var(--state-border, rgba(180, 83, 9, 0.35));
+  border-top: 4px solid var(--state-primary, #b45309);
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 20px 48px rgba(30, 20, 10, 0.16), 0 0 0 1px rgba(217, 119, 6, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: slideInToast 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+}
+
+@keyframes slideInToast {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.toast-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.toast-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(217, 119, 6, 0.12);
+  color: #b45309;
+  border: 1px solid rgba(180, 83, 9, 0.3);
+}
+
+.toast-tag.toast-tag-nature {
+  background: #ecfdf5;
+  color: #047857;
+  border-color: #a7f3d0;
+}
+
+.toast-tag.toast-tag-monument {
+  background: #fef3c7;
+  color: #b45309;
+  border-color: #fde68a;
+}
+
+.toast-tag.toast-tag-spiritual {
+  background: #fff7ed;
+  color: #c2410c;
+  border-color: #fed7aa;
+}
+
+.toast-tag.toast-tag-university {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.toast-close {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 800;
+  color: #94a3b8;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.toast-close:hover {
+  background: rgba(180, 83, 9, 0.1);
+  color: #0f172a;
+  transform: scale(1.1);
+}
+
+.toast-title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+  line-height: 1.25;
+}
+
+.toast-district-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: #64748b;
+  background: #fff7ed;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(180, 83, 9, 0.2);
+  width: fit-content;
+}
+
+.toast-pin-icon {
+  color: var(--state-primary, #b45309);
+}
+
+.toast-desc {
+  margin: 0;
+  font-size: 12.5px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.toast-inspect-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  background: linear-gradient(135deg, var(--state-primary, #b45309), var(--state-secondary, #92400e));
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(180, 83, 9, 0.25);
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+
+.toast-inspect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(180, 83, 9, 0.35);
+  filter: brightness(1.05);
+}
+
 .bihar-map-loading {
   position: absolute;
   inset: 0;
@@ -1761,6 +1926,17 @@ html {
     right: 0;
     top: 0;
     bottom: 0;
+  }
+
+  .selected-landmark-toast {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    left: 14px;
+    right: 14px;
+    width: auto;
+    max-width: none;
+    z-index: 100;
   }
 
   .bihar-map-controls {

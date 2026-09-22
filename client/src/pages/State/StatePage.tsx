@@ -645,30 +645,46 @@ export default function StatePage() {
 
         {/* Selected Landmark Floating Dialog */}
         {selectedLandmark && (
-          <div className="selected-landmark-toast">
+          <aside className="selected-landmark-toast" aria-label="Landmark Details">
             <div className="toast-header">
-              <span className="toast-tag">✦ {selectedLandmark.category.toUpperCase()} PIN</span>
+              <span className={`toast-tag toast-tag-${selectedLandmark.category}`}>
+                {selectedLandmark.category === "nature"
+                  ? "🌿 NATURE & WILDLIFE"
+                  : selectedLandmark.category === "spiritual"
+                  ? "🕉️ SACRED & SPIRITUAL"
+                  : selectedLandmark.category === "university"
+                  ? "📜 ANCIENT LEARNING"
+                  : "🏛️ HISTORIC MONUMENT"}
+              </span>
               <button
                 type="button"
                 className="toast-close"
                 onClick={() => setSelectedLandmark(null)}
-                aria-label="Close dialog"
+                title="Close"
+                aria-label="Close landmark details"
               >
                 ✕
               </button>
             </div>
+
             <h4 className="toast-title">{selectedLandmark.name}</h4>
-            <p className="toast-district">District: {selectedLandmark.district}</p>
+
+            <div className="toast-district-badge">
+              <MapPin size={12} className="toast-pin-icon" />
+              <span>District: <strong>{selectedLandmark.district}</strong></span>
+            </div>
+
             <p className="toast-desc">{selectedLandmark.description}</p>
+
             <button
               type="button"
               className="toast-inspect-btn"
               onClick={() => handleOpen3DMonument(selectedLandmark.name)}
             >
-              <Sparkles size={12} />
+              <Sparkles size={13} />
               <span>Inspect 3D Architecture</span>
             </button>
-          </div>
+          </aside>
         )}
 
         {/* Animated Scroll Down Indicator */}
