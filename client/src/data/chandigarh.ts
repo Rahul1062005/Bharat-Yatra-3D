@@ -1,0 +1,146 @@
+import type { StateData } from "../types/state"
+
+export const chandigarhData: StateData = {
+  id: "chandigarh",
+  name: "Chandigarh",
+  hindiName: "चंडीगढ़",
+  capital: "Chandigarh",
+  tagline: "The City Beautiful, Le Corbusier's Modernist Marvel & Foot of the Shivaliks",
+  overview:
+    "Chandigarh, famously dubbed 'The City Beautiful', is India's first planned modernist city and joint capital of Punjab and Haryana. Conceived in the dawn of Indian independence by Prime Minister Jawaharlal Nehru and master-planned by Swiss-French architectural titan Le Corbusier, it is an international triumph of urban planning. Set against the rolling purple foothills of the Shivalik Himalayas, the city harmoniously weaves concrete brutalist monuments, Nek Chand's world-famous recycled Rock Garden, tranquil Sukhna Lake, and Asia's largest rose garden.",
+  ancientNames: ["Chandi Mandir Plain", "Harappan Foothill Settlement"],
+  keyStats: [
+    { label: "Districts", value: "1 (Planned Urban Sectors & Foothills)" },
+    { label: "Joint Capital", value: "Capital of Punjab & Haryana" },
+    { label: "UNESCO World Heritage", value: "The Architectural Work of Le Corbusier (2016)" },
+    { label: "Peace Symbol", value: "Open Hand Monument (26 meters, rotates with wind)" },
+    { label: "Outsider Art Wonder", value: "Nek Chand Rock Garden (25-acre mosaic labyrinth)" },
+    { label: "Green Cover", value: "Over 46% Tree Canopy (Greenest City in India)" },
+  ],
+  quote: {
+    text: "Let this be a new town, symbolic of the freedom of India, unfettered by the traditions of the past, an expression of the nation's faith in the future.",
+    author: "Jawaharlal Nehru on the Founding of Chandigarh",
+  },
+  districts: {
+    "Chandigarh": {
+      name: "Chandigarh",
+      tagline: "Sectors, Shivalik Promenade & Capitol Monoliths",
+      headquarters: "Sector 17",
+      knownFor: "UNESCO Capitol Complex (High Court, Secretariat, Assembly), Nek Chand Rock Garden, Sukhna Lake, Zakir Hussain Rose Garden, Sector 17 Plaza, Government Museum & Art Gallery.",
+      famousSpot: "Rock Garden & Sukhna Lake",
+    },
+  },
+  cuisines: [
+    {
+      name: "Slow-Cooked Dal Makhani & Garlic Naan",
+      image: "/images/chandigarh/dal_makhani_naan.jpg",
+      description: "Whole black lentils (urad dal) and kidney beans slow-simmered overnight over charcoal embers with butter, cream, and charred garlic naan.",
+      ingredients: ["Black lentils (urad)", "Red kidney beans", "Desi butter", "Cream", "Tomatoes", "Garlic naan"],
+      dietary: "Vegetarian",
+    },
+    {
+      name: "Crispy Amritsari Stuffed Kulcha",
+      image: "/images/chandigarh/amritsari_kulcha.jpg",
+      description: "Flaky, layered tandoor-baked flatbread stuffed with spiced potatoes, cauliflower, and onions, paired with spicy pindi chhole and tamarind chutney.",
+      ingredients: ["Refined flour dough", "Spiced potatoes", "Pomegranate seeds (anardana)", "Pure ghee", "Chickpeas"],
+      dietary: "Vegetarian",
+    },
+    {
+      name: "Tandoori Paneer Tikka",
+      image: "/images/chandigarh/paneer_tikka.jpg",
+      description: "Thick cubes of fresh malai cottage cheese marinated in hung curd, carom seeds (ajwain), and mustard oil, roasted in clay ovens with bell peppers.",
+      ingredients: ["Fresh paneer", "Hung curd", "Kashmiri red chili", "Ajwain", "Capsicum", "Onions"],
+      dietary: "Vegetarian",
+    },
+    {
+      name: "Creamy Sweet Punjabi Lassi",
+      image: "/images/chandigarh/punjabi_lassi.jpg",
+      description: "Thick, churned yogurt drink topped with a thick dollop of fresh clotted cream (malai), infused with rose essence and crushed pistachios.",
+      ingredients: ["Cultured whole milk yogurt", "Raw sugar", "Malai cream", "Rose water", "Pistachios"],
+      dietary: "Vegetarian Beverage",
+    },
+    {
+      name: "Chandigarh Chhole Bhature",
+      image: "/images/chandigarh/chhole_bhature.jpg",
+      description: "Fluffy puffed fried bhature served alongside rich, dark chickpeas spiced with amchur and garam masala, accompanied by pickled onions.",
+      ingredients: ["Chickpeas", "Bhatura flour dough", "Ginger juliennes", "Pickled green chilies"],
+      dietary: "Vegetarian",
+    },
+  ],
+  traditions: [
+    {
+      name: "Zakir Hussain Rose Festival",
+      image: "/images/chandigarh/rose_festival.jpg",
+      category: "Floral Heritage Festival",
+      description: "Annual grand spring gathering at Asia's largest rose garden (30 acres with over 50,000 rose bushes across 1,600 varieties), featuring folk music, kite flying, and helicopter rides.",
+      season: "Late February / Early March",
+    },
+    {
+      name: "Open Hand Peace Gathering",
+      image: "/images/chandigarh/open_hand_ceremony.jpg",
+      category: "Civic Peace Celebration",
+      description: "Cultural and interfaith peace meets held beneath the iconic 26-meter Open Hand metal wind vane, representing openness to give and receive peace.",
+      season: "Year-Round",
+    },
+    {
+      name: "Outsider Folk Sculpture Heritage",
+      image: "/images/chandigarh/rock_garden_art.jpg",
+      category: "Transformative Folk Art",
+      description: "Nek Chand's visionary environmental folk art movement converting city construction rubble, discarded bangles, broken bathroom tiles, and ceramic electrical plugs into fairytale courtyards.",
+      season: "Year-Round",
+    },
+  ],
+  attires: [
+    {
+      name: "Tailored Punjabi Kurta-Pyjama & Waistcoat",
+      image: "/images/chandigarh/chandigarh_kurta.jpg",
+      type: "Modern Formal Wear",
+      description: "Crisp cotton or linen long kurtas paired with churidars and a Nehru-collar structured waistcoat, popular across government and corporate avenues.",
+      gender: "Men",
+    },
+    {
+      name: "Embroidered Phulkari Dupatta & Suit",
+      image: "/images/chandigarh/phulkari_dupatta.jpg",
+      type: "Traditional Silk Embroidery",
+      description: "Vibrant silk floss geometric floral embroidery (Phulkari) on rich khaddar cotton stoles draped gracefully over salwar kameez suits.",
+      gender: "Women",
+    },
+    {
+      name: "Urban Punjabi Turban & Blazer",
+      image: "/images/chandigarh/urban_punjabi_wear.jpg",
+      type: "Contemporary Heritage Style",
+      description: "Sharply tied colorful pagri (turban) paired with tailored contemporary blazers, blending rich Punjabi heritage with cosmopolitan modernity.",
+      gender: "Men",
+    },
+  ],
+  monuments: [
+    {
+      name: "Nek Chand's Rock Garden",
+      image: "/images/chandigarh/rock_garden.jpg",
+      location: "Sector 1 (Adjacent to Sukhna Lake)",
+      period: "1957–1976 (Sculpted secretly by Nek Chand)",
+      significance: "World-renowned 25-acre sculpture kingdom crafted entirely from industrial waste, discarded porcelain, broken bangles, and ceramic plugs, receiving millions of global pilgrims.",
+    },
+    {
+      name: "UNESCO Capitol Complex",
+      image: "/images/chandigarh/capitol_complex.jpg",
+      location: "Sector 1, Chandigarh",
+      period: "1951–1962 (Le Corbusier)",
+      significance: "UNESCO World Heritage Site encompassing the monumental Legislative Assembly, Secretariat, and High Court, the crown jewel of 20th-century modernist architecture.",
+    },
+    {
+      name: "Sukhna Lake & Shivalik Promenade",
+      image: "/images/chandigarh/sukhna_lake.jpg",
+      location: "Sector 1, Foothills",
+      period: "1958 (Created by damming Sukhna Choe)",
+      significance: "Picturesque 3-sq-km rainwater lake offering morning rowing, sailing, and a 2-km paved walkway with reflections of the purple Shivalik ridges.",
+    },
+    {
+      name: "The Open Hand Monument",
+      image: "/images/chandigarh/open_hand_monument.jpg",
+      location: "Capitol Complex, Sector 1",
+      period: "Designed by Le Corbusier (Inaugurated 1985)",
+      significance: "Colossal 26-meter-high, 50-tonne metal hand balanced on ball bearings to turn with the wind, embodying the official city emblem: 'Open to give and open to receive'.",
+    },
+  ],
+}

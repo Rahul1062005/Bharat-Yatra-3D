@@ -1,0 +1,146 @@
+import type { StateData } from "../types/state"
+
+export const lakshadweepData: StateData = {
+  id: "lakshadweep",
+  name: "Lakshadweep",
+  hindiName: "लक्षद्वीप",
+  capital: "Kavaratti",
+  tagline: "Hundred Thousand Coral Atolls, Sapphire Lagoons & Island Harmony",
+  overview:
+    "Lakshadweep, whose Sanskrit name signifies 'a hundred thousand islands', is India's smallest union territory and an incomparable marine paradise situated in the Arabian Sea off the Malabar coast. Composed of 36 breathtaking coral atolls, submerged banks, and turquoise lagoons teeming with manta rays, sea turtles, and kaleidoscopic reef fish, Lakshadweep showcases an ancient maritime seafaring heritage, coconut-palm canopies, and the distinct Mahl culture of Minicoy.",
+  ancientNames: ["Laksha-Dweepa", "Divanduru", "Cheraman Perumal Archipelago"],
+  keyStats: [
+    { label: "Districts", value: "1 (Comprising 36 Atolls & Reefs)" },
+    { label: "Capital", value: "Kavaratti" },
+    { label: "Lagoon Area", value: "Over 4,200 sq km of Pristine Marine Waters" },
+    { label: "Aviation Gateway", value: "Agatti Island Airstrip (Surrounded by Ocean)" },
+    { label: "Maritime Beacon", value: "Minicoy Lighthouse (Erected 1885, 49.5m tall)" },
+    { label: "Eco Triumph", value: "100% Certified Organic Agricultural Territory" },
+  ],
+  quote: {
+    text: "Here the turquoise lagoons merge with the infinite azure sky, and the silence of the coral atoll is broken only by the rhythmic whisper of ocean waves.",
+    author: "Songs of the Coral Seas",
+  },
+  districts: {
+    "Lakshadweep": {
+      name: "Lakshadweep",
+      tagline: "Coral Archipelago of Kavaratti, Agatti, Bangaram & Minicoy",
+      headquarters: "Kavaratti",
+      knownFor: "Kavaratti Marine Aquarium and historic 17th-century Ujra Mosque with carved driftwood ceiling; Agatti airstrip lagoon; Bangaram uninhabited teardrop island; Minicoy cultural traditions.",
+      famousSpot: "Bangaram Atoll & Minicoy Lighthouse",
+    },
+  },
+  cuisines: [
+    {
+      name: "Mus Kavaab (Spiced Tuna Skewers)",
+      image: "/images/lakshadweep/mus_kavaab.jpg",
+      description: "Tender boneless skipjack tuna marinated in crushed island red chilies, turmeric, coriander seeds, cardamom, and sautéed with caramelized onions.",
+      ingredients: ["Skipjack tuna (Mus)", "Ground island chilies", "Shallots", "Curry leaves", "Coconut oil"],
+      dietary: "Non-Veg (Tuna)",
+    },
+    {
+      name: "Rayereha (Island Red Tuna Curry)",
+      image: "/images/lakshadweep/rayereha_curry.jpg",
+      description: "Rich, velvety crimson tuna gravy prepared with coconut milk, crushed island coriander, roasted spices, and tangy kodampuli (Malabar kokum).",
+      ingredients: ["Fresh tuna", "Coconut milk", "Kodampuli (kokum)", "Garlic", "Roasted fenugreek"],
+      dietary: "Non-Veg",
+    },
+    {
+      name: "Flaky Malabar Parotta",
+      image: "/images/lakshadweep/malabar_parotta.jpg",
+      description: "Layered, spiral-rolled flaky flatbread beaten to crispy golden perfection, the quintessential accompaniment to rich lagoon curries.",
+      ingredients: ["Flour", "Pure ghee / coconut oil", "Water", "Pinch of salt"],
+      dietary: "Vegetarian",
+    },
+    {
+      name: "Island Coconut Halwa",
+      image: "/images/lakshadweep/coconut_halwa.jpg",
+      description: "A decadent, dark brown fudge-like dessert slow-cooked in brass cauldrons with freshly squeezed coconut cream, jaggery, and crushed green cardamom.",
+      ingredients: ["Coconut cream", "Palm jaggery", "Ghee", "Cardamom", "Cashews"],
+      dietary: "Vegetarian",
+    },
+    {
+      name: "Fresh Island Tender Coconut",
+      image: "/images/lakshadweep/tender_coconut.jpg",
+      description: "Electrolyte-rich sweet water from organic tall coconut palms that blanket every atoll, enjoyed fresh under the tropical canopy.",
+      ingredients: ["100% Pure Virgin Island Coconut Water"],
+      dietary: "Vegan",
+    },
+  ],
+  traditions: [
+    {
+      name: "Lava Dance of Minicoy",
+      image: "/images/lakshadweep/lava_dance.jpg",
+      category: "Island Folk Art",
+      description: "The most vibrant traditional dance of Minicoy island, performed by male dancers dressed in bright red silk trousers and turbans to rhythmic beats of drums and cymbals.",
+      season: "Festive Occasions & Eid",
+    },
+    {
+      name: "Kolkali Stick Martial Rhythm",
+      image: "/images/lakshadweep/kolkali_dance.jpg",
+      category: "Synchronized Folk Rhythm",
+      description: "Dynamic circle dance where performers rhythmically strike pairs of short polished wooden batons together while singing harmonious Maldivian-Malayalam ballads.",
+      season: "Community Gatherings",
+    },
+    {
+      name: "Traditional Lagoon Boat Racing (Jahadhoni)",
+      image: "/images/lakshadweep/lagoon_heritage.jpg",
+      category: "Maritime Seafaring Heritage",
+      description: "Colourful hand-built wooden racing rowboats (Jahadhoni) propelled by dozens of synchronized oarsmen across the placid turquoise lagoons.",
+      season: "Ocean Festivals",
+    },
+  ],
+  attires: [
+    {
+      name: "Minicoy Kachi & Thattam",
+      image: "/images/lakshadweep/minicoy_attire.jpg",
+      type: "Heirloom Island Silk",
+      description: "A rectangular black or deep crimson fabric wrapped around the waist (Kachi) held with a silver chain, complemented by an embroidered head veil (Thattam).",
+      gender: "Women",
+    },
+    {
+      name: "Island White Lungi & Silver Belt",
+      image: "/images/lakshadweep/island_silk.jpg",
+      type: "Traditional Maritime Attire",
+      description: "Crisp white cotton lungi bordered with intricate colored hems, fastened securely with a handcrafted silver waist chain (Arayanjen).",
+      gender: "Men",
+    },
+    {
+      name: "Handcrafted Coral & Shell Jewelry",
+      image: "/images/lakshadweep/coral_jewelry.jpg",
+      type: "Oceanic Adornment",
+      description: "Silver bangles and necklaces inlaid with mother-of-pearl and natural oceanic motifs handed down through generations of island families.",
+      gender: "Women",
+    },
+  ],
+  monuments: [
+    {
+      name: "Historic Minicoy Island Lighthouse",
+      image: "/images/lakshadweep/minicoy_lighthouse.jpg",
+      location: "Southern tip of Minicoy Island",
+      period: "1885 (Built with London cast brick)",
+      significance: "Monumental 49.5-meter brick lighthouse guiding Arabian Sea and Indian Ocean shipping lanes along the crucial 9-Degree Channel for over 140 years.",
+    },
+    {
+      name: "Bangaram Coral Atoll & Sandspit",
+      image: "/images/lakshadweep/bangaram_atoll.jpg",
+      location: "Bangaram Atoll (North of Agatti)",
+      period: "Pristine Coral Formation",
+      significance: "An uninhabited tear-drop coral haven encircled by a shallow turquoise lagoon with phosphorescent plankton that glows brilliantly after midnight.",
+    },
+    {
+      name: "Kavaratti Island & Ujra Mosque",
+      image: "/images/lakshadweep/kavaratti_island.jpg",
+      location: "Kavaratti Capital Atoll",
+      period: "17th Century (Sheikh Mohammad Kasim)",
+      significance: "Spiritual center of the archipelago famed for its intricate ceiling carvings hand-chiselled from a single driftwood log and sacred freshwater spring well.",
+    },
+    {
+      name: "Agatti Island Lagoon & Coral Shelf",
+      image: "/images/lakshadweep/agatti_lagoon.jpg",
+      location: "Agatti Island",
+      period: "Living Coral Barrier Reef",
+      significance: "One of the world's most spectacular aerial landing vistas, where the narrow airstrip stretches into an endless crystalline sapphire lagoon.",
+    },
+  ],
+}

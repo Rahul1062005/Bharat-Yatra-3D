@@ -1,0 +1,373 @@
+/* =========================================================
+   BHARAT YATRA 3D: SLEEK TOP DOCK SEARCH & FILTER
+   Compact Glassmorphic Dock — Zero Map Interference
+========================================================= */
+
+.india-search-dock {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 460px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+}
+
+/* ================= Top Slim Search Bar Pill ================= */
+.india-search-bar-wrap {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(11, 23, 49, 0.85);
+  border: 1px solid rgba(245, 184, 46, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 20px rgba(245, 184, 46, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 999px;
+  padding: 0 14px 0 16px;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.india-search-bar-wrap.focused,
+.india-search-bar-wrap:hover {
+  border-color: rgba(250, 204, 21, 0.7);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 25px rgba(245, 184, 46, 0.2);
+  background: rgba(13, 27, 58, 0.94);
+}
+
+.search-bar-icon {
+  color: #fef08a;
+  flex-shrink: 0;
+  opacity: 0.95;
+}
+
+.india-search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 13.5px;
+  color: #f8fafc;
+  letter-spacing: 0.2px;
+}
+
+.india-search-input::placeholder {
+  color: rgba(203, 213, 225, 0.55);
+  font-size: 12.5px;
+}
+
+.search-clear-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  outline: none;
+  color: #94a3b8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.search-clear-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.search-filter-toggle-btn {
+  background: rgba(245, 184, 46, 0.12);
+  border: 1px solid rgba(245, 184, 46, 0.28);
+  color: #fef08a;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.search-filter-toggle-btn:hover,
+.search-filter-toggle-btn.has-filter {
+  background: rgba(245, 184, 46, 0.24);
+  border-color: #fef08a;
+  color: #ffffff;
+}
+
+/* ================= Expandable Tray ================= */
+.india-search-results-tray {
+  position: absolute;
+  top: 48px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 380px;
+  background: rgba(10, 21, 44, 0.97);
+  border: 1px solid rgba(245, 184, 46, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(245, 184, 46, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 18px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: trayDropIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes trayDropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ================= Tray Region Filter Chips ================= */
+.tray-filter-chips-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tray-filter-chips-row::-webkit-scrollbar {
+  height: 3px;
+}
+
+.tray-filter-chips-row::-webkit-scrollbar-thumb {
+  background: rgba(245, 184, 46, 0.3);
+  border-radius: 999px;
+}
+
+.region-chip {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.region-chip:hover {
+  color: #fef08a;
+  border-color: rgba(245, 184, 46, 0.4);
+  background: rgba(20, 39, 78, 0.8);
+}
+
+.region-chip.active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.35) 0%, rgba(217, 119, 6, 0.2) 100%);
+  border-color: #fef08a;
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.3);
+}
+
+/* ================= Tray Header ================= */
+.results-tray-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.results-count-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: #94a3b8;
+}
+
+.results-sparkle-icon {
+  color: #fef08a;
+}
+
+.results-tray-close {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.results-tray-close:hover {
+  color: #fef08a;
+}
+
+/* ================= Results Grid ================= */
+.results-grid {
+  overflow-y: auto;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 4px;
+}
+
+.results-grid::-webkit-scrollbar {
+  width: 4px;
+}
+
+.results-grid::-webkit-scrollbar-thumb {
+  background: rgba(245, 184, 46, 0.3);
+  border-radius: 999px;
+}
+
+.result-state-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 10px;
+}
+
+.result-state-card:hover {
+  background: rgba(245, 184, 46, 0.08);
+  border-color: rgba(245, 184, 46, 0.45);
+  transform: translateX(2px);
+}
+
+.result-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.result-card-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.result-card-name {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f8fafc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result-card-hindi {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.result-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.result-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10.5px;
+  color: #fef08a;
+  font-weight: 600;
+}
+
+.result-meta-tagline {
+  font-size: 10px;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.result-card-action {
+  flex-shrink: 0;
+}
+
+.dive-pill {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #fef08a;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  padding: 3px 7px;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.result-state-card:hover .dive-pill {
+  background: #f59e0b;
+  color: #0b1731;
+}
+
+/* ================= No Results State ================= */
+.no-results-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 10px;
+  color: #94a3b8;
+  text-align: center;
+  gap: 5px;
+}
+
+.no-results-icon {
+  color: #64748b;
+  margin-bottom: 2px;
+}
+
+.no-results-state p {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.no-results-state span {
+  font-size: 11px;
+}
+
+/* ================= Mobile Adjustments ================= */
+@media (max-width: 768px) {
+  .india-search-dock {
+    top: 15px;
+    width: 92%;
+  }
+
+  .india-search-bar-wrap {
+    height: 38px;
+  }
+}

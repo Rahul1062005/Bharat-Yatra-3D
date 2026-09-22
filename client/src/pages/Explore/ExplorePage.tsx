@@ -4,6 +4,7 @@ import { ArrowLeft, Globe } from "lucide-react"
 
 import Earth from "../../components/globe/Earth"
 import IndiaMap, { preloadIndiaMapData } from "../../components/map/IndiaMap"
+import IndiaSearchBar from "../../components/search/IndiaSearchBar"
 import "./ExplorePage.css"
 
 export type ExploreStage = "globe" | "diving" | "india"
@@ -62,6 +63,59 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
     }, 280)
   }
 
+  // Dive from India Map into specific State (Bihar, Maharashtra, UP, Rajasthan, Kerala, Gujarat, West Bengal, Tamil Nadu, Karnataka, Punjab)
+  const handleStateDive = (stateName: string) => {
+    let slug = ""
+    if (/bihar/i.test(stateName)) slug = "bihar"
+    else if (/maharashtra/i.test(stateName)) slug = "maharashtra"
+    else if (/uttar pradesh/i.test(stateName)) slug = "uttar-pradesh"
+    else if (/rajasthan/i.test(stateName)) slug = "rajasthan"
+    else if (/kerala/i.test(stateName)) slug = "kerala"
+    else if (/gujarat/i.test(stateName)) slug = "gujarat"
+    else if (/west bengal/i.test(stateName)) slug = "west-bengal"
+    else if (/tamil nadu/i.test(stateName)) slug = "tamil-nadu"
+    else if (/karnataka/i.test(stateName)) slug = "karnataka"
+    else if (/punjab/i.test(stateName)) slug = "punjab"
+    else if (/madhya pradesh/i.test(stateName)) slug = "madhya-pradesh"
+    else if (/odisha/i.test(stateName)) slug = "odisha"
+    else if (/andhra pradesh/i.test(stateName)) slug = "andhra-pradesh"
+    else if (/telangana/i.test(stateName)) slug = "telangana"
+    else if (/assam/i.test(stateName)) slug = "assam"
+    else if (/haryana/i.test(stateName)) slug = "haryana"
+    else if (/himachal pradesh/i.test(stateName)) slug = "himachal-pradesh"
+    else if (/uttarakhand/i.test(stateName)) slug = "uttarakhand"
+    else if (/goa/i.test(stateName)) slug = "goa"
+    else if (/jammu/i.test(stateName) || /kashmir/i.test(stateName)) slug = "jammu-kashmir"
+    else if (/jharkhand/i.test(stateName)) slug = "jharkhand"
+    else if (/chhattisgarh/i.test(stateName)) slug = "chhattisgarh"
+    else if (/sikkim/i.test(stateName)) slug = "sikkim"
+    else if (/meghalaya/i.test(stateName)) slug = "meghalaya"
+    else if (/manipur/i.test(stateName)) slug = "manipur"
+    else if (/nagaland/i.test(stateName)) slug = "nagaland"
+    else if (/tripura/i.test(stateName)) slug = "tripura"
+    else if (/mizoram/i.test(stateName)) slug = "mizoram"
+    else if (/arunachal/i.test(stateName)) slug = "arunachal-pradesh"
+    else if (/ladakh/i.test(stateName)) slug = "ladakh"
+    else if (/delhi/i.test(stateName)) slug = "delhi"
+    else if (/andaman/i.test(stateName) || /nicobar/i.test(stateName)) slug = "andaman-nicobar"
+    else if (/lakshadweep/i.test(stateName)) slug = "lakshadweep"
+    else if (/puducherry/i.test(stateName) || /pondicherry/i.test(stateName)) slug = "puducherry"
+    else if (/chandigarh/i.test(stateName)) slug = "chandigarh"
+    else if (/dadra/i.test(stateName) || /daman/i.test(stateName) || /diu/i.test(stateName)) slug = "dadra-nagar-haveli-daman-diu"
+
+    if (slug) {
+      // Atmospheric mist / cloud wash rushes in as camera swoops in
+      setTimeout(() => {
+        setCloudWashActive(true)
+      }, 360)
+
+      // Navigate to dedicated 3D State page
+      setTimeout(() => {
+        navigate(`/state/${slug}`)
+      }, 850)
+    }
+  }
+
   return (
     <main className={`explore-page stage-${stage}`}>
       {/* ================= ATMOSPHERIC DIVE VFX OVERLAY ================= */}
@@ -103,7 +157,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
       )}
 
       {/* ================= DYNAMIC HEADERS ================= */}
-      {stage !== "india" ? (
+      {stage !== "india" && (
         <header
           className={`explore-header ${
             stage === "diving" ? "header-fading" : ""
@@ -115,14 +169,6 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
             {stage === "diving"
               ? "Entering India..."
               : "Click India to begin."}
-          </p>
-        </header>
-      ) : (
-        <header className="explore-header india-active-header">
-          <p className="explore-tag india-tag">BHARAT YATRA</p>
-          <h1 className="india-header-title">India, Unfolded.</h1>
-          <p className="explore-subtitle india-header-sub">
-            Explore the states of India
           </p>
         </header>
       )}
@@ -142,7 +188,8 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
         </div>
       ) : (
         <div className="india-container">
-          <IndiaMap animateEntrance={true} />
+          <IndiaSearchBar onSelectState={handleStateDive} />
+          <IndiaMap animateEntrance={true} onStateDive={handleStateDive} />
         </div>
       )}
     </main>

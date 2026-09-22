@@ -950,6 +950,222 @@ function MapEntranceController({
   return null
 }
 
+/* =========================================================
+   STATE DIVE CAMERA CONTROLLER
+   Smoothly swoops camera down into Bihar's coordinates
+========================================================= */
+
+function StateDiveCamera({
+  divingState,
+  onComplete,
+}: {
+  divingState: string | null
+  onComplete?: () => void
+}) {
+  const { camera } = useThree()
+  const isDivingRef = useRef(false)
+  const progressRef = useRef(0)
+  const startPosRef = useRef<THREE.Vector3 | null>(null)
+  const targetCamPosRef = useRef<THREE.Vector3 | null>(null)
+  const startLookRef = useRef<THREE.Vector3 | null>(null)
+  const targetLookRef = useRef<THREE.Vector3 | null>(null)
+
+  useEffect(() => {
+    if (!divingState) return
+
+    let targetX = 0
+    let targetY = 0
+    let shouldDive = false
+
+    if (/bihar/i.test(divingState)) {
+      targetX = 0.97
+      targetY = 0.55
+      shouldDive = true
+    } else if (/maharashtra/i.test(divingState)) {
+      targetX = -0.32
+      targetY = -0.36
+      shouldDive = true
+    } else if (/uttar pradesh/i.test(divingState)) {
+      targetX = 0.28
+      targetY = 0.74
+      shouldDive = true
+    } else if (/rajasthan/i.test(divingState)) {
+      targetX = -0.72
+      targetY = 0.65
+      shouldDive = true
+    } else if (/kerala/i.test(divingState)) {
+      targetX = -0.40
+      targetY = -1.67
+      shouldDive = true
+    } else if (/gujarat/i.test(divingState)) {
+      targetX = -1.12
+      targetY = 0.06
+      shouldDive = true
+    } else if (/west bengal/i.test(divingState)) {
+      targetX = 1.28
+      targetY = 0.34
+      shouldDive = true
+    } else if (/tamil nadu/i.test(divingState)) {
+      targetX = -0.09
+      targetY = -1.60
+      shouldDive = true
+    } else if (/karnataka/i.test(divingState)) {
+      targetX = -0.46
+      targetY = -1.04
+      shouldDive = true
+    } else if (/punjab/i.test(divingState)) {
+      targetX = -0.52
+      targetY = 1.30
+      shouldDive = true
+    } else if (/madhya pradesh/i.test(divingState)) {
+      targetX = 0.02
+      targetY = 0.20
+      shouldDive = true
+    } else if (/odisha/i.test(divingState)) {
+      targetX = 0.85
+      targetY = -0.32
+      shouldDive = true
+    } else if (/andhra pradesh/i.test(divingState)) {
+      targetX = 0.32
+      targetY = -0.92
+      shouldDive = true
+    } else if (/telangana/i.test(divingState)) {
+      targetX = 0.14
+      targetY = -0.64
+      shouldDive = true
+    } else if (/assam/i.test(divingState)) {
+      targetX = 2.01
+      targetY = 0.50
+      shouldDive = true
+    } else if (/haryana/i.test(divingState)) {
+      targetX = -0.35
+      targetY = 0.95
+      shouldDive = true
+    } else if (/himachal pradesh/i.test(divingState)) {
+      targetX = -0.17
+      targetY = 1.30
+      shouldDive = true
+    } else if (/uttarakhand/i.test(divingState)) {
+      targetX = 0.11
+      targetY = 1.06
+      shouldDive = true
+    } else if (/goa/i.test(divingState)) {
+      targetX = -0.63
+      targetY = -0.99
+      shouldDive = true
+    } else if (/jammu/i.test(divingState) || /kashmir/i.test(divingState)) {
+      targetX = -0.42
+      targetY = 1.57
+      shouldDive = true
+    } else if (/jharkhand/i.test(divingState)) {
+      targetX = 0.99
+      targetY = 0.17
+      shouldDive = true
+    } else if (/chhattisgarh/i.test(divingState)) {
+      targetX = 0.53
+      targetY = -0.22
+      shouldDive = true
+    } else if (/sikkim/i.test(divingState)) {
+      targetX = 1.40
+      targetY = 0.71
+      shouldDive = true
+    } else if (/meghalaya/i.test(divingState)) {
+      targetX = 1.79
+      targetY = 0.42
+      shouldDive = true
+    } else if (/manipur/i.test(divingState)) {
+      targetX = 2.15
+      targetY = 0.32
+      shouldDive = true
+    } else if (/nagaland/i.test(divingState)) {
+      targetX = 2.21
+      targetY = 0.50
+      shouldDive = true
+    } else if (/tripura/i.test(divingState)) {
+      targetX = 1.85
+      targetY = 0.17
+      shouldDive = true
+    } else if (/mizoram/i.test(divingState)) {
+      targetX = 2.00
+      targetY = 0.10
+      shouldDive = true
+    } else if (/arunachal/i.test(divingState)) {
+      targetX = 2.24
+      targetY = 0.78
+      shouldDive = true
+    } else if (/ladakh/i.test(divingState)) {
+      targetX = -0.15
+      targetY = 1.60
+      shouldDive = true
+    } else if (/delhi/i.test(divingState)) {
+      targetX = -0.20
+      targetY = 0.85
+      shouldDive = true
+    } else if (/andaman/i.test(divingState) || /nicobar/i.test(divingState)) {
+      targetX = 2.06
+      targetY = -1.62
+      shouldDive = true
+    } else if (/lakshadweep/i.test(divingState)) {
+      targetX = -0.88
+      targetY = -1.74
+      shouldDive = true
+    } else if (/puducherry/i.test(divingState) || /pondicherry/i.test(divingState)) {
+      targetX = 0.12
+      targetY = -1.46
+      shouldDive = true
+    } else if (/chandigarh/i.test(divingState)) {
+      targetX = -0.32
+      targetY = 1.27
+      shouldDive = true
+    } else if (/dadra/i.test(divingState) || /daman/i.test(divingState) || /diu/i.test(divingState)) {
+      targetX = -1.01
+      targetY = -0.23
+      shouldDive = true
+    }
+
+    if (shouldDive) {
+      isDivingRef.current = true
+      progressRef.current = 0
+      startPosRef.current = camera.position.clone()
+
+      targetCamPosRef.current = new THREE.Vector3(targetX, 2.2, 1.35)
+      startLookRef.current = new THREE.Vector3(0, 0, 0)
+      targetLookRef.current = new THREE.Vector3(targetX, targetY, 0.1)
+    }
+  }, [divingState, camera])
+
+  useFrame((_, delta) => {
+    if (
+      !isDivingRef.current ||
+      !startPosRef.current ||
+      !targetCamPosRef.current ||
+      !targetLookRef.current
+    )
+      return
+
+    progressRef.current = Math.min(progressRef.current + delta * 1.15, 1)
+    const t = progressRef.current
+    // Smooth cubic in-out ease
+    const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+
+    camera.position.lerpVectors(startPosRef.current, targetCamPosRef.current, ease)
+    const currentLook = new THREE.Vector3().lerpVectors(
+      startLookRef.current || new THREE.Vector3(),
+      targetLookRef.current,
+      ease
+    )
+    camera.lookAt(currentLook)
+
+    if (t >= 1) {
+      isDivingRef.current = false
+      if (onComplete) onComplete()
+    }
+  })
+
+  return null
+}
+
+
 
 /* =========================================================
    STATES ELEVATION GROUP
@@ -1026,6 +1242,8 @@ function IndiaScene({
   onLeave,
   onSelect,
   animateEntrance = false,
+  divingState = null,
+  onDiveComplete,
 }: {
   states: StateData[]
 
@@ -1046,6 +1264,8 @@ function IndiaScene({
   ) => void
 
   animateEntrance?: boolean
+  divingState?: string | null
+  onDiveComplete?: () => void
 }) {
 
   return (
@@ -1080,6 +1300,7 @@ function IndiaScene({
       />
 
       <MapEntranceController animateEntrance={animateEntrance} />
+      <StateDiveCamera divingState={divingState} onComplete={onDiveComplete} />
 
 
       {/* =================================================
@@ -1222,6 +1443,10 @@ function IndiaScene({
       ================================================= */}
 
       <OrbitControls
+        enabled={
+          !divingState
+        }
+
         enablePan={
           false
         }
@@ -1449,12 +1674,19 @@ export function preloadIndiaMapData(): Promise<StateData[]> {
    MAIN INDIA MAP
 ========================================================= */
 
+export const ACTIVE_STATES_REGEX =
+  /bihar|maharashtra|uttar pradesh|rajasthan|kerala|gujarat|west bengal|tamil nadu|karnataka|punjab|madhya pradesh|odisha|andhra pradesh|telangana|assam|haryana|himachal pradesh|uttarakhand|goa|jammu|kashmir|jharkhand|chhattisgarh|sikkim|meghalaya|manipur|nagaland|tripura|mizoram|arunachal|ladakh|delhi|andaman|nicobar|lakshadweep|puducherry|pondicherry|chandigarh|dadra|daman|diu/i
+
 export interface IndiaMapProps {
   animateEntrance?: boolean
+  onStateSelect?: (stateName: string) => void
+  onStateDive?: (stateName: string) => void
 }
 
 export default function IndiaMap({
   animateEntrance = false,
+  onStateSelect,
+  onStateDive,
 }: IndiaMapProps) {
 
   /* =======================================================
@@ -1465,6 +1697,11 @@ export default function IndiaMap({
     states,
     setStates,
   ] = useState<StateData[]>(() => cachedStatesData || [])
+
+  const [
+    divingState,
+    setDivingState,
+  ] = useState<string | null>(null)
 
 
   /* =======================================================
@@ -1699,6 +1936,17 @@ export default function IndiaMap({
     setSelectedState(
       name,
     )
+
+    if (onStateSelect) {
+      onStateSelect(name)
+    }
+
+    if (ACTIVE_STATES_REGEX.test(name)) {
+      setDivingState(name)
+      if (onStateDive) {
+        onStateDive(name)
+      }
+    }
 
 
     console.log(
@@ -2068,6 +2316,10 @@ export default function IndiaMap({
             animateEntrance={
               animateEntrance
             }
+
+            divingState={
+              divingState
+            }
           />
 
         </Canvas>
@@ -2277,18 +2529,53 @@ export default function IndiaMap({
               "1px",
 
             pointerEvents:
-              "none",
+              ACTIVE_STATES_REGEX.test(selectedState) ? "auto" : "none",
+
+            cursor:
+              ACTIVE_STATES_REGEX.test(selectedState) ? "pointer" : "default",
 
             whiteSpace:
               "nowrap",
 
             textShadow:
               "0 2px 18px rgba(245, 184, 46, 0.3)",
+
+            display:
+              "flex",
+
+            alignItems:
+              "center",
+
+            gap:
+              "8px",
+
+            padding:
+              "6px 16px",
+
+            borderRadius:
+              "999px",
+
+            background:
+              ACTIVE_STATES_REGEX.test(selectedState) ? "rgba(15, 31, 61, 0.85)" : "transparent",
+
+            border:
+              ACTIVE_STATES_REGEX.test(selectedState) ? "1px solid rgba(245, 158, 11, 0.5)" : "none",
+          }}
+          onClick={() => {
+            if (ACTIVE_STATES_REGEX.test(selectedState)) {
+              setDivingState(selectedState)
+              if (onStateDive) {
+                onStateDive(selectedState)
+              }
+            }
           }}
         >
-          {
-            selectedState
-          }
+          <span>{selectedState}</span>
+          {ACTIVE_STATES_REGEX.test(selectedState) && (
+            <span style={{ fontSize: "12px", color: "#fef08a" }}>
+              — Dive into State →
+            </span>
+          )}
         </div>
 
       )}
