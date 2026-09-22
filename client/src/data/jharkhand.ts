@@ -88,6 +88,33 @@ export const jharkhandData: StateData = {
       lon: 86.7001,
       category: "spiritual",
       description: "One of the twelve supreme Jyotirlingas of Lord Shiva where Ravana is believed to have sacrificed his nine heads to please Shiva, renowned for the world's longest pilgrimage festival—the 105-kilometer Kanwar Yatra from Sultanganj in Shravan.",
+      image: "/images/jharkhand/baidyanath_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Baba Baidyanath Jyotirlinga Temple.",
+      gallery: [
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Baba Baidyanath Jyotirlinga Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Baba Baidyanath Jyotirlinga Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Baba Baidyanath Jyotirlinga Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Baba Baidyanath Jyotirlinga Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "hundru-falls",
@@ -97,6 +124,33 @@ export const jharkhandData: StateData = {
       lon: 85.6481,
       category: "nature",
       description: "One of the most spectacular waterfalls in eastern India where the holy Subarnarekha River plunges 98 meters (322 feet) over sheer black rocks into an emerald-green foaming natural pool.",
+      image: "/images/jharkhand/baidyanath_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Hundru Waterfalls.",
+      gallery: [
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Hundru Waterfalls — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Hundru Waterfalls — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Hundru Waterfalls — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Hundru Waterfalls — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "parasnath-temple",
@@ -106,6 +160,33 @@ export const jharkhandData: StateData = {
       lon: 86.1309,
       category: "spiritual",
       description: "The highest mountain peak in Jharkhand rising to 1,365 meters, venerated as the holiest pilgrimage site in Jainism where twenty out of the twenty-four Tirthankaras, including Lord Parshvanatha, attained spiritual Nirvana.",
+      image: "/images/jharkhand/baidyanath_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Parasnath Hill (Shikharji).",
+      gallery: [
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Parasnath Hill (Shikharji) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Parasnath Hill (Shikharji) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Parasnath Hill (Shikharji) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Parasnath Hill (Shikharji) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "jagannath-temple-ranchi",
@@ -115,6 +196,33 @@ export const jharkhandData: StateData = {
       lon: 85.2817,
       category: "spiritual",
       description: "17th-century hilltop temple built in 1691 by King Thakur Ani Nath Shahdeo resembling the Puri Jagannath Temple, offering panoramic vistas over the city and hosting a massive annual Ratha Yatra.",
+      image: "/images/jharkhand/baidyanath_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Ranchi Jagannath Temple.",
+      gallery: [
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Ranchi Jagannath Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Ranchi Jagannath Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Ranchi Jagannath Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Ranchi Jagannath Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "dassam-falls",
@@ -124,6 +232,33 @@ export const jharkhandData: StateData = {
       lon: 85.4678,
       category: "nature",
       description: "Stunning natural cascade where the Kanchi River tumbles 44 meters down into ten distinct water streams over dark granite formations amidst dense sal forest canopies.",
+      image: "/images/jharkhand/baidyanath_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Dassam Falls (Kanchi River).",
+      gallery: [
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Dassam Falls (Kanchi River) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Dassam Falls (Kanchi River) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Dassam Falls (Kanchi River) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Dassam Falls (Kanchi River) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "dalma-sanctuary",
@@ -133,6 +268,33 @@ export const jharkhandData: StateData = {
       lon: 86.2089,
       category: "nature",
       description: "Dense deciduous forest sanctuary spanning the Dalma mountain range, world-famous as a pristine haven for herds of wild Asian elephants, barking deer, leopards, and giant squirrels.",
+      image: "/images/jharkhand/baidyanath_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Dalma Wildlife & Elephant Sanctuary.",
+      gallery: [
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Dalma Wildlife & Elephant Sanctuary — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Dalma Wildlife & Elephant Sanctuary — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Dalma Wildlife & Elephant Sanctuary — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/jharkhand/baidyanath_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Dalma Wildlife & Elephant Sanctuary — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -319,6 +481,7 @@ export const jharkhandData: StateData = {
   luminaries: [
     {
       name: "Bhagwan Birsa Munda",
+      image: "/images/luminaries/bhagwan_birsa_munda.jpg",
       era: "1875 – 1900 CE",
       title: "Dharti Aaba (Father of the Earth) & Freedom Revolutionary",
       contribution:
@@ -326,6 +489,7 @@ export const jharkhandData: StateData = {
     },
     {
       name: "Sidho and Kanho Murmu",
+      image: "/images/luminaries/sidho_and_kanho_murmu.jpg",
       era: "1815 – 1856 CE",
       title: "Leaders of the Great Santhal Hool Rebellion",
       contribution:
@@ -333,6 +497,7 @@ export const jharkhandData: StateData = {
     },
     {
       name: "Mahendra Singh Dhoni",
+      image: "/images/luminaries/mahendra_singh_dhoni.jpg",
       era: "1981 – Present",
       title: "Legendary Indian Cricket Captain & World Cup Winner",
       contribution:

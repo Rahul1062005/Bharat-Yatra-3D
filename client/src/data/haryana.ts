@@ -88,6 +88,33 @@ export const haryanaData: StateData = {
       lon: 76.8335,
       category: "spiritual",
       description: "A colossal sacred water reservoir measuring 1,800 feet by 1,400 feet, believed in Hindu cosmology to be the cradle where Lord Brahma created the universe, surrounded by grand stepped bathing ghats that host millions of pilgrims during solar eclipses.",
+      image: "/images/haryana/asigarh_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Brahma Sarovar of Kurukshetra.",
+      gallery: [
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Brahma Sarovar of Kurukshetra — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Brahma Sarovar of Kurukshetra — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Brahma Sarovar of Kurukshetra — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Brahma Sarovar of Kurukshetra — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "jyotisar",
@@ -97,6 +124,33 @@ export const haryanaData: StateData = {
       lon: 76.7725,
       category: "spiritual",
       description: "The hallowed site where Lord Krishna is believed to have revealed the 700 verses of the Bhagavad Gita and his cosmic Vishwaroopa form to the grief-stricken warrior Arjuna under an immortal banyan tree on the eve of the Kurukshetra war.",
+      image: "/images/haryana/asigarh_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Jyotisar Sacred Banyan Tree.",
+      gallery: [
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Jyotisar Sacred Banyan Tree — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Jyotisar Sacred Banyan Tree — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Jyotisar Sacred Banyan Tree — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Jyotisar Sacred Banyan Tree — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "pinjore-gardens",
@@ -106,6 +160,33 @@ export const haryanaData: StateData = {
       lon: 76.9152,
       category: "monument",
       description: "A 17th-century terraced Mughal pleasure garden built by architect Fidai Khan under Aurangzeb and restored by Maharaja Yadavindra Singh of Patiala, cascading through seven ascending terraces of fountains, water pavilions, and manicured orchards.",
+      image: "/images/haryana/asigarh_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Yadavindra (Pinjore) Mughal Gardens.",
+      gallery: [
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Yadavindra (Pinjore) Mughal Gardens — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Yadavindra (Pinjore) Mughal Gardens — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Yadavindra (Pinjore) Mughal Gardens — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Yadavindra (Pinjore) Mughal Gardens — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "sheikh-chilli-tomb",
@@ -115,6 +196,33 @@ export const haryanaData: StateData = {
       lon: 76.8285,
       category: "monument",
       description: "An elegant white marble-domed mausoleum built in Persian Mughal architectural style resting on an octagonal sandstone terrace, dedicated to the Sufi saint Abd-ur-Rahim (Sheikh Chilli), the spiritual mentor of Mughal Prince Dara Shikoh.",
+      image: "/images/haryana/asigarh_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Tomb of Sheikh Chilli.",
+      gallery: [
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Tomb of Sheikh Chilli — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Tomb of Sheikh Chilli — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Tomb of Sheikh Chilli — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Tomb of Sheikh Chilli — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "rakhigarhi",
@@ -124,6 +232,33 @@ export const haryanaData: StateData = {
       lon: 76.1136,
       category: "monument",
       description: "The largest known city of the ancient Indus Valley (Harappan) Civilization sprawling across 350 hectares on the dried-up bed of the paleo-Saraswati River, revealing 5,000-year-old planned drainage systems, terracotta kilns, and bronze artifacts.",
+      image: "/images/haryana/asigarh_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Rakhigarhi Harappan Archaeological Site.",
+      gallery: [
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Rakhigarhi Harappan Archaeological Site — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Rakhigarhi Harappan Archaeological Site — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Rakhigarhi Harappan Archaeological Site — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Rakhigarhi Harappan Archaeological Site — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "surajkund",
@@ -133,6 +268,33 @@ export const haryanaData: StateData = {
       lon: 77.2831,
       category: "monument",
       description: "A semicircular 10th-century stone step-reservoir built by Tomar King Suraj Pal with stepped stone embankments resembling a Roman amphitheater, host to the annual Surajkund International Crafts Mela celebrating rural global artisans.",
+      image: "/images/haryana/asigarh_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Surajkund Ancient Sun Reservoir.",
+      gallery: [
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Surajkund Ancient Sun Reservoir — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Surajkund Ancient Sun Reservoir — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Surajkund Ancient Sun Reservoir — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/haryana/asigarh_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Surajkund Ancient Sun Reservoir — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -310,6 +472,7 @@ export const haryanaData: StateData = {
   luminaries: [
     {
       name: "Pandit Lakhmi Chand",
+      image: "/images/luminaries/aryabhata.jpg",
       era: "1903 – 1945 CE",
       title: "Kalidas of Haryana & Grandmaster of Saang",
       contribution:
@@ -317,6 +480,7 @@ export const haryanaData: StateData = {
     },
     {
       name: "Sir Chhotu Ram",
+      image: "/images/luminaries/sir_chhotu_ram.jpg",
       era: "1881 – 1945 CE",
       title: "Rahbar-e-Azam (Savior of the Farmers)",
       contribution:
@@ -324,6 +488,7 @@ export const haryanaData: StateData = {
     },
     {
       name: "Kalpana Chawla",
+      image: "/images/luminaries/kalpana_chawla.jpg",
       era: "1962 – 2003 CE",
       title: "First Indian Woman in Space & Aerospace Pioneer",
       contribution:

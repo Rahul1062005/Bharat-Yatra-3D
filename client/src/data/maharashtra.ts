@@ -277,6 +277,33 @@ export const maharashtraData: StateData = {
       lon: 72.8347,
       category: "monument",
       description: "Iconic 26-meter basalt triumphal arch facing the Arabian Sea, built in Indo-Saracenic grandeur.",
+      image: "/images/maharashtra/ajanta_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Gateway of India.",
+      gallery: [
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Gateway of India — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Gateway of India — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Gateway of India — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Gateway of India — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "mh-kailasa",
@@ -286,6 +313,33 @@ export const maharashtraData: StateData = {
       lon: 75.179,
       category: "monument",
       description: "UNESCO Cave 16: The world's largest monolithic rock-cut monument, carved from top-to-bottom out of a single basalt cliff.",
+      image: "/images/maharashtra/ajanta_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Kailasa Temple, Ellora.",
+      gallery: [
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Kailasa Temple, Ellora — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Kailasa Temple, Ellora — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Kailasa Temple, Ellora — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Kailasa Temple, Ellora — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "mh-ajanta",
@@ -295,6 +349,33 @@ export const maharashtraData: StateData = {
       lon: 75.7033,
       category: "monument",
       description: "UNESCO 30 rock-cut Buddhist cave temples dating from 2nd century BCE with exquisite ancient mural frescoes.",
+      image: "/images/maharashtra/ajanta_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Ajanta Buddhist Caves.",
+      gallery: [
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Ajanta Buddhist Caves — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Ajanta Buddhist Caves — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Ajanta Buddhist Caves — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Ajanta Buddhist Caves — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "mh-raigad",
@@ -304,6 +385,33 @@ export const maharashtraData: StateData = {
       lon: 73.4447,
       category: "monument",
       description: "The invincible hill citadel chosen by Chhatrapati Shivaji Maharaj as the capital of the sovereign Maratha Empire.",
+      image: "/images/maharashtra/ajanta_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Fort Raigad.",
+      gallery: [
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Fort Raigad — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Fort Raigad — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Fort Raigad — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Fort Raigad — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "mh-trimbakeshwar",
@@ -313,6 +421,33 @@ export const maharashtraData: StateData = {
       lon: 73.5308,
       category: "spiritual",
       description: "Ancient black stone Jyotirlinga temple at the source of sacred River Godavari in Brahmagiri hills.",
+      image: "/images/maharashtra/ajanta_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Trimbakeshwar Shiva Jyotirlinga.",
+      gallery: [
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Trimbakeshwar Shiva Jyotirlinga — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Trimbakeshwar Shiva Jyotirlinga — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Trimbakeshwar Shiva Jyotirlinga — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Trimbakeshwar Shiva Jyotirlinga — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "mh-shirdi",
@@ -322,6 +457,33 @@ export const maharashtraData: StateData = {
       lon: 74.4767,
       category: "spiritual",
       description: "Sacred samadhi temple of revered saint Sai Baba, welcoming millions of global seekers of all faiths.",
+      image: "/images/maharashtra/ajanta_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Shirdi Sai Baba Sansthan.",
+      gallery: [
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Shirdi Sai Baba Sansthan — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Shirdi Sai Baba Sansthan — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shirdi Sai Baba Sansthan — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shirdi Sai Baba Sansthan — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "mh-deekshabhoomi",
@@ -331,6 +493,33 @@ export const maharashtraData: StateData = {
       lon: 79.0664,
       category: "spiritual",
       description: "World's largest hollow Buddhist stupa where Dr. B.R. Ambedkar embraced Buddhism alongside 600,000 followers in 1956.",
+      image: "/images/maharashtra/ajanta_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Deekshabhoomi.",
+      gallery: [
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Deekshabhoomi — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Deekshabhoomi — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Deekshabhoomi — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/maharashtra/ajanta_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Deekshabhoomi — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -526,6 +715,7 @@ export const maharashtraData: StateData = {
   luminaries: [
     {
       name: "Chhatrapati Shivaji Maharaj",
+      image: "/images/luminaries/chhatrapati_shivaji_maharaj.jpg",
       era: "1630 – 1680 CE",
       title: "Founder of Hindavi Swarajya & Naval Pioneer",
       contribution:
@@ -533,6 +723,7 @@ export const maharashtraData: StateData = {
     },
     {
       name: "Mahatma Jyotirao & Savitribai Phule",
+      image: "/images/luminaries/mahatma_jyotirao_savitribai_phule.jpg",
       era: "1827 – 1897 CE",
       title: "Pioneers of Women's Education & Social Equality",
       contribution:
@@ -540,6 +731,7 @@ export const maharashtraData: StateData = {
     },
     {
       name: "Dr. B.R. Ambedkar",
+      image: "/images/luminaries/dr_b_r_ambedkar.jpg",
       era: "1891 – 1956 CE",
       title: "Chief Architect of the Constitution of India",
       contribution:
@@ -547,6 +739,7 @@ export const maharashtraData: StateData = {
     },
     {
       name: "Sant Tukaram & Sant Dnyaneshwar",
+      image: "/images/luminaries/sant_tukaram_sant_dnyaneshwar.jpg",
       era: "13th – 17th Century CE",
       title: "Spiritual Luminaries of the Varkari Movement",
       contribution:

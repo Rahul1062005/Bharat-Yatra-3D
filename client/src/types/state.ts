@@ -1,3 +1,9 @@
+export interface LandmarkAngleImage {
+  url: string
+  angle: string // e.g. "Front Elevation", "Aerial Drone View", "Intricate Carvings", "Panoramic Dusk"
+  caption: string
+}
+
 export interface LandmarkPin {
   id: string
   name: string
@@ -6,6 +12,12 @@ export interface LandmarkPin {
   lon: number
   category: "monument" | "spiritual" | "nature" | "university"
   description: string
+  image?: string
+  gallery?: LandmarkAngleImage[]
+  builtBy?: string
+  era?: string
+  architecturalStyle?: string
+  significance?: string
 }
 
 export interface DistrictInfo {

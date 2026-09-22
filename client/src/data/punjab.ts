@@ -186,6 +186,33 @@ export const punjabData: StateData = {
       lon: 74.8765,
       category: "spiritual",
       description: "Holiest gurdwara of Sikhism covered in 500 kilograms of pure 24-carat gold leaf, surrounded by the sacred Amrit Sarovar lake, serving free meals to over 100,000 visitors daily regardless of faith.",
+      image: "/images/punjab/amritsari_kulcha.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Sri Harmandir Sahib (The Golden Temple).",
+      gallery: [
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Front Elevation",
+                caption: "Sri Harmandir Sahib (The Golden Temple) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Aerial Drone View",
+                caption: "Sri Harmandir Sahib (The Golden Temple) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Sri Harmandir Sahib (The Golden Temple) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Sri Harmandir Sahib (The Golden Temple) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "jallianwala-bagh",
@@ -195,6 +222,33 @@ export const punjabData: StateData = {
       lon: 74.8801,
       category: "monument",
       description: "Sacred national memorial garden preserving the bullet-marked walls and martyr's well where hundreds of peaceful freedom demonstrators were massacred under General Dyer on Baisakhi in 1919.",
+      image: "/images/punjab/amritsari_kulcha.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Jallianwala Bagh National Memorial.",
+      gallery: [
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Front Elevation",
+                caption: "Jallianwala Bagh National Memorial — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Aerial Drone View",
+                caption: "Jallianwala Bagh National Memorial — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Jallianwala Bagh National Memorial — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Jallianwala Bagh National Memorial — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "wagah-border",
@@ -204,6 +258,33 @@ export const punjabData: StateData = {
       lon: 74.5731,
       category: "monument",
       description: "World-famous daily sunset military ceremony featuring high-stepping drill maneuvers and thunderous patriotic cheers conducted by the Indian Border Security Force (BSF).",
+      image: "/images/punjab/amritsari_kulcha.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Attari-Wagah Border Flag Lowering Ceremony.",
+      gallery: [
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Front Elevation",
+                caption: "Attari-Wagah Border Flag Lowering Ceremony — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Aerial Drone View",
+                caption: "Attari-Wagah Border Flag Lowering Ceremony — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Attari-Wagah Border Flag Lowering Ceremony — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Attari-Wagah Border Flag Lowering Ceremony — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "qila-mubarak-bathinda",
@@ -213,6 +294,33 @@ export const punjabData: StateData = {
       lon: 74.9455,
       category: "monument",
       description: "One of the oldest surviving forts in India built of burnt clay bricks in the Kushan era (90–110 CE), where India's first female empress Razia Sultana was incarcerated in 1240 CE.",
+      image: "/images/punjab/amritsari_kulcha.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Qila Mubarak of Bathinda.",
+      gallery: [
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Front Elevation",
+                caption: "Qila Mubarak of Bathinda — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Aerial Drone View",
+                caption: "Qila Mubarak of Bathinda — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Qila Mubarak of Bathinda — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Qila Mubarak of Bathinda — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "anandpur-sahib",
@@ -222,6 +330,33 @@ export const punjabData: StateData = {
       lon: 76.4984,
       category: "spiritual",
       description: "The birthplace of the Khalsa Panth established by Guru Gobind Singh Ji on Baisakhi in 1699, host to the electrifying martial arts festival of Hola Mohalla.",
+      image: "/images/punjab/amritsari_kulcha.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Takht Sri Kesgarh Sahib (Anandpur).",
+      gallery: [
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Front Elevation",
+                caption: "Takht Sri Kesgarh Sahib (Anandpur) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Aerial Drone View",
+                caption: "Takht Sri Kesgarh Sahib (Anandpur) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Takht Sri Kesgarh Sahib (Anandpur) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Takht Sri Kesgarh Sahib (Anandpur) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "harike-wetland",
@@ -231,6 +366,33 @@ export const punjabData: StateData = {
       lon: 74.96,
       category: "nature",
       description: "Largest freshwater wetland in northern India at the confluence of the Beas and Sutlej rivers, winter haven for over 200,000 migratory waterfowl from Siberia and Central Asia.",
+      image: "/images/punjab/amritsari_kulcha.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Harike Bird Sanctuary & Wetland.",
+      gallery: [
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Front Elevation",
+                caption: "Harike Bird Sanctuary & Wetland — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Aerial Drone View",
+                caption: "Harike Bird Sanctuary & Wetland — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Harike Bird Sanctuary & Wetland — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/punjab/amritsari_kulcha.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Harike Bird Sanctuary & Wetland — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -414,6 +576,7 @@ export const punjabData: StateData = {
   luminaries: [
     {
       name: "Guru Nanak Dev Ji",
+      image: "/images/luminaries/guru_nanak_dev_ji.jpg",
       era: "1469 – 1539 CE",
       title: "First Sikh Guru & Founder of Sikhism",
       contribution:
@@ -421,6 +584,7 @@ export const punjabData: StateData = {
     },
     {
       name: "Shaheed Bhagat Singh",
+      image: "/images/luminaries/shaheed_bhagat_singh.jpg",
       era: "1907 – 1931 CE",
       title: "Immortal Revolutionary Patriot of India",
       contribution:
@@ -428,6 +592,7 @@ export const punjabData: StateData = {
     },
     {
       name: "Maharaja Ranjit Singh",
+      image: "/images/luminaries/maharaja_ranjit_singh.jpg",
       era: "1780 – 1839 CE",
       title: "Sher-e-Punjab (Lion of Punjab)",
       contribution:

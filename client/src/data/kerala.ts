@@ -130,6 +130,33 @@ export const keralaData: StateData = {
       lon: 76.9436,
       category: "spiritual",
       description: "One of the 108 Divya Desams, an opulent Dravidian-Kerala gold-plated temple dedicated to Lord Vishnu resting on the serpent Anantha.",
+      image: "/images/kerala/appam_stew.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Sree Padmanabhaswamy Temple.",
+      gallery: [
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Front Elevation",
+                caption: "Sree Padmanabhaswamy Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Aerial Drone View",
+                caption: "Sree Padmanabhaswamy Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Sree Padmanabhaswamy Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Sree Padmanabhaswamy Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "chinese-fishing-nets",
@@ -139,6 +166,33 @@ export const keralaData: StateData = {
       lon: 76.2428,
       category: "monument",
       description: "Iconic shore-operated cantilever lift nets introduced in the 14th century by Chinese explorer Zheng He's court, framing Kochi sunsets.",
+      image: "/images/kerala/appam_stew.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Chinese Fishing Nets Fort Kochi.",
+      gallery: [
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Front Elevation",
+                caption: "Chinese Fishing Nets Fort Kochi — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Aerial Drone View",
+                caption: "Chinese Fishing Nets Fort Kochi — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Chinese Fishing Nets Fort Kochi — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Chinese Fishing Nets Fort Kochi — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "bekal-fort",
@@ -148,6 +202,33 @@ export const keralaData: StateData = {
       lon: 75.0334,
       category: "monument",
       description: "Kerala's largest and most magnificent coastal citadel, featuring keyhole ramparts rising directly out of the Arabian Sea waves.",
+      image: "/images/kerala/appam_stew.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Bekal Fort.",
+      gallery: [
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Front Elevation",
+                caption: "Bekal Fort — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Aerial Drone View",
+                caption: "Bekal Fort — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Bekal Fort — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Bekal Fort — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "munnar-hills",
@@ -157,6 +238,33 @@ export const keralaData: StateData = {
       lon: 77.0595,
       category: "nature",
       description: "Misty Western Ghats tea kingdom situated at 5,200 ft elevation, habitat of the endangered Nilgiri Tahr and the blooming Neelakurinji flower.",
+      image: "/images/kerala/appam_stew.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Munnar & Eravikulam National Park.",
+      gallery: [
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Front Elevation",
+                caption: "Munnar & Eravikulam National Park — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Aerial Drone View",
+                caption: "Munnar & Eravikulam National Park — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Munnar & Eravikulam National Park — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Munnar & Eravikulam National Park — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "alappuzha-backwaters",
@@ -166,6 +274,33 @@ export const keralaData: StateData = {
       lon: 76.3388,
       category: "nature",
       description: "Serene world of palm-fringed canals, paddy fields cultivated below sea level, and traditional thatched Kettuvallam houseboats.",
+      image: "/images/kerala/appam_stew.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Alappuzha Vembanad Backwaters.",
+      gallery: [
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Front Elevation",
+                caption: "Alappuzha Vembanad Backwaters — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Aerial Drone View",
+                caption: "Alappuzha Vembanad Backwaters — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Alappuzha Vembanad Backwaters — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Alappuzha Vembanad Backwaters — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "vadakkumnathan-temple",
@@ -175,6 +310,33 @@ export const keralaData: StateData = {
       lon: 76.2135,
       category: "spiritual",
       description: "Ancient 1,000-year-old temple complex recognized by UNESCO for architectural conservation, venue for the magnificent Thrissur Pooram.",
+      image: "/images/kerala/appam_stew.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Vadakkumnathan Shiva Temple.",
+      gallery: [
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Front Elevation",
+                caption: "Vadakkumnathan Shiva Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Aerial Drone View",
+                caption: "Vadakkumnathan Shiva Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Vadakkumnathan Shiva Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/kerala/appam_stew.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Vadakkumnathan Shiva Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -358,6 +520,7 @@ export const keralaData: StateData = {
   luminaries: [
     {
       name: "Adi Shankaracharya",
+      image: "/images/luminaries/adi_shankaracharya.jpg",
       era: "788 – 820 CE",
       title: "Master of Advaita Vedanta Philosophy",
       contribution:
@@ -365,6 +528,7 @@ export const keralaData: StateData = {
     },
     {
       name: "Raja Ravi Varma",
+      image: "/images/luminaries/raja_ravi_varma.jpg",
       era: "1848 – 1906 CE",
       title: "Father of Modern Indian Art",
       contribution:
@@ -372,6 +536,7 @@ export const keralaData: StateData = {
     },
     {
       name: "Sree Narayana Guru",
+      image: "/images/luminaries/sree_narayana_guru.jpg",
       era: "1856 – 1928 CE",
       title: "Social Reformer & Spiritual Philosopher",
       contribution:

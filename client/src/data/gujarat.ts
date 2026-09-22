@@ -270,6 +270,33 @@ export const gujaratData: StateData = {
       lon: 73.7191,
       category: "monument",
       description: "The world's tallest statue (182 meters / 597 feet), honoring Sardar Vallabhbhai Patel who unified 562 princely states into the Indian Union.",
+      image: "/images/gujarat/bhavai_theatre.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Statue of Unity (Sardar Patel).",
+      gallery: [
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Front Elevation",
+                caption: "Statue of Unity (Sardar Patel) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Aerial Drone View",
+                caption: "Statue of Unity (Sardar Patel) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Statue of Unity (Sardar Patel) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Statue of Unity (Sardar Patel) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "somnath-temple",
@@ -279,6 +306,33 @@ export const gujaratData: StateData = {
       lon: 70.4012,
       category: "spiritual",
       description: "First of the twelve sacred Shiva Jyotirlinga shrines of India, rising triumphantly along the seashore at Prabhas Patan.",
+      image: "/images/gujarat/bhavai_theatre.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Somnath Jyotirlinga Temple.",
+      gallery: [
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Front Elevation",
+                caption: "Somnath Jyotirlinga Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Aerial Drone View",
+                caption: "Somnath Jyotirlinga Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Somnath Jyotirlinga Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Somnath Jyotirlinga Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "rani-ki-vav",
@@ -288,6 +342,33 @@ export const gujaratData: StateData = {
       lon: 72.1017,
       category: "monument",
       description: "UNESCO World Heritage subterranean stepwell constructed in 1063 CE by Queen Udayamati, boasting over 500 principal sculptures of Vishnu avatars.",
+      image: "/images/gujarat/bhavai_theatre.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Rani ki Vav (Queen.",
+      gallery: [
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Front Elevation",
+                caption: "Rani ki Vav (Queen — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Aerial Drone View",
+                caption: "Rani ki Vav (Queen — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Rani ki Vav (Queen — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Rani ki Vav (Queen — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "modhera-sun-temple",
@@ -297,6 +378,33 @@ export const gujaratData: StateData = {
       lon: 72.1331,
       category: "monument",
       description: "Architectural masterpiece built in 1026 CE by King Bhima I of the Solanki dynasty, oriented so the first rays of the equinox sun illuminate the inner sanctum.",
+      image: "/images/gujarat/bhavai_theatre.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Sun Temple of Modhera.",
+      gallery: [
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Front Elevation",
+                caption: "Sun Temple of Modhera — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Aerial Drone View",
+                caption: "Sun Temple of Modhera — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Sun Temple of Modhera — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Sun Temple of Modhera — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "white-rann",
@@ -306,6 +414,33 @@ export const gujaratData: StateData = {
       lon: 69.832,
       category: "nature",
       description: "One of the largest seasonal salt marshes in the world, spanning 7,500 sq km of pure white salt crystals glowing under full moonlight.",
+      image: "/images/gujarat/bhavai_theatre.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Great Rann of Kutch Salt Desert.",
+      gallery: [
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Front Elevation",
+                caption: "Great Rann of Kutch Salt Desert — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Aerial Drone View",
+                caption: "Great Rann of Kutch Salt Desert — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Great Rann of Kutch Salt Desert — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Great Rann of Kutch Salt Desert — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "gir-national-park",
@@ -315,6 +450,33 @@ export const gujaratData: StateData = {
       lon: 70.7942,
       category: "nature",
       description: "The sole wild refuge on planet Earth for the majestic Asiatic Lion (Panthera leo persica), rescued from the brink of extinction.",
+      image: "/images/gujarat/bhavai_theatre.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Gir Asiatic Lion Sanctuary.",
+      gallery: [
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Front Elevation",
+                caption: "Gir Asiatic Lion Sanctuary — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Aerial Drone View",
+                caption: "Gir Asiatic Lion Sanctuary — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Gir Asiatic Lion Sanctuary — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/gujarat/bhavai_theatre.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Gir Asiatic Lion Sanctuary — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -498,6 +660,7 @@ export const gujaratData: StateData = {
   luminaries: [
     {
       name: "Mahatma Gandhi",
+      image: "/images/luminaries/mahatma_gandhi.jpg",
       era: "1869 – 1948 CE",
       title: "Father of the Nation (Bapu)",
       contribution:
@@ -505,6 +668,7 @@ export const gujaratData: StateData = {
     },
     {
       name: "Sardar Vallabhbhai Patel",
+      image: "/images/luminaries/sardar_vallabhbhai_patel.jpg",
       era: "1875 – 1950 CE",
       title: "The Iron Man of India",
       contribution:
@@ -512,6 +676,7 @@ export const gujaratData: StateData = {
     },
     {
       name: "Vikram Sarabhai",
+      image: "/images/luminaries/vikram_sarabhai.jpg",
       era: "1919 – 1971 CE",
       title: "Father of the Indian Space Program",
       contribution:

@@ -88,6 +88,33 @@ export const tripuraData: StateData = {
       lon: 91.2828,
       category: "monument",
       description: "Magnificent neoclassical white palace built between 1899 and 1901 by Maharaja Radha Kishore Manikya, featuring soaring domes, Mughal-style reflecting pools with fountains, and tiled floors, now housing the State Museum.",
+      image: "/images/tripura/bangui_rice.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Ujjayanta Royal Palace.",
+      gallery: [
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Front Elevation",
+                caption: "Ujjayanta Royal Palace — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Aerial Drone View",
+                caption: "Ujjayanta Royal Palace — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Ujjayanta Royal Palace — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Ujjayanta Royal Palace — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "neermahal-palace",
@@ -97,6 +124,33 @@ export const tripuraData: StateData = {
       lon: 91.3197,
       category: "monument",
       description: "One of only two water palaces in India, built in 1930 by Maharaja Bir Bikram Kishore Manikya in the center of the vast Rudrasagar Lake, fusing Hindu and Islamic architectural styles with domed balconies and floodlit night reflections.",
+      image: "/images/tripura/bangui_rice.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Neermahal (Twijilikma Water Palace).",
+      gallery: [
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Front Elevation",
+                caption: "Neermahal (Twijilikma Water Palace) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Aerial Drone View",
+                caption: "Neermahal (Twijilikma Water Palace) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Neermahal (Twijilikma Water Palace) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Neermahal (Twijilikma Water Palace) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "unakoti-carvings",
@@ -106,6 +160,33 @@ export const tripuraData: StateData = {
       lon: 92.0167,
       category: "spiritual",
       description: "Ancient 8th–9th century Saivite pilgrimage site hidden in a forested ravine, featuring massive rock-cut bas-reliefs carved directly into the cliff-face, centered around the 30-foot-tall head of Shiva (Unakotiswara Kal Bhairava) with an ornate 10-foot headdress.",
+      image: "/images/tripura/bangui_rice.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Unakoti Rock-Cut Relief Sculptures.",
+      gallery: [
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Front Elevation",
+                caption: "Unakoti Rock-Cut Relief Sculptures — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Aerial Drone View",
+                caption: "Unakoti Rock-Cut Relief Sculptures — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Unakoti Rock-Cut Relief Sculptures — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Unakoti Rock-Cut Relief Sculptures — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "tripura-sundari-temple",
@@ -115,6 +196,33 @@ export const tripuraData: StateData = {
       lon: 91.4981,
       category: "spiritual",
       description: "One of the 51 sacred Shakti Peethas built in 1501 CE by Maharaja Dhanya Manikya, shaped in a tortoise-shell (Kurmapitha) style along the tortoise-filled Kalyan Sagar lake, dedicated to Goddess Kali as Soroshi.",
+      image: "/images/tripura/bangui_rice.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Maa Tripura Sundari Temple (Matabari).",
+      gallery: [
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Front Elevation",
+                caption: "Maa Tripura Sundari Temple (Matabari) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Aerial Drone View",
+                caption: "Maa Tripura Sundari Temple (Matabari) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Maa Tripura Sundari Temple (Matabari) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Maa Tripura Sundari Temple (Matabari) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "pilak-archaeology",
@@ -124,6 +232,33 @@ export const tripuraData: StateData = {
       lon: 91.4167,
       category: "monument",
       description: "Historical archaeological site dating back to the 8th to 12th centuries, showcasing terracotta plaques, colossal stone statues of Avalokiteshvara and Surya, and remains of brick stupas reflecting the syncretic Buddhist-Hindu culture of the Samatata kingdom.",
+      image: "/images/tripura/bangui_rice.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Pilak Buddhist & Hindu Ruins.",
+      gallery: [
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Front Elevation",
+                caption: "Pilak Buddhist & Hindu Ruins — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Aerial Drone View",
+                caption: "Pilak Buddhist & Hindu Ruins — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Pilak Buddhist & Hindu Ruins — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Pilak Buddhist & Hindu Ruins — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "dumbur-lake",
@@ -133,6 +268,33 @@ export const tripuraData: StateData = {
       lon: 91.8028,
       category: "nature",
       description: "Picturesque 41-square-kilometer freshwater lake shaped like the sacred drum (Damru) of Lord Shiva, studded with 48 undulating green islands and serving as the confluence source of the sacred Gomati River.",
+      image: "/images/tripura/bangui_rice.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Dumbur Lake & Tirthamukh.",
+      gallery: [
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Front Elevation",
+                caption: "Dumbur Lake & Tirthamukh — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Aerial Drone View",
+                caption: "Dumbur Lake & Tirthamukh — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Dumbur Lake & Tirthamukh — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/tripura/bangui_rice.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Dumbur Lake & Tirthamukh — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -310,6 +472,7 @@ export const tripuraData: StateData = {
   luminaries: [
     {
       name: "Maharaja Bir Bikram Kishore Manikya",
+      image: "/images/luminaries/maharaja_bir_bikram_kishore_manikya.jpg",
       era: "1908 – 1947 CE",
       title: "Modern Architect of Tripura & Visionary King",
       contribution:
@@ -317,6 +480,7 @@ export const tripuraData: StateData = {
     },
     {
       name: "Sachin Dev Burman (S.D. Burman)",
+      image: "/images/luminaries/sachin_dev_burman_s_d_burman.jpg",
       era: "1906 – 1975 CE",
       title: "Musical Maestro of Indian Cinema & Royal Prince",
       contribution:
@@ -324,6 +488,7 @@ export const tripuraData: StateData = {
     },
     {
       name: "Dipa Karmakar",
+      image: "/images/luminaries/dipa_karmakar.jpg",
       era: "1993 – Present",
       title: "First Indian Female Olympic Gymnast",
       contribution:

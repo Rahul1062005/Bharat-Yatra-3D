@@ -263,6 +263,33 @@ export const rajasthanData: StateData = {
       lon: 75.8267,
       category: "monument",
       description: "Crown jewel of Rajput architecture with 953 honeycombed jharokha windows built in 1799 by Maharaja Sawai Pratap Singh.",
+      image: "/images/rajasthan/amber_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Hawa Mahal (Palace of Winds).",
+      gallery: [
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Hawa Mahal (Palace of Winds) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Hawa Mahal (Palace of Winds) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Hawa Mahal (Palace of Winds) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Hawa Mahal (Palace of Winds) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "mehrangarh-fort",
@@ -272,6 +299,33 @@ export const rajasthanData: StateData = {
       lon: 73.0189,
       category: "monument",
       description: "One of India's largest and most imposing hill citadels rising 400 feet above the Blue City of Jodhpur, founded in 1459 by Rao Jodha.",
+      image: "/images/rajasthan/amber_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Mehrangarh Fort.",
+      gallery: [
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Mehrangarh Fort — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Mehrangarh Fort — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Mehrangarh Fort — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Mehrangarh Fort — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "city-palace-udaipur",
@@ -281,6 +335,33 @@ export const rajasthanData: StateData = {
       lon: 73.6835,
       category: "monument",
       description: "Flamboyant lakeside palace complex built over 400 years by the rulers of the Mewar dynasty on the eastern bank of Lake Pichola.",
+      image: "/images/rajasthan/amber_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Udaipur City Palace.",
+      gallery: [
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Udaipur City Palace — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Udaipur City Palace — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Udaipur City Palace — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Udaipur City Palace — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "kumbhalgarh-fort",
@@ -290,6 +371,33 @@ export const rajasthanData: StateData = {
       lon: 73.5872,
       category: "monument",
       description: "Birthplace of Maharana Pratap boasting a 36-kilometer continuous perimeter wall, the second longest defensive wall in the world.",
+      image: "/images/rajasthan/amber_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Kumbhalgarh Fort & Great Wall.",
+      gallery: [
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Kumbhalgarh Fort & Great Wall — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Kumbhalgarh Fort & Great Wall — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Kumbhalgarh Fort & Great Wall — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Kumbhalgarh Fort & Great Wall — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "ranthambore",
@@ -299,6 +407,33 @@ export const rajasthanData: StateData = {
       lon: 76.5026,
       category: "nature",
       description: "Renowned royal Bengal tiger kingdom where apex predators roam freely amidst thousand-year-old fortresses, lakes, and banyan trees.",
+      image: "/images/rajasthan/amber_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Ranthambore Tiger Reserve.",
+      gallery: [
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Ranthambore Tiger Reserve — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Ranthambore Tiger Reserve — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Ranthambore Tiger Reserve — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Ranthambore Tiger Reserve — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "pushkar-brahma",
@@ -308,6 +443,33 @@ export const rajasthanData: StateData = {
       lon: 74.5511,
       category: "spiritual",
       description: "One of the few temples on Earth dedicated to Lord Brahma, situated beside the sacred Pushkar Sarovar with 52 bathing ghats.",
+      image: "/images/rajasthan/amber_fort.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Pushkar Holy Lake & Brahma Temple.",
+      gallery: [
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Pushkar Holy Lake & Brahma Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Aerial Drone View",
+                caption: "Pushkar Holy Lake & Brahma Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Pushkar Holy Lake & Brahma Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/rajasthan/amber_fort.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Pushkar Holy Lake & Brahma Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -491,6 +653,7 @@ export const rajasthanData: StateData = {
   luminaries: [
     {
       name: "Maharana Pratap",
+      image: "/images/luminaries/maharana_pratap.jpg",
       era: "1540 – 1597 CE",
       title: "Hero of Haldighati & Defender of Rajput Freedom",
       contribution:
@@ -498,6 +661,7 @@ export const rajasthanData: StateData = {
     },
     {
       name: "Mirabai",
+      image: "/images/luminaries/mirabai.jpg",
       era: "1498 – 1546 CE",
       title: "Mystic Saint-Poetess of Krishna Bhakti",
       contribution:
@@ -505,6 +669,7 @@ export const rajasthanData: StateData = {
     },
     {
       name: "Prithviraj Chauhan",
+      image: "/images/luminaries/prithviraj_chauhan.jpg",
       era: "1166 – 1192 CE",
       title: "The Last Hindu Emperor of Delhi & Ajmer",
       contribution:

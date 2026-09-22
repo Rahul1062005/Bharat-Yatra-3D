@@ -88,6 +88,33 @@ export const jammuKashmirData: StateData = {
       lon: 74.837,
       category: "nature",
       description: "Iconic alpine urban lake spreading over 18 square kilometers, renowned for its cedar wood houseboats, colorful carved shikara boats, floating vegetable markets, and the shoreline Boulevard Road lined with chinar trees.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Dal Lake & Shikara Gondolas.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Dal Lake & Shikara Gondolas — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Dal Lake & Shikara Gondolas — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Dal Lake & Shikara Gondolas — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Dal Lake & Shikara Gondolas — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "vaishno-devi-shrine",
@@ -97,6 +124,33 @@ export const jammuKashmirData: StateData = {
       lon: 74.949,
       category: "spiritual",
       description: "One of the most visited Hindu pilgrimage cave shrines in the world, located at an altitude of 5,200 feet inside the Trikuta mountain range, enshrining the natural rock formations (Pindies) representing Mahakali, Mahalakshmi, and Mahasaraswati.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Shri Mata Vaishno Devi Shrine.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Shri Mata Vaishno Devi Shrine — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Shri Mata Vaishno Devi Shrine — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shri Mata Vaishno Devi Shrine — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shri Mata Vaishno Devi Shrine — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "shankaracharya-temple",
@@ -106,6 +160,33 @@ export const jammuKashmirData: StateData = {
       lon: 74.8458,
       category: "spiritual",
       description: "Ancient stone temple perched at 1,100 feet atop Gopadari Hill overlooking Srinagar and Dal Lake, dedicated to Lord Shiva and visited by philosopher Adi Shankaracharya in the 9th century during his philosophical travels.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Shankaracharya Shiva Temple.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Shankaracharya Shiva Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Shankaracharya Shiva Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shankaracharya Shiva Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shankaracharya Shiva Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "martand-sun-temple",
@@ -115,6 +196,33 @@ export const jammuKashmirData: StateData = {
       lon: 75.2208,
       category: "monument",
       description: "A monumental 8th-century stone temple built by King Lalitaditya Muktapida of the Karkota dynasty, synthesizing Kashmiri, Roman, and Gandharan architectural elements with soaring fluted colonnades resting on a plateau overlooking the entire Kashmir Valley.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Martand Sun Temple Ruins.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Martand Sun Temple Ruins — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Martand Sun Temple Ruins — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Martand Sun Temple Ruins — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Martand Sun Temple Ruins — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "gulmarg-gondola",
@@ -124,6 +232,33 @@ export const jammuKashmirData: StateData = {
       lon: 74.3789,
       category: "nature",
       description: "World's second-highest operating cable car carrying visitors up to 3,950 meters onto Apharwat Peak, providing world-class powdery ski slopes during winter and sweeping views of Nanga Parbat and the Pir Panjal range.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Gulmarg Gondola & Apharwat Peak.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Gulmarg Gondola & Apharwat Peak — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Gulmarg Gondola & Apharwat Peak — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Gulmarg Gondola & Apharwat Peak — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Gulmarg Gondola & Apharwat Peak — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "hari-parbat-fort",
@@ -133,6 +268,33 @@ export const jammuKashmirData: StateData = {
       lon: 74.8153,
       category: "monument",
       description: "Historic hill fort dominating the skyline of old Srinagar, originally walled by Mughal Emperor Akbar in 1590 CE, sacred to Hindus as the abode of Goddess Sharika, to Muslims for the shrine of Sheikh Hamza Makhdoom, and to Sikhs for Gurdwara Chatti Padshahi.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Hari Parbat Fort (Koh-e-Maran).",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Hari Parbat Fort (Koh-e-Maran) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Hari Parbat Fort (Koh-e-Maran) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Hari Parbat Fort (Koh-e-Maran) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Hari Parbat Fort (Koh-e-Maran) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -319,6 +481,7 @@ export const jammuKashmirData: StateData = {
   luminaries: [
     {
       name: "Lalleshwari (Lal Ded)",
+      image: "/images/luminaries/aryabhata.jpg",
       era: "1320 – 1392 CE",
       title: "Mother Mystic of Kashmir & Creator of Vakhs",
       contribution:
@@ -326,6 +489,7 @@ export const jammuKashmirData: StateData = {
     },
     {
       name: "King Lalitaditya Muktapida",
+      image: "/images/luminaries/king_lalitaditya_muktapida.jpg",
       era: "699 – 736 CE",
       title: "Alexander of Kashmir & Empire Builder",
       contribution:
@@ -333,6 +497,7 @@ export const jammuKashmirData: StateData = {
     },
     {
       name: "Sheikh Noor-ud-Din Noorani (Nund Rishi)",
+      image: "/images/luminaries/sheikh_noor_ud_din_noorani_nund_rishi.jpg",
       era: "1377 – 1440 CE",
       title: "Alamdar-e-Kashmir (Flag Bearer of Kashmir)",
       contribution:

@@ -46,6 +46,33 @@ export const goaData: StateData = {
       lon: 73.9116,
       category: "spiritual",
       description: "UNESCO World Heritage Baroque church completed in 1605, famous for holding the mortal relics of Saint Francis Xavier in an ornate glass-sided silver casket, marking the beginning of Christianity in India.",
+      image: "/images/goa/basilica_bom_jesus.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Basilica of Bom Jesus.",
+      gallery: [
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Front Elevation",
+                caption: "Basilica of Bom Jesus — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Aerial Drone View",
+                caption: "Basilica of Bom Jesus — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Basilica of Bom Jesus — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Basilica of Bom Jesus — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "fort-aguada",
@@ -55,6 +82,33 @@ export const goaData: StateData = {
       lon: 73.7736,
       category: "monument",
       description: "A colossal 17th-century Portuguese coastal fortress built on Sinquerim beach overlooking the mouth of the Mandovi River, equipped with an immense freshwater cistern that replenished passing trade ships and a four-story lighthouse built in 1864.",
+      image: "/images/goa/basilica_bom_jesus.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Fort Aguada & Historic Lighthouse.",
+      gallery: [
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Front Elevation",
+                caption: "Fort Aguada & Historic Lighthouse — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Aerial Drone View",
+                caption: "Fort Aguada & Historic Lighthouse — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Fort Aguada & Historic Lighthouse — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Fort Aguada & Historic Lighthouse — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "se-cathedral",
@@ -64,6 +118,33 @@ export const goaData: StateData = {
       lon: 73.9125,
       category: "spiritual",
       description: "One of the largest churches in all of Asia, built in Portuguese-Manueline architectural style between 1562 and 1619, renowned for its Golden Bell (Sino de Ouro) celebrated as one of the best-sounding bells in the world.",
+      image: "/images/goa/basilica_bom_jesus.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Sé Cathedral of Saint Catherine.",
+      gallery: [
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Front Elevation",
+                caption: "Sé Cathedral of Saint Catherine — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Aerial Drone View",
+                caption: "Sé Cathedral of Saint Catherine — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Sé Cathedral of Saint Catherine — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Sé Cathedral of Saint Catherine — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "chapora-fort",
@@ -73,6 +154,33 @@ export const goaData: StateData = {
       lon: 73.7369,
       category: "monument",
       description: "Iconic hilltop red-laterite fort constructed in 1717 by the Portuguese over an earlier Adil Shahi fortification, offering panoramic 360-degree sunset vistas over Vagator Beach and the Chapora River mouth.",
+      image: "/images/goa/basilica_bom_jesus.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Chapora Fort.",
+      gallery: [
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Front Elevation",
+                caption: "Chapora Fort — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Aerial Drone View",
+                caption: "Chapora Fort — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Chapora Fort — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Chapora Fort — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "dudhsagar-falls",
@@ -82,6 +190,33 @@ export const goaData: StateData = {
       lon: 74.3143,
       category: "nature",
       description: "A spectacular four-tiered waterfall cascading down 310 meters (1,017 feet) through the lush jungle of Bhagwan Mahaveer Sanctuary, where the historic South Western Railway viaduct cuts dramatically through the roaring white foam.",
+      image: "/images/goa/basilica_bom_jesus.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Dudhsagar Waterfalls (Sea of Milk).",
+      gallery: [
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Front Elevation",
+                caption: "Dudhsagar Waterfalls (Sea of Milk) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Aerial Drone View",
+                caption: "Dudhsagar Waterfalls (Sea of Milk) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Dudhsagar Waterfalls (Sea of Milk) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Dudhsagar Waterfalls (Sea of Milk) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "shanta-durga-temple",
@@ -91,6 +226,33 @@ export const goaData: StateData = {
       lon: 73.9856,
       category: "spiritual",
       description: "Magnificent temple complex dedicated to Goddess Shantadurga who mediated peace between Lord Shiva and Lord Vishnu, featuring unique Goan-Hindu architecture with red-tiled sloping roofs and a multi-tiered Deepastambha lamp tower.",
+      image: "/images/goa/basilica_bom_jesus.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Shree Shantadurga Temple.",
+      gallery: [
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Front Elevation",
+                caption: "Shree Shantadurga Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Aerial Drone View",
+                caption: "Shree Shantadurga Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shree Shantadurga Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/goa/basilica_bom_jesus.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shree Shantadurga Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -277,6 +439,7 @@ export const goaData: StateData = {
   luminaries: [
     {
       name: "Dr. Ram Manohar Lohia",
+      image: "/images/luminaries/dr_ram_manohar_lohia.jpg",
       era: "1910 – 1967 CE",
       title: "Catalyst of the Goa Liberation Movement",
       contribution:
@@ -284,6 +447,7 @@ export const goaData: StateData = {
     },
     {
       name: "Abbade Faria (José Custódio de Faria)",
+      image: "/images/luminaries/abbade_faria_jos_cust_dio_de_faria.jpg",
       era: "1756 – 1819 CE",
       title: "Father of Modern Hypnotism & Scientific Suggestion",
       contribution:
@@ -291,6 +455,7 @@ export const goaData: StateData = {
     },
     {
       name: "Lata Mangeshkar",
+      image: "/images/luminaries/lata_mangeshkar.jpg",
       era: "1929 – 2022 CE",
       title: "Nightingale of India & Bharat Ratna",
       contribution:

@@ -116,6 +116,33 @@ export const biharData: StateData = {
       lon: 84.9914,
       category: "spiritual",
       description: "UNESCO World Heritage site where Gautama Buddha attained supreme enlightenment under the sacred Bodhi Tree.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "3rd Century BCE – 6th Century CE",
+      builtBy: "Emperor Ashoka & Gupta Dynasty",
+      architecturalStyle: "Classical Indian Brick Temple (Nagara predecessor)",
+      significance: "UNESCO World Heritage site where Gautama Buddha attained supreme enlightenment under the sacred Bodhi Tree.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Soaring 55-meter grand pyramidal shikhara rising above the Bodh Gaya sanctuary grounds."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Sacred Bodhi Tree & Vajrasana",
+                caption: "The direct descendant of the Sri Maha Bodhi tree and Emperor Ashoka's Diamond Throne."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Carved Stone Railings",
+                caption: "Intricate sandstone and granite balustrades dating back to the Sunga and Gupta periods."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Evening Illumination",
+                caption: "Golden temple lights shimmering against the evening sky with chanting monks."
+        }
+]
     },
     {
       id: "nalanda",
@@ -125,6 +152,33 @@ export const biharData: StateData = {
       lon: 85.4452,
       category: "university",
       description: "The world's earliest global residential university that housed over 10,000 scholars and 2,000 teachers in antiquity.",
+      image: "/images/bihar/nalanda_ruins.jpg",
+      era: "5th – 12th Century CE",
+      builtBy: "Gupta Emperor Kumaragupta I & King Harshavardhana",
+      architecturalStyle: "Ancient Buddhist Monastic Architecture (Vihara & Chaitya)",
+      significance: "World's foremost ancient residential university that housed 10,000 scholars from across Asia.",
+      gallery: [
+        {
+                url: "/images/bihar/nalanda_ruins.jpg",
+                angle: "Sariputta Great Stupa",
+                caption: "Iconic multi-tiered votive stupa with stucco sculptures and stepped corner towers."
+        },
+        {
+                url: "/images/bihar/nalanda_ruins.jpg",
+                angle: "Aerial Monastic Quadrangle",
+                caption: "Symmetrical layout of classrooms, dormitories, meditation cells, and central wells."
+        },
+        {
+                url: "/images/bihar/nalanda_ruins.jpg",
+                angle: "Red Brick Corbelled Arches",
+                caption: "Masterful ancient burnt-brick masonry that has endured over 1,500 years."
+        },
+        {
+                url: "/images/bihar/nalanda_ruins.jpg",
+                angle: "Sunset over Excavation Ruins",
+                caption: "Dusk spreading over the archaeological park and tranquil sacred ponds."
+        }
+]
     },
     {
       id: "rajgir",
@@ -134,6 +188,33 @@ export const biharData: StateData = {
       lon: 85.4217,
       category: "nature",
       description: "Ancient Magadhan hill retreat featuring Vishwa Shanti Stupa, hot sulfur springs, Vulture's Peak, and modern Glass Skywalk.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Ancient Magadhan / Modern Eco-Tourism",
+      builtBy: "Government of Bihar & Ancient Magadha Kings",
+      architecturalStyle: "Modern Glass Engineering & Buddhist Peace Pagoda",
+      significance: "Ancient mountain valley capital of King Bimbisara with hot springs and 85-foot cantilevered glass bridge.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Glass Skywalk Canyon View",
+                caption: "Suspended glass platform overlooking the deep forested gorge of Rajgir hills."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Vishwa Shanti Stupa",
+                caption: "White marble Japanese peace pagoda crowning the Ratnagiri hilltop."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Vulture's Peak (Gridhrakuta)",
+                caption: "Historic natural rock outcrop where Lord Buddha preached the Lotus Sutra."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Hot Springs of Brahmakund",
+                caption: "Sacred geo-thermal mineral springs flowing at the base of Vaibhava hill."
+        }
+]
     },
     {
       id: "patna-sahib",
@@ -143,6 +224,33 @@ export const biharData: StateData = {
       lon: 85.2289,
       category: "spiritual",
       description: "Birthplace of Sri Guru Gobind Singh Ji, the tenth Sikh Guru, and one of the five holy Takhts of Sikhism.",
+      image: "/images/bihar/patna_sahib.jpg",
+      era: "1666 CE / 1839 CE",
+      builtBy: "Maharaja Ranjit Singh (Original shrine)",
+      architecturalStyle: "Sikh Gurdwara Architecture with marble domes and gold accents",
+      significance: "Birthplace of Sri Guru Gobind Singh Ji, tenth Sikh Guru, and one of the five revered Takhts.",
+      gallery: [
+        {
+                url: "/images/bihar/patna_sahib.jpg",
+                angle: "White Marble Facade",
+                caption: "Pristine white marble structure adorned with gilded finials and ornamental jali work."
+        },
+        {
+                url: "/images/bihar/patna_sahib.jpg",
+                angle: "Golden Sanctum Domes",
+                caption: "Gleaming ribbed dome commanding the historic skyline of Patna on the Ganga banks."
+        },
+        {
+                url: "/images/bihar/patna_sahib.jpg",
+                angle: "Relic Chamber & Weapons",
+                caption: "Enshrined historical manuscripts, personal armaments, and holy relics of Guru Gobind Singh Ji."
+        },
+        {
+                url: "/images/bihar/patna_sahib.jpg",
+                angle: "Evening Langar Courtyard",
+                caption: "Vibrant communal dining hall where thousands partake in egalitarian blessed langar daily."
+        }
+]
     },
     {
       id: "vaishali",
@@ -152,6 +260,33 @@ export const biharData: StateData = {
       lon: 85.1275,
       category: "monument",
       description: "A monumental monolithic lion pillar erected by Emperor Ashoka near Buddha's Relic Stupa in the world's first republic.",
+      image: "/images/bihar/nalanda_ruins.jpg",
+      era: "3rd Century BCE",
+      builtBy: "Emperor Ashoka the Great",
+      architecturalStyle: "Mauryan Monolithic Chunar Sandstone Column",
+      significance: "Completely intact monolithic pillar crowned with a seated lion facing north towards Buddha's final journey.",
+      gallery: [
+        {
+                url: "/images/bihar/nalanda_ruins.jpg",
+                angle: "Intact Lion Capital",
+                caption: "Finely carved monolithic lion perched on an inverted lotus bell with Mauryan polish."
+        },
+        {
+                url: "/images/bihar/nalanda_ruins.jpg",
+                angle: "Ancient Brick Relic Stupa",
+                caption: "Excavated earthen and brick stupa that originally held one-eighth of Buddha's corporeal ashes."
+        },
+        {
+                url: "/images/bihar/nalanda_ruins.jpg",
+                angle: "Coronation Tank (Abhisheka Pushkarini)",
+                caption: "Sacred lake where Licchavi republican representatives were consecrated before oath."
+        },
+        {
+                url: "/images/bihar/nalanda_ruins.jpg",
+                angle: "Atmospheric Twilight",
+                caption: "Peaceful pastoral surroundings illuminated by the soft twilight of Vaishali."
+        }
+]
     },
     {
       id: "sasaram",
@@ -161,6 +296,33 @@ export const biharData: StateData = {
       lon: 84.0163,
       category: "monument",
       description: "An architectural marvel of Indo-Islamic red sandstone rising serenely from the center of an artificial lake.",
+      image: "/images/bihar/sher_shah_tomb.jpg",
+      era: "1545 CE",
+      builtBy: "Architect Aliwal Khan for Emperor Sher Shah Suri",
+      architecturalStyle: "Indo-Islamic Octagonal Sandstone Mausoleum",
+      significance: "A masterpiece of medieval civil engineering rising 122 feet from the center of an expansive artificial lake.",
+      gallery: [
+        {
+                url: "/images/bihar/sher_shah_tomb.jpg",
+                angle: "Lake Island Reflection",
+                caption: "Majestic stepped plinth and arched kiosks mirrored perfectly in the surrounding lake waters."
+        },
+        {
+                url: "/images/bihar/sher_shah_tomb.jpg",
+                angle: "Octagonal Dome & Chhatris",
+                caption: "Grand central dome spanning 22 meters flanked by 8 domed pillared pavilions."
+        },
+        {
+                url: "/images/bihar/sher_shah_tomb.jpg",
+                angle: "Causeway & Entrance Gate",
+                caption: "Stone arched bridge connecting the mainland portal to the floating island tomb."
+        },
+        {
+                url: "/images/bihar/sher_shah_tomb.jpg",
+                angle: "Sunset Glow on Chunar Sandstone",
+                caption: "Warm red and amber sandstone reflecting deep crimson light during sunset."
+        }
+]
     },
   ],
   cuisines: [
@@ -349,30 +511,35 @@ export const biharData: StateData = {
   luminaries: [
     {
       name: "Aryabhata",
+      image: "/images/luminaries/aryabhata.jpg",
       era: "476–550 CE",
       title: "Pioneer Astronomer & Mathematician",
       contribution: "Invented the concept of zero, computed the value of Pi to 4 decimal places, and calculated that the Earth rotates on its own axis.",
     },
     {
       name: "Chanakya (Kautilya)",
+      image: "/images/luminaries/chanakya_kautilya.jpg",
       era: "375–283 BCE",
       title: "Master Strategist & Prime Minister",
       contribution: "Authored the Arthashastra (ancient treatise on statecraft, economics, and military strategy) and guided Chandragupta Maurya.",
     },
     {
       name: "Emperor Ashoka the Great",
+      image: "/images/luminaries/emperor_ashoka_the_great.jpg",
       era: "304–232 BCE",
       title: "Maurya Emperor & Patron of Peace",
       contribution: "Unified the subcontinent, championed Dhamma, erected Ashokan edicts, and adopted the Lion Capital which became India's National Emblem.",
     },
     {
       name: "Guru Gobind Singh Ji",
+      image: "/images/luminaries/guru_gobind_singh_ji.jpg",
       era: "1666–1708 CE",
       title: "Tenth Sikh Guru & Spiritual Luminary",
       contribution: "Born at Patna Sahib on the banks of Ganga; poet, philosopher, and founder of the Khalsa panth standing for justice and equality.",
     },
     {
       name: "Dr. Rajendra Prasad",
+      image: "/images/luminaries/dr_rajendra_prasad.jpg",
       era: "1884–1963 CE",
       title: "First President of the Republic of India",
       contribution: "Steered the Constituent Assembly that drafted the Constitution of India; beloved statesman of simplicity and integrity.",

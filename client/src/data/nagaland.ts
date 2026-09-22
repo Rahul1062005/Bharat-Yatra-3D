@@ -88,6 +88,33 @@ export const nagalandData: StateData = {
       lon: 94.1036,
       category: "monument",
       description: "A beautifully landscaped terraced war cemetery maintained by the Commonwealth War Graves Commission on Garrison Hill, honoring the soldiers of the Allied forces who halted the Japanese advance into India during the brutal 1944 Battle of Kohima, featuring the famous tennis court battleground.",
+      image: "/images/nagaland/axone_paste.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Kohima War Cemetery & Memorial.",
+      gallery: [
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Front Elevation",
+                caption: "Kohima War Cemetery & Memorial — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Aerial Drone View",
+                caption: "Kohima War Cemetery & Memorial — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Kohima War Cemetery & Memorial — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Kohima War Cemetery & Memorial — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "dzukou-valley",
@@ -97,6 +124,33 @@ export const nagalandData: StateData = {
       lon: 94.0667,
       category: "nature",
       description: "A breathtaking high-altitude valley resting at 2,452 meters, carpeted with rolling emerald-green dwarf bamboo hills and meandering crystal streams, home to the rare endemic Dzukou Lily blooming in monsoon months.",
+      image: "/images/nagaland/axone_paste.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Dzukou Valley & Emerald Ridges.",
+      gallery: [
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Front Elevation",
+                caption: "Dzukou Valley & Emerald Ridges — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Aerial Drone View",
+                caption: "Dzukou Valley & Emerald Ridges — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Dzukou Valley & Emerald Ridges — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Dzukou Valley & Emerald Ridges — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "kisama-heritage-village",
@@ -106,6 +160,33 @@ export const nagalandData: StateData = {
       lon: 94.1169,
       category: "monument",
       description: "A permanent cultural village built 12 kilometers from Kohima, featuring authentic traditional tribal Morungs (bachelor dormitories) constructed by all 16 major Naga tribes, serving as the grand open-air stage for the annual Hornbill Festival.",
+      image: "/images/nagaland/axone_paste.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Naga Heritage Village at Kisama.",
+      gallery: [
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Front Elevation",
+                caption: "Naga Heritage Village at Kisama — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Aerial Drone View",
+                caption: "Naga Heritage Village at Kisama — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Naga Heritage Village at Kisama — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Naga Heritage Village at Kisama — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "kachari-ruins",
@@ -115,6 +196,33 @@ export const nagalandData: StateData = {
       lon: 93.7317,
       category: "monument",
       description: "Mysterious 13th-century archaeological stone pillars carved into distinctive mushroom and chess-piece shapes by the Dimasa Kachari kingdom before the Ahom invasion, standing in a protected park in Dimapur.",
+      image: "/images/nagaland/axone_paste.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Kachari Megalithic Ruins.",
+      gallery: [
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Front Elevation",
+                caption: "Kachari Megalithic Ruins — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Aerial Drone View",
+                caption: "Kachari Megalithic Ruins — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Kachari Megalithic Ruins — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Kachari Megalithic Ruins — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "khonoma-village",
@@ -124,6 +232,33 @@ export const nagalandData: StateData = {
       lon: 94.0208,
       category: "nature",
       description: "A 700-year-old historic Angami warrior village that led legendary resistance against British expeditions, later creating history by voluntarily banning all hunting and commercial logging to establish the Khonoma Nature Conservation and Tragopan Sanctuary.",
+      image: "/images/nagaland/axone_paste.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Khonoma (India.",
+      gallery: [
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Front Elevation",
+                caption: "Khonoma (India — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Aerial Drone View",
+                caption: "Khonoma (India — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Khonoma (India — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Khonoma (India — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "doyang-reservoir",
@@ -133,6 +268,33 @@ export const nagalandData: StateData = {
       lon: 94.2817,
       category: "nature",
       description: "A massive scenic reservoir that welcomes over one million Amur Falcons every autumn migrating from Siberia to South Africa, earning Nagaland the international title of the 'Falcon Capital of the World'.",
+      image: "/images/nagaland/axone_paste.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Doyang Lake & Amur Falcon Sanctuary.",
+      gallery: [
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Front Elevation",
+                caption: "Doyang Lake & Amur Falcon Sanctuary — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Aerial Drone View",
+                caption: "Doyang Lake & Amur Falcon Sanctuary — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Doyang Lake & Amur Falcon Sanctuary — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/nagaland/axone_paste.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Doyang Lake & Amur Falcon Sanctuary — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -319,6 +481,7 @@ export const nagalandData: StateData = {
   luminaries: [
     {
       name: "Rani Gaidinliu",
+      image: "/images/luminaries/rani_gaidinliu.jpg",
       era: "1915 – 1993 CE",
       title: "Rani of the Nagas & Fearless Freedom Fighter",
       contribution:
@@ -326,6 +489,7 @@ export const nagalandData: StateData = {
     },
     {
       name: "A.Z. Phizo (Angami Zapu Phizo)",
+      image: "/images/luminaries/a_z_phizo_angami_zapu_phizo.jpg",
       era: "1904 – 1990 CE",
       title: "Pioneer of Modern Naga Identity",
       contribution:
@@ -333,6 +497,7 @@ export const nagalandData: StateData = {
     },
     {
       name: "Chekrovolu Swuro",
+      image: "/images/luminaries/chekrovolu_swuro.jpg",
       era: "1982 – Present",
       title: "Olympic Archer & Arjuna Awardee",
       contribution:

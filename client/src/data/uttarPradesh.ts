@@ -543,6 +543,33 @@ export const uttarPradeshData: StateData = {
       lon: 78.0421,
       category: "monument",
       description: "UNESCO World Heritage wonder of ivory-white marble, commissioned by Shah Jahan on the Yamuna riverbank.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of The Taj Mahal.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "The Taj Mahal — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "The Taj Mahal — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "The Taj Mahal — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "The Taj Mahal — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "up-kashi",
@@ -552,6 +579,33 @@ export const uttarPradeshData: StateData = {
       lon: 83.0107,
       category: "spiritual",
       description: "The holiest Jyotirlinga of Lord Shiva, crowned with golden spire and leading to the sacred 84 Ganga ghats.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Kashi Vishwanath Temple & Ghats.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Kashi Vishwanath Temple & Ghats — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Kashi Vishwanath Temple & Ghats — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Kashi Vishwanath Temple & Ghats — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Kashi Vishwanath Temple & Ghats — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "up-ram-mandir",
@@ -561,6 +615,33 @@ export const uttarPradeshData: StateData = {
       lon: 82.1998,
       category: "spiritual",
       description: "Magnificent Nagara-style pink sandstone temple at the sacred birthplace of Lord Rama on the banks of Saryu.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Shri Ram Janmabhoomi Mandir.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Shri Ram Janmabhoomi Mandir — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Shri Ram Janmabhoomi Mandir — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shri Ram Janmabhoomi Mandir — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shri Ram Janmabhoomi Mandir — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "up-imambara",
@@ -570,6 +651,33 @@ export const uttarPradeshData: StateData = {
       lon: 80.9129,
       category: "monument",
       description: "Built in 1784 by Nawab Asaf-ud-Daula, featuring the world's largest unsupported vaulted hall and the Bhool Bhulaiya labyrinth.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Bara Imambara & Rumi Darwaza.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Bara Imambara & Rumi Darwaza — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Bara Imambara & Rumi Darwaza — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Bara Imambara & Rumi Darwaza — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Bara Imambara & Rumi Darwaza — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "up-sangam",
@@ -579,6 +687,33 @@ export const uttarPradeshData: StateData = {
       lon: 81.8841,
       category: "spiritual",
       description: "The sacred confluence of Ganga, Yamuna, and mythical Saraswati, host to the historic Maha Kumbh Mela.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Triveni Sangam.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Triveni Sangam — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Triveni Sangam — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Triveni Sangam — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Triveni Sangam — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "up-krishna",
@@ -588,6 +723,33 @@ export const uttarPradeshData: StateData = {
       lon: 77.669,
       category: "spiritual",
       description: "The sanctum sanctorum prison cell where Lord Krishna manifested in human form over 5,000 years ago.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Shri Krishna Janmabhoomi.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Shri Krishna Janmabhoomi — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Shri Krishna Janmabhoomi — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shri Krishna Janmabhoomi — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shri Krishna Janmabhoomi — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "up-sarnath",
@@ -597,6 +759,33 @@ export const uttarPradeshData: StateData = {
       lon: 83.0244,
       category: "monument",
       description: "Massive cylindrical brick stupa where Gautam Buddha delivered the historic Dhammacakkappavattana Sutta.",
+      image: "/images/bihar/mahabodhi_temple.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Sarnath Dhamek Stupa.",
+      gallery: [
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Front Elevation",
+                caption: "Sarnath Dhamek Stupa — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Aerial Drone View",
+                caption: "Sarnath Dhamek Stupa — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Sarnath Dhamek Stupa — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/bihar/mahabodhi_temple.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Sarnath Dhamek Stupa — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -792,6 +981,7 @@ export const uttarPradeshData: StateData = {
   luminaries: [
     {
       name: "Goswami Tulsidas",
+      image: "/images/luminaries/goswami_tulsidas.jpg",
       era: "1532 – 1623 CE",
       title: "Saint-Poet & Author of Ramcharitmanas",
       contribution:
@@ -799,6 +989,7 @@ export const uttarPradeshData: StateData = {
     },
     {
       name: "Sant Kabir",
+      image: "/images/luminaries/sant_kabir.jpg",
       era: "1398 – 1518 CE",
       title: "Mystic Poet of Universal Brotherhood",
       contribution:
@@ -806,6 +997,7 @@ export const uttarPradeshData: StateData = {
     },
     {
       name: "Rani Lakshmibai of Jhansi",
+      image: "/images/luminaries/rani_lakshmibai_of_jhansi.jpg",
       era: "1828 – 1858 CE",
       title: "Heroine of the 1857 War of Independence",
       contribution:
@@ -813,6 +1005,7 @@ export const uttarPradeshData: StateData = {
     },
     {
       name: "Munshi Premchand",
+      image: "/images/luminaries/munshi_premchand.jpg",
       era: "1880 – 1936 CE",
       title: "Upanyas Samrat (Emperor of Modern Hindi & Urdu Literature)",
       contribution:
@@ -820,6 +1013,7 @@ export const uttarPradeshData: StateData = {
     },
     {
       name: "Ustad Bismillah Khan",
+      image: "/images/luminaries/ustad_bismillah_khan.jpg",
       era: "1916 – 2006 CE",
       title: "Bharat Ratna & Shehnai Maestro",
       contribution:

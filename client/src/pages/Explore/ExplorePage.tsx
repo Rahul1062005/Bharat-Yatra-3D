@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft, Globe, MessageCircle, Gamepad2, Route, Landmark, Award } from "lucide-react"
+import { ArrowLeft, Globe, MessageCircle, Gamepad2, Route, Award } from "lucide-react"
 
 import Earth from "../../components/globe/Earth"
 import IndiaMap, { preloadIndiaMapData } from "../../components/map/IndiaMap"
@@ -10,7 +10,6 @@ import GuessTheStateModal from "../../components/game/GuessTheStateModal"
 import IndiaGeoTelemetry from "../../components/telemetry/IndiaGeoTelemetry"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import JourneyPlannerModal from "../../components/itinerary/JourneyPlannerModal"
-import Monument3DViewerModal from "../../components/monuments/Monument3DViewerModal"
 import "./ExplorePage.css"
 
 export type ExploreStage = "globe" | "diving" | "india"
@@ -27,7 +26,6 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
   const [isQuizOpen, setIsQuizOpen] = useState(false)
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
   const [isJourneyOpen, setIsJourneyOpen] = useState(false)
-  const [isMonumentsOpen, setIsMonumentsOpen] = useState(false)
 
   // Sync if initialStage changes externally
   useEffect(() => {
@@ -211,18 +209,6 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
 
             <button
               type="button"
-              className="monuments-launcher-btn"
-              onClick={() => setIsMonumentsOpen(true)}
-              title="3D Architectural Monuments Inspector"
-            >
-              <span className="monuments-launcher-icon">
-                <Landmark size={15} />
-              </span>
-              <span className="monuments-launcher-text">3D Monuments</span>
-            </button>
-
-            <button
-              type="button"
               className="mastery-launcher-btn"
               onClick={() => setIsMasteryOpen(true)}
               title="National Cultural Mastery Tracker"
@@ -274,7 +260,6 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
             onOpenQuiz={() => setIsQuizOpen(true)}
             onOpenJourneyPlanner={() => setIsJourneyOpen(true)}
             onOpenMasteryTracker={() => setIsMasteryOpen(true)}
-            onOpenMonuments={() => setIsMonumentsOpen(true)}
           />
           <IndiaMap animateEntrance={true} onStateDive={handleStateDive} />
 
@@ -304,11 +289,6 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
       <JourneyPlannerModal
         isOpen={isJourneyOpen}
         onClose={() => setIsJourneyOpen(false)}
-      />
-
-      <Monument3DViewerModal
-        isOpen={isMonumentsOpen}
-        onClose={() => setIsMonumentsOpen(false)}
       />
     </main>
   )

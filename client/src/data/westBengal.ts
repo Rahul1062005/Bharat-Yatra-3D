@@ -193,6 +193,33 @@ export const westBengalData: StateData = {
       lon: 88.3426,
       category: "monument",
       description: "Iconic white Makrana marble palace constructed between 1906 and 1921, set in 64 acres of landscaped gardens, housing rare art galleries.",
+      image: "/images/westbengal/baul_music.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Victoria Memorial Hall.",
+      gallery: [
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Front Elevation",
+                caption: "Victoria Memorial Hall — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Aerial Drone View",
+                caption: "Victoria Memorial Hall — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Victoria Memorial Hall — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Victoria Memorial Hall — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "howrah-bridge",
@@ -202,6 +229,33 @@ export const westBengalData: StateData = {
       lon: 88.3468,
       category: "monument",
       description: "Engineering marvel and one of the busiest cantilever bridges on Earth, spanning 1,500 feet over the Hooghly River without a single pylon in the water.",
+      image: "/images/westbengal/baul_music.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Howrah Bridge (Rabindra Setu).",
+      gallery: [
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Front Elevation",
+                caption: "Howrah Bridge (Rabindra Setu) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Aerial Drone View",
+                caption: "Howrah Bridge (Rabindra Setu) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Howrah Bridge (Rabindra Setu) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Howrah Bridge (Rabindra Setu) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "sundarbans",
@@ -211,6 +265,33 @@ export const westBengalData: StateData = {
       lon: 88.8893,
       category: "nature",
       description: "The world's largest contiguous halophytic mangrove forest and global refuge of the swimming Royal Bengal Tiger, estuarine crocodiles, and river dolphins.",
+      image: "/images/westbengal/baul_music.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Sundarbans UNESCO Biosphere Reserve.",
+      gallery: [
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Front Elevation",
+                caption: "Sundarbans UNESCO Biosphere Reserve — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Aerial Drone View",
+                caption: "Sundarbans UNESCO Biosphere Reserve — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Sundarbans UNESCO Biosphere Reserve — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Sundarbans UNESCO Biosphere Reserve — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "shantiniketan",
@@ -220,6 +301,33 @@ export const westBengalData: StateData = {
       lon: 87.689,
       category: "university",
       description: "UNESCO World Heritage residential school founded by Gurudev Rabindranath Tagore, where learning takes place open-air under sacred mango and banyan trees.",
+      image: "/images/westbengal/baul_music.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Shantiniketan (Visva-Bharati).",
+      gallery: [
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Front Elevation",
+                caption: "Shantiniketan (Visva-Bharati) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Aerial Drone View",
+                caption: "Shantiniketan (Visva-Bharati) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shantiniketan (Visva-Bharati) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shantiniketan (Visva-Bharati) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "bishnupur-temples",
@@ -229,6 +337,33 @@ export const westBengalData: StateData = {
       lon: 87.3204,
       category: "monument",
       description: "Stunning 17th-century brick temples built by the Malla kings, completely encrusted with intricate terracotta panels illustrating Mahabharata episodes.",
+      image: "/images/westbengal/baul_music.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Bishnupur Terracotta Temples.",
+      gallery: [
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Front Elevation",
+                caption: "Bishnupur Terracotta Temples — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Aerial Drone View",
+                caption: "Bishnupur Terracotta Temples — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Bishnupur Terracotta Temples — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Bishnupur Terracotta Temples — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "darjeeling-toy-train",
@@ -238,6 +373,33 @@ export const westBengalData: StateData = {
       lon: 88.2663,
       category: "monument",
       description: "UNESCO World Heritage narrow-gauge steam train climbing from 100 meters at New Jalpaiguri to 2,258 meters at Ghoom, circling loops and Batasia zig-zags.",
+      image: "/images/westbengal/baul_music.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Darjeeling Himalayan Railway (Toy Train).",
+      gallery: [
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Front Elevation",
+                caption: "Darjeeling Himalayan Railway (Toy Train) — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Aerial Drone View",
+                caption: "Darjeeling Himalayan Railway (Toy Train) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Darjeeling Himalayan Railway (Toy Train) — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/westbengal/baul_music.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Darjeeling Himalayan Railway (Toy Train) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -421,6 +583,7 @@ export const westBengalData: StateData = {
   luminaries: [
     {
       name: "Rabindranath Tagore",
+      image: "/images/luminaries/rabindranath_tagore.jpg",
       era: "1861 – 1941 CE",
       title: "The Bard of Bengal & Nobel Laureate",
       contribution:
@@ -428,6 +591,7 @@ export const westBengalData: StateData = {
     },
     {
       name: "Swami Vivekananda",
+      image: "/images/luminaries/swami_vivekananda.jpg",
       era: "1863 – 1902 CE",
       title: "Prophet of Modern India & Advaita Vedanta",
       contribution:
@@ -435,6 +599,7 @@ export const westBengalData: StateData = {
     },
     {
       name: "Netaji Subhas Chandra Bose",
+      image: "/images/luminaries/netaji_subhas_chandra_bose.jpg",
       era: "1897 – 1945 CE",
       title: "Supreme Commander of the Indian National Army",
       contribution:

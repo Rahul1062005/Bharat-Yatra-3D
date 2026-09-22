@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from "react"
-import { Search, X, MapPin, Compass, ChevronRight, Sparkles, SlidersHorizontal, MessageCircle, Trophy, Route, Award, Landmark } from "lucide-react"
+import { Search, X, MapPin, Compass, ChevronRight, Sparkles, SlidersHorizontal, MessageCircle, Trophy, Route, Award } from "lucide-react"
 import { statesRegistry } from "../../data/states"
 import { getStateGreeting } from "../../data/greetings"
 import "./IndiaSearchBar.css"
@@ -11,7 +11,6 @@ export interface IndiaSearchBarProps {
   onOpenQuiz?: () => void
   onOpenJourneyPlanner?: () => void
   onOpenMasteryTracker?: () => void
-  onOpenMonuments?: () => void
 }
 
 export interface RegionCategory {
@@ -94,7 +93,6 @@ export default function IndiaSearchBar({
   onOpenQuiz,
   onOpenJourneyPlanner,
   onOpenMasteryTracker,
-  onOpenMonuments,
 }: IndiaSearchBarProps) {
   const [query, setQuery] = useState("")
   const [activeRegion, setActiveRegion] = useState("all")
@@ -265,20 +263,7 @@ export default function IndiaSearchBar({
                 </button>
               )}
 
-              {onOpenMonuments && (
-                <button
-                  type="button"
-                  className="tray-greetings-cta-btn"
-                  onClick={() => {
-                    setIsOpen(false)
-                    onOpenMonuments()
-                  }}
-                  title="3D Architectural Monuments Inspector"
-                >
-                  <Landmark size={12} />
-                  <span>3D Monuments</span>
-                </button>
-              )}
+
 
               {onOpenMasteryTracker && (
                 <button

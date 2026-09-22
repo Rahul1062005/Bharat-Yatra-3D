@@ -102,6 +102,33 @@ export const madhyaPradeshData: StateData = {
       lon: 79.9199,
       category: "monument",
       description: "Magnificent UNESCO World Heritage sandstone temples built by the Chandela dynasty between 950 and 1050 CE, renowned for their architectural perfection and celebration of human life, spiritual union, and love.",
+      image: "/images/madhyapradesh/khajuraho_temple.jpg",
+      era: "950 – 1050 CE",
+      builtBy: "Chandela Dynasty Kings",
+      architecturalStyle: "Nagara Style Sandstone Temples",
+      significance: "UNESCO World Heritage site renowned for nagara architectural towers and exquisite stone sculptures celebrating all dimensions of life.",
+      gallery: [
+        {
+                url: "/images/madhyapradesh/khajuraho_temple.jpg",
+                angle: "Kandariya Mahadeva Facade",
+                caption: "Soaring 31-meter shikhara designed like a mountain range of Mount Kailash."
+        },
+        {
+                url: "/images/madhyapradesh/khajuraho_temple.jpg",
+                angle: "Intricate Stone Sculptures",
+                caption: "Masterfully carved celestial nymphs, apsaras, deities, musicians, and everyday medieval life."
+        },
+        {
+                url: "/images/madhyapradesh/khajuraho_temple.jpg",
+                angle: "Western Temple Complex View",
+                caption: "Panoramic sweep across Lakshmana, Kandariya Mahadeva, and Devi Jagadambi temples."
+        },
+        {
+                url: "/images/madhyapradesh/khajuraho_temple.jpg",
+                angle: "Sound & Light Evening Show",
+                caption: "Dramatically illuminated temple spires glowing against the star-studded night sky."
+        }
+]
     },
     {
       id: "sanchi-stupa",
@@ -111,6 +138,33 @@ export const madhyaPradeshData: StateData = {
       lon: 77.7397,
       category: "spiritual",
       description: "One of the oldest stone structures in India commissioned by Emperor Ashoka in the 3rd century BCE, enshrining sacred Buddhist relics behind carved ceremonial Torana gateways depicting Jataka tales.",
+      image: "/images/madhyapradesh/sanchi_stupa.jpg",
+      era: "3rd Century BCE – 1st Century CE",
+      builtBy: "Emperor Ashoka & Sunga Dynasty",
+      architecturalStyle: "Buddhist Hemispherical Stupa Architecture",
+      significance: "Oldest stone structure in India and supreme masterpiece of classical Buddhist art and ceremonial Torana gateways.",
+      gallery: [
+        {
+                url: "/images/madhyapradesh/sanchi_stupa.jpg",
+                angle: "South Torana Gateway",
+                caption: "Detailed narrative carvings depicting Jataka tales, Ashoka's visits, and the wheel of Dharma."
+        },
+        {
+                url: "/images/madhyapradesh/sanchi_stupa.jpg",
+                angle: "Hemispherical Dome & Harmika",
+                caption: "Enormous sandstone dome crowned by the triple umbrella representing the Three Jewels."
+        },
+        {
+                url: "/images/madhyapradesh/sanchi_stupa.jpg",
+                angle: "Ambulatory Path (Pradakshina)",
+                caption: "Elevated stone terrace for circumambulation with heavy monolithic railings."
+        },
+        {
+                url: "/images/madhyapradesh/sanchi_stupa.jpg",
+                angle: "Panoramic Hilltop Vista",
+                caption: "Stupa overlooking the tranquil Betwa river plains from the crest of Sanchi hill."
+        }
+]
     },
     {
       id: "gwalior-fort",
@@ -120,6 +174,33 @@ export const madhyaPradeshData: StateData = {
       lon: 78.1695,
       category: "monument",
       description: "Described by Mughal Emperor Babur as 'the pearl amongst fortresses in Hind', this hilltop citadel houses the 8th-century Teli Ka Mandir, ornate Man Mandir Palace, and monolithic rock-cut Jain statues.",
+      image: "/images/madhyapradesh/gwalior_fort.jpg",
+      era: "8th – 16th Century CE",
+      builtBy: "Raja Man Singh Tomar & Sur Empire",
+      architecturalStyle: "Medieval Hill Fortress & Blue Glazed Tilework",
+      significance: "Hailed by Mughal Emperor Babur as 'The Pearl among Fortresses of Hind'.",
+      gallery: [
+        {
+                url: "/images/madhyapradesh/gwalior_fort.jpg",
+                angle: "Man Mandir Palace Turquoise Tiles",
+                caption: "Brilliant blue and yellow glazed ceramic duck and elephant bands along the stone ramparts."
+        },
+        {
+                url: "/images/madhyapradesh/gwalior_fort.jpg",
+                angle: "Aerial View of Gopachal Parvat",
+                caption: "Impenetrable 100-meter sheer sandstone cliff plateau extending over 3 kilometers."
+        },
+        {
+                url: "/images/madhyapradesh/gwalior_fort.jpg",
+                angle: "Gopachal Colossal Rock-Cut Tirthankaras",
+                caption: "Massive monolithic Jain sculptures carved directly into the cliff faces."
+        },
+        {
+                url: "/images/madhyapradesh/gwalior_fort.jpg",
+                angle: "Sunset over Teli ka Mandir",
+                caption: "Unique Dravidian-style vaulted shrine glowing in the warm Madhya Pradesh sunset."
+        }
+]
     },
     {
       id: "bhimbetka-shelters",
@@ -129,6 +210,33 @@ export const madhyaPradeshData: StateData = {
       lon: 77.6128,
       category: "nature",
       description: "Prehistoric UNESCO archaeological site showcasing over 750 rock shelters spanning from the Paleolithic to the Mesolithic era, adorned with vibrant cave paintings depicting early human life.",
+      image: "/images/madhyapradesh/bhimbetka_caves.jpg",
+      era: "Paleolithic & Mesolithic (100,000 BCE – 10,000 BCE)",
+      builtBy: "Prehistoric Stone Age Humans",
+      architecturalStyle: "Natural Quartzite Rock Shelters with Mineral Pigment Art",
+      significance: "UNESCO World Heritage site displaying the earliest traces of human creative life on the Indian subcontinent.",
+      gallery: [
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Auditorium Rock Cave",
+                caption: "Massive central cavern with natural acoustic resonance and cupules over 100,000 years old."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Zoo Rock Rock-Art Gallery",
+                caption: "Vivid ochre and white depictions of bison, elephants, deer, and prehistoric community hunts."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Rugged Quartzite Formations",
+                caption: "Sculpted monolithic crags nestled amidst dense teak and sal forests of Ratapani."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Sunlight Piercing Stone Canopy",
+                caption: "Natural light filtering through ancient overhangs illuminating ancestral artworks."
+        }
+]
     },
     {
       id: "mahakaleshwar-temple",
@@ -138,6 +246,33 @@ export const madhyaPradeshData: StateData = {
       lon: 75.7682,
       category: "spiritual",
       description: "One of the twelve revered Jyotirlingas of Lord Shiva situated on the holy banks of the Shipra River, famous for its daily sunrise Bhasma Aarti and as the spiritual nucleus of the ancient prime meridian.",
+      image: "/images/madhyapradesh/bhimbetka_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Mahakaleshwar Jyotirlinga.",
+      gallery: [
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Mahakaleshwar Jyotirlinga — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Mahakaleshwar Jyotirlinga — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Mahakaleshwar Jyotirlinga — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Mahakaleshwar Jyotirlinga — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "bhedaghat-marble-rocks",
@@ -147,6 +282,33 @@ export const madhyaPradeshData: StateData = {
       lon: 79.8005,
       category: "nature",
       description: "Breathtaking gorge where the holy Narmada River narrows between soaring 100-foot white marble cliffs before plunging into the thundering mist of the Dhuandhar (smoke-cascade) waterfall.",
+      image: "/images/madhyapradesh/bhimbetka_caves.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Bhedaghat & Dhuandhar Falls.",
+      gallery: [
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Front Elevation",
+                caption: "Bhedaghat & Dhuandhar Falls — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Aerial Drone View",
+                caption: "Bhedaghat & Dhuandhar Falls — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Bhedaghat & Dhuandhar Falls — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/madhyapradesh/bhimbetka_caves.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Bhedaghat & Dhuandhar Falls — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -333,6 +495,7 @@ export const madhyaPradeshData: StateData = {
   luminaries: [
     {
       name: "Rani Ahilyabai Holkar",
+      image: "/images/luminaries/rani_ahilyabai_holkar.jpg",
       era: "1725 – 1795 CE",
       title: "Philosopher Queen of Malwa & Great Builder",
       contribution:
@@ -340,6 +503,7 @@ export const madhyaPradeshData: StateData = {
     },
     {
       name: "Tansen (Ramtanu Pandey)",
+      image: "/images/luminaries/tansen_ramtanu_pandey.jpg",
       era: "1506 – 1589 CE",
       title: "Father of Hindustani Classical Music",
       contribution:
@@ -347,6 +511,7 @@ export const madhyaPradeshData: StateData = {
     },
     {
       name: "Kalidasa",
+      image: "/images/luminaries/kalidasa.jpg",
       era: "4th – 5th Century CE",
       title: "Greatest Sanskrit Poet & Dramatist",
       contribution:

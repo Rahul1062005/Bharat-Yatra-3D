@@ -74,6 +74,33 @@ export const manipurData: StateData = {
       lon: 93.8167,
       category: "nature",
       description: "Largest natural freshwater lake in Northeast India, famous worldwide for its floating circular masses of vegetation, soil, and organic matter called 'Phumdis', upon which local fishermen live in thatched huts called Phumsangs.",
+      image: "/images/manipur/chak_hao_kheer.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Loktak Lake & Floating Phumdis.",
+      gallery: [
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Front Elevation",
+                caption: "Loktak Lake & Floating Phumdis — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Aerial Drone View",
+                caption: "Loktak Lake & Floating Phumdis — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Loktak Lake & Floating Phumdis — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Loktak Lake & Floating Phumdis — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "keibul-lamjao-park",
@@ -83,6 +110,33 @@ export const manipurData: StateData = {
       lon: 93.8475,
       category: "nature",
       description: "The only floating national park in the entire world covering 40 square kilometers of floating phumdi swamp on Loktak Lake, preserving the last surviving natural habitat of the endangered, delicate Sangai (dancing brow-antlered deer).",
+      image: "/images/manipur/chak_hao_kheer.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Keibul Lamjao Floating National Park.",
+      gallery: [
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Front Elevation",
+                caption: "Keibul Lamjao Floating National Park — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Aerial Drone View",
+                caption: "Keibul Lamjao Floating National Park — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Keibul Lamjao Floating National Park — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Keibul Lamjao Floating National Park — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "kangla-fort",
@@ -92,6 +146,33 @@ export const manipurData: StateData = {
       lon: 93.9439,
       category: "monument",
       description: "The ancient fortified royal seat of the Ningthouja dynasty who ruled Kangleipak for over two millennia, featuring sacred coronation halls, the Sanamahi temple, royal moats, and stone dragon-lion sculptures (Kangla Sha).",
+      image: "/images/manipur/chak_hao_kheer.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Kangla Palace Citadel.",
+      gallery: [
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Front Elevation",
+                caption: "Kangla Palace Citadel — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Aerial Drone View",
+                caption: "Kangla Palace Citadel — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Kangla Palace Citadel — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Kangla Palace Citadel — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "ima-keithel",
@@ -101,6 +182,33 @@ export const manipurData: StateData = {
       lon: 93.9356,
       category: "monument",
       description: "A 500-year-old commercial marvel and symbol of female empowerment, recognized as the world's largest all-women market where over 5,000 licensed female traders (Imas/Mothers) run all trade stalls.",
+      image: "/images/manipur/chak_hao_kheer.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Ima Keithel (Mother.",
+      gallery: [
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Front Elevation",
+                caption: "Ima Keithel (Mother — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Aerial Drone View",
+                caption: "Ima Keithel (Mother — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Ima Keithel (Mother — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Ima Keithel (Mother — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "ina-war-memorial",
@@ -110,6 +218,33 @@ export const manipurData: StateData = {
       lon: 93.7664,
       category: "monument",
       description: "Sacred national memorial where Colonel Shaukat Ali Malik of Netaji Subhas Chandra Bose's Indian National Army (INA) hoisted the Indian tricolor for the very first time on liberated Indian mainland soil on April 14, 1944.",
+      image: "/images/manipur/chak_hao_kheer.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of INA War Memorial of Moirang.",
+      gallery: [
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Front Elevation",
+                caption: "INA War Memorial of Moirang — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Aerial Drone View",
+                caption: "INA War Memorial of Moirang — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "INA War Memorial of Moirang — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "INA War Memorial of Moirang — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "govindaji-temple",
@@ -119,6 +254,33 @@ export const manipurData: StateData = {
       lon: 93.9556,
       category: "spiritual",
       description: "Historic gold-domed royal Vaishnavite temple built in 1846 by Maharaja Nara Singh, serving as the cultural epicenter of classical Manipuri Raas Leela dance performances and devotional Vaishnavite festivals.",
+      image: "/images/manipur/chak_hao_kheer.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Shri Shri Govindaji Temple.",
+      gallery: [
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Front Elevation",
+                caption: "Shri Shri Govindaji Temple — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Aerial Drone View",
+                caption: "Shri Shri Govindaji Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shri Shri Govindaji Temple — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/manipur/chak_hao_kheer.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shri Shri Govindaji Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -296,6 +458,7 @@ export const manipurData: StateData = {
   luminaries: [
     {
       name: "Maharaja Bhagyachandra (Jai Singh)",
+      image: "/images/luminaries/maharaja_bhagyachandra_jai_singh.jpg",
       era: "1748 – 1799 CE",
       title: "Visionary King & Creator of Manipuri Raas Leela",
       contribution:
@@ -303,6 +466,7 @@ export const manipurData: StateData = {
     },
     {
       name: "Major Paona Brajabashi",
+      image: "/images/luminaries/major_paona_brajabashi.jpg",
       era: "1833 – 1891 CE",
       title: "Hero of the Battle of Khongjom",
       contribution:
@@ -310,6 +474,7 @@ export const manipurData: StateData = {
     },
     {
       name: "Mary Kom (Mangte Chungneijang)",
+      image: "/images/luminaries/mary_kom_mangte_chungneijang.jpg",
       era: "1982 – Present",
       title: "Magnificent Mary & Six-Time World Boxing Champion",
       contribution:

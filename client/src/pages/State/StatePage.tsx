@@ -17,6 +17,7 @@ import {
   Crown,
   Share2,
   Check,
+  Camera,
 } from "lucide-react"
 
 import StateDistrictMap from "../../components/map/StateDistrictMap"
@@ -28,6 +29,7 @@ import type { LandmarkPin } from "../../types/state"
 import StateQuizSection from "../../components/quiz/StateQuizSection"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import Monument3DViewerModal from "../../components/monuments/Monument3DViewerModal"
+import LandmarkGalleryModal from "../../components/landmarks/LandmarkGalleryModal"
 import { MONUMENTS_3D_CATALOG } from "../../data/monumentsData"
 import { getStateTheme } from "../../data/stateThemes"
 import "./StatePage.css"
@@ -266,6 +268,7 @@ export default function StatePage() {
 
   const [activeSection, setActiveSection] = useState("map-section")
   const [selectedLandmark, setSelectedLandmark] = useState<LandmarkPin | null>(null)
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false)
   const [copiedGreeting, setCopiedGreeting] = useState<string | null>(null)
   const [selectedDistrict, setSelectedDistrict] = useState<string>(stateConfig.defaultDistrict)
   const [isSpeakingGreeting, setIsSpeakingGreeting] = useState(false)
@@ -329,6 +332,7 @@ export default function StatePage() {
   useEffect(() => {
     setSelectedDistrict(stateConfig.defaultDistrict)
     setSelectedLandmark(null)
+    setIsGalleryOpen(false)
     stopGreetingAudio()
     setIsSpeakingGreeting(false)
     setActiveSpeakingLang(null)
@@ -646,6 +650,20 @@ export default function StatePage() {
         {/* Selected Landmark Floating Dialog */}
         {selectedLandmark && (
           <aside className="selected-landmark-toast" aria-label="Landmark Details">
+            {selectedLandmark.image && (
+              <div className="toast-image-wrap">
+                <img
+                  src={selectedLandmark.image}
+                  alt={selectedLandmark.name}
+                  className="toast-landmark-img"
+                  loading="lazy"
+                />
+                <span className="toast-image-lens-cue">
+                  <Camera size={11} /> Real Photo
+                </span>
+              </div>
+            )}
+
             <div className="toast-header">
               <span className={`toast-tag toast-tag-${selectedLandmark.category}`}>
                 {selectedLandmark.category === "nature"
@@ -678,11 +696,12 @@ export default function StatePage() {
 
             <button
               type="button"
-              className="toast-inspect-btn"
-              onClick={() => handleOpen3DMonument(selectedLandmark.name)}
+              className="toast-gallery-btn"
+              onClick={() => setIsGalleryOpen(true)}
+              title="Explore real photos from multiple perspectives"
             >
-              <Sparkles size={13} />
-              <span>Inspect 3D Architecture</span>
+              <Camera size={14} />
+              <span>Explore Multi-Angle Gallery & Story</span>
             </button>
           </aside>
         )}
@@ -1057,7 +1076,27 @@ export default function StatePage() {
             <div className="luminaries-grid">
               {stateData.luminaries.map((person, idx) => (
                 <div key={idx} className="luminary-card">
-                  <div className="luminary-emblem">✦</div>
+                  <div className="luminary-top-row">
+                    <div className="luminary-avatar-wrap">
+                      {person.image ? (
+                        <img
+                          src={person.image}
+                          alt={person.name}
+                          className="luminary-portrait-img"
+                          loading="lazy"
+                          onError={(e) => {
+                            e.currentTarget.style.display = "none"
+                          }}
+                        />
+                      ) : (
+                        <div className="luminary-avatar-placeholder">
+                          {person.name.charAt(0)}
+                        </div>
+                      )}
+                      <div className="luminary-avatar-ring" />
+                    </div>
+                    <div className="luminary-emblem">✦</div>
+                  </div>
                   <div className="luminary-meta">
                     <span className="luminary-era">{person.era}</span>
                     <h3 className="luminary-name">{person.name}</h3>
@@ -1109,6 +1148,14 @@ export default function StatePage() {
         isOpen={isMonumentOpen}
         onClose={() => setIsMonumentOpen(false)}
         initialMonumentId={active3DMonumentId}
+      />
+
+      {/* ================= LANDMARK MULTI-ANGLE GALLERY MODAL ================= */}
+      <LandmarkGalleryModal
+        isOpen={isGalleryOpen}
+        onClose={() => setIsGalleryOpen(false)}
+        landmark={selectedLandmark}
+        stateName={stateData.name}
       />
     </div>
   )

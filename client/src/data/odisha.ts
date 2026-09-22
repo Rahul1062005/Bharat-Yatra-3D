@@ -88,6 +88,33 @@ export const odishaData: StateData = {
       lon: 86.0945,
       category: "monument",
       description: "UNESCO World Heritage 13th-century stone architectural miracle built by King Narasimhadeva I, shaped as a colossal chariot of Surya with 24 exquisitely sculpted stone wheels functioning as sundials and pulled by seven straining stone horses.",
+      image: "/images/odisha/konark_sun_temple.jpg",
+      era: "1250 CE",
+      builtBy: "King Narasimhadeva I of Eastern Ganga Dynasty",
+      architecturalStyle: "Kalinga Deula Architecture (Colossal Stone Chariot)",
+      significance: "UNESCO World Heritage site conceived as the colossal stone chariot of Surya with 24 carved wheels and 7 galloping horses.",
+      gallery: [
+        {
+                url: "/images/odisha/konark_sun_temple.jpg",
+                angle: "The Great Sun Chariot Wheel",
+                caption: "Famous sundial wheel whose 8 major spokes accurately indicate time to the exact minute."
+        },
+        {
+                url: "/images/odisha/konark_sun_temple.jpg",
+                angle: "Jagamohana (Audience Hall) Elevation",
+                caption: "Magnificent stepped pyramidal roof adorned with musician apsaras playing drums and cymbals."
+        },
+        {
+                url: "/images/odisha/konark_sun_temple.jpg",
+                angle: "Galloping Horse Sculptures",
+                caption: "Monumental stone warrior horse crushing an opponent, symbolizing solar vitality and valor."
+        },
+        {
+                url: "/images/odisha/konark_sun_temple.jpg",
+                angle: "Dawn Over the Bay of Bengal",
+                caption: "First golden rays of morning sunlight aligning with the eastern sea-facing sanctum."
+        }
+]
     },
     {
       id: "jagannath-temple-puri",
@@ -97,6 +124,33 @@ export const odishaData: StateData = {
       lon: 85.8179,
       category: "spiritual",
       description: "One of the sacred Char Dham pilgrimage centers of India built in the 12th century, housing Lord Jagannath, Balabhadra, and Subhadra, celebrated worldwide for its grand annual Ratha Yatra and the world's largest traditional temple kitchen.",
+      image: "/images/odisha/jagannath_temple.jpg",
+      era: "12th Century CE",
+      builtBy: "King Anantavarman Chodaganga Deva",
+      architecturalStyle: "Kalinga Rekha Deula Architecture",
+      significance: "One of the four sacred Char Dham pilgrimage centers and home to the world-famous annual Ratha Yatra.",
+      gallery: [
+        {
+                url: "/images/odisha/jagannath_temple.jpg",
+                angle: "Main 65-Meter Vimana Tower",
+                caption: "Soaring curvilinear spire crowned with the sacred Neela Chakra and fluttering Patita Pavana flag."
+        },
+        {
+                url: "/images/odisha/jagannath_temple.jpg",
+                angle: "Singhadwara (Lion's Gate)",
+                caption: "Grand eastern entrance guarded by monumental seated lions and the monolithic Aruna Stambha."
+        },
+        {
+                url: "/images/odisha/jagannath_temple.jpg",
+                angle: "Ananda Bazar & Mahaprasad Kitchen",
+                caption: "World's largest traditional kitchen where 56 sacred delicacies (Chhappan Bhog) are prepared."
+        },
+        {
+                url: "/images/odisha/jagannath_temple.jpg",
+                angle: "Grand Ratha Yatra Procession",
+                caption: "Hundreds of thousands pulling the majestic wooden chariots down the sacred Bada Danda."
+        }
+]
     },
     {
       id: "lingaraj-temple",
@@ -106,6 +160,33 @@ export const odishaData: StateData = {
       lon: 85.8336,
       category: "spiritual",
       description: "The crown jewel of Kalinga temple architecture in Bhubaneswar dating to the 11th century, dedicated to Harihara (combined form of Shiva and Vishnu), featuring a soaring 180-foot deula tower adorned with intricate stone sculptures.",
+      image: "/images/odisha/lingaraj_temple.jpg",
+      era: "11th Century CE",
+      builtBy: "Somavamsi Dynasty & Ganga Kings",
+      architecturalStyle: "Quintessential Kalinga Architectural Style",
+      significance: "Tallest and most complete temple in Bhubaneswar, dedicated to Lord Harihara (unification of Shiva and Vishnu).",
+      gallery: [
+        {
+                url: "/images/odisha/lingaraj_temple.jpg",
+                angle: "55-Meter Curvilinear Shikhara",
+                caption: "Grand fluted spire dominating the temple city of Bhubaneswar with intricate vertical fluting."
+        },
+        {
+                url: "/images/odisha/lingaraj_temple.jpg",
+                angle: "Bindu Sagar Sacred Tank",
+                caption: "Sacred lake believed to contain water from every sacred river and ocean across India."
+        },
+        {
+                url: "/images/odisha/lingaraj_temple.jpg",
+                angle: "Intricate Natamandira Reliefs",
+                caption: "Hall of Dance with richly detailed sculptures of celestial dancers, guardians, and floral friezes."
+        },
+        {
+                url: "/images/odisha/lingaraj_temple.jpg",
+                angle: "Evening Sandhya Aarti Illumination",
+                caption: "Deep earthen oil lamps casting warm golden reflections on the ancient chlorite stone."
+        }
+]
     },
     {
       id: "udayagiri-khandagiri-caves",
@@ -115,6 +196,33 @@ export const odishaData: StateData = {
       lon: 85.7865,
       category: "monument",
       description: "Partly natural and partly artificial rock-cut caves carved out in the 2nd century BCE by King Kharavela of the Mahameghavahana dynasty, containing the famous 17-line Hathigumpha Brahmi inscription.",
+      image: "/images/odisha/khandagiri_caves.jpg",
+      era: "2nd Century BCE",
+      builtBy: "Emperor Kharavela of Mahameghavahana Dynasty",
+      architecturalStyle: "Ancient Rock-Cut Jain Caves",
+      significance: "Famous for the 17-line Brahmi Hathigumpha inscription documenting Kharavela's military expeditions and civil works.",
+      gallery: [
+        {
+                url: "/images/odisha/khandagiri_caves.jpg",
+                angle: "Ranigumpha (Queen's Cave) Double Storey",
+                caption: "Vast two-tiered monastery with pillared verandahs and dramatic theatrical friezes."
+        },
+        {
+                url: "/images/odisha/khandagiri_caves.jpg",
+                angle: "Hathigumpha Elephant Cave",
+                caption: "Natural cavern housing the priceless historical epigraph of Emperor Kharavela."
+        },
+        {
+                url: "/images/odisha/khandagiri_caves.jpg",
+                angle: "Tiger Cave (Vyaghra Gumpha)",
+                caption: "Intriguing rock shelter carved entirely in the shape of a roaring tiger's open maw."
+        },
+        {
+                url: "/images/odisha/khandagiri_caves.jpg",
+                angle: "Hilltop Sunset View",
+                caption: "Sweeping vantage point overlooking the temple city and lush green Odisha landscape."
+        }
+]
     },
     {
       id: "chilika-lake",
@@ -124,6 +232,33 @@ export const odishaData: StateData = {
       lon: 85.3228,
       category: "nature",
       description: "Asia's largest brackish water lagoon spreading over 1,100 square kilometers, designated as India's first Ramsar wetland, sheltering endangered Irrawaddy dolphins and over a million migratory birds each winter.",
+      image: "/images/odisha/chhena_gaja.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Chilika Lake & Bird Sanctuary.",
+      gallery: [
+        {
+                url: "/images/odisha/chhena_gaja.jpg",
+                angle: "Front Elevation",
+                caption: "Chilika Lake & Bird Sanctuary — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/odisha/chhena_gaja.jpg",
+                angle: "Aerial Drone View",
+                caption: "Chilika Lake & Bird Sanctuary — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/odisha/chhena_gaja.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Chilika Lake & Bird Sanctuary — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/odisha/chhena_gaja.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Chilika Lake & Bird Sanctuary — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
     {
       id: "hirakud-dam",
@@ -133,6 +268,33 @@ export const odishaData: StateData = {
       lon: 83.8706,
       category: "nature",
       description: "One of the first major multipurpose river valley projects initiated after Indian independence, forming a vast 55-kilometer-long earthen embankment across the mighty Mahanadi River.",
+      image: "/images/odisha/chhena_gaja.jpg",
+      era: "Historical & Living Heritage Era",
+      builtBy: "Historic Rulers & Architects of the Region",
+      architecturalStyle: "Indigenous Classical Indian Architecture",
+      significance: "Iconic monument embodying the timeless civilizational heritage of Hirakud Dam on the Mahanadi.",
+      gallery: [
+        {
+                url: "/images/odisha/chhena_gaja.jpg",
+                angle: "Front Elevation",
+                caption: "Hirakud Dam on the Mahanadi — Iconic grand facade and architectural overview."
+        },
+        {
+                url: "/images/odisha/chhena_gaja.jpg",
+                angle: "Aerial Drone View",
+                caption: "Hirakud Dam on the Mahanadi — Expansive panoramic perspective capturing the surrounding heritage landscape."
+        },
+        {
+                url: "/images/odisha/chhena_gaja.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Hirakud Dam on the Mahanadi — Intricate heritage craftsmanship and authentic design motifs."
+        },
+        {
+                url: "/images/odisha/chhena_gaja.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Hirakud Dam on the Mahanadi — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+        }
+]
     },
   ],
   cuisines: [
@@ -320,6 +482,7 @@ export const odishaData: StateData = {
   luminaries: [
     {
       name: "Utkalmani Gopabandhu Das",
+      image: "/images/luminaries/utkalmani_gopabandhu_das.jpg",
       era: "1877 – 1928 CE",
       title: "Gem of Odisha & Freedom Fighter",
       contribution:
@@ -327,6 +490,7 @@ export const odishaData: StateData = {
     },
     {
       name: "Biju Patnaik",
+      image: "/images/luminaries/biju_patnaik.jpg",
       era: "1916 – 1997 CE",
       title: "Legendary Aviator & Modern Architect of Odisha",
       contribution:
@@ -334,6 +498,7 @@ export const odishaData: StateData = {
     },
     {
       name: "Jayadeva",
+      image: "/images/luminaries/jayadeva.jpg",
       era: "12th Century CE",
       title: "Immortal Sanskrit Poet of Gita Govinda",
       contribution:
