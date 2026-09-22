@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from "react"
-import { Search, X, MapPin, Compass, ChevronRight, Sparkles, SlidersHorizontal, MessageCircle } from "lucide-react"
+import { Search, X, MapPin, Compass, ChevronRight, Sparkles, SlidersHorizontal, MessageCircle, Trophy } from "lucide-react"
 import { statesRegistry } from "../../data/states"
 import { getStateGreeting } from "../../data/greetings"
 import "./IndiaSearchBar.css"
@@ -8,6 +8,7 @@ export interface IndiaSearchBarProps {
   onSelectState: (stateSlug: string) => void
   onHighlightState?: (stateName: string | null) => void
   onOpenGreetings?: () => void
+  onOpenQuiz?: () => void
 }
 
 export interface RegionCategory {
@@ -83,7 +84,7 @@ const ALL_PRIMARY_SLUGS = [
   "andaman-nicobar", "lakshadweep", "puducherry", "chandigarh", "dadra-nagar-haveli-daman-diu"
 ]
 
-export default function IndiaSearchBar({ onSelectState, onHighlightState, onOpenGreetings }: IndiaSearchBarProps) {
+export default function IndiaSearchBar({ onSelectState, onHighlightState, onOpenGreetings, onOpenQuiz }: IndiaSearchBarProps) {
   const [query, setQuery] = useState("")
   const [activeRegion, setActiveRegion] = useState("all")
   const [isOpen, setIsOpen] = useState(false)
@@ -207,19 +208,36 @@ export default function IndiaSearchBar({ onSelectState, onHighlightState, onOpen
               </span>
             </span>
 
-            {onOpenGreetings && (
-              <button
-                type="button"
-                className="tray-greetings-cta-btn"
-                onClick={() => {
-                  setIsOpen(false)
-                  onOpenGreetings()
-                }}
-              >
-                <MessageCircle size={12} />
-                <span>36 Greetings of Bharat</span>
-              </button>
-            )}
+            <div className="tray-header-actions">
+              {onOpenQuiz && (
+                <button
+                  type="button"
+                  className="tray-quiz-cta-btn"
+                  onClick={() => {
+                    setIsOpen(false)
+                    onOpenQuiz()
+                  }}
+                  title="Play Guess the State 3D Quiz"
+                >
+                  <Trophy size={12} />
+                  <span>Play Quiz</span>
+                </button>
+              )}
+
+              {onOpenGreetings && (
+                <button
+                  type="button"
+                  className="tray-greetings-cta-btn"
+                  onClick={() => {
+                    setIsOpen(false)
+                    onOpenGreetings()
+                  }}
+                >
+                  <MessageCircle size={12} />
+                  <span>36 Greetings</span>
+                </button>
+              )}
+            </div>
 
             <button
               type="button"

@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft, Globe, MessageCircle } from "lucide-react"
+import { ArrowLeft, Globe, MessageCircle, Gamepad2 } from "lucide-react"
 
 import Earth from "../../components/globe/Earth"
 import IndiaMap, { preloadIndiaMapData } from "../../components/map/IndiaMap"
 import IndiaSearchBar from "../../components/search/IndiaSearchBar"
 import GreetingsModal from "../../components/greetings/GreetingsModal"
+import GuessTheStateModal from "../../components/game/GuessTheStateModal"
 import "./ExplorePage.css"
 
 export type ExploreStage = "globe" | "diving" | "india"
@@ -19,6 +20,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
   const [stage, setStage] = useState<ExploreStage>(initialStage)
   const [cloudWashActive, setCloudWashActive] = useState(false)
   const [isGreetingsOpen, setIsGreetingsOpen] = useState(false)
+  const [isQuizOpen, setIsQuizOpen] = useState(false)
 
   // Sync if initialStage changes externally
   useEffect(() => {
@@ -158,17 +160,31 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
             <span className="home-button-text">Earth</span>
           </button>
 
-          <button
-            type="button"
-            className="greetings-launcher-btn"
-            onClick={() => setIsGreetingsOpen(true)}
-            title="Explore 36 Greetings of Bharat"
-          >
-            <span className="greetings-launcher-icon">
-              <MessageCircle size={16} />
-            </span>
-            <span className="greetings-launcher-text">36 Greetings</span>
-          </button>
+          <div className="explore-top-right-dock">
+            <button
+              type="button"
+              className="quiz-launcher-btn"
+              onClick={() => setIsQuizOpen(true)}
+              title="Play Guess the State 3D Quiz Challenge"
+            >
+              <span className="quiz-launcher-icon">
+                <Gamepad2 size={16} />
+              </span>
+              <span className="quiz-launcher-text">Play Quiz</span>
+            </button>
+
+            <button
+              type="button"
+              className="greetings-launcher-btn"
+              onClick={() => setIsGreetingsOpen(true)}
+              title="Explore 36 Greetings of Bharat"
+            >
+              <span className="greetings-launcher-icon">
+                <MessageCircle size={16} />
+              </span>
+              <span className="greetings-launcher-text">36 Greetings</span>
+            </button>
+          </div>
         </>
       )}
 
@@ -207,6 +223,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
           <IndiaSearchBar
             onSelectState={handleStateDive}
             onOpenGreetings={() => setIsGreetingsOpen(true)}
+            onOpenQuiz={() => setIsQuizOpen(true)}
           />
           <IndiaMap animateEntrance={true} onStateDive={handleStateDive} />
 
@@ -214,6 +231,12 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
             isOpen={isGreetingsOpen}
             onClose={() => setIsGreetingsOpen(false)}
             onSelectState={handleStateDive}
+          />
+
+          <GuessTheStateModal
+            isOpen={isQuizOpen}
+            onClose={() => setIsQuizOpen(false)}
+            onExploreState={handleStateDive}
           />
         </div>
       )}

@@ -320,10 +320,10 @@
 }
 
 /* ===================================================== */
-/* GREETINGS LAUNCHER BUTTON (DESKTOP) */
+/* TOP RIGHT ACTIONS DOCK (DESKTOP) */
 /* ===================================================== */
 
-.greetings-launcher-btn {
+.explore-top-right-dock {
   position: absolute;
   top: 28px;
   right: 32px;
@@ -332,9 +332,78 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.quiz-launcher-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
   height: 50px;
-  padding: 5px 18px 5px 8px;
+  padding: 5px 16px 5px 8px;
+
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(6, 32, 22, 0.95),
+    rgba(4, 18, 12, 0.95)
+  );
+
+  color: #6ee7b7;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.35),
+    0 0 20px rgba(16, 185, 129, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.quiz-launcher-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(16, 185, 129, 0.85);
+  box-shadow:
+    0 12px 35px rgba(16, 185, 129, 0.25),
+    0 0 25px rgba(16, 185, 129, 0.2);
+}
+
+.quiz-launcher-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.45);
+}
+
+.quiz-launcher-text {
+  letter-spacing: 0.2px;
+}
+
+.greetings-launcher-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  height: 50px;
+  padding: 5px 16px 5px 8px;
 
   border: 1px solid rgba(245, 158, 11, 0.45);
   border-radius: 999px;
@@ -510,7 +579,7 @@
     display: none;
   }
 
-  .greetings-launcher-btn {
+  .explore-top-right-dock {
     display: none;
   }
 
