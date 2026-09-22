@@ -1,0 +1,488 @@
+/* NationalMasteryModal.css - Premium Bharat Cultural Mastery Tracker */
+
+.mastery-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(3, 7, 18, 0.82);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeInModal 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mastery-modal-content {
+  background: #0f1423;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 920px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 40px rgba(245, 158, 11, 0.12);
+}
+
+/* Header */
+.mastery-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 28px 20px 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, transparent 100%);
+}
+
+.mastery-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #f59e0b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.mastery-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 4px 0;
+}
+
+.mastery-subtitle {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.mastery-close-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.mastery-close-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+/* Rank & Progress Card */
+.mastery-rank-card {
+  margin: 20px 28px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.mastery-rank-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.mastery-rank-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(225, 29, 72, 0.25));
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #f59e0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+.rank-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.rank-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 4px 0;
+}
+
+.rank-next-hint {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.mastery-gauge-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 180px;
+}
+
+.gauge-number-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.gauge-count {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f59e0b;
+}
+
+.gauge-slash {
+  color: #64748b;
+  font-size: 1.2rem;
+}
+
+.gauge-total {
+  font-size: 1.1rem;
+  color: #94a3b8;
+}
+
+.gauge-desc {
+  font-size: 0.76rem;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.mastery-progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.mastery-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f59e0b, #10b981);
+  border-radius: 999px;
+  transition: width 0.5s ease-out;
+}
+
+.mastery-percent-text {
+  font-size: 0.74rem;
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* Badges Showcase */
+.mastery-badges-section {
+  padding: 0 28px 16px 28px;
+}
+
+.badges-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0 0 12px 0;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.mastery-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.2s ease;
+}
+
+.mastery-badge-item.unlocked {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.mastery-badge-item.locked {
+  opacity: 0.45;
+  filter: grayscale(1);
+}
+
+.badge-icon-box {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.badge-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.badge-title-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge-check-icon {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.badge-desc-text {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 36 States Grid Section */
+.mastery-states-section {
+  padding: 16px 28px 24px 28px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.mastery-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.states-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.filter-buttons-group {
+  display: flex;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: #f8fafc;
+}
+
+.filter-btn.active {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.mastery-states-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.mastery-state-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mastery-state-pill:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.mastery-state-pill.state-mastered {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.state-pill-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.state-status-icon.mastered {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.state-status-icon.pending {
+  color: #475569;
+  flex-shrink: 0;
+}
+
+.state-name-label {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.state-pill-right {
+  display: flex;
+  align-items: center;
+}
+
+.state-score-tag {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+
+.take-quiz-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  color: #f59e0b;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.take-quiz-tag:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Custom scrollbar for modal content */
+.mastery-states-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mastery-states-section::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mastery-states-section::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mastery-modal-overlay {
+    padding: 12px;
+  }
+
+  .mastery-modal-content {
+    max-height: 94vh;
+    border-radius: 18px;
+  }
+
+  .mastery-modal-header {
+    padding: 16px 20px;
+  }
+
+  .mastery-rank-card {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 14px 20px;
+    padding: 16px;
+  }
+
+  .mastery-gauge-right {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .mastery-badges-section {
+    padding: 0 20px 14px 20px;
+  }
+
+  .badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mastery-states-section {
+    padding: 12px 20px 20px 20px;
+  }
+
+  .mastery-states-grid {
+    grid-template-columns: 1fr;
+  }
+}

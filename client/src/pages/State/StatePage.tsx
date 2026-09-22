@@ -21,6 +21,10 @@ import { getStateById } from "../../data/states"
 import { getStateGreeting } from "../../data/greetings"
 import { playGreetingAudio, stopGreetingAudio } from "../../utils/greetingSpeech"
 import type { LandmarkPin } from "../../types/state"
+import StateQuizSection from "../../components/quiz/StateQuizSection"
+import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
+import Monument3DViewerModal from "../../components/monuments/Monument3DViewerModal"
+import { MONUMENTS_3D_CATALOG } from "../../data/monumentsData"
 import "./StatePage.css"
 
 const HERITAGE_HIGHLIGHTS: Record<
@@ -261,7 +265,29 @@ export default function StatePage() {
   const [selectedDistrict, setSelectedDistrict] = useState<string>(stateConfig.defaultDistrict)
   const [isSpeakingGreeting, setIsSpeakingGreeting] = useState(false)
   const [activeSpeakingLang, setActiveSpeakingLang] = useState<string | null>(null)
+  const [isMasteryOpen, setIsMasteryOpen] = useState(false)
+  const [isMonumentOpen, setIsMonumentOpen] = useState(false)
+  const [active3DMonumentId, setActive3DMonumentId] = useState("taj-mahal")
   const stateGreeting = getStateGreeting(stateData.id)
+
+  const handleOpen3DMonument = (monumentName?: string) => {
+    if (monumentName) {
+      const match = MONUMENTS_3D_CATALOG.find(
+        (m) =>
+          monumentName.toLowerCase().includes(m.name.toLowerCase()) ||
+          m.name.toLowerCase().includes(monumentName.toLowerCase()) ||
+          m.stateId === stateData.id
+      )
+      if (match) {
+        setActive3DMonumentId(match.id)
+      } else {
+        // Fallback to state's monument if available, else first in catalog
+        const stateMatch = MONUMENTS_3D_CATALOG.find((m) => m.stateId === stateData.id)
+        if (stateMatch) setActive3DMonumentId(stateMatch.id)
+      }
+    }
+    setIsMonumentOpen(true)
+  }
 
   // Synchronize when route / stateId changes
   useEffect(() => {
@@ -288,6 +314,7 @@ export default function StatePage() {
         "monuments-section",
         "languages-section",
         "luminaries-section",
+        "quiz-section",
       ]
       const scrollPos = window.scrollY + 200
 
@@ -390,6 +417,13 @@ export default function StatePage() {
               Languages
             </button>
           )}
+          <button
+            type="button"
+            className={`nav-tab ${activeSection === "quiz-section" ? "active" : ""}`}
+            onClick={() => scrollToSection("quiz-section")}
+          >
+            Quiz
+          </button>
         </nav>
       </header>
 
@@ -508,6 +542,14 @@ export default function StatePage() {
             <h4 className="toast-title">{selectedLandmark.name}</h4>
             <p className="toast-district">District: {selectedLandmark.district}</p>
             <p className="toast-desc">{selectedLandmark.description}</p>
+            <button
+              type="button"
+              className="toast-inspect-btn"
+              onClick={() => handleOpen3DMonument(selectedLandmark.name)}
+            >
+              <Sparkles size={12} />
+              <span>Inspect 3D Architecture</span>
+            </button>
           </div>
         )}
 
@@ -756,6 +798,14 @@ export default function StatePage() {
                       <strong>Significance:</strong> {mon.significance}
                     </div>
                   )}
+                  <button
+                    type="button"
+                    className="monument-inspect-3d-btn"
+                    onClick={() => handleOpen3DMonument(mon.name)}
+                  >
+                    <Sparkles size={13} />
+                    <span>Inspect Architecture in 3D</span>
+                  </button>
                 </div>
               </div>
             ))}
@@ -884,6 +934,13 @@ export default function StatePage() {
         </section>
       )}
 
+      {/* ================= SECTION 7: STATE CULTURAL QUIZ ================= */}
+      <StateQuizSection
+        stateId={stateData.id}
+        stateName={stateData.name}
+        onOpenMasteryTracker={() => setIsMasteryOpen(true)}
+      />
+
       {/* ================= FOOTER / CONTINUE JOURNEY ================= */}
       <footer className="state-footer">
         <div className="footer-glow" />
@@ -903,6 +960,19 @@ export default function StatePage() {
           </button>
         </div>
       </footer>
+
+      {/* ================= NATIONAL MASTERY TRACKER MODAL ================= */}
+      <NationalMasteryModal
+        isOpen={isMasteryOpen}
+        onClose={() => setIsMasteryOpen(false)}
+      />
+
+      {/* ================= 3D ARCHITECTURAL MONUMENT INSPECTOR ================= */}
+      <Monument3DViewerModal
+        isOpen={isMonumentOpen}
+        onClose={() => setIsMonumentOpen(false)}
+        initialMonumentId={active3DMonumentId}
+      />
     </div>
   )
 }

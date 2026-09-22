@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from "react"
-import { Search, X, MapPin, Compass, ChevronRight, Sparkles, SlidersHorizontal, MessageCircle, Trophy } from "lucide-react"
+import { Search, X, MapPin, Compass, ChevronRight, Sparkles, SlidersHorizontal, MessageCircle, Trophy, Route, Award, Landmark } from "lucide-react"
 import { statesRegistry } from "../../data/states"
 import { getStateGreeting } from "../../data/greetings"
 import "./IndiaSearchBar.css"
@@ -9,6 +9,9 @@ export interface IndiaSearchBarProps {
   onHighlightState?: (stateName: string | null) => void
   onOpenGreetings?: () => void
   onOpenQuiz?: () => void
+  onOpenJourneyPlanner?: () => void
+  onOpenMasteryTracker?: () => void
+  onOpenMonuments?: () => void
 }
 
 export interface RegionCategory {
@@ -84,7 +87,15 @@ const ALL_PRIMARY_SLUGS = [
   "andaman-nicobar", "lakshadweep", "puducherry", "chandigarh", "dadra-nagar-haveli-daman-diu"
 ]
 
-export default function IndiaSearchBar({ onSelectState, onHighlightState, onOpenGreetings, onOpenQuiz }: IndiaSearchBarProps) {
+export default function IndiaSearchBar({
+  onSelectState,
+  onHighlightState,
+  onOpenGreetings,
+  onOpenQuiz,
+  onOpenJourneyPlanner,
+  onOpenMasteryTracker,
+  onOpenMonuments,
+}: IndiaSearchBarProps) {
   const [query, setQuery] = useState("")
   const [activeRegion, setActiveRegion] = useState("all")
   const [isOpen, setIsOpen] = useState(false)
@@ -232,9 +243,55 @@ export default function IndiaSearchBar({ onSelectState, onHighlightState, onOpen
                     setIsOpen(false)
                     onOpenGreetings()
                   }}
+                  title="Explore 36 Greetings of Bharat"
                 >
                   <MessageCircle size={12} />
-                  <span>36 Greetings</span>
+                  <span>Greetings</span>
+                </button>
+              )}
+
+              {onOpenJourneyPlanner && (
+                <button
+                  type="button"
+                  className="tray-greetings-cta-btn"
+                  onClick={() => {
+                    setIsOpen(false)
+                    onOpenJourneyPlanner()
+                  }}
+                  title="Custom Route & Expedition Planner"
+                >
+                  <Route size={12} />
+                  <span>My Yatra</span>
+                </button>
+              )}
+
+              {onOpenMonuments && (
+                <button
+                  type="button"
+                  className="tray-greetings-cta-btn"
+                  onClick={() => {
+                    setIsOpen(false)
+                    onOpenMonuments()
+                  }}
+                  title="3D Architectural Monuments Inspector"
+                >
+                  <Landmark size={12} />
+                  <span>3D Monuments</span>
+                </button>
+              )}
+
+              {onOpenMasteryTracker && (
+                <button
+                  type="button"
+                  className="tray-greetings-cta-btn"
+                  onClick={() => {
+                    setIsOpen(false)
+                    onOpenMasteryTracker()
+                  }}
+                  title="National Cultural Mastery Tracker"
+                >
+                  <Award size={12} />
+                  <span>Mastery</span>
                 </button>
               )}
             </div>

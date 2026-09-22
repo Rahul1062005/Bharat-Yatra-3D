@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft, Globe, MessageCircle, Gamepad2 } from "lucide-react"
+import { ArrowLeft, Globe, MessageCircle, Gamepad2, Route, Landmark, Award } from "lucide-react"
 
 import Earth from "../../components/globe/Earth"
 import IndiaMap, { preloadIndiaMapData } from "../../components/map/IndiaMap"
 import IndiaSearchBar from "../../components/search/IndiaSearchBar"
 import GreetingsModal from "../../components/greetings/GreetingsModal"
 import GuessTheStateModal from "../../components/game/GuessTheStateModal"
+import IndiaGeoTelemetry from "../../components/telemetry/IndiaGeoTelemetry"
+import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
+import JourneyPlannerModal from "../../components/itinerary/JourneyPlannerModal"
+import Monument3DViewerModal from "../../components/monuments/Monument3DViewerModal"
 import "./ExplorePage.css"
 
 export type ExploreStage = "globe" | "diving" | "india"
@@ -21,6 +25,9 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
   const [cloudWashActive, setCloudWashActive] = useState(false)
   const [isGreetingsOpen, setIsGreetingsOpen] = useState(false)
   const [isQuizOpen, setIsQuizOpen] = useState(false)
+  const [isMasteryOpen, setIsMasteryOpen] = useState(false)
+  const [isJourneyOpen, setIsJourneyOpen] = useState(false)
+  const [isMonumentsOpen, setIsMonumentsOpen] = useState(false)
 
   // Sync if initialStage changes externally
   useEffect(() => {
@@ -182,7 +189,43 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               <span className="greetings-launcher-icon">
                 <MessageCircle size={16} />
               </span>
-              <span className="greetings-launcher-text">36 Greetings</span>
+              <span className="greetings-launcher-text">Greetings</span>
+            </button>
+
+            <button
+              type="button"
+              className="journey-launcher-btn"
+              onClick={() => setIsJourneyOpen(true)}
+              title="Plan your custom route across Bharat"
+            >
+              <span className="journey-launcher-icon">
+                <Route size={16} />
+              </span>
+              <span className="journey-launcher-text">My Yatra</span>
+            </button>
+
+            <button
+              type="button"
+              className="monuments-launcher-btn"
+              onClick={() => setIsMonumentsOpen(true)}
+              title="3D Architectural Monuments Inspector"
+            >
+              <span className="monuments-launcher-icon">
+                <Landmark size={16} />
+              </span>
+              <span className="monuments-launcher-text">3D Monuments</span>
+            </button>
+
+            <button
+              type="button"
+              className="mastery-launcher-btn"
+              onClick={() => setIsMasteryOpen(true)}
+              title="National Cultural Mastery Tracker"
+            >
+              <span className="mastery-launcher-icon">
+                <Award size={16} />
+              </span>
+              <span className="mastery-launcher-text">Mastery Tracker</span>
             </button>
           </div>
         </>
@@ -224,8 +267,14 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
             onSelectState={handleStateDive}
             onOpenGreetings={() => setIsGreetingsOpen(true)}
             onOpenQuiz={() => setIsQuizOpen(true)}
+            onOpenJourneyPlanner={() => setIsJourneyOpen(true)}
+            onOpenMasteryTracker={() => setIsMasteryOpen(true)}
+            onOpenMonuments={() => setIsMonumentsOpen(true)}
           />
           <IndiaMap animateEntrance={true} onStateDive={handleStateDive} />
+
+          {/* India Geographic Telemetry (Collapsible dock in bottom-left) */}
+          <IndiaGeoTelemetry />
 
           <GreetingsModal
             isOpen={isGreetingsOpen}
@@ -237,6 +286,21 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
             isOpen={isQuizOpen}
             onClose={() => setIsQuizOpen(false)}
             onExploreState={handleStateDive}
+          />
+
+          <NationalMasteryModal
+            isOpen={isMasteryOpen}
+            onClose={() => setIsMasteryOpen(false)}
+          />
+
+          <JourneyPlannerModal
+            isOpen={isJourneyOpen}
+            onClose={() => setIsJourneyOpen(false)}
+          />
+
+          <Monument3DViewerModal
+            isOpen={isMonumentsOpen}
+            onClose={() => setIsMonumentsOpen(false)}
           />
         </div>
       )}

@@ -1781,3 +1781,50 @@ html {
     min-height: 310px;
   }
 }
+
+/* 3D Monument Inspection Action Triggers */
+.toast-inspect-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(225, 29, 72, 0.2));
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  border-radius: 8px;
+  color: #fbbf24;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toast-inspect-btn:hover {
+  background: linear-gradient(135deg, #f59e0b, #e11d48);
+  color: #0b0f19;
+  transform: translateY(-1px);
+}
+
+.monument-inspect-3d-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 8px 14px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 10px;
+  color: #fbbf24;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.monument-inspect-3d-btn:hover {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #0b0f19;
+  border-color: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+}

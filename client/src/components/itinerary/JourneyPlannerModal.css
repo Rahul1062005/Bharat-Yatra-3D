@@ -1,0 +1,525 @@
+/* JourneyPlannerModal.css - My Bharat Yatra Custom Route Planner */
+
+.journey-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(3, 7, 18, 0.82);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeInJourney 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInJourney {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.journey-modal-content {
+  background: #0d1220;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 960px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 40px rgba(245, 158, 11, 0.12);
+}
+
+/* Header */
+.journey-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 28px 18px 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, transparent 100%);
+}
+
+.journey-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #f59e0b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.journey-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 4px 0;
+}
+
+.journey-subtitle {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.journey-close-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.journey-close-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+/* Body */
+.journey-modal-body {
+  padding: 20px 28px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+/* Curated Trails Carousel */
+.curated-trails-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trails-heading,
+.builder-heading,
+.picker-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.curated-trails-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+
+.curated-trails-row::-webkit-scrollbar {
+  height: 4px;
+}
+
+.curated-trails-row::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+}
+
+.curated-trail-card {
+  min-width: 200px;
+  max-width: 220px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.curated-trail-card:hover {
+  background: rgba(245, 158, 11, 0.06);
+  border-color: rgba(245, 158, 11, 0.3);
+  transform: translateY(-2px);
+}
+
+.curated-trail-card.selected-trail {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: #f59e0b;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.2);
+}
+
+.trail-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trail-emoji {
+  font-size: 1.4rem;
+}
+
+.trail-stops-badge {
+  background: rgba(255, 255, 255, 0.06);
+  color: #f59e0b;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.trail-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.trail-sub {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Route Builder Section */
+.route-builder-section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.route-builder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.builder-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.route-icon {
+  color: #f59e0b;
+}
+
+.clear-stops-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-stops-btn:hover {
+  background: rgba(239, 68, 68, 0.12);
+}
+
+.empty-route-notice {
+  text-align: center;
+  padding: 28px 16px;
+  color: #64748b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.empty-pin-icon {
+  color: #475569;
+}
+
+/* Stops Sequence List */
+.stops-sequence-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.route-stop-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.route-stop-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.stop-badge-idx {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #0b0f19;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stop-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.stop-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.stop-tagline {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-stop-btn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.remove-stop-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+/* Route Stats Ribbon */
+.route-stats-ribbon {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.stat-pill {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 10px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+}
+
+.stat-label {
+  color: #94a3b8;
+}
+
+.stat-value {
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+/* State Picker Section */
+.state-picker-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.picker-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.picker-chips-grid::-webkit-scrollbar {
+  width: 4px;
+}
+
+.picker-chips-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+}
+
+.state-picker-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.state-picker-chip:hover:not(:disabled) {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #ffffff;
+}
+
+.state-picker-chip.already-added {
+  opacity: 0.4;
+  border-color: transparent;
+  cursor: default;
+}
+
+.chip-plus {
+  color: #f59e0b;
+}
+
+.chip-check {
+  color: #10b981;
+}
+
+/* Footer */
+.journey-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.2);
+  gap: 14px;
+}
+
+.share-route-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-route-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.share-route-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.start-yatra-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: none;
+  color: #0b0f19;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+}
+
+.start-yatra-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(245, 158, 11, 0.45);
+}
+
+.start-yatra-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .journey-modal-overlay {
+    padding: 12px;
+  }
+
+  .journey-modal-content {
+    max-height: 94vh;
+    border-radius: 18px;
+  }
+
+  .journey-modal-header {
+    padding: 16px 20px;
+  }
+
+  .journey-modal-body {
+    padding: 16px 20px;
+  }
+
+  .journey-modal-footer {
+    padding: 14px 20px;
+    flex-direction: column;
+  }
+
+  .share-route-btn,
+  .start-yatra-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

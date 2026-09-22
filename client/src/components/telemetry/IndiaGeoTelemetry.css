@@ -1,0 +1,357 @@
+/* =========================================================
+   INDIA GEOGRAPHIC TELEMETRY & LIVE CLOCK
+========================================================= */
+
+.india-telemetry-container {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 40;
+  pointer-events: auto;
+  font-family: inherit;
+}
+
+/* Collapsed Pill Button */
+.telemetry-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 999px;
+  color: #f8fafc;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.45),
+    0 0 15px rgba(245, 158, 11, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.22s ease;
+}
+
+.telemetry-pill-btn:hover {
+  background: rgba(20, 30, 55, 0.95);
+  border-color: rgba(245, 158, 11, 0.7);
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.55),
+    0 0 20px rgba(245, 158, 11, 0.2);
+  transform: translateY(-2px);
+}
+
+.telemetry-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulseLive 1.8s infinite;
+}
+
+@keyframes pulseLive {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.6;
+  }
+}
+
+.telemetry-time-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fef08a;
+  font-variant-numeric: tabular-nums;
+}
+
+.sun-icon {
+  color: #f59e0b;
+}
+
+.moon-icon {
+  color: #93c5fd;
+}
+
+.telemetry-sep {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 10px;
+}
+
+.telemetry-area-badge {
+  color: #cbd5e1;
+}
+
+.telemetry-coords-badge {
+  color: #94a3b8;
+}
+
+.telemetry-expand-icon {
+  color: #fbbf24;
+  margin-left: 2px;
+  display: flex;
+}
+
+/* Expanded Glass Card */
+.telemetry-glass-card {
+  width: 440px;
+  max-width: 90vw;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.94) 0%,
+    rgba(10, 15, 28, 0.97) 100%
+  );
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.7),
+    0 0 25px rgba(245, 158, 11, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: telemetrySlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes telemetrySlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.telemetry-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.telemetry-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.telemetry-compass-icon {
+  color: #f59e0b;
+}
+
+.telemetry-title {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.telemetry-subtitle {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.telemetry-collapse-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.telemetry-collapse-btn:hover {
+  background: rgba(245, 158, 11, 0.25);
+  border-color: rgba(245, 158, 11, 0.5);
+  color: #ffffff;
+}
+
+.telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.telemetry-item {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.telemetry-item.highlight-box {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.telemetry-item.coords-span-item {
+  grid-column: span 2;
+}
+
+.telemetry-item.full-width-extremes {
+  grid-column: span 2;
+}
+
+.item-label-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #fbbf24;
+  text-transform: uppercase;
+}
+
+.item-live-clock {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 1px;
+}
+
+.live-clock-time {
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+}
+
+.live-clock-offset {
+  font-size: 9.5px;
+  color: #fef08a;
+  background: rgba(245, 158, 11, 0.2);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.live-clock-date {
+  font-size: 9.5px;
+  color: #94a3b8;
+}
+
+.item-large-stat {
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.item-sub-desc {
+  font-size: 9px;
+  color: #94a3b8;
+}
+
+.coords-dual-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.coord-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.coord-axis {
+  font-size: 9px;
+  color: #94a3b8;
+}
+
+.coord-value {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.coord-dist {
+  font-size: 9px;
+  color: #fef08a;
+}
+
+/* Extremes Grid */
+.extremes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.extreme-cell {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.extreme-cardinal {
+  font-size: 8px;
+  font-weight: 700;
+  color: #fbbf24;
+}
+
+.extreme-name {
+  font-size: 9.5px;
+  color: #e2e8f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-stat-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 10px;
+  color: #cbd5e1;
+}
+
+.item-stat-pair strong {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .india-telemetry-container {
+    bottom: 56px;
+    left: 12px;
+    right: 12px;
+  }
+
+  .telemetry-pill-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 10.5px;
+    padding: 6px 12px;
+  }
+
+  .telemetry-glass-card {
+    width: 100%;
+    max-height: 55vh;
+    overflow-y: auto;
+    font-size: 11px;
+  }
+
+  .telemetry-coords-badge {
+    display: none;
+  }
+}
