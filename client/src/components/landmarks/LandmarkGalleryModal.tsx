@@ -1,5 +1,20 @@
 import React, { useState, useEffect } from "react"
-import { X, Camera, Compass, Award, Calendar, UserCheck, ShieldCheck, ChevronLeft, ChevronRight, Layers } from "lucide-react"
+import {
+  X,
+  Camera,
+  Compass,
+  Award,
+  Calendar,
+  UserCheck,
+  ShieldCheck,
+  ChevronLeft,
+  ChevronRight,
+  Layers,
+  BookOpen,
+  MapPin,
+  Sparkles,
+  Info
+} from "lucide-react"
 import type { LandmarkPin, LandmarkAngleImage } from "../../types/state"
 import "./LandmarkGalleryModal.css"
 
@@ -17,10 +32,12 @@ export const LandmarkGalleryModal: React.FC<LandmarkGalleryModalProps> = ({
   stateName,
 }) => {
   const [selectedAngleIndex, setSelectedAngleIndex] = useState<number>(0)
+  const [activeTab, setActiveTab] = useState<"overview" | "architecture" | "significance">("overview")
 
-  // Reset to first angle whenever landmark changes
+  // Reset to first angle and overview tab whenever landmark changes
   useEffect(() => {
     setSelectedAngleIndex(0)
+    setActiveTab("overview")
   }, [landmark])
 
   // Close on Escape key
@@ -74,21 +91,25 @@ export const LandmarkGalleryModal: React.FC<LandmarkGalleryModalProps> = ({
         aria-modal="true"
         aria-label={`Gallery of ${landmarkTitle}`}
       >
-        {/* Modal Header */}
+        {/* ================= MODAL HEADER ================= */}
         <div className="landmark-modal-header">
-          <div className="landmark-title-group">
-            <div className="landmark-category-pill">
-              <Camera size={14} className="cat-icon" />
-              <span className="cat-text">
-                {landmarkCategory.toUpperCase()} • {landmark.district}
+          <div className="landmark-header-left">
+            <div className="landmark-badges-row">
+              <span className="landmark-category-pill">
+                <Camera size={13} className="cat-icon" />
+                <span className="cat-text">{landmarkCategory.toUpperCase()}</span>
               </span>
+              <span className="landmark-district-pill">
+                <MapPin size={12} />
+                <span>{landmark.district} DISTRICT</span>
+              </span>
+              {stateName && (
+                <span className="landmark-state-pill">
+                  <span>{stateName}</span>
+                </span>
+              )}
             </div>
             <h2 className="landmark-main-title">{landmarkTitle}</h2>
-            {stateName && (
-              <span className="landmark-state-crumb">
-                {stateName} • Heritage Architecture of Bharat
-              </span>
-            )}
           </div>
 
           <button
@@ -96,54 +117,66 @@ export const LandmarkGalleryModal: React.FC<LandmarkGalleryModalProps> = ({
             className="landmark-modal-close-btn"
             onClick={onClose}
             aria-label="Close dialog"
+            title="Close (Esc)"
           >
             <X size={20} />
           </button>
         </div>
 
-        {/* Modal Body */}
+        {/* ================= MODAL BODY ================= */}
         <div className="landmark-modal-body">
-          {/* Main Visual Gallery Showcase */}
-          <div className="landmark-visual-panel">
+          {/* LEFT COLUMN: VISUAL GALLERY STAGE */}
+          <div className="landmark-visual-stage">
             <div className="landmark-main-viewport">
               {currentImage ? (
                 <>
                   <img
-                    key={currentImage.url}
+                    key={currentImage.url + currentImage.angle}
                     src={currentImage.url}
                     alt={`${landmarkTitle} - ${currentImage.angle}`}
                     className="landmark-featured-image"
                     loading="lazy"
                     onError={(e) => {
-                      // Fallback to placeholder gradient if image URL fails
                       const target = e.currentTarget
                       target.style.display = "none"
                     }}
                   />
+
+                  {/* Angle Watermark Badge */}
                   <div className="image-angle-watermark">
                     <Layers size={13} />
-                    <span>{currentImage.angle}</span>
+                    <span>Perspective: <strong>{currentImage.angle}</strong></span>
                   </div>
 
+                  {/* Navigation Arrows (if multiple angles) */}
                   {galleryItems.length > 1 && (
                     <>
                       <button
                         type="button"
                         className="gallery-nav-arrow left-arrow"
                         onClick={handlePrevAngle}
-                        title="Previous Angle"
+                        title="Previous Perspective"
+                        aria-label="Previous Perspective"
                       >
-                        <ChevronLeft size={22} />
+                        <ChevronLeft size={20} />
                       </button>
                       <button
                         type="button"
                         className="gallery-nav-arrow right-arrow"
                         onClick={handleNextAngle}
-                        title="Next Angle"
+                        title="Next Perspective"
+                        aria-label="Next Perspective"
                       >
-                        <ChevronRight size={22} />
+                        <ChevronRight size={20} />
                       </button>
                     </>
+                  )}
+
+                  {/* Caption Bar */}
+                  {currentImage?.caption && (
+                    <div className="landmark-caption-bar">
+                      <p>{currentImage.caption}</p>
+                    </div>
                   )}
                 </>
               ) : (
@@ -152,19 +185,21 @@ export const LandmarkGalleryModal: React.FC<LandmarkGalleryModalProps> = ({
                   <p>Archival perspective imagery of {landmarkTitle}</p>
                 </div>
               )}
-
-              {/* Caption Bar */}
-              {currentImage?.caption && (
-                <div className="landmark-caption-bar">
-                  <p>{currentImage.caption}</p>
-                </div>
-              )}
             </div>
 
-            {/* Angle Selector Tabs / Ribbon */}
+            {/* Angle Selector Tabs */}
             {galleryItems.length > 1 && (
               <div className="landmark-angle-ribbon">
-                <span className="angle-ribbon-title">PERSPECTIVES & ANGLES:</span>
+                <div className="angle-ribbon-header">
+                  <span className="angle-ribbon-title">
+                    <Sparkles size={12} />
+                    <span>SELECT ANGLE / PERSPECTIVE ({galleryItems.length})</span>
+                  </span>
+                  <span className="angle-counter">
+                    0{selectedAngleIndex + 1} / 0{galleryItems.length}
+                  </span>
+                </div>
+
                 <div className="angle-buttons-scroll">
                   {galleryItems.map((item, idx) => (
                     <button
@@ -172,6 +207,7 @@ export const LandmarkGalleryModal: React.FC<LandmarkGalleryModalProps> = ({
                       type="button"
                       className={`angle-tab-btn ${idx === selectedAngleIndex ? "active" : ""}`}
                       onClick={() => setSelectedAngleIndex(idx)}
+                      title={`Switch to ${item.angle}`}
                     >
                       <span className="angle-number">0{idx + 1}</span>
                       <span className="angle-label">{item.angle}</span>
@@ -182,76 +218,197 @@ export const LandmarkGalleryModal: React.FC<LandmarkGalleryModalProps> = ({
             )}
           </div>
 
-          {/* Architectural & Historical Dossier Panel */}
+          {/* RIGHT COLUMN: HERITAGE & ARCHITECTURAL DOSSIER */}
           <div className="landmark-dossier-panel">
-            <div className="dossier-section-title">
-              <Compass size={16} />
-              <span>ARCHITECTURAL & CULTURAL DOSSIER</span>
+            {/* Interactive Dossier Navigation Tabs */}
+            <div className="dossier-tabs-nav">
+              <button
+                type="button"
+                className={`dossier-nav-tab ${activeTab === "overview" ? "active" : ""}`}
+                onClick={() => setActiveTab("overview")}
+              >
+                <BookOpen size={14} />
+                <span>The Story</span>
+              </button>
+              <button
+                type="button"
+                className={`dossier-nav-tab ${activeTab === "architecture" ? "active" : ""}`}
+                onClick={() => setActiveTab("architecture")}
+              >
+                <Award size={14} />
+                <span>Architecture</span>
+              </button>
+              <button
+                type="button"
+                className={`dossier-nav-tab ${activeTab === "significance" ? "active" : ""}`}
+                onClick={() => setActiveTab("significance")}
+              >
+                <ShieldCheck size={14} />
+                <span>Significance</span>
+              </button>
             </div>
 
-            {/* Quick Metadata Chips */}
-            <div className="dossier-chips-grid">
-              {landmark.era && (
-                <div className="dossier-chip">
-                  <div className="chip-icon-box">
-                    <Calendar size={15} />
+            {/* TAB CONTENT 1: THE STORY & OVERVIEW */}
+            {activeTab === "overview" && (
+              <div className="tab-pane-fade">
+                {/* Historical Narrative */}
+                <div className="dossier-story-card">
+                  <div className="dossier-card-title">
+                    <Info size={15} className="card-title-icon" />
+                    <span>HISTORICAL NARRATIVE & LORE</span>
                   </div>
-                  <div className="chip-info">
-                    <span className="chip-label">HISTORICAL ERA</span>
-                    <span className="chip-value">{landmark.era}</span>
+                  <p className="dossier-narrative-text">{landmark.description}</p>
+                </div>
+
+                {/* Key Quick Fact Rows (Full width, clear and legible) */}
+                <div className="dossier-rows-list">
+                  {landmark.era && (
+                    <div className="dossier-row-card">
+                      <div className="row-icon-cell">
+                        <Calendar size={18} />
+                      </div>
+                      <div className="row-content-cell">
+                        <span className="row-label">HISTORICAL ERA</span>
+                        <strong className="row-value">{landmark.era}</strong>
+                      </div>
+                    </div>
+                  )}
+
+                  {landmark.builtBy && (
+                    <div className="dossier-row-card">
+                      <div className="row-icon-cell">
+                        <UserCheck size={18} />
+                      </div>
+                      <div className="row-content-cell">
+                        <span className="row-label">BUILT BY / PATRON</span>
+                        <strong className="row-value">{landmark.builtBy}</strong>
+                      </div>
+                    </div>
+                  )}
+
+                  {landmark.district && (
+                    <div className="dossier-row-card">
+                      <div className="row-icon-cell">
+                        <MapPin size={18} />
+                      </div>
+                      <div className="row-content-cell">
+                        <span className="row-label">DISTRICT LOCATION</span>
+                        <strong className="row-value">{landmark.district}, {stateName || "Bharat"}</strong>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* TAB CONTENT 2: ARCHITECTURE & GENIUS */}
+            {activeTab === "architecture" && (
+              <div className="tab-pane-fade">
+                <div className="dossier-story-card architecture-focus">
+                  <div className="dossier-card-title">
+                    <Compass size={15} className="card-title-icon" />
+                    <span>ARCHITECTURAL STYLE & DESIGN</span>
+                  </div>
+                  <div className="style-highlight-box">
+                    <span className="style-pill-tag">CLASSIFICATION</span>
+                    <h3 className="style-heading">{landmark.architecturalStyle || "Classical Indigenous Architecture"}</h3>
+                  </div>
+                  <p className="dossier-narrative-text">
+                    This monument embodies the sublime architectural and masonry traditions of the {landmark.district} region, 
+                    showcasing sophisticated symmetry, monumental stone craftsmanship, and traditional Vastu / indigenous civil engineering principles.
+                  </p>
+                </div>
+
+                <div className="dossier-rows-list">
+                  {landmark.builtBy && (
+                    <div className="dossier-row-card">
+                      <div className="row-icon-cell">
+                        <UserCheck size={18} />
+                      </div>
+                      <div className="row-content-cell">
+                        <span className="row-label">ARCHITECTURAL PATRON</span>
+                        <strong className="row-value">{landmark.builtBy}</strong>
+                      </div>
+                    </div>
+                  )}
+
+                  {landmark.era && (
+                    <div className="dossier-row-card">
+                      <div className="row-icon-cell">
+                        <Calendar size={18} />
+                      </div>
+                      <div className="row-content-cell">
+                        <span className="row-label">CHRONOLOGY & PERIOD</span>
+                        <strong className="row-value">{landmark.era}</strong>
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="dossier-row-card">
+                    <div className="row-icon-cell">
+                      <Layers size={18} />
+                    </div>
+                    <div className="row-content-cell">
+                      <span className="row-label">CURRENT PERSPECTIVE FEATURE</span>
+                      <strong className="row-value">{currentImage?.angle}</strong>
+                      <span className="row-subtext">{currentImage?.caption}</span>
+                    </div>
                   </div>
                 </div>
-              )}
+              </div>
+            )}
 
-              {landmark.builtBy && (
-                <div className="dossier-chip">
-                  <div className="chip-icon-box">
-                    <UserCheck size={15} />
+            {/* TAB CONTENT 3: CULTURAL SIGNIFICANCE & GEOGRAPHY */}
+            {activeTab === "significance" && (
+              <div className="tab-pane-fade">
+                <div className="dossier-story-card significance-focus">
+                  <div className="dossier-card-title">
+                    <ShieldCheck size={15} className="card-title-icon" />
+                    <span>CULTURAL & HISTORICAL SIGNIFICANCE</span>
                   </div>
-                  <div className="chip-info">
-                    <span className="chip-label">BUILT BY / PATRON</span>
-                    <span className="chip-value">{landmark.builtBy}</span>
+                  <p className="significance-lead-text">
+                    {landmark.significance || `Celebrated landmark of ${landmark.district}, standing as a living testament to Bharat's civilizational legacy.`}
+                  </p>
+                </div>
+
+                <div className="dossier-rows-list">
+                  <div className="dossier-row-card">
+                    <div className="row-icon-cell">
+                      <MapPin size={18} />
+                    </div>
+                    <div className="row-content-cell">
+                      <span className="row-label">GEOGRAPHIC COORDINATES</span>
+                      <strong className="row-value">
+                        {landmark.lat != null ? Number(landmark.lat).toFixed(4) : "—"}° N,{" "}
+                        {landmark.lon != null ? Number(landmark.lon).toFixed(4) : "—"}° E
+                      </strong>
+                      <span className="row-subtext">Geolocated in {landmark.district} district</span>
+                    </div>
+                  </div>
+
+                  <div className="dossier-row-card">
+                    <div className="row-icon-cell">
+                      <Award size={18} />
+                    </div>
+                    <div className="row-content-cell">
+                      <span className="row-label">HERITAGE STATUS</span>
+                      <strong className="row-value">Protected Cultural Monument of Bharat</strong>
+                      <span className="row-subtext">Integral landmark within the national Bharat Yatra cultural atlas.</span>
+                    </div>
                   </div>
                 </div>
-              )}
+              </div>
+            )}
 
-              {landmark.architecturalStyle && (
-                <div className="dossier-chip">
-                  <div className="chip-icon-box">
-                    <Award size={15} />
-                  </div>
-                  <div className="chip-info">
-                    <span className="chip-label">ARCHITECTURAL STYLE</span>
-                    <span className="chip-value">{landmark.architecturalStyle}</span>
-                  </div>
-                </div>
-              )}
-
-              {landmark.significance && (
-                <div className="dossier-chip">
-                  <div className="chip-icon-box">
-                    <ShieldCheck size={15} />
-                  </div>
-                  <div className="chip-info">
-                    <span className="chip-label">SIGNIFICANCE</span>
-                    <span className="chip-value">{landmark.significance}</span>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Description & Historical Lore */}
-            <div className="dossier-narrative-box">
-              <h4>Historical Narrative & Architectural Genius</h4>
-              <p className="dossier-description">{landmark.description}</p>
-            </div>
-
-            {/* Geographic Coordinates & District badge */}
-            <div className="dossier-geo-badge">
-              <span className="geo-dot" />
-              <span>
-                Coordinates: {landmark.lat != null ? Number(landmark.lat).toFixed(4) : "—"}°N,{" "}
-                {landmark.lon != null ? Number(landmark.lon).toFixed(4) : "—"}°E • District: {landmark.district}
+            {/* FOOTER BAR: QUICK STATUS STRIP */}
+            <div className="dossier-footer-bar">
+              <div className="footer-status-pill">
+                <span className="status-live-dot" />
+                <span>Active 3D Landmark</span>
+              </div>
+              <span className="footer-coords-text">
+                {landmark.lat != null ? Number(landmark.lat).toFixed(3) : ""}°N,{" "}
+                {landmark.lon != null ? Number(landmark.lon).toFixed(3) : ""}°E
               </span>
             </div>
           </div>

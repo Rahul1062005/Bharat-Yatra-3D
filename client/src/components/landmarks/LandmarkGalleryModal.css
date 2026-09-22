@@ -1,19 +1,19 @@
 /* ==========================================================================
    LANDMARK MULTI-ANGLE GALLERY MODAL
-   Royal traditional aesthetics, high-res angles showcase, and architectural dossier
+   Royal Parchment Theme with Curated Architectural & Historical Showcase
    ========================================================================== */
 
 .landmark-modal-backdrop {
   position: fixed;
   inset: 0;
   z-index: 99999;
-  background: rgba(12, 8, 5, 0.78);
+  background: rgba(15, 10, 6, 0.8);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 20px;
   animation: landmarkFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -29,19 +29,20 @@
 .landmark-modal-dialog {
   position: relative;
   width: 100%;
-  max-width: 1100px;
-  max-height: 90vh;
-  background: #fffdf9;
+  max-width: 1160px;
+  height: 86vh;
+  max-height: 800px;
+  background-color: #fdfaf3;
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(197, 85, 30, 0.06) 0%, transparent 45%),
-    repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.02) 0, rgba(212, 175, 55, 0.02) 2px, transparent 0, transparent 12px);
+    radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 85%, rgba(197, 85, 30, 0.06) 0%, transparent 45%),
+    repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.02) 0, rgba(212, 175, 55, 0.02) 2px, transparent 0, transparent 14px);
   border: 1.5px solid rgba(212, 175, 55, 0.45);
   border-radius: 20px;
   box-shadow: 
     0 24px 60px rgba(0, 0, 0, 0.35),
-    0 4px 16px rgba(212, 175, 55, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    0 4px 20px rgba(212, 175, 55, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -51,7 +52,7 @@
 @keyframes landmarkScaleUp {
   from {
     opacity: 0;
-    transform: scale(0.96) translateY(12px);
+    transform: scale(0.97) translateY(10px);
   }
   to {
     opacity: 1;
@@ -59,63 +60,80 @@
   }
 }
 
-/* Header */
+/* ================= HEADER ================= */
 .landmark-modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 28px;
-  background: linear-gradient(135deg, rgba(255, 248, 235, 0.95), rgba(253, 241, 220, 0.95));
+  padding: 18px 28px;
+  background: linear-gradient(135deg, rgba(255, 250, 240, 0.98), rgba(253, 243, 226, 0.98));
   border-bottom: 1.5px solid rgba(212, 175, 55, 0.3);
+  flex-shrink: 0;
 }
 
-.landmark-title-group {
+.landmark-header-left {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
+}
+
+.landmark-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .landmark-category-pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   background: rgba(184, 91, 25, 0.12);
   border: 1px solid rgba(184, 91, 25, 0.3);
   padding: 3px 10px;
   border-radius: 12px;
-  width: fit-content;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #8b3a0e;
 }
 
 .landmark-category-pill .cat-icon {
   color: #b85b19;
 }
 
-.landmark-category-pill .cat-text {
-  font-size: 11px;
+.landmark-district-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: 0.8px;
-  color: #8b3a0e;
-  text-transform: uppercase;
+  color: #635345;
+  letter-spacing: 0.5px;
+}
+
+.landmark-state-pill {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8c7a68;
 }
 
 .landmark-main-title {
   font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 700;
-  color: #2b1810;
-  letter-spacing: 0.5px;
+  color: #24150d;
+  letter-spacing: 0.3px;
   margin: 0;
-}
-
-.landmark-state-crumb {
-  font-size: 12px;
-  font-weight: 500;
-  color: #7a6857;
-  letter-spacing: 0.4px;
+  line-height: 1.2;
 }
 
 .landmark-modal-close-btn {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #4a3b32;
   width: 38px;
@@ -126,6 +144,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
 .landmark-modal-close-btn:hover {
@@ -135,36 +154,39 @@
   transform: rotate(90deg);
 }
 
-/* Modal Body */
+/* ================= MODAL BODY ================= */
 .landmark-modal-body {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.08fr 0.92fr;
   flex: 1;
-  overflow-y: auto;
   min-height: 0;
+  overflow: hidden;
 }
 
-/* Left Panel: Visual Viewport */
-.landmark-visual-panel {
+/* ================= LEFT: VISUAL GALLERY STAGE ================= */
+.landmark-visual-stage {
   display: flex;
   flex-direction: column;
-  padding: 20px 24px;
+  padding: 22px 24px;
+  background: #101217;
   border-right: 1.5px solid rgba(212, 175, 55, 0.25);
-  background: #0f1115;
-  color: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  gap: 16px;
 }
 
 .landmark-main-viewport {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10.5;
-  background: #08090c;
+  background: #08090d;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .landmark-featured-image {
@@ -183,32 +205,36 @@
   position: absolute;
   top: 14px;
   left: 14px;
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(12, 14, 18, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffd875;
-  padding: 4px 10px;
+  padding: 4px 11px;
   border-radius: 12px;
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   z-index: 5;
+}
+
+.image-angle-watermark strong {
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .gallery-nav-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(18, 18, 22, 0.7);
+  background: rgba(18, 20, 26, 0.75);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -221,7 +247,7 @@
 .gallery-nav-arrow:hover {
   background: #d4af37;
   color: #1a150c;
-  transform: translateY(-50%) scale(1.1);
+  transform: translateY(-50%) scale(1.08);
 }
 
 .left-arrow {
@@ -230,6 +256,24 @@
 
 .right-arrow {
   right: 12px;
+}
+
+.landmark-caption-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 75%, transparent 100%);
+  padding: 24px 16px 12px;
+  z-index: 5;
+}
+
+.landmark-caption-bar p {
+  margin: 0;
+  font-size: 12px;
+  color: #f1f2f6;
+  line-height: 1.45;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .landmark-placeholder-view {
@@ -242,38 +286,35 @@
   padding: 24px;
 }
 
-.landmark-caption-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.45) 75%, transparent 100%);
-  padding: 24px 16px 10px;
-  z-index: 5;
-}
-
-.landmark-caption-bar p {
-  margin: 0;
-  font-size: 12px;
-  color: #f1f2f6;
-  line-height: 1.45;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-}
-
 /* Angle Selector Ribbon */
 .landmark-angle-ribbon {
-  margin-top: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+}
+
+.angle-ribbon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .angle-ribbon-title {
-  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: 1px;
-  color: #9da8b6;
+  letter-spacing: 0.8px;
+  color: #d4af37;
   text-transform: uppercase;
+}
+
+.angle-counter {
+  font-size: 11px;
+  font-weight: 700;
+  color: #8b949e;
+  letter-spacing: 0.5px;
 }
 
 .angle-buttons-scroll {
@@ -293,7 +334,7 @@
 }
 
 .angle-tab-btn {
-  background: #1b1e24;
+  background: #1b1f28;
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #c9d1d9;
   padding: 8px 12px;
@@ -304,14 +345,14 @@
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.2s ease;
-  font-size: 12px;
+  font-size: 11.5px;
 }
 
 .angle-tab-btn .angle-number {
   font-size: 10px;
   font-weight: 800;
   color: #d4af37;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .angle-tab-btn .angle-label {
@@ -319,7 +360,7 @@
 }
 
 .angle-tab-btn:hover {
-  background: #252a33;
+  background: #272d3a;
   border-color: rgba(212, 175, 55, 0.4);
   color: #ffffff;
 }
@@ -328,145 +369,299 @@
   background: linear-gradient(135deg, #b85b19, #8c3b06);
   border-color: #ffd875;
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(184, 91, 25, 0.35);
+  box-shadow: 0 4px 14px rgba(184, 91, 25, 0.4);
 }
 
 .angle-tab-btn.active .angle-number {
-  color: #fff;
+  color: #ffffff;
 }
 
-/* Right Panel: Dossier */
+/* ================= RIGHT: HERITAGE & ARCHITECTURAL DOSSIER ================= */
 .landmark-dossier-panel {
   display: flex;
   flex-direction: column;
-  padding: 24px 26px;
-  background: #fffdf9;
+  padding: 22px 26px;
+  background: #fdfaf3;
   overflow-y: auto;
-  gap: 18px;
+  overflow-x: hidden;
+  gap: 16px;
 }
 
-.dossier-section-title {
+/* Custom Scrollbar for Dossier Panel (prevents ugly default scrollbar) */
+.landmark-dossier-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.landmark-dossier-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.landmark-dossier-panel::-webkit-scrollbar-thumb {
+  background: rgba(180, 83, 9, 0.22);
+  border-radius: 6px;
+}
+
+.landmark-dossier-panel::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 83, 9, 0.4);
+}
+
+/* Dossier Navigation Tabs */
+.dossier-tabs-nav {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #8c3b06;
-  border-bottom: 1.5px solid rgba(212, 175, 55, 0.3);
-  padding-bottom: 8px;
-}
-
-/* Dossier Chips Grid */
-.dossier-chips-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.dossier-chip {
-  background: #faf5eb;
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  background: #f4ecdc;
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 12px;
-  padding: 10px 12px;
+  padding: 4px;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.dossier-nav-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: #6d5b4d;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.dossier-nav-tab:hover {
+  color: #24150d;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.dossier-nav-tab.active {
+  background: #ffffff;
+  color: #8c3b06;
+  box-shadow: 0 2px 8px rgba(140, 59, 6, 0.12);
+}
+
+/* Tab Pane Animation */
+.tab-pane-fade {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: tabFadeIn 0.22s ease forwards;
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Story / Narrative Card */
+.dossier-story-card {
+  background: #faf4e6;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-left: 3.5px solid #b85b19;
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dossier-story-card.architecture-focus {
+  border-left-color: #2563eb;
+  background: #f5f8ff;
+  border-color: rgba(37, 99, 235, 0.25);
+}
+
+.dossier-story-card.significance-focus {
+  border-left-color: #059669;
+  background: #f2faf6;
+  border-color: rgba(5, 150, 105, 0.25);
+}
+
+.dossier-card-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #8c3b06;
+}
+
+.architecture-focus .dossier-card-title {
+  color: #1d4ed8;
+}
+
+.significance-focus .dossier-card-title {
+  color: #047857;
+}
+
+.card-title-icon {
+  flex-shrink: 0;
+}
+
+.dossier-narrative-text {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #382c24;
+}
+
+.style-highlight-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 4px 0 2px;
+}
+
+.style-pill-tag {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #1d4ed8;
+}
+
+.style-heading {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #1e3a8a;
+  line-height: 1.35;
+}
+
+.significance-lead-text {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #064e3b;
+  font-weight: 500;
+}
+
+/* Dossier Rows List (Clean, Full-width, Zero truncation!) */
+.dossier-rows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dossier-row-card {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   transition: all 0.2s ease;
 }
 
-.dossier-chip:hover {
-  background: #f7ecd7;
+.dossier-row-card:hover {
   border-color: #b85b19;
+  background: #fffdfa;
+  transform: translateY(-1px);
 }
 
-.chip-icon-box {
-  background: rgba(184, 91, 25, 0.12);
+.row-icon-cell {
+  background: rgba(184, 91, 25, 0.1);
   color: #8c3b06;
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
-.chip-info {
+.row-content-cell {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  min-width: 0;
+  flex: 1;
 }
 
-.chip-label {
+.row-label {
   font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 0.7px;
-  color: #7a6857;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #8c7a68;
   text-transform: uppercase;
 }
 
-.chip-value {
-  font-size: 12px;
-  font-weight: 600;
-  color: #2b1810;
-  line-height: 1.3;
-}
-
-/* Narrative Box */
-.dossier-narrative-box {
-  background: #fdfaf3;
-  border-left: 3px solid #b85b19;
-  padding: 14px 16px;
-  border-radius: 0 10px 10px 0;
-}
-
-.dossier-narrative-box h4 {
-  margin: 0 0 8px;
+.row-value {
   font-size: 13px;
   font-weight: 700;
-  color: #2b1810;
+  color: #24150d;
+  line-height: 1.4;
+  word-break: break-word;
 }
 
-.dossier-description {
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.6;
-  color: #44372e;
+.row-subtext {
+  font-size: 11.5px;
+  color: #635345;
+  line-height: 1.4;
+  margin-top: 2px;
 }
 
-/* Geo Badge */
-.dossier-geo-badge {
+/* Footer Status Strip */
+.dossier-footer-bar {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  font-weight: 600;
-  color: #6d6153;
-  background: rgba(0, 0, 0, 0.04);
-  padding: 8px 12px;
-  border-radius: 8px;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #f7f1e4;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 10px;
   margin-top: auto;
+  font-size: 11px;
 }
 
-.geo-dot {
+.footer-status-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: #047857;
+}
+
+.status-live-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: #10b981;
-  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.7);
 }
 
-/* Responsive adjustments */
-@media (max-width: 900px) {
+.footer-coords-text {
+  font-weight: 600;
+  color: #7a6857;
+  font-family: monospace;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 960px) {
+  .landmark-modal-dialog {
+    height: 92vh;
+  }
   .landmark-modal-body {
     grid-template-columns: 1fr;
+    overflow-y: auto;
   }
-  .landmark-visual-panel {
+  .landmark-visual-stage {
     border-right: none;
     border-bottom: 1.5px solid rgba(212, 175, 55, 0.25);
-  }
-  .dossier-chips-grid {
-    grid-template-columns: 1fr;
   }
 }
