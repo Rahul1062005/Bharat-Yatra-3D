@@ -53,7 +53,7 @@ export default function NationalMasteryModal({ isOpen, onClose }: NationalMaster
 
   const handleStateClick = (stateId: string) => {
     onClose()
-    navigate(`/${stateId}`)
+    navigate(`/state/${stateId}`)
   }
 
   return (

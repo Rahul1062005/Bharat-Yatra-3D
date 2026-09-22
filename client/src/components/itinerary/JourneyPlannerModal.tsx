@@ -12,6 +12,7 @@ import {
   Check,
   ArrowRight,
   PlaneTakeoff,
+  Maximize2,
 } from "lucide-react"
 import { statesRegistry } from "../../data/states"
 import "./JourneyPlannerModal.css"
@@ -114,9 +115,7 @@ export default function JourneyPlannerModal({ isOpen, onClose }: JourneyPlannerM
     )
   }, [])
 
-  if (!isOpen) return null
-
-  // Calculate total route distance
+  // Calculate total route distance (must be called unconditionally before early returns)
   const totalDistanceKm = useMemo(() => {
     if (selectedStops.length < 2) return 0
     let total = 0
@@ -129,6 +128,8 @@ export default function JourneyPlannerModal({ isOpen, onClose }: JourneyPlannerM
     }
     return total
   }, [selectedStops])
+
+  if (!isOpen) return null
 
   const handleApplyPreset = (trail: CuratedTrail) => {
     setSelectedStops(trail.stateIds)
@@ -161,7 +162,7 @@ export default function JourneyPlannerModal({ isOpen, onClose }: JourneyPlannerM
   const handleStartJourney = () => {
     if (selectedStops.length > 0) {
       onClose()
-      navigate(`/${selectedStops[0]}`)
+      navigate(`/state/${selectedStops[0]}`)
     }
   }
 
@@ -185,14 +186,28 @@ export default function JourneyPlannerModal({ isOpen, onClose }: JourneyPlannerM
               Craft your bespoke dream route across Indian heritage states or pick iconic curated trails.
             </p>
           </div>
-          <button
-            type="button"
-            className="journey-close-btn"
-            onClick={onClose}
-            aria-label="Close Journey Planner"
-          >
-            <X size={20} />
-          </button>
+          <div className="journey-header-actions-right">
+            <button
+              type="button"
+              className="journey-fullpage-btn"
+              onClick={() => {
+                onClose()
+                navigate("/my-yatra")
+              }}
+              title="Open dedicated My Yatra page"
+            >
+              <Maximize2 size={14} />
+              <span>Full Page</span>
+            </button>
+            <button
+              type="button"
+              className="journey-close-btn"
+              onClick={onClose}
+              aria-label="Close Journey Planner"
+            >
+              <X size={20} />
+            </button>
+          </div>
         </div>
 
         {/* Modal Body */}

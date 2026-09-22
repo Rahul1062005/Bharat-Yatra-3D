@@ -79,6 +79,35 @@
   margin: 0;
 }
 
+.journey-header-actions-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.journey-fullpage-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(180, 83, 9, 0.3);
+  background: rgba(255, 255, 255, 0.85);
+  color: #78350f;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.journey-fullpage-btn:hover {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: rgba(180, 83, 9, 0.5);
+  transform: translateY(-1px);
+}
+
 .journey-close-btn {
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
