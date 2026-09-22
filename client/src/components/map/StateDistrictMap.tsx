@@ -386,9 +386,19 @@ export default function StateDistrictMap({
     y: 0,
   })
 
+  const [stateProjection, setStateProjection] = useState<{
+    cLon: number
+    cLat: number
+    scale: number
+  }>({
+    cLon: centerLon,
+    cLat: centerLat,
+    scale: scale || 1.0,
+  })
+
   const controlsRef = useRef<OrbitControlsImpl>(null)
 
-  // Load state GeoJSON
+  // Load state GeoJSON and calculate dynamic bounding box & optimal scale
   useEffect(() => {
     let mounted = true
     setLoading(true)
@@ -400,6 +410,45 @@ export default function StateDistrictMap({
       })
       .then((geojson) => {
         if (!mounted) return
+
+        let minLon = Infinity
+        let maxLon = -Infinity
+        let minLat = Infinity
+        let maxLat = -Infinity
+
+        const scanCoords = (c: unknown) => {
+          if (Array.isArray(c)) {
+            if (typeof c[0] === "number" && typeof c[1] === "number") {
+              minLon = Math.min(minLon, c[0])
+              maxLon = Math.max(maxLon, c[0])
+              minLat = Math.min(minLat, c[1])
+              maxLat = Math.max(maxLat, c[1])
+            } else {
+              c.forEach(scanCoords)
+            }
+          }
+        }
+
+        geojson.features.forEach((feature) => {
+          scanCoords(feature.geometry.coordinates)
+        })
+
+        const stateCenterLon = isFinite(minLon) ? (minLon + maxLon) / 2 : centerLon
+        const stateCenterLat = isFinite(minLat) ? (minLat + maxLat) / 2 : centerLat
+        const spanLon = maxLon - minLon
+        const spanLat = maxLat - minLat
+        const maxSpan = Math.max(spanLon, spanLat)
+
+        // Make state maps prominent & large (~6.4 units across, matching original grand scale)
+        const TARGET_SPAN_3D = 6.4
+        const calculatedScale = maxSpan > 0 ? TARGET_SPAN_3D / maxSpan : 1.0
+        const activeScale = Math.max(scale ? scale * 1.4 : 0, calculatedScale)
+
+        setStateProjection({
+          cLon: stateCenterLon,
+          cLat: stateCenterLat,
+          scale: activeScale,
+        })
 
         const parsedDistricts: DistrictMeshInfo[] = geojson.features.map(
           (feature, index) => {
@@ -416,9 +465,9 @@ export default function StateDistrictMap({
             if (feature.geometry.type === "Polygon") {
               const coords = feature.geometry.coordinates as Coordinate[][]
               if (coords.length > 0) {
-                shapes.push(createDistrictShape(coords[0], centerLon, centerLat, scale))
+                shapes.push(createDistrictShape(coords[0], stateCenterLon, stateCenterLat, activeScale))
                 coords[0].forEach(([lon, lat]) => {
-                  const [px, py] = projectCoord([lon, lat], centerLon, centerLat, scale)
+                  const [px, py] = projectCoord([lon, lat], stateCenterLon, stateCenterLat, activeScale)
                   sumX += px
                   sumY += py
                   pointCount++
@@ -428,9 +477,9 @@ export default function StateDistrictMap({
               const coords = feature.geometry.coordinates as Coordinate[][][]
               coords.forEach((poly) => {
                 if (poly.length > 0) {
-                  shapes.push(createDistrictShape(poly[0], centerLon, centerLat, scale))
+                  shapes.push(createDistrictShape(poly[0], stateCenterLon, stateCenterLat, activeScale))
                   poly[0].forEach(([lon, lat]) => {
-                    const [px, py] = projectCoord([lon, lat], centerLon, centerLat, scale)
+                    const [px, py] = projectCoord([lon, lat], stateCenterLon, stateCenterLat, activeScale)
                     sumX += px
                     sumY += py
                     pointCount++
@@ -503,19 +552,22 @@ export default function StateDistrictMap({
   }, [])
 
   const effectiveTarget = useMemo<[number, number, number]>(() => {
-    if (!isMobile) return target
-    return [0, target[1], target[2]]
+    if (!isMobile) return [target ? target[0] : 0.75, target ? target[1] : 0, 0]
+    return [0, target ? target[1] : 0, 0]
   }, [isMobile, target])
 
   const effectiveCamPos = useMemo<[number, number, number]>(() => {
-    if (!isMobile) return cameraPosition
-    const distMult = typeof window !== "undefined" && window.innerWidth < 480 ? 1.25 : 1.15
-    return [0, cameraPosition[1], cameraPosition[2] * distMult]
-  }, [isMobile, cameraPosition])
+    if (!isMobile) {
+      const zDist = Math.min(cameraPosition ? cameraPosition[2] : 5.0, 5.2)
+      return [target ? target[0] : 0.75, target ? target[1] : 0, zDist]
+    }
+    const distMult = typeof window !== "undefined" && window.innerWidth < 480 ? 1.35 : 1.2
+    return [0, 0, 5.4 * distMult]
+  }, [isMobile, target, cameraPosition])
 
   const effectiveFov = useMemo(() => {
-    if (!isMobile) return fov
-    return typeof window !== "undefined" && window.innerWidth < 480 ? fov + 8 : fov + 4
+    if (!isMobile) return fov || 38
+    return typeof window !== "undefined" && window.innerWidth < 480 ? (fov ? fov + 8 : 46) : (fov ? fov + 4 : 42)
   }, [isMobile, fov])
 
   const resetCamera = () => {
@@ -577,9 +629,9 @@ export default function StateDistrictMap({
         <StateScene
           districts={districts}
           landmarks={landmarks}
-          centerLon={centerLon}
-          centerLat={centerLat}
-          scale={scale}
+          centerLon={stateProjection.cLon}
+          centerLat={stateProjection.cLat}
+          scale={stateProjection.scale}
           hoveredDistrict={hoveredDistrict}
           selectedDistrict={selectedDistrict}
           target={effectiveTarget}

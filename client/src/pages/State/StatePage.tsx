@@ -29,6 +29,7 @@ import StateQuizSection from "../../components/quiz/StateQuizSection"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import Monument3DViewerModal from "../../components/monuments/Monument3DViewerModal"
 import { MONUMENTS_3D_CATALOG } from "../../data/monumentsData"
+import { getStateTheme } from "../../data/stateThemes"
 import "./StatePage.css"
 
 const HERITAGE_HIGHLIGHTS: Record<
@@ -274,6 +275,7 @@ export default function StatePage() {
   const [active3DMonumentId, setActive3DMonumentId] = useState("taj-mahal")
   const [audioState, setAudioState] = useState<HeritageAudioState>(heritageAudio.getState())
   const stateGreeting = getStateGreeting(stateData.id)
+  const stateTheme = getStateTheme(stateData.id)
 
   // Ambient Heritage Indian Classical Audio lifecycle
   useEffect(() => {
@@ -383,7 +385,15 @@ export default function StatePage() {
   }
 
   return (
-    <div className="state-page">
+    <div
+      className={`state-page state-theme-${stateData.id}`}
+      style={{
+        backgroundColor: stateTheme.pageBg,
+        ["--state-primary" as string]: stateTheme.primaryColor,
+        ["--state-secondary" as string]: stateTheme.secondaryColor,
+        ["--state-border" as string]: stateTheme.borderColor,
+      }}
+    >
       {/* ================= STICKY TOP NAVBAR ================= */}
       <header className="state-navbar">
         <div className="state-nav-left">
@@ -510,8 +520,19 @@ export default function StatePage() {
         </div>
       </header>
 
-      {/* ================= HERO: BIG 3D STATE MAP ================= */}
-      <section className="state-hero-map" id="map-section">
+      {/* ================= HERO: BIG 3D STATE MAP (VIBRANT THEMED ARTWORK) ================= */}
+      <section
+        className="state-hero-map"
+        id="map-section"
+        style={{ background: stateTheme.heroGradient }}
+      >
+        {/* Traditional Painting Watermark Backdrop */}
+        <div
+          className="state-hero-art-backdrop"
+          style={{ backgroundImage: `url("${stateTheme.artPatternSvg}")` }}
+          aria-hidden="true"
+        />
+
         {/* Floating Left HUD Dock (Never overlaps the 3D map) */}
         <aside className="state-hero-left-dock">
           <div className="hero-kicker-tag">
@@ -522,6 +543,15 @@ export default function StatePage() {
           </div>
           <h2 className="hero-intro-heading">{stateData.name}</h2>
           <p className="hero-intro-tagline">{stateData.tagline}</p>
+
+          {/* Traditional Art & Painting Badge */}
+          <div className="hero-traditional-art-badge">
+            <Palette size={13} className="art-palette-icon" />
+            <div className="hero-art-info">
+              <span className="hero-art-kicker">TRADITIONAL PAINTING</span>
+              <span className="hero-art-name">{stateTheme.artName}</span>
+            </div>
+          </div>
 
           {stateGreeting && (
             <div className="hud-greeting-badge">
@@ -661,7 +691,11 @@ export default function StatePage() {
       </div>
 
       {/* ================= SECTION 1: HERITAGE & ORIGIN ================= */}
-      <section className="state-content-section" id="heritage-section">
+      <section
+        className="state-content-section"
+        id="heritage-section"
+        style={{ backgroundColor: stateTheme.sectionBg }}
+      >
         <div className="section-container">
           <div className="section-header">
             <span className="section-overline">01 — FOUNDATION & SOUL</span>
