@@ -16,7 +16,7 @@ export interface QuizQuestion {
   capitalHint: string
 }
 
-// Curated pool of high-quality, authentic questions
+// Curated pool of high-quality, authentic questions with verified images
 const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
   {
     id: "bihar-litti",
@@ -33,6 +33,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "rajasthan-greeting",
     category: "Greeting",
     prompt: "In which royal desert state do locals warmly welcome you with 'Khamma Ghani'?",
+    clueImage: "/images/rajasthan/hawa_mahal.jpg",
     correctStateId: "rajasthan",
     correctStateName: "Rajasthan",
     explanation: "'Khamma Ghani' is the timeless greeting of Rajputana, wishing boundless joy, divine protection, and auspicious peace.",
@@ -43,6 +44,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "punjab-golden-temple",
     category: "Heritage",
     prompt: "Which state is home to Sri Harmandir Sahib (The Golden Temple) and celebrated for the Baisakhi harvest festival?",
+    clueImage: "/images/punjab/golden_temple.jpg",
     correctStateId: "punjab",
     correctStateName: "Punjab",
     explanation: "Sri Harmandir Sahib in Amritsar, Punjab, serves free sacred meals (Langar) to over 100,000 pilgrims daily, embodying universal equality.",
@@ -53,6 +55,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "kerala-kathakali",
     category: "Traditions",
     prompt: "Which coastal state is the birthplace of the classical dance drama Kathakali and famous backwater houseboats?",
+    clueImage: "/images/kerala/kathakali.jpg",
     correctStateId: "kerala",
     correctStateName: "Kerala",
     explanation: "Kathakali is renowned for its elaborate makeup, vibrant costumes, and intricate facial expressions depicted across God's Own Country.",
@@ -74,6 +77,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "ladakh-julley",
     category: "Greeting",
     prompt: "In which high-altitude Himalayan territory do people greet with a warm smile saying 'Julley!'?",
+    clueImage: "/images/ladakh/thiksey_monastery.jpg",
     correctStateId: "ladakh",
     correctStateName: "Ladakh",
     explanation: "'Julley' is the versatile Ladakhi greeting used for hello, welcome, respect, and peace across high mountain passes.",
@@ -84,6 +88,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "meghalaya-clouds",
     category: "Geography",
     prompt: "Known as the 'Abode of Clouds', which state is famous for living root bridges and receiving the highest rainfall on Earth?",
+    clueImage: "/images/meghalaya/double_decker_bridge.jpg",
     correctStateId: "meghalaya",
     correctStateName: "Meghalaya",
     explanation: "Meghalaya is home to Mawsynram and Cherrapunji, as well as ancient bio-engineering marvels: the living root bridges of the Khasi hills.",
@@ -94,6 +99,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "gujarat-garba",
     category: "Traditions",
     prompt: "Which state hosts the world's longest dance festival with nine nights of vibrant Garba and Dandiya Raas?",
+    clueImage: "/images/gujarat/garba_dance.jpg",
     correctStateId: "gujarat",
     correctStateName: "Gujarat",
     explanation: "Garba is celebrated during Navratri across Gujarat and was inscribed onto UNESCO's Intangible Cultural Heritage list in 2023.",
@@ -104,6 +110,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "tamilnadu-chola",
     category: "Heritage",
     prompt: "Which state is home to the UNESCO Great Living Chola Temples, including the majestic Brihadisvara Temple of Thanjavur?",
+    clueImage: "/images/tamilnadu/brihadeeswarar_temple.jpg",
     correctStateId: "tamil-nadu",
     correctStateName: "Tamil Nadu",
     explanation: "Built by Emperor Raja Raja Chola I over 1,000 years ago, the Brihadisvara Temple's monolithic granite tower (vimana) is an architectural wonder.",
@@ -114,7 +121,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "assam-kaziranga",
     category: "Identity",
     prompt: "Which state produces world-renowned golden Muga silk and shelters the world's largest population of great one-horned rhinos?",
-    clueImage: "/images/assam/kaziranga.jpg",
+    clueImage: "/images/assam/kaziranga_rhino.jpg",
     correctStateId: "assam",
     correctStateName: "Assam",
     explanation: "Kaziranga National Park in Assam holds two-thirds of the world's great one-horned rhinoceroses and is fed by the mighty Brahmaputra river.",
@@ -125,7 +132,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "maharashtra-ajanta",
     category: "Heritage",
     prompt: "In which state are the ancient rock-cut cave temples of Ajanta and Ellora, including the monolithic Kailasa Temple, located?",
-    clueImage: "/images/maharashtra/ellora.jpg",
+    clueImage: "/images/maharashtra/kailasa_temple.jpg",
     correctStateId: "maharashtra",
     correctStateName: "Maharashtra",
     explanation: "The Kailasa Temple at Ellora (Cave 16) is the largest monolithic rock-cut monument in the world, carved from top to bottom from a single cliff.",
@@ -136,7 +143,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "karnataka-hampi",
     category: "Heritage",
     prompt: "The ruins of the Vijayanagara Empire with its iconic Stone Chariot and grand bazaars are situated in which state?",
-    clueImage: "/images/karnataka/hampi.jpg",
+    clueImage: "/images/karnataka/hampi_stone_chariot.jpg",
     correctStateId: "karnataka",
     correctStateName: "Karnataka",
     explanation: "Hampi in Karnataka was the 14th-century capital of the Vijayanagara Empire and was described by medieval travelers as one of the world's grandest cities.",
@@ -147,7 +154,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "westbengal-durga",
     category: "Traditions",
     prompt: "Which state hosts the world-famous UNESCO Intangible Cultural Heritage street festival of Durga Puja?",
-    clueImage: "/images/west-bengal/durga_puja.jpg",
+    clueImage: "/images/westbengal/durga_puja.jpg",
     correctStateId: "west-bengal",
     correctStateName: "West Bengal",
     explanation: "Durga Puja in West Bengal transforms entire cities into open-air contemporary art installations celebrating divine motherly energy.",
@@ -158,6 +165,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "jharkhand-johar",
     category: "Greeting",
     prompt: "In which mineral-rich state do indigenous tribal communities greet one another with the sacred word 'Johar'?",
+    clueImage: "/images/jharkhand/sarhul_festival.jpg",
     correctStateId: "jharkhand",
     correctStateName: "Jharkhand",
     explanation: "'Johar' represents deep reverence for nature, ancestral spirits, and universal human brotherhood among Santali, Ho, and Munda peoples.",
@@ -168,6 +176,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "goa-beaches",
     category: "Identity",
     prompt: "Which coastal state blends vibrant Konkani culture with Portuguese colonial baroque basilicas and is famous for Bebinca?",
+    clueImage: "/images/goa/basilica_bom_jesus.jpg",
     correctStateId: "goa",
     correctStateName: "Goa",
     explanation: "Goa is home to the Basilica of Bom Jesus (UNESCO), fragrant spice plantations, and the layered dessert Bebinca.",
@@ -178,7 +187,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "uttarakhand-devbhoomi",
     category: "Identity",
     prompt: "Known as 'Devbhoomi' (Land of the Gods), which state is the source of the sacred rivers Ganga and Yamuna?",
-    clueImage: "/images/uttarakhand/kedarnath.jpg",
+    clueImage: "/images/uttarakhand/kedarnath_temple.jpg",
     correctStateId: "uttarakhand",
     correctStateName: "Uttarakhand",
     explanation: "Uttarakhand houses the Char Dham pilgrimage sites: Gangotri, Yamunotri, Kedarnath, and Badrinath amidst high Himalayan peaks.",
@@ -189,7 +198,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "sikkim-kanchenjunga",
     category: "Geography",
     prompt: "Which northeastern state is home to Mt. Kanchenjunga (India's highest peak) and is 100% certified organic?",
-    clueImage: "/images/sikkim/kanchenjunga.jpg",
+    clueImage: "/images/sikkim/rumtek_monastery.jpg",
     correctStateId: "sikkim",
     correctStateName: "Sikkim",
     explanation: "Sikkim became the world's first 100% organic state in 2016 and is framed by sacred monasteries under Mt. Kanchenjunga.",
@@ -200,7 +209,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "chhattisgarh-falls",
     category: "Geography",
     prompt: "Which state boasts the breathtaking Chitrakote Falls, often affectionately hailed as the 'Niagara of India'?",
-    clueImage: "/images/chhattisgarh/chitrakote.jpg",
+    clueImage: "/images/chhattisgarh/chitrakote_falls.jpg",
     correctStateId: "chhattisgarh",
     correctStateName: "Chhattisgarh",
     explanation: "Chitrakote Falls on the Indravati river in Bastar, Chhattisgarh, spans nearly 300 meters wide during monsoons.",
@@ -211,6 +220,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "andhra-kuchipudi",
     category: "Traditions",
     prompt: "Which southern state is the birthplace of the classical dance form Kuchipudi and famous for Tirupati Balaji Temple?",
+    clueImage: "/images/andhrapradesh/kuchipudi_dance.jpg",
     correctStateId: "andhra-pradesh",
     correctStateName: "Andhra Pradesh",
     explanation: "Kuchipudi originated in the Krishna district of Andhra Pradesh, and the Sri Venkateswara Temple atop the Tirumala hills is one of the world's most visited spiritual centers.",
@@ -218,19 +228,10 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     capitalHint: "Its riverfront capital is Amaravati.",
   },
   {
-    id: "himachal-apples",
-    category: "Identity",
-    prompt: "Known as the 'Apple State of India', which state is famous for high-altitude passes of Spiti and the Kangra Valley?",
-    correctStateId: "himachal-pradesh",
-    correctStateName: "Himachal Pradesh",
-    explanation: "Himachal Pradesh is celebrated for its lush apple orchards, pine-forested hill stations like Shimla, and serene Tibetan monasteries of Dharamshala.",
-    regionHint: "Northern mountainous state bordered by Jammu & Kashmir, Punjab, and Uttarakhand.",
-    capitalHint: "Its capital is the historic hill city of Shimla.",
-  },
-  {
     id: "mizoram-bamboo",
     category: "Traditions",
     prompt: "Which state is famous for the Cheraw (Bamboo Dance), where dancers step rhythmically between clapped bamboo poles?",
+    clueImage: "/images/mizoram/cheraw_bamboo_dance.jpg",
     correctStateId: "mizoram",
     correctStateName: "Mizoram",
     explanation: "Cheraw is an ancient traditional folk dance of Mizoram performed during Chapchar Kut, requiring agility, rhythm, and grace.",
@@ -241,6 +242,7 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
     id: "puducherry-french",
     category: "Identity",
     prompt: "Which Union Territory is famous for its French colonial quarter, Promenade Beach, and the universal township of Auroville?",
+    clueImage: "/images/puducherry/french_quarter.jpg",
     correctStateId: "puducherry",
     correctStateName: "Puducherry",
     explanation: "Puducherry preserves a unique blend of French boulevard architecture with ancient Tamil spiritual heritage.",
@@ -249,14 +251,21 @@ const BASE_QUESTIONS: Omit<QuizQuestion, "options">[] = [
   },
 ]
 
-// All available 36 state IDs and names
-const ALL_STATE_LIST = Object.entries(statesRegistry).map(([slug, bundle]) => ({
-  stateId: slug,
-  stateName: bundle.data.name,
-}))
+// Deduplicate states strictly by stateName so no alias duplicates ever occur
+const UNIQUE_STATE_MAP = new Map<string, { stateId: string; stateName: string }>()
+Object.entries(statesRegistry).forEach(([slug, bundle]) => {
+  if (!UNIQUE_STATE_MAP.has(bundle.data.name)) {
+    UNIQUE_STATE_MAP.set(bundle.data.name, {
+      stateId: slug,
+      stateName: bundle.data.name,
+    })
+  }
+})
+
+const DEDUPED_STATE_LIST = Array.from(UNIQUE_STATE_MAP.values())
 
 /**
- * Generate a randomized quiz round with realistic, well-balanced options
+ * Generate a randomized quiz round with realistic, strictly unique options
  */
 export function generateQuizRound(count: number = 5): QuizQuestion[] {
   // Shuffle base questions
@@ -264,9 +273,9 @@ export function generateQuizRound(count: number = 5): QuizQuestion[] {
   const selected = shuffled.slice(0, count)
 
   return selected.map((q) => {
-    // Generate 3 distractors from all states
-    const distractors = ALL_STATE_LIST.filter(
-      (s) => s.stateId !== q.correctStateId
+    // Pick 3 distractors whose stateName is strictly DIFFERENT from the correct state name
+    const distractors = DEDUPED_STATE_LIST.filter(
+      (s) => s.stateName !== q.correctStateName
     )
       .sort(() => 0.5 - Math.random())
       .slice(0, 3)

@@ -47,6 +47,7 @@ export default function GuessTheStateModal({
   const [revealedCapitalHint, setRevealedCapitalHint] = useState(false)
   const [isGameOver, setIsGameOver] = useState(false)
   const [isMuted, setIsMutedState] = useState(getSoundMuted())
+  const [imageError, setImageError] = useState(false)
 
   // Initialize or reset game round when modal opens
   useEffect(() => {
@@ -78,6 +79,7 @@ export default function GuessTheStateModal({
     setRevealedRegionHint(false)
     setRevealedCapitalHint(false)
     setIsGameOver(false)
+    setImageError(false)
   }
 
   const currentQuestion = questions[currentIndex]
@@ -115,6 +117,7 @@ export default function GuessTheStateModal({
       setIsAnswered(false)
       setRevealedRegionHint(false)
       setRevealedCapitalHint(false)
+      setImageError(false)
     } else {
       setIsGameOver(true)
       playVictorySound()
@@ -232,16 +235,13 @@ export default function GuessTheStateModal({
                 {currentQuestion.prompt}
               </h2>
 
-              {currentQuestion.clueImage && (
+              {currentQuestion.clueImage && !imageError && (
                 <div className="quiz-clue-image-wrap">
                   <img
                     src={currentQuestion.clueImage}
                     alt="Quiz Clue"
                     className="quiz-clue-img"
-                    onError={(e) => {
-                      // Gracefully hide if missing
-                      ;(e.target as HTMLElement).style.display = "none"
-                    }}
+                    onError={() => setImageError(true)}
                   />
                 </div>
               )}
