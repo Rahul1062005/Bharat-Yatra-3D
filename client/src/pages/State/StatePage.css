@@ -211,6 +211,144 @@ html {
   line-height: 1.45;
 }
 
+/* Cultural State Greeting Badge */
+.hud-greeting-badge {
+  padding: 10px 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.12) 0%,
+    rgba(180, 83, 9, 0.08) 100%
+  );
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.greeting-badge-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.greeting-badge-kicker {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #fbbf24;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.greeting-listen-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #fef08a;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.greeting-listen-chip:hover {
+  background: rgba(245, 158, 11, 0.35);
+  border-color: rgba(245, 158, 11, 0.7);
+  color: #ffffff;
+}
+
+.greeting-listen-chip.speaking {
+  background: #f59e0b;
+  border-color: #d97706;
+  color: #000000;
+}
+
+.greeting-badge-phrase {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 1px;
+}
+
+.greeting-badge-phrase .greeting-native {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.greeting-badge-phrase .greeting-roman {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #fef08a;
+}
+
+.greeting-badge-meaning {
+  margin: 0;
+  font-size: 10.5px;
+  color: rgba(220, 231, 255, 0.82);
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* Audio pulse animation */
+.audio-pulse {
+  animation: audioPulseIcon 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes audioPulseIcon {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+.greeting-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.audio-greeting-btn {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fef08a;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.audio-greeting-btn:hover {
+  background: rgba(245, 158, 11, 0.3);
+  border-color: rgba(245, 158, 11, 0.6);
+  color: #ffffff;
+}
+
+.audio-greeting-btn.speaking {
+  background: #f59e0b;
+  border-color: #d97706;
+  color: #000000;
+}
+
 .hero-district-hud {
   padding: 12px 14px;
   background: rgba(245, 158, 11, 0.08);

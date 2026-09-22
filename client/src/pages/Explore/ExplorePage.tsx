@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft, Globe } from "lucide-react"
+import { ArrowLeft, Globe, MessageCircle } from "lucide-react"
 
 import Earth from "../../components/globe/Earth"
 import IndiaMap, { preloadIndiaMapData } from "../../components/map/IndiaMap"
 import IndiaSearchBar from "../../components/search/IndiaSearchBar"
+import GreetingsModal from "../../components/greetings/GreetingsModal"
 import "./ExplorePage.css"
 
 export type ExploreStage = "globe" | "diving" | "india"
@@ -17,6 +18,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
   const navigate = useNavigate()
   const [stage, setStage] = useState<ExploreStage>(initialStage)
   const [cloudWashActive, setCloudWashActive] = useState(false)
+  const [isGreetingsOpen, setIsGreetingsOpen] = useState(false)
 
   // Sync if initialStage changes externally
   useEffect(() => {
@@ -144,16 +146,30 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
       )}
 
       {stage === "india" && (
-        <button
-          type="button"
-          className="home-back-button"
-          onClick={handleBackToGlobe}
-        >
-          <span className="home-button-icon">
-            <Globe size={17} />
-          </span>
-          <span className="home-button-text">Earth</span>
-        </button>
+        <>
+          <button
+            type="button"
+            className="home-back-button"
+            onClick={handleBackToGlobe}
+          >
+            <span className="home-button-icon">
+              <Globe size={17} />
+            </span>
+            <span className="home-button-text">Earth</span>
+          </button>
+
+          <button
+            type="button"
+            className="greetings-launcher-btn"
+            onClick={() => setIsGreetingsOpen(true)}
+            title="Explore 36 Greetings of Bharat"
+          >
+            <span className="greetings-launcher-icon">
+              <MessageCircle size={16} />
+            </span>
+            <span className="greetings-launcher-text">36 Greetings</span>
+          </button>
+        </>
       )}
 
       {/* ================= DYNAMIC HEADERS ================= */}
@@ -188,8 +204,17 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
         </div>
       ) : (
         <div className="india-container">
-          <IndiaSearchBar onSelectState={handleStateDive} />
+          <IndiaSearchBar
+            onSelectState={handleStateDive}
+            onOpenGreetings={() => setIsGreetingsOpen(true)}
+          />
           <IndiaMap animateEntrance={true} onStateDive={handleStateDive} />
+
+          <GreetingsModal
+            isOpen={isGreetingsOpen}
+            onClose={() => setIsGreetingsOpen(false)}
+            onSelectState={handleStateDive}
+          />
         </div>
       )}
     </main>

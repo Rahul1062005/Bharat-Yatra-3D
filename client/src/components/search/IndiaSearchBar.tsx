@@ -1,11 +1,13 @@
 import { useState, useMemo, useRef, useEffect } from "react"
-import { Search, X, MapPin, Compass, ChevronRight, Sparkles, SlidersHorizontal } from "lucide-react"
+import { Search, X, MapPin, Compass, ChevronRight, Sparkles, SlidersHorizontal, MessageCircle } from "lucide-react"
 import { statesRegistry } from "../../data/states"
+import { getStateGreeting } from "../../data/greetings"
 import "./IndiaSearchBar.css"
 
 export interface IndiaSearchBarProps {
   onSelectState: (stateSlug: string) => void
   onHighlightState?: (stateName: string | null) => void
+  onOpenGreetings?: () => void
 }
 
 export interface RegionCategory {
@@ -81,7 +83,7 @@ const ALL_PRIMARY_SLUGS = [
   "andaman-nicobar", "lakshadweep", "puducherry", "chandigarh", "dadra-nagar-haveli-daman-diu"
 ]
 
-export default function IndiaSearchBar({ onSelectState, onHighlightState }: IndiaSearchBarProps) {
+export default function IndiaSearchBar({ onSelectState, onHighlightState, onOpenGreetings }: IndiaSearchBarProps) {
   const [query, setQuery] = useState("")
   const [activeRegion, setActiveRegion] = useState("all")
   const [isOpen, setIsOpen] = useState(false)
@@ -98,7 +100,7 @@ export default function IndiaSearchBar({ onSelectState, onHighlightState }: Indi
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
 
-  // Filtered states list based on active region chip and search query
+  // Filtered states list based on active region chip, search query, and regional greetings
   const filteredStates = useMemo(() => {
     const q = query.trim().toLowerCase()
     const activeRegionObj = REGIONS.find((r) => r.id === activeRegion)
@@ -116,11 +118,20 @@ export default function IndiaSearchBar({ onSelectState, onHighlightState }: Indi
       const capitalMatch = bundle.data.capital.toLowerCase().includes(q)
       const taglineMatch = bundle.data.tagline.toLowerCase().includes(q)
       const districtsMatch = Object.keys(bundle.data.districts || {}).some((d) => d.toLowerCase().includes(q))
+      
+      const greeting = getStateGreeting(slug)
+      const greetingMatch = greeting
+        ? greeting.native.toLowerCase().includes(q) ||
+          greeting.transliteration.toLowerCase().includes(q) ||
+          greeting.meaning.toLowerCase().includes(q) ||
+          greeting.language.toLowerCase().includes(q)
+        : false
 
-      return nameMatch || hindiMatch || capitalMatch || taglineMatch || districtsMatch
+      return nameMatch || hindiMatch || capitalMatch || taglineMatch || districtsMatch || greetingMatch
     }).map((slug) => ({
       slug,
       ...statesRegistry[slug].data,
+      greeting: getStateGreeting(slug),
     }))
   }, [query, activeRegion])
 
@@ -140,7 +151,7 @@ export default function IndiaSearchBar({ onSelectState, onHighlightState }: Indi
         <input
           type="text"
           className="india-search-input"
-          placeholder="Search 36 States & UTs (e.g. Kerala, Ladakh, Jaipur)..."
+          placeholder="Search 36 States & UTs or Greetings (e.g. Khamma Ghani, Vanakkam, Kerala)..."
           value={query}
           onChange={(e) => {
             setQuery(e.target.value)
@@ -195,6 +206,21 @@ export default function IndiaSearchBar({ onSelectState, onHighlightState }: Indi
                 <strong>{filteredStates.length}</strong> {filteredStates.length === 1 ? "Territory" : "Territories"}
               </span>
             </span>
+
+            {onOpenGreetings && (
+              <button
+                type="button"
+                className="tray-greetings-cta-btn"
+                onClick={() => {
+                  setIsOpen(false)
+                  onOpenGreetings()
+                }}
+              >
+                <MessageCircle size={12} />
+                <span>36 Greetings of Bharat</span>
+              </button>
+            )}
+
             <button
               type="button"
               className="results-tray-close"
@@ -220,6 +246,11 @@ export default function IndiaSearchBar({ onSelectState, onHighlightState }: Indi
                   <div className="result-card-title-row">
                     <h4 className="result-card-name">{st.name}</h4>
                     <span className="result-card-hindi">{st.hindiName}</span>
+                    {st.greeting && (
+                      <span className="result-card-greeting-badge" title={`Greeting: ${st.greeting.meaning}`}>
+                        {st.greeting.native.split("/")[0].trim()}
+                      </span>
+                    )}
                   </div>
                   <div className="result-card-meta">
                     <span className="result-meta-item">

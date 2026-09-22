@@ -18,6 +18,8 @@ import {
 
 import StateDistrictMap from "../../components/map/StateDistrictMap"
 import { getStateById } from "../../data/states"
+import { getStateGreeting } from "../../data/greetings"
+import { playGreetingAudio, stopGreetingAudio } from "../../utils/greetingSpeech"
 import type { LandmarkPin } from "../../types/state"
 import "./StatePage.css"
 
@@ -257,11 +259,17 @@ export default function StatePage() {
   const [selectedLandmark, setSelectedLandmark] = useState<LandmarkPin | null>(null)
   const [copiedGreeting, setCopiedGreeting] = useState<string | null>(null)
   const [selectedDistrict, setSelectedDistrict] = useState<string>(stateConfig.defaultDistrict)
+  const [isSpeakingGreeting, setIsSpeakingGreeting] = useState(false)
+  const [activeSpeakingLang, setActiveSpeakingLang] = useState<string | null>(null)
+  const stateGreeting = getStateGreeting(stateData.id)
 
   // Synchronize when route / stateId changes
   useEffect(() => {
     setSelectedDistrict(stateConfig.defaultDistrict)
     setSelectedLandmark(null)
+    stopGreetingAudio()
+    setIsSpeakingGreeting(false)
+    setActiveSpeakingLang(null)
     window.scrollTo({ top: 0, behavior: "smooth" })
   }, [stateId, stateConfig.defaultDistrict])
 
@@ -397,6 +405,45 @@ export default function StatePage() {
           </div>
           <h2 className="hero-intro-heading">{stateData.name}</h2>
           <p className="hero-intro-tagline">{stateData.tagline}</p>
+
+          {stateGreeting && (
+            <div className="hud-greeting-badge">
+              <div className="greeting-badge-header">
+                <span className="greeting-badge-kicker">
+                  SAY HELLO IN {stateGreeting.language.split(",")[0].split("&")[0].trim().toUpperCase()}
+                </span>
+                <button
+                  type="button"
+                  className={`greeting-listen-chip ${isSpeakingGreeting ? "speaking" : ""}`}
+                  onClick={() => {
+                    if (isSpeakingGreeting) {
+                      stopGreetingAudio()
+                      setIsSpeakingGreeting(false)
+                    } else {
+                      setIsSpeakingGreeting(true)
+                      playGreetingAudio(
+                        stateGreeting,
+                        () => setIsSpeakingGreeting(true),
+                        () => setIsSpeakingGreeting(false),
+                        () => setIsSpeakingGreeting(false)
+                      )
+                    }
+                  }}
+                  title="Listen to authentic pronunciation"
+                >
+                  <Volume2 size={12} className={isSpeakingGreeting ? "audio-pulse" : ""} />
+                  <span>{isSpeakingGreeting ? "Speaking..." : "Listen"}</span>
+                </button>
+              </div>
+
+              <div className="greeting-badge-phrase">
+                <span className="greeting-native">{stateGreeting.native}</span>
+                <span className="greeting-roman">({stateGreeting.transliteration})</span>
+              </div>
+
+              <p className="greeting-badge-meaning">"{stateGreeting.meaning}"</p>
+            </div>
+          )}
 
           <div className="hero-district-hud">
             <div className="hud-label">
@@ -742,26 +789,63 @@ export default function StatePage() {
                     <span className="script-badge">{lang.script}</span>
                   </div>
 
-                  <div className="greeting-box">
-                    <span className="greeting-label">How to Greet:</span>
-                    <div className="greeting-text-wrap">
-                      <p className="greeting-vernacular">{lang.greeting}</p>
-                      <button
-                        type="button"
-                        className="copy-greeting-btn"
-                        onClick={() => handleCopyGreeting(lang.greeting)}
-                        title="Copy greeting"
-                        aria-label="Copy greeting"
-                      >
-                        {copiedGreeting === lang.greeting ? (
-                          <Check size={14} className="copied-icon" />
-                        ) : (
-                          <Share2 size={14} />
-                        )}
-                      </button>
+                    <div className="greeting-box">
+                      <span className="greeting-label">How to Greet:</span>
+                      <div className="greeting-text-wrap">
+                        <p className="greeting-vernacular">{lang.greeting}</p>
+                        <div className="greeting-actions-row">
+                          <button
+                            type="button"
+                            className={`audio-greeting-btn ${activeSpeakingLang === lang.greeting ? "speaking" : ""}`}
+                            onClick={() => {
+                              if (activeSpeakingLang === lang.greeting) {
+                                stopGreetingAudio()
+                                setActiveSpeakingLang(null)
+                              } else {
+                                setActiveSpeakingLang(lang.greeting)
+                                const phrase = lang.greeting.split("/")[0].split("(")[0].trim()
+                                playGreetingAudio(
+                                  {
+                                    stateId: stateData.id,
+                                    stateName: stateData.name,
+                                    native: lang.greeting,
+                                    transliteration: lang.greeting,
+                                    language: lang.name,
+                                    meaning: lang.meaning,
+                                    speechPhrase: phrase,
+                                    speechLang: stateGreeting?.speechLang || "hi-IN",
+                                    region: stateGreeting?.region || "North",
+                                    culturalContext: lang.meaning,
+                                  },
+                                  () => setActiveSpeakingLang(lang.greeting),
+                                  () => setActiveSpeakingLang(null),
+                                  () => setActiveSpeakingLang(null)
+                                )
+                              }
+                            }}
+                            title="Listen to pronunciation"
+                            aria-label="Listen to pronunciation"
+                          >
+                            <Volume2 size={13} className={activeSpeakingLang === lang.greeting ? "audio-pulse" : ""} />
+                          </button>
+
+                          <button
+                            type="button"
+                            className="copy-greeting-btn"
+                            onClick={() => handleCopyGreeting(lang.greeting)}
+                            title="Copy greeting"
+                            aria-label="Copy greeting"
+                          >
+                            {copiedGreeting === lang.greeting ? (
+                              <Check size={14} className="copied-icon" />
+                            ) : (
+                              <Share2 size={14} />
+                            )}
+                          </button>
+                        </div>
+                      </div>
+                      <span className="greeting-meaning">“{lang.meaning}”</span>
                     </div>
-                    <span className="greeting-meaning">“{lang.meaning}”</span>
-                  </div>
 
                   <p className="language-desc">{lang.description}</p>
                 </div>

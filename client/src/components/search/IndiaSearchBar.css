@@ -200,6 +200,28 @@
   color: #94a3b8;
 }
 
+.tray-greetings-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fef08a;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tray-greetings-cta-btn:hover {
+  background: rgba(245, 158, 11, 0.3);
+  border-color: rgba(245, 158, 11, 0.7);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.25);
+}
+
 .results-sparkle-icon {
   color: #fef08a;
 }
@@ -265,7 +287,8 @@
 
 .result-card-title-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
 }
 
@@ -283,6 +306,17 @@
   font-size: 11px;
   color: #94a3b8;
   font-weight: 500;
+}
+
+.result-card-greeting-badge {
+  font-size: 10px;
+  font-weight: 600;
+  background: rgba(245, 158, 11, 0.14);
+  color: #fef08a;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 1px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 .result-card-meta {
