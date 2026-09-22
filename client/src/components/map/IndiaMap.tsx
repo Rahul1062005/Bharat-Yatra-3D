@@ -1232,6 +1232,39 @@ function StatesElevationGroup({
 
 
 /* =========================================================
+   RESPONSIVE INDIA CAMERA HOOK FOR MOBILE
+   Guarantees zero cropping in portrait orientation while
+   preserving 100% exact desktop coordinates on PC.
+========================================================= */
+
+function ResponsiveIndiaCamera({ animateEntrance }: { animateEntrance?: boolean }) {
+  const { camera, size } = useThree()
+
+  useEffect(() => {
+    if (camera instanceof THREE.PerspectiveCamera) {
+      const aspect = size.width / size.height
+      if (aspect < 0.75) {
+        // Mobile portrait: back camera up and expand FOV so all of India fits comfortably
+        camera.fov = 48
+        camera.position.set(0, 10.5, 7.2)
+      } else if (aspect < 1.1) {
+        // Tablet / square
+        camera.fov = 40
+        camera.position.set(0, 8.8, 5.8)
+      } else {
+        // Desktop widescreen: 100% exact original position & FOV
+        camera.fov = 34
+        camera.position.set(0, animateEntrance ? 10.4 : 7.6, animateEntrance ? 4.0 : 5.1)
+      }
+      camera.updateProjectionMatrix()
+    }
+  }, [size.width, size.height, animateEntrance, camera])
+
+  return null
+}
+
+
+/* =========================================================
    INDIA 3D SCENE
 ========================================================= */
 
@@ -1279,26 +1312,23 @@ function IndiaScene({
 
       <PerspectiveCamera
         makeDefault
-
         position={
           animateEntrance
             ? [0, 10.4, 4.0]
             : [0, 7.6, 5.1]
         }
-
         fov={
           34
         }
-
         near={
           0.1
         }
-
         far={
           100
         }
       />
 
+      <ResponsiveIndiaCamera animateEntrance={animateEntrance} />
       <MapEntranceController animateEntrance={animateEntrance} />
       <StateDiveCamera divingState={divingState} onComplete={onDiveComplete} />
 
@@ -2456,7 +2486,7 @@ export default function IndiaMap({
             "50%",
 
           bottom:
-            "31px",
+            "28px",
 
           transform:
             "translateX(-50%)",
@@ -2474,7 +2504,7 @@ export default function IndiaMap({
             600,
 
           letterSpacing:
-            "5px",
+            "4px",
 
           textTransform:
             "uppercase",
@@ -2489,7 +2519,9 @@ export default function IndiaMap({
             "0 2px 10px rgba(0,0,0,0.2)",
         }}
       >
-        H O V E R&nbsp;&nbsp;A&nbsp;&nbsp;S T A T E&nbsp;&nbsp;T O&nbsp;&nbsp;E X P L O R E
+        {typeof window !== "undefined" && window.innerWidth < 768
+          ? "T A P   A   S T A T E   T O   E X P L O R E"
+          : "H O V E R   A   S T A T E   T O   E X P L O R E"}
       </div>
 
 

@@ -490,10 +490,38 @@ export default function StateDistrictMap({
     onLandmarkSelect?.(pin)
   }
 
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== "undefined" ? window.innerWidth < 768 : false
+  )
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  const effectiveTarget = useMemo<[number, number, number]>(() => {
+    if (!isMobile) return target
+    return [0, target[1], target[2]]
+  }, [isMobile, target])
+
+  const effectiveCamPos = useMemo<[number, number, number]>(() => {
+    if (!isMobile) return cameraPosition
+    const distMult = typeof window !== "undefined" && window.innerWidth < 480 ? 1.25 : 1.15
+    return [0, cameraPosition[1], cameraPosition[2] * distMult]
+  }, [isMobile, cameraPosition])
+
+  const effectiveFov = useMemo(() => {
+    if (!isMobile) return fov
+    return typeof window !== "undefined" && window.innerWidth < 480 ? fov + 8 : fov + 4
+  }, [isMobile, fov])
+
   const resetCamera = () => {
     if (controlsRef.current) {
-      controlsRef.current.target.set(target[0], target[1], target[2])
-      controlsRef.current.object.position.set(cameraPosition[0], cameraPosition[1], cameraPosition[2])
+      controlsRef.current.target.set(effectiveTarget[0], effectiveTarget[1], effectiveTarget[2])
+      controlsRef.current.object.position.set(effectiveCamPos[0], effectiveCamPos[1], effectiveCamPos[2])
       controlsRef.current.update()
     }
   }
@@ -516,7 +544,7 @@ export default function StateDistrictMap({
     <div className="bihar-map-wrapper">
       {/* ================= 3D CANVAS ================= */}
       <Canvas shadows dpr={[1, 2]} gl={{ antialias: true, alpha: true }}>
-        <PerspectiveCamera makeDefault position={cameraPosition} fov={fov} />
+        <PerspectiveCamera makeDefault position={effectiveCamPos} fov={effectiveFov} />
 
         <ambientLight intensity={0.9} />
         <directionalLight
@@ -531,7 +559,7 @@ export default function StateDistrictMap({
 
         <OrbitControls
           ref={controlsRef}
-          target={target}
+          target={effectiveTarget}
           enableRotate={true}
           enablePan={false}
           enableZoom={false}
@@ -540,6 +568,10 @@ export default function StateDistrictMap({
           maxPolarAngle={Math.PI / 2.05}
           minPolarAngle={Math.PI / 6}
           dampingFactor={0.06}
+          touches={{
+            ONE: THREE.TOUCH.ROTATE,
+            TWO: THREE.TOUCH.DOLLY_PAN,
+          }}
         />
 
         <StateScene
@@ -550,7 +582,7 @@ export default function StateDistrictMap({
           scale={scale}
           hoveredDistrict={hoveredDistrict}
           selectedDistrict={selectedDistrict}
-          target={target}
+          target={effectiveTarget}
           onHover={handleHover}
           onLeave={handleLeave}
           onSelect={handleSelect}

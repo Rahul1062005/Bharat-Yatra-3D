@@ -418,21 +418,24 @@
 /* MOBILE */
 /* ===================================================== */
 
-@media (max-width: 800px) {
-
+@media (max-width: 768px) {
   .home-back-button {
-    top: 20px;
-    left: 20px;
-
-    height: 44px;
-
-    padding-right: 14px;
+    top: 18px;
+    left: 16px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
   }
 
-
   .home-button-icon {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .home-button-text {
+    display: none;
   }
 
 

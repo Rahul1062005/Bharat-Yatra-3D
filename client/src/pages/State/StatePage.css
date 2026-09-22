@@ -1454,31 +1454,192 @@ html {
 }
 
 /* =========================================================
-   RESPONSIVE QUERIES
+   RESPONSIVE QUERIES (MOBILE <= 900px)
+   Desktop layout (>= 901px) is 100% preserved and untouched.
 ========================================================= */
 
 @media (max-width: 900px) {
   .state-navbar {
-    padding: 12px 16px;
+    padding: 10px 14px;
+    height: 52px;
   }
+
+  .state-nav-brand {
+    font-size: 13px;
+  }
+
   .state-section-nav {
     display: none;
   }
-  .heritage-grid {
-    grid-template-columns: 1fr;
+
+  /* State Hero Section on Mobile: Vertical Stack (Zero Dock Overlap) */
+  .state-hero-map {
+    height: auto;
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
   }
+
   .state-hero-left-dock {
-    top: 14px;
-    left: 14px;
-    width: calc(100% - 28px);
-    max-width: 320px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24px);
+    max-width: none;
+    margin: 12px auto 8px;
     padding: 14px 16px;
-    gap: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+    border-radius: 14px;
   }
+
   .hero-intro-heading {
     font-size: 22px;
   }
+
+  .hero-intro-tagline {
+    font-size: 11.5px;
+  }
+
+  .hud-district-name {
+    font-size: 16px;
+  }
+
+  .state-canvas-container {
+    height: 48vh;
+    min-height: 340px;
+    max-height: 460px;
+    width: 100%;
+    position: relative;
+  }
+
+  .bihar-map-controls {
+    right: 12px;
+    bottom: 14px;
+    gap: 6px;
+  }
+
+  .map-control-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .bihar-compass-badge {
+    left: 12px;
+    bottom: 14px;
+  }
+
+  .scroll-down-cue {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 10px auto 14px;
+    display: flex;
+  }
+
+  /* Stats Strip on Mobile: Horizontal Scrollable Ribbon */
+  .state-stats-strip-bar {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 14px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .state-stats-strip-bar::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  .state-stats-strip-bar::-webkit-scrollbar-thumb {
+    background: rgba(245, 158, 11, 0.35);
+    border-radius: 999px;
+  }
+
   .hero-stats-strip {
-    display: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    min-width: max-content;
+  }
+
+  .strip-stat-item {
+    padding: 8px 14px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  .strip-stat-value {
+    font-size: 12px;
+  }
+
+  .strip-stat-label {
+    font-size: 9px;
+  }
+
+  /* Cultural Content Grids on Mobile: Clean 1-Column Layout */
+  .state-content-section {
+    padding: 42px 14px;
+  }
+
+  .section-heading {
+    font-size: clamp(20px, 4.5vw, 28px);
+  }
+
+  .section-subtext {
+    font-size: 13px;
+  }
+
+  .heritage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cuisines-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cuisine-image-wrap {
+    height: 190px;
+  }
+
+  .traditions-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .attire-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .attire-image-container {
+    height: 240px;
+  }
+
+  .monuments-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .monument-img {
+    height: 210px;
+  }
+
+  .languages-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .luminaries-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .state-canvas-container {
+    height: 44vh;
+    min-height: 310px;
   }
 }
