@@ -1205,16 +1205,16 @@ function StatesElevationGroup({
 
     // Smoothly elevate 3D depth from 0.04 up to full 1.0 height
     const currentYScale = Math.max(0.04, ease)
-    groupRef.current.scale.set(1, currentYScale, 1)
+    groupRef.current.scale.set(1.15, currentYScale * 1.15, 1.15)
 
     if (t >= 1) {
       isDoneRef.current = true
-      groupRef.current.scale.set(1, 1, 1)
+      groupRef.current.scale.set(1.15, 1.15, 1.15)
     }
   })
 
   return (
-    <group ref={groupRef} position={[0, -0.2, 0]}>
+    <group ref={groupRef} position={[0, -0.2, 0]} scale={[1.15, 1.15, 1.15]}>
       {states.map((state, index) => (
         <StateShape
           key={state.id}

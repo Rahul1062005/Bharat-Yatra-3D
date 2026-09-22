@@ -280,35 +280,36 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
 
           {/* India Geographic Telemetry (Collapsible dock in bottom-left) */}
           <IndiaGeoTelemetry />
-
-          <GreetingsModal
-            isOpen={isGreetingsOpen}
-            onClose={() => setIsGreetingsOpen(false)}
-            onSelectState={handleStateDive}
-          />
-
-          <GuessTheStateModal
-            isOpen={isQuizOpen}
-            onClose={() => setIsQuizOpen(false)}
-            onExploreState={handleStateDive}
-          />
-
-          <NationalMasteryModal
-            isOpen={isMasteryOpen}
-            onClose={() => setIsMasteryOpen(false)}
-          />
-
-          <JourneyPlannerModal
-            isOpen={isJourneyOpen}
-            onClose={() => setIsJourneyOpen(false)}
-          />
-
-          <Monument3DViewerModal
-            isOpen={isMonumentsOpen}
-            onClose={() => setIsMonumentsOpen(false)}
-          />
         </div>
       )}
+
+      {/* ================= GLOBAL MODALS (ROOT STACKING OVER ALL DOCKS) ================= */}
+      <GreetingsModal
+        isOpen={isGreetingsOpen}
+        onClose={() => setIsGreetingsOpen(false)}
+        onSelectState={handleStateDive}
+      />
+
+      <GuessTheStateModal
+        isOpen={isQuizOpen}
+        onClose={() => setIsQuizOpen(false)}
+        onExploreState={handleStateDive}
+      />
+
+      <NationalMasteryModal
+        isOpen={isMasteryOpen}
+        onClose={() => setIsMasteryOpen(false)}
+      />
+
+      <JourneyPlannerModal
+        isOpen={isJourneyOpen}
+        onClose={() => setIsJourneyOpen(false)}
+      />
+
+      <Monument3DViewerModal
+        isOpen={isMonumentsOpen}
+        onClose={() => setIsMonumentsOpen(false)}
+      />
     </main>
   )
 }

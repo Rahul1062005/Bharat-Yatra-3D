@@ -1,0 +1,57 @@
+/* traditionalPatterns.css - Authentic Indian Traditional Art Motifs & Textures */
+
+:root {
+  /* Warm Heritage Parchment Palettes */
+  --heritage-ivory: #faf8f2;
+  --heritage-cream: #f5efe2;
+  --heritage-parchment: #fdfaf5;
+  --heritage-card-bg: rgba(255, 255, 255, 0.88);
+  --heritage-border: rgba(180, 83, 9, 0.22);
+  --heritage-gold: #d97706;
+  --heritage-terracotta: #c2410c;
+  --heritage-indigo: #1e3a8a;
+  --heritage-peacock: #0f766e;
+  --heritage-marigold: #f59e0b;
+  --heritage-text-dark: #0f172a;
+  --heritage-text-muted: #475569;
+}
+
+/* 1. Indian Mandala & Geometric Lotus Pattern (Subtle decorative watermark) */
+.pattern-mandala-watermark {
+  background-color: var(--heritage-parchment);
+  background-image: radial-gradient(circle at 50% 0%, rgba(217, 119, 6, 0.08), transparent 70%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b45309' fill-opacity='0.045' fill-rule='evenodd'%3E%3Cpath d='M40 0L46 14L60 10L56 24L70 28L60 38L70 48L56 52L60 66L46 62L40 76L34 62L20 66L24 52L10 48L20 38L10 28L24 24L20 10L34 14zM40 22a18 18 0 1 0 0 36a18 18 0 0 0 0-36zm0 4a14 14 0 1 1 0 28a14 14 0 0 1 0-28zm0 6a8 8 0 1 0 0 16a8 8 0 0 0 0-16z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* 2. Traditional Indian Jaali / Lattice Motif (Lattice carving print) */
+.pattern-jaali-lattice {
+  background-image: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.06), transparent 80%),
+    url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2392400e' fill-opacity='0.04'%3E%3Cpath d='M24 0l12 12-12 12L12 12 24 0zm0 24l12 12-12 12-12-12 12-12zm-24 0l12-12 12 12-12 12-12-12zm48 0l-12-12 12-12 12 12-12 12z'/%3E%3Ccircle cx='24' cy='12' r='3' fill='none' stroke='%2392400e' stroke-width='1' stroke-opacity='0.04'/%3E%3Ccircle cx='24' cy='36' r='3' fill='none' stroke='%2392400e' stroke-width='1' stroke-opacity='0.04'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* 3. Kalamkari / Floral Vine Motif (Flowing botanical woodblock print) */
+.pattern-kalamkari-vines {
+  background-image: radial-gradient(circle at 20% 30%, rgba(180, 83, 9, 0.06), transparent 70%),
+    url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23c2410c' stroke-width='1' stroke-opacity='0.05'%3E%3Cpath d='M0 32c16 0 16-16 32-16s16 16 32 16M0 32c16 0 16 16 32 16s16-16 32-16'/%3E%3Ccircle cx='32' cy='16' r='6' fill='%23c2410c' fill-opacity='0.03'/%3E%3Ccircle cx='32' cy='48' r='6' fill='%23c2410c' fill-opacity='0.03'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* 4. Warli & Tribal Folklore Rhythm Border (Geometric human and celebratory figures) */
+.pattern-warli-tribal {
+  background-image: url("data:image/svg+xml,%3Csvg width='56' height='56' viewBox='0 0 56 56' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23854d0e' fill-opacity='0.045'%3E%3Cpolygon points='28,14 20,28 36,28'/%3E%3Cpolygon points='28,42 20,28 36,28'/%3E%3Ccircle cx='28' cy='10' r='3'/%3E%3Cline x1='20' y1='24' x2='12' y2='16' stroke='%23854d0e' stroke-width='1.5' stroke-opacity='0.045'/%3E%3Cline x1='36' y1='24' x2='44' y2='16' stroke='%23854d0e' stroke-width='1.5' stroke-opacity='0.045'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Ornate Traditional Border Stamp */
+.heritage-ornate-border {
+  border: 1px solid rgba(180, 83, 9, 0.28);
+  box-shadow: 0 12px 36px -10px rgba(120, 53, 15, 0.15), 0 0 0 1px rgba(245, 158, 11, 0.1);
+  position: relative;
+}
+
+.heritage-ornate-border::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 1px solid rgba(180, 83, 9, 0.12);
+  border-radius: inherit;
+  pointer-events: none;
+}

@@ -1,17 +1,22 @@
 /* =========================================================
-   STATE PAGE STYLING (BIHAR DEEP DIVE)
+   STATE PAGE STYLING (BHARAT YATRA)
+   Vibrant Indian Traditional Art & Painting Aesthetic
+   (Madhubani, Pichwai, Kalamkari, Warli & Ivory Parchment)
 ========================================================= */
 
 :root {
-  --bihar-gold: #f59e0b;
-  --bihar-amber: #fbbf24;
+  --bihar-gold: #d97706;
+  --bihar-amber: #b45309;
   --bihar-terracotta: #c2410c;
   --bihar-saffron: #ea580c;
-  --bihar-navy: #091326;
-  --bihar-deep-blue: #0f1f3d;
-  --bihar-surface: rgba(15, 31, 61, 0.72);
-  --bihar-border: rgba(245, 158, 11, 0.22);
-  --bihar-border-glow: rgba(245, 158, 11, 0.45);
+  --bihar-peacock: #1e3a8a;
+  --bihar-emerald: #047857;
+  --bihar-maroon: #881337;
+  --bihar-parchment: #faf7f0;
+  --bihar-ivory: #fffdf9;
+  --bihar-dark-bg: #120e18;
+  --bihar-border: rgba(180, 83, 9, 0.28);
+  --bihar-border-glow: rgba(217, 119, 6, 0.45);
 }
 
 html {
@@ -21,7 +26,13 @@ html {
 .state-page {
   position: relative;
   min-height: 100vh;
-  background-color: var(--bihar-navy);
+  background-color: var(--bihar-dark-bg);
+  background-image:
+    radial-gradient(circle at 10% 15%, rgba(217, 119, 6, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 90% 40%, rgba(194, 65, 12, 0.14) 0%, transparent 50%),
+    radial-gradient(circle at 20% 85%, rgba(30, 58, 138, 0.18) 0%, transparent 55%),
+    radial-gradient(circle at 80% 90%, rgba(136, 19, 55, 0.15) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d97706' fill-opacity='0.038' fill-rule='evenodd'%3E%3Cpath d='M40 0L46 14L60 10L56 24L70 28L60 38L70 48L56 52L60 66L46 62L40 76L34 62L20 66L24 52L10 48L20 38L10 28L24 24L20 10L34 14zM40 22a18 18 0 1 0 0 36a18 18 0 0 0 0-36zm0 4a14 14 0 1 1 0 28a14 14 0 0 1 0-28zm0 6a8 8 0 1 0 0 16a8 8 0 0 0 0-16z'/%3E%3C/g%3E%3C/svg%3E");
   color: #f8fafc;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
@@ -42,17 +53,18 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 12px 32px;
-  background: rgba(9, 19, 38, 0.82);
+  background: rgba(20, 15, 26, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(245, 158, 11, 0.18);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(217, 119, 6, 0.28);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+  gap: 16px;
 }
 
 .state-nav-left {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 
 .state-back-btn {
@@ -61,21 +73,22 @@ html {
   gap: 8px;
   padding: 8px 16px;
   border-radius: 999px;
-  background: rgba(245, 158, 11, 0.1);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  color: #fef08a;
+  background: rgba(217, 119, 6, 0.12);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  color: #fef3c7;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.4px;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .state-back-btn:hover {
-  background: rgba(245, 158, 11, 0.22);
-  border-color: #fbbf24;
+  background: rgba(217, 119, 6, 0.25);
+  border-color: #f59e0b;
   transform: translateX(-3px);
   box-shadow: 0 0 16px rgba(245, 158, 11, 0.3);
+  color: #ffffff;
 }
 
 .state-nav-title-group {
@@ -85,7 +98,7 @@ html {
 
 .state-nav-kicker {
   font-size: 9.5px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   color: #fbbf24;
   text-transform: uppercase;
@@ -108,40 +121,158 @@ html {
 .state-nav-devanagari {
   font-size: 15px;
   color: #fcd34d;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .state-section-nav {
   display: flex;
   align-items: center;
   gap: 8px;
+  overflow-x: auto;
 }
 
 .nav-tab {
   background: transparent;
   border: 1px solid transparent;
-  color: #94a3b8;
+  color: #cbd5e1;
   font-size: 12.5px;
   font-weight: 600;
   padding: 6px 14px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav-tab:hover {
-  color: #f8fafc;
-  background: rgba(255, 255, 255, 0.05);
+  color: #fef3c7;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .nav-tab.active {
-  color: #fef08a;
-  background: rgba(245, 158, 11, 0.15);
-  border-color: rgba(245, 158, 11, 0.4);
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.35) 0%, rgba(180, 83, 9, 0.45) 100%);
+  border-color: rgba(245, 158, 11, 0.55);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
 }
 
 /* =========================================================
-   HERO: 3D BIHAR MAP
+   SOOTHING INDIAN CLASSICAL AMBIENCE AUDIO PILL
+========================================================= */
+
+.heritage-audio-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #faf7f0;
+  border: 1px solid rgba(180, 83, 9, 0.4);
+  border-radius: 999px;
+  padding: 5px 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), 0 0 10px rgba(217, 119, 6, 0.15);
+  flex-shrink: 0;
+}
+
+.audio-mute-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: #92400e;
+  font-size: 11.5px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: all 0.2s ease;
+}
+
+.audio-mute-toggle:hover {
+  color: #b45309;
+}
+
+.audio-mute-toggle.muted {
+  color: #64748b;
+}
+
+.audio-label {
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.audio-wave-anim {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 11px;
+}
+
+.audio-wave-anim span {
+  width: 2px;
+  background: #b45309;
+  border-radius: 999px;
+  animation: waveBar 0.8s ease-in-out infinite alternate;
+}
+
+.audio-wave-anim span:nth-child(1) {
+  height: 4px;
+  animation-delay: 0s;
+}
+
+.audio-wave-anim span:nth-child(2) {
+  height: 11px;
+  animation-delay: 0.25s;
+}
+
+.audio-wave-anim span:nth-child(3) {
+  height: 7px;
+  animation-delay: 0.5s;
+}
+
+.audio-vol-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-left: 1px solid rgba(180, 83, 9, 0.25);
+  padding-left: 8px;
+}
+
+.audio-vol-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  background: #ffffff;
+  color: #78350f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  padding: 0;
+}
+
+.audio-vol-btn:hover:not(:disabled) {
+  background: #fef3c7;
+  border-color: #b45309;
+  color: #0f172a;
+  transform: scale(1.08);
+}
+
+.audio-vol-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.audio-vol-pct {
+  font-size: 10px;
+  font-weight: 800;
+  color: #78350f;
+  min-width: 26px;
+  text-align: center;
+}
+
+/* =========================================================
+   HERO: 3D STATE MAP
 ========================================================= */
 
 .state-hero-map {
@@ -149,26 +280,28 @@ html {
   width: 100%;
   height: calc(100vh - 58px);
   min-height: 600px;
-  background: radial-gradient(circle at 60% 45%, #18335e 0%, #0d1e3d 48%, #081122 90%);
+  background: radial-gradient(circle at 60% 45%, #1e293b 0%, #0f172a 50%, #090e1a 95%);
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
+/* Cultural Heritage Parchment HUD Card */
 .state-hero-left-dock {
   position: absolute;
   top: 24px;
   left: 28px;
   z-index: 20;
-  width: 320px;
+  width: 330px;
   max-width: calc(100vw - 56px);
-  background: rgba(12, 25, 50, 0.90);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  padding: 18px 20px;
-  border-radius: 16px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 24px rgba(245, 158, 11, 0.1);
+  background-color: #faf7f0;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(217, 119, 6, 0.08), transparent 70%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b45309' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M30 0L60 30L30 60L0 30zM30 10L50 30L30 50L10 30zM30 20L40 30L30 40L20 30z'/%3E%3C/g%3E%3C/svg%3E");
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  padding: 20px 22px;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(217, 119, 6, 0.2);
   pointer-events: auto;
   display: flex;
   flex-direction: column;
@@ -181,14 +314,14 @@ html {
   align-items: center;
   gap: 6px;
   font-size: 9.5px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1.8px;
-  color: #fbbf24;
+  color: #b45309;
   text-transform: uppercase;
 }
 
 .kicker-sparkle {
-  color: #fbbf24;
+  color: #d97706;
 }
 
 .kicker-dot {
@@ -199,31 +332,29 @@ html {
   margin: 0;
   font-size: 26px;
   font-weight: 900;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  line-height: 1.1;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+  line-height: 1.15;
 }
 
 .hero-intro-tagline {
   margin: 0;
-  font-size: 12px;
-  color: rgba(220, 231, 255, 0.85);
-  line-height: 1.45;
+  font-size: 12.5px;
+  color: #334155;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 /* Cultural State Greeting Badge */
 .hud-greeting-badge {
-  padding: 10px 12px;
-  background: linear-gradient(
-    135deg,
-    rgba(245, 158, 11, 0.12) 0%,
-    rgba(180, 83, 9, 0.08) 100%
-  );
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
 .greeting-badge-header {
@@ -235,9 +366,9 @@ html {
 
 .greeting-badge-kicker {
   font-size: 8.5px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1.2px;
-  color: #fbbf24;
+  color: #b45309;
   text-transform: uppercase;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -248,115 +379,49 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: rgba(245, 158, 11, 0.2);
-  border: 1px solid rgba(245, 158, 11, 0.45);
-  color: #fef08a;
-  padding: 2px 7px;
+  background: rgba(217, 119, 6, 0.12);
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  color: #92400e;
+  font-size: 9.5px;
+  font-weight: 800;
+  padding: 3px 8px;
   border-radius: 999px;
-  font-size: 10px;
-  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  flex-shrink: 0;
 }
 
 .greeting-listen-chip:hover {
-  background: rgba(245, 158, 11, 0.35);
-  border-color: rgba(245, 158, 11, 0.7);
+  background: #b45309;
   color: #ffffff;
 }
 
 .greeting-listen-chip.speaking {
-  background: #f59e0b;
-  border-color: #d97706;
-  color: #000000;
+  background: #b45309;
+  color: #ffffff;
 }
 
 .greeting-badge-phrase {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 1px;
-}
-
-.greeting-badge-phrase .greeting-native {
+  margin: 0;
   font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.greeting-badge-phrase .greeting-roman {
-  font-size: 11.5px;
-  font-weight: 600;
-  color: #fef08a;
+  font-weight: 800;
+  color: #0f172a;
 }
 
 .greeting-badge-meaning {
-  margin: 0;
-  font-size: 10.5px;
-  color: rgba(220, 231, 255, 0.82);
-  line-height: 1.35;
+  font-size: 11px;
+  color: #64748b;
   font-style: italic;
-}
-
-/* Audio pulse animation */
-.audio-pulse {
-  animation: audioPulseIcon 0.8s ease-in-out infinite alternate;
-}
-
-@keyframes audioPulseIcon {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1.15);
-    opacity: 1;
-  }
-}
-
-.greeting-actions-row {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.audio-greeting-btn {
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  color: #fef08a;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.audio-greeting-btn:hover {
-  background: rgba(245, 158, 11, 0.3);
-  border-color: rgba(245, 158, 11, 0.6);
-  color: #ffffff;
-}
-
-.audio-greeting-btn.speaking {
-  background: #f59e0b;
-  border-color: #d97706;
-  color: #000000;
 }
 
 .hero-district-hud {
   padding: 12px 14px;
-  background: rgba(245, 158, 11, 0.08);
-  border: 1px solid rgba(245, 158, 11, 0.25);
+  background: #ffffff;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
 .hud-label {
@@ -364,27 +429,27 @@ html {
   align-items: center;
   gap: 5px;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1.8px;
-  color: #fbbf24;
+  color: #b45309;
   text-transform: uppercase;
 }
 
 .hud-sparkle {
-  color: #fbbf24;
+  color: #d97706;
 }
 
 .hud-district-name {
   margin: 0;
   font-size: 18px;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .hud-district-tagline {
   margin: 0;
   font-size: 11.5px;
-  color: rgba(220, 231, 255, 0.85);
+  color: #475569;
   line-height: 1.4;
 }
 
@@ -400,164 +465,29 @@ html {
   align-items: center;
   gap: 5px;
   font-size: 11px;
-  font-weight: 600;
-  color: #fef08a;
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  font-weight: 700;
+  color: #92400e;
+  background: rgba(217, 119, 6, 0.1);
+  border: 1px solid rgba(180, 83, 9, 0.25);
   padding: 3px 9px;
   border-radius: 999px;
 }
 
-.hero-instruction-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.25);
-  color: #fef08a;
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
-
-.state-canvas-container {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-/* Bihar Map Component internals */
-.bihar-map-wrapper {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.bihar-map-controls {
-  position: absolute;
-  right: 28px;
-  bottom: 80px;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.map-control-btn {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  background: rgba(15, 31, 61, 0.85);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  color: #fef08a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  transition: all 0.2s ease;
-}
-
-.map-control-btn:hover {
-  background: rgba(245, 158, 11, 0.25);
-  border-color: #fbbf24;
-  transform: scale(1.08);
-}
-
-.bihar-compass-badge {
-  position: absolute;
-  right: 32px;
-  top: 24px;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fbbf24;
-  font-size: 10px;
-  font-weight: 800;
-  pointer-events: none;
-  background: rgba(15, 31, 61, 0.7);
-  padding: 6px 8px;
-  border-radius: 8px;
-  border: 1px solid rgba(245, 158, 11, 0.25);
-}
-
-
-
-.bihar-map-tooltip {
-  position: fixed;
-  z-index: 1000;
-  pointer-events: none;
-  padding: 8px 14px;
-  background: rgba(9, 19, 38, 0.94);
-  border: 1px solid #fbbf24;
-  border-radius: 9px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  font-size: 12.5px;
-  color: #f8fafc;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  backdrop-filter: blur(10px);
-}
-
-.bihar-map-tooltip strong {
-  color: #fef08a;
-}
-
-.tooltip-sub {
-  font-size: 10.5px;
-  color: rgba(220, 231, 255, 0.8);
-}
-
-.bihar-map-loading {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: #fbbf24;
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: rgba(9, 19, 38, 0.7);
-  backdrop-filter: blur(8px);
-}
-
-.loading-spinner {
-  width: 32px;
-  height: 32px;
-  border: 3px solid rgba(245, 158, 11, 0.2);
-  border-top-color: #fbbf24;
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Dedicated Stats Strip Bar (No overlap with 3D map) */
+/* Dedicated Stats Strip Bar */
 .state-stats-strip-bar {
   width: 100%;
-  padding: 16px 24px;
-  background: #081122;
-  border-top: 1px solid rgba(245, 158, 11, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 14px 24px;
+  background: #faf7f0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b45309' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M20 0L40 20L20 40L0 20z'/%3E%3C/g%3E%3C/svg%3E");
+  border-top: 1px solid rgba(180, 83, 9, 0.25);
+  border-bottom: 1px solid rgba(180, 83, 9, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 5;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .hero-stats-strip {
@@ -567,12 +497,10 @@ html {
   flex-wrap: wrap;
   gap: 24px;
   padding: 8px 24px;
-  background: rgba(15, 31, 61, 0.85);
-  border: 1px solid rgba(245, 158, 11, 0.25);
+  background: #ffffff;
+  border: 1px solid rgba(180, 83, 9, 0.3);
   border-radius: 999px;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 14px rgba(180, 83, 9, 0.1);
 }
 
 .strip-stat-item {
@@ -584,81 +512,15 @@ html {
 .strip-stat-value {
   font-size: 16px;
   font-weight: 800;
-  color: #fef08a;
+  color: #b45309;
 }
 
 .strip-stat-label {
   font-size: 9px;
-  font-weight: 600;
-  color: #94a3b8;
+  font-weight: 700;
+  color: #64748b;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-.selected-landmark-toast {
-  position: absolute;
-  top: 90px;
-  right: 28px;
-  z-index: 25;
-  background: rgba(15, 31, 61, 0.94);
-  border: 1px solid #fbbf24;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  padding: 16px 20px;
-  border-radius: 14px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(245, 158, 11, 0.15);
-  max-width: 320px;
-  animation: fadeInHud 0.3s ease;
-}
-
-.toast-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6px;
-}
-
-.toast-tag {
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #fbbf24;
-}
-
-.toast-close {
-  background: transparent;
-  border: none;
-  color: #94a3b8;
-  cursor: pointer;
-  font-size: 13px;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-
-.toast-close:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.toast-title {
-  margin: 0 0 2px;
-  font-size: 17px;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-.toast-district {
-  margin: 0 0 6px;
-  font-size: 11.5px;
-  color: #fbbf24;
-  font-weight: 600;
-}
-
-.toast-desc {
-  margin: 0;
-  font-size: 12.5px;
-  color: #cbd5e1;
-  line-height: 1.5;
 }
 
 .scroll-down-cue {
@@ -666,28 +528,25 @@ html {
   bottom: 16px;
   right: 28px;
   z-index: 10;
-  background: rgba(15, 31, 61, 0.85);
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: #faf7f0;
+  border: 1px solid rgba(180, 83, 9, 0.35);
   padding: 6px 14px;
   border-radius: 999px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: #fbbf24;
+  color: #b45309;
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 11.5px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.5px;
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease;
 }
 
 .scroll-down-cue:hover {
-  background: rgba(245, 158, 11, 0.2);
-  border-color: #fbbf24;
-  color: #fef08a;
+  background: #ffffff;
+  border-color: #b45309;
   transform: translateY(-2px);
 }
 
@@ -705,13 +564,13 @@ html {
 }
 
 /* =========================================================
-   GENERIC CONTENT SECTIONS
+   GENERIC CONTENT SECTIONS (TRADITIONAL INDIAN THEME)
 ========================================================= */
 
 .state-content-section {
   position: relative;
   padding: 90px 24px;
-  border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+  border-bottom: 1px solid rgba(217, 119, 6, 0.15);
 }
 
 .section-container {
@@ -741,11 +600,11 @@ html {
   gap: 7px;
   padding: 5px 14px;
   border-radius: 999px;
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  color: #fbbf24;
+  background: rgba(217, 119, 6, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fef08a;
   font-size: 10.5px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -754,7 +613,7 @@ html {
 .section-heading {
   margin: 0 0 14px;
   font-size: clamp(26px, 3.6vw, 42px);
-  font-weight: 800;
+  font-weight: 900;
   color: #ffffff;
   letter-spacing: -0.5px;
   line-height: 1.25;
@@ -763,7 +622,7 @@ html {
 .section-subtext {
   margin: 0;
   font-size: 16px;
-  color: #94a3b8;
+  color: #cbd5e1;
   line-height: 1.6;
 }
 
@@ -779,19 +638,21 @@ html {
 }
 
 .heritage-main-card {
-  background: rgba(15, 31, 61, 0.6);
-  border: 1px solid rgba(245, 158, 11, 0.25);
+  background-color: #fffdf9;
+  background-image:
+    radial-gradient(circle at 100% 0%, rgba(217, 119, 6, 0.08), transparent 60%),
+    url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b45309' fill-opacity='0.035' fill-rule='evenodd'%3E%3Cpath d='M35 0C40 18 52 30 70 35C52 40 40 52 35 70C30 52 18 40 0 35C18 30 30 18 35 0z'/%3E%3C/g%3E%3C/svg%3E");
+  border: 1px solid rgba(180, 83, 9, 0.3);
   border-radius: 20px;
   padding: 36px;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(217, 119, 6, 0.15);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .heritage-quote-box {
-  border-left: 3px solid #fbbf24;
+  border-left: 4px solid #b45309;
   padding-left: 18px;
   margin-bottom: 24px;
 }
@@ -800,20 +661,21 @@ html {
   margin: 0 0 6px;
   font-size: 18px;
   font-style: italic;
-  color: #fef08a;
+  color: #0f172a;
   line-height: 1.5;
+  font-weight: 700;
 }
 
 .heritage-quote-author {
   font-size: 12px;
-  font-weight: 600;
-  color: #fbbf24;
+  font-weight: 800;
+  color: #b45309;
   letter-spacing: 1px;
 }
 
 .heritage-narrative {
   font-size: 15.5px;
-  color: #cbd5e1;
+  color: #334155;
   line-height: 1.8;
   margin-bottom: 24px;
 }
@@ -824,13 +686,13 @@ html {
   gap: 12px;
   flex-wrap: wrap;
   padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(180, 83, 9, 0.18);
 }
 
 .ancient-label {
   font-size: 12px;
-  font-weight: 700;
-  color: #fbbf24;
+  font-weight: 800;
+  color: #b45309;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -844,11 +706,11 @@ html {
 .ancient-tag-pill {
   padding: 4px 12px;
   border-radius: 999px;
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  color: #ffffff;
+  background: rgba(217, 119, 6, 0.12);
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  color: #92400e;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .heritage-side-cards {
@@ -858,44 +720,47 @@ html {
 }
 
 .heritage-mini-card {
-  background: rgba(15, 31, 61, 0.5);
-  border: 1px solid rgba(245, 158, 11, 0.18);
+  background: #fffdf9;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 16px;
   padding: 22px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .heritage-mini-card:hover {
-  border-color: rgba(245, 158, 11, 0.45);
+  border-color: #b45309;
   transform: translateY(-3px);
-  background: rgba(15, 31, 61, 0.75);
+  box-shadow: 0 10px 25px rgba(180, 83, 9, 0.2);
 }
 
 .mini-card-icon {
-  color: #fbbf24;
+  color: #b45309;
   margin-bottom: 10px;
 }
 
 .heritage-mini-card h3 {
   margin: 0 0 8px;
   font-size: 17px;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: 800;
+  color: #0f172a;
 }
 
 .heritage-mini-card p {
   margin: 0;
   font-size: 13.5px;
-  color: #94a3b8;
+  color: #475569;
   line-height: 1.6;
 }
 
 /* =========================================================
-   SECTION 2: CUISINE
+   SECTION 2: CUISINE (SAFFRON & CARDAMOM THEME)
 ========================================================= */
 
 .cuisine-bg {
-  background: radial-gradient(circle at 50% 50%, #172b4d 0%, #091326 100%);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(217, 119, 6, 0.12) 0%, transparent 80%),
+    rgba(18, 14, 24, 0.8);
 }
 
 .cuisine-cards-grid {
@@ -905,20 +770,20 @@ html {
 }
 
 .cuisine-card {
-  background: rgba(15, 31, 61, 0.7);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  background: #fffdf9;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 18px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .cuisine-card:hover {
   transform: translateY(-6px);
-  border-color: #fbbf24;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 24px rgba(245, 158, 11, 0.15);
+  border-color: #b45309;
+  box-shadow: 0 16px 40px rgba(180, 83, 9, 0.25);
 }
 
 .cuisine-image-wrap {
@@ -943,11 +808,11 @@ html {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: rgba(9, 19, 38, 0.85);
+  background: rgba(15, 23, 42, 0.88);
   border: 1px solid rgba(245, 158, 11, 0.5);
   color: #fef08a;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 4px 10px;
   border-radius: 999px;
   backdrop-filter: blur(8px);
@@ -957,13 +822,13 @@ html {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: rgba(194, 65, 12, 0.9);
+  background: #b45309;
   color: #ffffff;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 3px 9px;
   border-radius: 6px;
-  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .cuisine-card-body {
@@ -984,33 +849,33 @@ html {
   margin: 0;
   font-size: 20px;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .cuisine-origin {
   font-size: 11.5px;
-  font-weight: 600;
-  color: #fbbf24;
+  font-weight: 700;
+  color: #b45309;
 }
 
 .cuisine-desc {
   margin: 0 0 16px;
   font-size: 13.5px;
-  color: #cbd5e1;
+  color: #334155;
   line-height: 1.6;
   flex: 1;
 }
 
 .cuisine-ingredients {
   padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(180, 83, 9, 0.16);
 }
 
 .ing-title {
   display: block;
   font-size: 10.5px;
-  font-weight: 700;
-  color: #94a3b8;
+  font-weight: 800;
+  color: #64748b;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 6px;
@@ -1024,14 +889,16 @@ html {
 
 .ing-pill {
   font-size: 11px;
+  font-weight: 600;
   padding: 3px 8px;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.06);
-  color: #e2e8f0;
+  background: rgba(217, 119, 6, 0.1);
+  border: 1px solid rgba(180, 83, 9, 0.2);
+  color: #78350f;
 }
 
 /* =========================================================
-   SECTION 3: ART & TRADITIONAL ATTIRE
+   SECTION 3: ART & TRADITIONAL ATTIRE (MADHUBANI THEME)
 ========================================================= */
 
 .traditions-row {
@@ -1042,16 +909,18 @@ html {
 }
 
 .tradition-feature-card {
-  background: rgba(15, 31, 61, 0.6);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  background: #fffdf9;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .tradition-feature-card:hover {
   transform: translateY(-5px);
-  border-color: #fbbf24;
+  border-color: #b45309;
+  box-shadow: 0 16px 40px rgba(180, 83, 9, 0.25);
 }
 
 .tradition-img-wrap {
@@ -1070,7 +939,7 @@ html {
 .tradition-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(15, 31, 61, 0.9) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.85) 0%, transparent 60%);
 }
 
 .tradition-category-pill {
@@ -1078,13 +947,12 @@ html {
   bottom: 12px;
   left: 16px;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(245, 158, 11, 0.25);
-  border: 1px solid #fbbf24;
-  color: #fef08a;
-  backdrop-filter: blur(8px);
+  background: rgba(217, 119, 6, 0.9);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .tradition-content {
@@ -1095,20 +963,20 @@ html {
   margin: 0 0 4px;
   font-size: 20px;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .tradition-period {
   margin: 0 0 12px;
   font-size: 11.5px;
-  font-weight: 600;
-  color: #fbbf24;
+  font-weight: 700;
+  color: #b45309;
 }
 
 .tradition-desc {
   margin: 0 0 16px;
   font-size: 13.5px;
-  color: #cbd5e1;
+  color: #334155;
   line-height: 1.6;
 }
 
@@ -1120,7 +988,8 @@ html {
 
 .highlight-tag {
   font-size: 12px;
-  color: #fef08a;
+  font-weight: 700;
+  color: #92400e;
 }
 
 /* Attire Subsection */
@@ -1143,16 +1012,18 @@ html {
 }
 
 .attire-card {
-  background: rgba(15, 31, 61, 0.55);
-  border: 1px solid rgba(245, 158, 11, 0.18);
+  background: #fffdf9;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .attire-card:hover {
-  border-color: rgba(245, 158, 11, 0.45);
+  border-color: #b45309;
   transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(180, 83, 9, 0.25);
 }
 
 .attire-image-container {
@@ -1171,10 +1042,10 @@ html {
   position: absolute;
   bottom: 10px;
   left: 12px;
-  background: rgba(9, 19, 38, 0.85);
+  background: rgba(15, 23, 42, 0.88);
   color: #fbbf24;
   font-size: 10.5px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 3px 9px;
   border-radius: 6px;
   border: 1px solid rgba(245, 158, 11, 0.3);
@@ -1188,21 +1059,21 @@ html {
   margin: 0 0 4px;
   font-size: 17px;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .attire-specialty {
   display: block;
   font-size: 11.5px;
-  font-weight: 600;
-  color: #fbbf24;
+  font-weight: 700;
+  color: #b45309;
   margin-bottom: 8px;
 }
 
 .attire-info p {
   margin: 0;
   font-size: 13px;
-  color: #94a3b8;
+  color: #475569;
   line-height: 1.5;
 }
 
@@ -1211,7 +1082,9 @@ html {
 ========================================================= */
 
 .monuments-bg {
-  background: radial-gradient(circle at 50% 30%, #152749 0%, #091326 100%);
+  background:
+    radial-gradient(circle at 50% 30%, rgba(180, 83, 9, 0.12) 0%, transparent 80%),
+    rgba(18, 14, 24, 0.8);
 }
 
 .monuments-grid {
@@ -1221,19 +1094,20 @@ html {
 }
 
 .monument-card {
-  background: rgba(15, 31, 61, 0.7);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  background: #fffdf9;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 18px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .monument-card:hover {
   transform: translateY(-5px);
-  border-color: #fbbf24;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  border-color: #b45309;
+  box-shadow: 0 16px 40px rgba(180, 83, 9, 0.25);
 }
 
 .monument-visual {
@@ -1255,24 +1129,24 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: rgba(194, 65, 12, 0.9);
+  background: #047857;
   color: #ffffff;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 4px 10px;
   border-radius: 999px;
-  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .monument-location-tag {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  background: rgba(9, 19, 38, 0.85);
+  background: rgba(15, 23, 42, 0.88);
   border: 1px solid rgba(245, 158, 11, 0.4);
   color: #fef08a;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 3px 9px;
   border-radius: 6px;
 }
@@ -1286,9 +1160,9 @@ html {
 
 .monument-era {
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
-  color: #fbbf24;
+  color: #b45309;
   text-transform: uppercase;
   margin-bottom: 4px;
 }
@@ -1297,26 +1171,50 @@ html {
   margin: 0 0 10px;
   font-size: 19px;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .monument-desc {
   margin: 0 0 14px;
   font-size: 13.5px;
-  color: #cbd5e1;
+  color: #334155;
   line-height: 1.6;
   flex: 1;
 }
 
 .monument-significance {
   padding-top: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(180, 83, 9, 0.16);
   font-size: 12px;
-  color: #94a3b8;
+  color: #64748b;
 }
 
 .monument-significance strong {
-  color: #fbbf24;
+  color: #b45309;
+}
+
+.monument-inspect-3d-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 8px 14px;
+  background: rgba(217, 119, 6, 0.1);
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  border-radius: 10px;
+  color: #b45309;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.monument-inspect-3d-btn:hover {
+  background: #b45309;
+  color: #ffffff;
+  border-color: #92400e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(180, 83, 9, 0.3);
 }
 
 /* =========================================================
@@ -1330,18 +1228,20 @@ html {
 }
 
 .language-card {
-  background: rgba(15, 31, 61, 0.6);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  background: #fffdf9;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 18px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   transition: all 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .language-card:hover {
-  border-color: #fbbf24;
+  border-color: #b45309;
   transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(180, 83, 9, 0.25);
 }
 
 .language-card-top {
@@ -1355,27 +1255,28 @@ html {
   margin: 0 0 2px;
   font-size: 20px;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .language-speakers {
   font-size: 11.5px;
-  color: #94a3b8;
+  color: #64748b;
+  font-weight: 600;
 }
 
 .script-badge {
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 3px 8px;
   border-radius: 6px;
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  color: #fef08a;
+  background: rgba(217, 119, 6, 0.12);
+  border: 1px solid rgba(180, 83, 9, 0.3);
+  color: #b45309;
 }
 
 .greeting-box {
-  background: rgba(9, 19, 38, 0.7);
-  border: 1px solid rgba(245, 158, 11, 0.25);
+  background: #fdfbf7;
+  border: 1px solid rgba(180, 83, 9, 0.2);
   border-radius: 12px;
   padding: 14px;
   margin-bottom: 16px;
@@ -1384,10 +1285,10 @@ html {
 .greeting-label {
   display: block;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fbbf24;
+  color: #b45309;
   margin-bottom: 6px;
 }
 
@@ -1401,15 +1302,15 @@ html {
 
 .greeting-vernacular {
   margin: 0;
-  font-size: 15px;
-  font-weight: 700;
-  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
 }
 
 .copy-greeting-btn {
   background: transparent;
   border: none;
-  color: #94a3b8;
+  color: #64748b;
   cursor: pointer;
   padding: 4px;
   border-radius: 4px;
@@ -1420,24 +1321,24 @@ html {
 }
 
 .copy-greeting-btn:hover {
-  color: #fbbf24;
-  background: rgba(255, 255, 255, 0.08);
+  color: #b45309;
+  background: rgba(217, 119, 6, 0.1);
 }
 
 .copied-icon {
-  color: #34d399;
+  color: #059669;
 }
 
 .greeting-meaning {
   font-size: 11.5px;
-  color: rgba(220, 231, 255, 0.75);
+  color: #475569;
   font-style: italic;
 }
 
 .language-desc {
   margin: 0;
   font-size: 13px;
-  color: #94a3b8;
+  color: #475569;
   line-height: 1.6;
 }
 
@@ -1446,7 +1347,9 @@ html {
 ========================================================= */
 
 .luminaries-bg {
-  background: radial-gradient(circle at 50% 60%, #172b4d 0%, #091326 100%);
+  background:
+    radial-gradient(circle at 50% 60%, rgba(217, 119, 6, 0.12) 0%, transparent 80%),
+    rgba(18, 14, 24, 0.8);
 }
 
 .luminaries-grid {
@@ -1456,27 +1359,28 @@ html {
 }
 
 .luminary-card {
-  background: rgba(15, 31, 61, 0.55);
-  border: 1px solid rgba(245, 158, 11, 0.18);
+  background: #fffdf9;
+  border: 1px solid rgba(180, 83, 9, 0.25);
   border-radius: 16px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   position: relative;
   transition: all 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .luminary-card:hover {
-  border-color: #fbbf24;
+  border-color: #b45309;
   transform: translateY(-4px);
-  background: rgba(15, 31, 61, 0.8);
+  box-shadow: 0 14px 35px rgba(180, 83, 9, 0.25);
 }
 
 .luminary-emblem {
   position: absolute;
   top: 18px;
   right: 18px;
-  color: rgba(245, 158, 11, 0.4);
+  color: rgba(180, 83, 9, 0.4);
   font-size: 18px;
 }
 
@@ -1487,8 +1391,8 @@ html {
 .luminary-era {
   display: block;
   font-size: 10.5px;
-  font-weight: 700;
-  color: #fbbf24;
+  font-weight: 800;
+  color: #b45309;
   margin-bottom: 4px;
 }
 
@@ -1496,19 +1400,20 @@ html {
   margin: 0 0 2px;
   font-size: 18px;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .luminary-title {
   display: block;
   font-size: 11.5px;
-  color: #cbd5e1;
+  color: #64748b;
+  font-weight: 600;
 }
 
 .luminary-contribution {
   margin: 0;
   font-size: 13px;
-  color: #94a3b8;
+  color: #334155;
   line-height: 1.6;
 }
 
@@ -1520,9 +1425,9 @@ html {
   position: relative;
   padding: 80px 24px;
   text-align: center;
-  background: #060e1d;
+  background: #0f0a14;
   overflow: hidden;
-  border-top: 1px solid rgba(245, 158, 11, 0.2);
+  border-top: 1px solid rgba(217, 119, 6, 0.3);
 }
 
 .footer-glow {
@@ -1532,7 +1437,7 @@ html {
   transform: translateX(-50%);
   width: 600px;
   height: 240px;
-  background: radial-gradient(ellipse, rgba(245, 158, 11, 0.18) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(217, 119, 6, 0.25) 0%, transparent 70%);
   filter: blur(40px);
   pointer-events: none;
 }
@@ -1557,14 +1462,14 @@ html {
 .footer-title {
   margin: 0 0 14px;
   font-size: clamp(24px, 3.5vw, 36px);
-  font-weight: 800;
+  font-weight: 900;
   color: #ffffff;
 }
 
 .footer-sub {
   margin: 0 0 32px;
   font-size: 15px;
-  color: #94a3b8;
+  color: #cbd5e1;
   line-height: 1.6;
 }
 
@@ -1574,21 +1479,21 @@ html {
   gap: 10px;
   padding: 14px 28px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
-  color: #091326;
+  background: linear-gradient(135deg, #b45309 0%, #92400e 100%);
+  color: #ffffff;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.5px;
-  border: none;
+  border: 1px solid #78350f;
   cursor: pointer;
-  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
+  box-shadow: 0 8px 25px rgba(180, 83, 9, 0.35);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .footer-cta-btn:hover {
   transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 12px 35px rgba(245, 158, 11, 0.5);
-  color: #000000;
+  box-shadow: 0 12px 35px rgba(217, 119, 6, 0.5);
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
 }
 
 /* =========================================================
@@ -1599,18 +1504,14 @@ html {
 @media (max-width: 900px) {
   .state-navbar {
     padding: 10px 14px;
-    height: 52px;
-  }
-
-  .state-nav-brand {
-    font-size: 13px;
+    height: auto;
+    flex-wrap: wrap;
   }
 
   .state-section-nav {
     display: none;
   }
 
-  /* State Hero Section on Mobile: Vertical Stack (Zero Dock Overlap) */
   .state-hero-map {
     height: auto;
     min-height: unset;
@@ -1626,8 +1527,7 @@ html {
     width: calc(100% - 24px);
     max-width: none;
     margin: 12px auto 8px;
-    padding: 14px 16px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+    padding: 16px 18px;
     border-radius: 14px;
   }
 
@@ -1676,7 +1576,6 @@ html {
     display: flex;
   }
 
-  /* Stats Strip on Mobile: Horizontal Scrollable Ribbon */
   .state-stats-strip-bar {
     display: block;
     width: 100%;
@@ -1690,7 +1589,7 @@ html {
   }
 
   .state-stats-strip-bar::-webkit-scrollbar-thumb {
-    background: rgba(245, 158, 11, 0.35);
+    background: rgba(180, 83, 9, 0.35);
     border-radius: 999px;
   }
 
@@ -1715,7 +1614,6 @@ html {
     font-size: 9px;
   }
 
-  /* Cultural Content Grids on Mobile: Clean 1-Column Layout */
   .state-content-section {
     padding: 42px 14px;
   }
@@ -1732,7 +1630,7 @@ html {
     grid-template-columns: 1fr;
   }
 
-  .cuisines-grid {
+  .cuisine-cards-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
@@ -1741,7 +1639,7 @@ html {
     height: 190px;
   }
 
-  .traditions-grid {
+  .traditions-row {
     grid-template-columns: 1fr;
     gap: 16px;
   }
@@ -1760,10 +1658,6 @@ html {
     gap: 16px;
   }
 
-  .monument-img {
-    height: 210px;
-  }
-
   .languages-grid {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -1780,51 +1674,4 @@ html {
     height: 44vh;
     min-height: 310px;
   }
-}
-
-/* 3D Monument Inspection Action Triggers */
-.toast-inspect-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 10px;
-  padding: 6px 12px;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(225, 29, 72, 0.2));
-  border: 1px solid rgba(245, 158, 11, 0.5);
-  border-radius: 8px;
-  color: #fbbf24;
-  font-size: 0.76rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.toast-inspect-btn:hover {
-  background: linear-gradient(135deg, #f59e0b, #e11d48);
-  color: #0b0f19;
-  transform: translateY(-1px);
-}
-
-.monument-inspect-3d-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 14px;
-  padding: 8px 14px;
-  background: rgba(245, 158, 11, 0.08);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  border-radius: 10px;
-  color: #fbbf24;
-  font-size: 0.82rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.monument-inspect-3d-btn:hover {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
-  color: #0b0f19;
-  border-color: #f59e0b;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
 }

@@ -10,6 +10,9 @@ import {
   Palette,
   BookOpen,
   Volume2,
+  VolumeX,
+  Plus,
+  Minus,
   Award,
   Crown,
   Share2,
@@ -20,6 +23,7 @@ import StateDistrictMap from "../../components/map/StateDistrictMap"
 import { getStateById } from "../../data/states"
 import { getStateGreeting } from "../../data/greetings"
 import { playGreetingAudio, stopGreetingAudio } from "../../utils/greetingSpeech"
+import { heritageAudio, type HeritageAudioState } from "../../utils/ambientHeritageAudio"
 import type { LandmarkPin } from "../../types/state"
 import StateQuizSection from "../../components/quiz/StateQuizSection"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
@@ -268,7 +272,37 @@ export default function StatePage() {
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
   const [isMonumentOpen, setIsMonumentOpen] = useState(false)
   const [active3DMonumentId, setActive3DMonumentId] = useState("taj-mahal")
+  const [audioState, setAudioState] = useState<HeritageAudioState>(heritageAudio.getState())
   const stateGreeting = getStateGreeting(stateData.id)
+
+  // Ambient Heritage Indian Classical Audio lifecycle
+  useEffect(() => {
+    const unsub = heritageAudio.subscribe((state) => {
+      setAudioState(state)
+    })
+
+    // Start soothing classical soundscape
+    heritageAudio.start()
+
+    const handleFirstGesture = () => {
+      heritageAudio.start()
+      window.removeEventListener("click", handleFirstGesture)
+      window.removeEventListener("keydown", handleFirstGesture)
+      window.removeEventListener("touchstart", handleFirstGesture)
+    }
+
+    window.addEventListener("click", handleFirstGesture, { once: true })
+    window.addEventListener("keydown", handleFirstGesture, { once: true })
+    window.addEventListener("touchstart", handleFirstGesture, { once: true })
+
+    return () => {
+      unsub()
+      heritageAudio.stop()
+      window.removeEventListener("click", handleFirstGesture)
+      window.removeEventListener("keydown", handleFirstGesture)
+      window.removeEventListener("touchstart", handleFirstGesture)
+    }
+  }, [])
 
   const handleOpen3DMonument = (monumentName?: string) => {
     if (monumentName) {
@@ -425,6 +459,55 @@ export default function StatePage() {
             Quiz
           </button>
         </nav>
+
+        {/* Soothing Indian Classical Ambient Audio Pill */}
+        <div className="heritage-audio-pill" role="region" aria-label="Indian Classical Ambience">
+          <button
+            type="button"
+            className={`audio-mute-toggle ${audioState.isMuted ? "muted" : "playing"}`}
+            onClick={() => {
+              if (!audioState.isPlaying) {
+                heritageAudio.start()
+              } else {
+                heritageAudio.toggleMute()
+              }
+            }}
+            title={audioState.isMuted ? "Unmute Classical Ambience" : "Mute Classical Ambience"}
+            aria-label={audioState.isMuted ? "Unmute classical ambience" : "Mute classical ambience"}
+          >
+            {audioState.isMuted ? <VolumeX size={15} /> : <Volume2 size={15} />}
+            <span className="audio-label">{audioState.isMuted ? "Muted" : "Tanpura & Flute"}</span>
+            {!audioState.isMuted && audioState.isPlaying && (
+              <span className="audio-wave-anim">
+                <span /><span /><span />
+              </span>
+            )}
+          </button>
+
+          <div className="audio-vol-controls">
+            <button
+              type="button"
+              className="audio-vol-btn"
+              onClick={() => heritageAudio.volumeDown()}
+              title="Decrease Volume (-10%)"
+              aria-label="Decrease volume"
+              disabled={audioState.volume <= 0.05}
+            >
+              <Minus size={11} />
+            </button>
+            <span className="audio-vol-pct">{Math.round(audioState.volume * 100)}%</span>
+            <button
+              type="button"
+              className="audio-vol-btn"
+              onClick={() => heritageAudio.volumeUp()}
+              title="Increase Volume (+10%)"
+              aria-label="Increase volume"
+              disabled={audioState.volume >= 1.0}
+            >
+              <Plus size={11} />
+            </button>
+          </div>
+        </div>
       </header>
 
       {/* ================= HERO: BIG 3D STATE MAP ================= */}

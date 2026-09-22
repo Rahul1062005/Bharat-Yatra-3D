@@ -1,10 +1,10 @@
-/* NationalMasteryModal.css - Premium Bharat Cultural Mastery Tracker */
+/* NationalMasteryModal.css - Royal Indian Heritage Parchment & Mandala Print */
 
 .mastery-modal-overlay {
   position: fixed;
   inset: 0;
-  z-index: 10000;
-  background: rgba(3, 7, 18, 0.82);
+  z-index: 99999;
+  background: rgba(15, 23, 42, 0.72);
   backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
@@ -25,8 +25,11 @@
 }
 
 .mastery-modal-content {
-  background: #0f1423;
-  border: 1px solid rgba(245, 158, 11, 0.25);
+  background-color: #faf7f0;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(217, 119, 6, 0.08), transparent 70%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b45309' fill-opacity='0.045' fill-rule='evenodd'%3E%3Cpath d='M40 0L46 14L60 10L56 24L70 28L60 38L70 48L56 52L60 66L46 62L40 76L34 62L20 66L24 52L10 48L20 38L10 28L24 24L20 10L34 14zM40 22a18 18 0 1 0 0 36a18 18 0 0 0 0-36zm0 4a14 14 0 1 1 0 28a14 14 0 0 1 0-28zm0 6a8 8 0 1 0 0 16a8 8 0 0 0 0-16z'/%3E%3C/g%3E%3C/svg%3E");
+  border: 1px solid rgba(180, 83, 9, 0.35);
   border-radius: 24px;
   width: 100%;
   max-width: 920px;
@@ -34,7 +37,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 40px rgba(245, 158, 11, 0.12);
+  box-shadow: 0 25px 70px -15px rgba(30, 20, 10, 0.4), 0 0 0 1px rgba(245, 158, 11, 0.2);
 }
 
 /* Header */
@@ -42,18 +45,18 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 24px 28px 20px 28px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, transparent 100%);
+  padding: 24px 28px 18px 28px;
+  border-bottom: 1px solid rgba(180, 83, 9, 0.16);
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.12) 0%, rgba(250, 247, 240, 0.6) 100%);
 }
 
 .mastery-tag {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  color: #f59e0b;
+  background: rgba(217, 119, 6, 0.1);
+  border: 1px solid rgba(180, 83, 9, 0.3);
+  color: #b45309;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -64,21 +67,22 @@
 
 .mastery-title {
   font-size: 1.45rem;
-  font-weight: 700;
-  color: #f8fafc;
+  font-weight: 800;
+  color: #0f172a;
   margin: 0 0 4px 0;
+  letter-spacing: -0.02em;
 }
 
 .mastery-subtitle {
   font-size: 0.88rem;
-  color: #94a3b8;
+  color: #475569;
   margin: 0;
 }
 
 .mastery-close-btn {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #94a3b8;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #475569;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -91,22 +95,23 @@
 }
 
 .mastery-close-btn:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: rgba(0, 0, 0, 0.12);
+  color: #0f172a;
   transform: rotate(90deg);
 }
 
 /* Rank & Progress Card */
 .mastery-rank-card {
-  margin: 20px 28px;
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 18px 28px;
+  background: #ffffff;
+  border: 1px solid rgba(180, 83, 9, 0.22);
   border-radius: 18px;
   padding: 20px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 .mastery-rank-left {
@@ -117,38 +122,38 @@
 }
 
 .mastery-rank-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(225, 29, 72, 0.25));
-  border: 1px solid rgba(245, 158, 11, 0.4);
-  color: #f59e0b;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(225, 29, 72, 0.15));
+  border: 1px solid rgba(217, 119, 6, 0.4);
+  color: #d97706;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.15);
 }
 
 .rank-label {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: #94a3b8;
+  color: #64748b;
   display: block;
   margin-bottom: 2px;
 }
 
 .rank-title {
   font-size: 1.2rem;
-  font-weight: 700;
-  color: #f8fafc;
+  font-weight: 800;
+  color: #0f172a;
   margin: 0 0 4px 0;
 }
 
 .rank-next-hint {
   font-size: 0.82rem;
-  color: #cbd5e1;
+  color: #475569;
   margin: 0;
 }
 
@@ -168,29 +173,31 @@
 .gauge-count {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #f59e0b;
+  color: #d97706;
 }
 
 .gauge-slash {
-  color: #64748b;
+  color: #94a3b8;
   font-size: 1.2rem;
 }
 
 .gauge-total {
   font-size: 1.1rem;
-  color: #94a3b8;
+  color: #64748b;
+  font-weight: 700;
 }
 
 .gauge-desc {
   font-size: 0.76rem;
-  color: #94a3b8;
+  color: #64748b;
   margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .mastery-progress-bar-bg {
   width: 100%;
   height: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.07);
   border-radius: 999px;
   overflow: hidden;
   margin-bottom: 4px;
@@ -198,15 +205,15 @@
 
 .mastery-progress-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, #f59e0b, #10b981);
+  background: linear-gradient(90deg, #f59e0b, #059669);
   border-radius: 999px;
   transition: width 0.5s ease-out;
 }
 
 .mastery-percent-text {
   font-size: 0.74rem;
-  color: #10b981;
-  font-weight: 600;
+  color: #059669;
+  font-weight: 700;
 }
 
 /* Badges Showcase */
@@ -218,10 +225,10 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #e2e8f0;
-  margin: 0 0 12px 0;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 10px 0;
 }
 
 .badges-grid {
@@ -236,14 +243,15 @@
   gap: 10px;
   padding: 10px 12px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
   transition: all 0.2s ease;
 }
 
 .mastery-badge-item.unlocked {
-  background: rgba(245, 158, 11, 0.08);
-  border-color: rgba(245, 158, 11, 0.3);
+  background: #fffbeb;
+  border-color: rgba(217, 119, 6, 0.35);
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.08);
 }
 
 .mastery-badge-item.locked {
@@ -271,20 +279,20 @@
 .badge-name {
   font-size: 0.78rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: #0f172a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .badge-check-icon {
-  color: #10b981;
+  color: #059669;
   flex-shrink: 0;
 }
 
 .badge-desc-text {
   font-size: 0.68rem;
-  color: #94a3b8;
+  color: #64748b;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -292,7 +300,7 @@
 
 /* 36 States Grid Section */
 .mastery-states-section {
-  padding: 16px 28px 24px 28px;
+  padding: 14px 28px 24px 28px;
   overflow-y: auto;
   flex: 1;
 }
@@ -301,7 +309,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -310,16 +318,16 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #e2e8f0;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #1e293b;
   margin: 0;
 }
 
 .filter-buttons-group {
   display: flex;
   gap: 6px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(0, 0, 0, 0.04);
   padding: 3px;
   border-radius: 10px;
 }
@@ -327,7 +335,7 @@
 .filter-btn {
   background: transparent;
   border: none;
-  color: #94a3b8;
+  color: #64748b;
   font-size: 0.78rem;
   font-weight: 600;
   padding: 5px 12px;
@@ -337,12 +345,14 @@
 }
 
 .filter-btn:hover {
-  color: #f8fafc;
+  color: #0f172a;
 }
 
 .filter-btn.active {
-  background: rgba(245, 158, 11, 0.2);
-  color: #f59e0b;
+  background: #ffffff;
+  color: #b45309;
+  font-weight: 700;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .mastery-states-grid {
@@ -357,21 +367,23 @@
   justify-content: space-between;
   padding: 10px 14px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #ffffff;
+  border: 1px solid rgba(180, 83, 9, 0.15);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
 .mastery-state-pill:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(245, 158, 11, 0.3);
+  background: #fffbeb;
+  border-color: rgba(217, 119, 6, 0.45);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.12);
 }
 
 .mastery-state-pill.state-mastered {
-  border-color: rgba(16, 185, 129, 0.3);
-  background: rgba(16, 185, 129, 0.05);
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.06);
 }
 
 .state-pill-left {
@@ -382,19 +394,19 @@
 }
 
 .state-status-icon.mastered {
-  color: #10b981;
+  color: #059669;
   flex-shrink: 0;
 }
 
 .state-status-icon.pending {
-  color: #475569;
+  color: #94a3b8;
   flex-shrink: 0;
 }
 
 .state-name-label {
   font-size: 0.84rem;
-  font-weight: 600;
-  color: #e2e8f0;
+  font-weight: 700;
+  color: #1e293b;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -407,9 +419,9 @@
 
 .state-score-tag {
   background: rgba(16, 185, 129, 0.15);
-  color: #34d399;
+  color: #047857;
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 800;
   padding: 2px 7px;
   border-radius: 6px;
 }
@@ -419,9 +431,9 @@
   align-items: center;
   gap: 4px;
   font-size: 0.72rem;
-  color: #f59e0b;
-  font-weight: 600;
-  opacity: 0.8;
+  color: #b45309;
+  font-weight: 700;
+  opacity: 0.85;
 }
 
 .take-quiz-tag:hover {
@@ -439,7 +451,7 @@
 }
 
 .mastery-states-section::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(180, 83, 9, 0.2);
   border-radius: 999px;
 }
 
