@@ -74,31 +74,31 @@ export const mizoramData: StateData = {
       lon: 92.8319,
       category: "nature",
       description: "The highest two-tiered waterfall in Mizoram cascading down 229 meters (751 feet) amidst dense bamboo and tropical evergreen forests near Thenzawl on the Vanva river, surrounded by mist and rainbow halos.",
-      image: "/images/mizoram/chapchar_kut.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Vantawng Waterfalls.",
+      image: "/images/landmarks/mizoram/vantawng-falls_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Serchhip",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Vantawng Waterfalls in Serchhip.",
       gallery: [
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/vantawng-falls_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Vantawng Waterfalls — Iconic grand facade and architectural overview."
+                caption: "Vantawng Waterfalls — Front elevation and iconic monumental facade in Serchhip."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
-                angle: "Aerial Drone View",
-                caption: "Vantawng Waterfalls — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/mizoram/vantawng-falls_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Vantawng Waterfalls — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/vantawng-falls_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Vantawng Waterfalls — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Vantawng Waterfalls — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/vantawng-falls_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Vantawng Waterfalls — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Vantawng Waterfalls — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -110,67 +110,67 @@ export const mizoramData: StateData = {
       lon: 92.6033,
       category: "nature",
       description: "A dramatic rocky mountain ridge rising to 1,548 meters with sheer vertical cliffs, housing an authentic recreated Mizo model village showcasing traditional chiefs' houses (Lal In) and bachelor quarters (Zawlbuk).",
-      image: "/images/mizoram/chapchar_kut.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Reiek Tlang & Heritage Village.",
+      image: "/images/landmarks/mizoram/reiek-peak_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Mamit",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Reiek Tlang & Heritage Village in Mamit.",
       gallery: [
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/reiek-peak_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Reiek Tlang & Heritage Village — Iconic grand facade and architectural overview."
+                caption: "Reiek Tlang & Heritage Village — Front elevation and iconic monumental facade in Mamit."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
-                angle: "Aerial Drone View",
-                caption: "Reiek Tlang & Heritage Village — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/mizoram/reiek-peak_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Reiek Tlang & Heritage Village — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/reiek-peak_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Reiek Tlang & Heritage Village — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Reiek Tlang & Heritage Village — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/reiek-peak_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Reiek Tlang & Heritage Village — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Reiek Tlang & Heritage Village — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
     {
       id: "solomons-temple",
-      name: "Solomon's Temple of Aizawl",
+      name: "Solomon",
       district: "Aizawl",
       lat: 23.7086,
       lon: 92.7303,
       category: "spiritual",
       description: "A magnificent white marble cathedral built in Kidron Valley on the outskirts of Aizawl by Kohhran Thianghlim church, featuring four towering spires, 12 grand entry gates, and seating for 3,000 worshippers inside an ornate hall.",
-      image: "/images/mizoram/chapchar_kut.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Solomon.",
+      image: "/images/landmarks/mizoram/solomons-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Aizawl",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Solomon in Aizawl.",
       gallery: [
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/solomons-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Solomon — Iconic grand facade and architectural overview."
+                caption: "Solomon — Front elevation and iconic monumental facade in Aizawl."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
-                angle: "Aerial Drone View",
-                caption: "Solomon — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/mizoram/solomons-temple_angle3.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Solomon — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/solomons-temple_angle4.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Solomon — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Solomon — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/solomons-temple_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Solomon — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Solomon — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -182,31 +182,31 @@ export const mizoramData: StateData = {
       lon: 92.9511,
       category: "nature",
       description: "Serene natural freshwater lake surrounded by pristine tropical evergreen forests and rolling green hills, celebrated as a peaceful boating retreat and rich habitat for endemic fish and prawns.",
-      image: "/images/mizoram/chapchar_kut.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Tamdil (Lake of Mustard).",
+      image: "/images/landmarks/mizoram/tamdil-lake_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Saitual / Kolasib",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Tamdil (Lake of Mustard) in Saitual / Kolasib.",
       gallery: [
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/tamdil-lake_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Tamdil (Lake of Mustard) — Iconic grand facade and architectural overview."
+                caption: "Tamdil (Lake of Mustard) — Front elevation and iconic monumental facade in Saitual / Kolasib."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
-                angle: "Aerial Drone View",
-                caption: "Tamdil (Lake of Mustard) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/mizoram/tamdil-lake_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Tamdil (Lake of Mustard) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/tamdil-lake_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Tamdil (Lake of Mustard) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Tamdil (Lake of Mustard) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/tamdil-lake_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Tamdil (Lake of Mustard) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Tamdil (Lake of Mustard) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -218,31 +218,31 @@ export const mizoramData: StateData = {
       lon: 93.3853,
       category: "spiritual",
       description: "A natural heart-shaped lake situated just across the international border near Champhai, revered in ancient Mizo mythology as the mystical passage through which all human souls must journey to reach the celestial afterlife (Pialral).",
-      image: "/images/mizoram/chapchar_kut.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Rih Dil Heart-Shaped Lake.",
+      image: "/images/landmarks/mizoram/rih-dil-lake_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Champhai Border (Near Zokhawthar)",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Rih Dil Heart-Shaped Lake in Champhai Border (Near Zokhawthar).",
       gallery: [
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/rih-dil-lake_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Rih Dil Heart-Shaped Lake — Iconic grand facade and architectural overview."
+                caption: "Rih Dil Heart-Shaped Lake — Front elevation and iconic monumental facade in Champhai Border (Near Zokhawthar)."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
-                angle: "Aerial Drone View",
-                caption: "Rih Dil Heart-Shaped Lake — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/mizoram/rih-dil-lake_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Rih Dil Heart-Shaped Lake — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/rih-dil-lake_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Rih Dil Heart-Shaped Lake — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Rih Dil Heart-Shaped Lake — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/landmarks/mizoram/rih-dil-lake_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Rih Dil Heart-Shaped Lake — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Rih Dil Heart-Shaped Lake — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -254,34 +254,34 @@ export const mizoramData: StateData = {
       lon: 92.7231,
       category: "nature",
       description: "A high mountain ridge overlooking the entire bowl-shaped capital of Aizawl, offering breathtaking sunset and nighttime vistas of glittering lights cascading across the terraced mountain slopes.",
-      image: "/images/mizoram/chapchar_kut.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Durtlang Hills Viewpoint.",
+      image: "/images/mizoram/durtlang-hills.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Aizawl",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Durtlang Hills Viewpoint in Aizawl.",
       gallery: [
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/mizoram/durtlang-hills.jpg",
                 angle: "Front Elevation",
-                caption: "Durtlang Hills Viewpoint — Iconic grand facade and architectural overview."
+                caption: "Durtlang Hills Viewpoint — Front elevation and iconic monumental facade in Aizawl."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
-                angle: "Aerial Drone View",
-                caption: "Durtlang Hills Viewpoint — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/mizoram/durtlang-hills.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Durtlang Hills Viewpoint — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/mizoram/durtlang-hills.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Durtlang Hills Viewpoint — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Durtlang Hills Viewpoint — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/mizoram/chapchar_kut.jpg",
+                url: "/images/mizoram/durtlang-hills.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Durtlang Hills Viewpoint — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Durtlang Hills Viewpoint — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

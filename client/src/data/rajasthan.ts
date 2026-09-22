@@ -263,31 +263,31 @@ export const rajasthanData: StateData = {
       lon: 75.8267,
       category: "monument",
       description: "Crown jewel of Rajput architecture with 953 honeycombed jharokha windows built in 1799 by Maharaja Sawai Pratap Singh.",
-      image: "/images/rajasthan/amber_fort.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Hawa Mahal (Palace of Winds).",
+      image: "/images/landmarks/rajasthan/hawa-mahal_angle1.jpg",
+      era: "1799 CE (Kachhwaha Dynasty)",
+      builtBy: "Maharaja Sawai Pratap Singh",
+      architecturalStyle: "Rajput & Mughal Red and Pink Sandstone Facade with 953 Jharokhas",
+      significance: "Iconic five-story screen palace built to allow royal women to observe street festivals unnoticed.",
       gallery: [
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/hawa-mahal_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Hawa Mahal (Palace of Winds) — Iconic grand facade and architectural overview."
+                caption: "Hawa Mahal (Palace of Winds) — Front elevation and iconic monumental facade in Jaipur."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
-                angle: "Aerial Drone View",
-                caption: "Hawa Mahal (Palace of Winds) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/rajasthan/hawa-mahal_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Hawa Mahal (Palace of Winds) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/hawa-mahal_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Hawa Mahal (Palace of Winds) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Hawa Mahal (Palace of Winds) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/hawa-mahal_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Hawa Mahal (Palace of Winds) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Hawa Mahal (Palace of Winds) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -299,31 +299,31 @@ export const rajasthanData: StateData = {
       lon: 73.0189,
       category: "monument",
       description: "One of India's largest and most imposing hill citadels rising 400 feet above the Blue City of Jodhpur, founded in 1459 by Rao Jodha.",
-      image: "/images/rajasthan/amber_fort.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Mehrangarh Fort.",
+      image: "/images/landmarks/rajasthan/mehrangarh-fort_angle1.jpg",
+      era: "1459 CE (Rathore Dynasty)",
+      builtBy: "Rao Jodha",
+      architecturalStyle: "Formidable Medieval Rajasthani Hill Fort Architecture",
+      significance: "One of India's largest forts perched 400 feet above the blue city of Jodhpur.",
       gallery: [
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/mehrangarh-fort_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Mehrangarh Fort — Iconic grand facade and architectural overview."
+                caption: "Mehrangarh Fort — Front elevation and iconic monumental facade in Jodhpur."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
-                angle: "Aerial Drone View",
-                caption: "Mehrangarh Fort — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/rajasthan/mehrangarh-fort_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Mehrangarh Fort — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/mehrangarh-fort_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Mehrangarh Fort — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Mehrangarh Fort — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/mehrangarh-fort_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Mehrangarh Fort — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Mehrangarh Fort — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -335,31 +335,31 @@ export const rajasthanData: StateData = {
       lon: 73.6835,
       category: "monument",
       description: "Flamboyant lakeside palace complex built over 400 years by the rulers of the Mewar dynasty on the eastern bank of Lake Pichola.",
-      image: "/images/rajasthan/amber_fort.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Udaipur City Palace.",
+      image: "/images/landmarks/rajasthan/city-palace-udaipur_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Udaipur",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Udaipur City Palace in Udaipur.",
       gallery: [
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/city-palace-udaipur_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Udaipur City Palace — Iconic grand facade and architectural overview."
+                caption: "Udaipur City Palace — Front elevation and iconic monumental facade in Udaipur."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
-                angle: "Aerial Drone View",
-                caption: "Udaipur City Palace — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/rajasthan/city-palace-udaipur_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Udaipur City Palace — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/city-palace-udaipur_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Udaipur City Palace — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Udaipur City Palace — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/city-palace-udaipur_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Udaipur City Palace — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Udaipur City Palace — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -371,31 +371,31 @@ export const rajasthanData: StateData = {
       lon: 73.5872,
       category: "monument",
       description: "Birthplace of Maharana Pratap boasting a 36-kilometer continuous perimeter wall, the second longest defensive wall in the world.",
-      image: "/images/rajasthan/amber_fort.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kumbhalgarh Fort & Great Wall.",
+      image: "/images/landmarks/rajasthan/kumbhalgarh-fort_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Rajsamand",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Kumbhalgarh Fort & Great Wall in Rajsamand.",
       gallery: [
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/kumbhalgarh-fort_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Kumbhalgarh Fort & Great Wall — Iconic grand facade and architectural overview."
+                caption: "Kumbhalgarh Fort & Great Wall — Front elevation and iconic monumental facade in Rajsamand."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kumbhalgarh Fort & Great Wall — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/rajasthan/kumbhalgarh-fort_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kumbhalgarh Fort & Great Wall — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/kumbhalgarh-fort_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kumbhalgarh Fort & Great Wall — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kumbhalgarh Fort & Great Wall — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/kumbhalgarh-fort_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kumbhalgarh Fort & Great Wall — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kumbhalgarh Fort & Great Wall — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -407,31 +407,31 @@ export const rajasthanData: StateData = {
       lon: 76.5026,
       category: "nature",
       description: "Renowned royal Bengal tiger kingdom where apex predators roam freely amidst thousand-year-old fortresses, lakes, and banyan trees.",
-      image: "/images/rajasthan/amber_fort.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Ranthambore Tiger Reserve.",
+      image: "/images/landmarks/rajasthan/ranthambore_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Sawai Madhopur",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Ranthambore Tiger Reserve in Sawai Madhopur.",
       gallery: [
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/ranthambore_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Ranthambore Tiger Reserve — Iconic grand facade and architectural overview."
+                caption: "Ranthambore Tiger Reserve — Front elevation and iconic monumental facade in Sawai Madhopur."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
-                angle: "Aerial Drone View",
-                caption: "Ranthambore Tiger Reserve — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/rajasthan/ranthambore_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Ranthambore Tiger Reserve — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/ranthambore_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Ranthambore Tiger Reserve — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Ranthambore Tiger Reserve — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/landmarks/rajasthan/ranthambore_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Ranthambore Tiger Reserve — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Ranthambore Tiger Reserve — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -443,34 +443,34 @@ export const rajasthanData: StateData = {
       lon: 74.5511,
       category: "spiritual",
       description: "One of the few temples on Earth dedicated to Lord Brahma, situated beside the sacred Pushkar Sarovar with 52 bathing ghats.",
-      image: "/images/rajasthan/amber_fort.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Pushkar Holy Lake & Brahma Temple.",
+      image: "/images/rajasthan/pushkar-brahma.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Ajmer",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Pushkar Holy Lake & Brahma Temple in Ajmer.",
       gallery: [
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/rajasthan/pushkar-brahma.jpg",
                 angle: "Front Elevation",
-                caption: "Pushkar Holy Lake & Brahma Temple — Iconic grand facade and architectural overview."
+                caption: "Pushkar Holy Lake & Brahma Temple — Front elevation and iconic monumental facade in Ajmer."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
-                angle: "Aerial Drone View",
-                caption: "Pushkar Holy Lake & Brahma Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/rajasthan/pushkar-brahma.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Pushkar Holy Lake & Brahma Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/rajasthan/pushkar-brahma.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Pushkar Holy Lake & Brahma Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Pushkar Holy Lake & Brahma Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/rajasthan/amber_fort.jpg",
+                url: "/images/rajasthan/pushkar-brahma.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Pushkar Holy Lake & Brahma Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Pushkar Holy Lake & Brahma Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

@@ -88,31 +88,31 @@ export const andhraPradeshData: StateData = {
       lon: 79.3472,
       category: "spiritual",
       description: "Perched atop the sacred Seven Hills of Seshachalam, this ancient Dravidian masterwork is dedicated to Lord Venkateswara (Balaji), attracting tens of millions of pilgrims annually who receive the world-renowned GI-tagged Tirupati Laddu Prasadam.",
-      image: "/images/andhrapradesh/amaravati_stupa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Tirumala Venkateswara Temple.",
+      image: "/images/landmarks/andhra-pradesh/tirumala-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Tirupati",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Tirumala Venkateswara Temple in Tirupati.",
       gallery: [
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/tirumala-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Tirumala Venkateswara Temple — Iconic grand facade and architectural overview."
+                caption: "Tirumala Venkateswara Temple — Front elevation and iconic monumental facade in Tirupati."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Tirumala Venkateswara Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/andhra-pradesh/tirumala-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Tirumala Venkateswara Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/tirumala-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Tirumala Venkateswara Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Tirumala Venkateswara Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/tirumala-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Tirumala Venkateswara Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Tirumala Venkateswara Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -124,31 +124,31 @@ export const andhraPradeshData: StateData = {
       lon: 77.6083,
       category: "monument",
       description: "16th-century Vijayanagara engineering marvel renowned for its miraculous hanging stone pillar that does not touch the ground, intricate ceiling fresco murals, and the magnificent monolithic colossal Nandi bull.",
-      image: "/images/andhrapradesh/amaravati_stupa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Veerabhadra Temple & Hanging Pillar.",
+      image: "/images/landmarks/andhra-pradesh/lepakshi-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Sri Sathya Sai",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Veerabhadra Temple & Hanging Pillar in Sri Sathya Sai.",
       gallery: [
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/lepakshi-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Veerabhadra Temple & Hanging Pillar — Iconic grand facade and architectural overview."
+                caption: "Veerabhadra Temple & Hanging Pillar — Front elevation and iconic monumental facade in Sri Sathya Sai."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Veerabhadra Temple & Hanging Pillar — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/andhra-pradesh/lepakshi-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Veerabhadra Temple & Hanging Pillar — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/lepakshi-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Veerabhadra Temple & Hanging Pillar — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Veerabhadra Temple & Hanging Pillar — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/lepakshi-temple_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Veerabhadra Temple & Hanging Pillar — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Veerabhadra Temple & Hanging Pillar — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -160,31 +160,31 @@ export const andhraPradeshData: StateData = {
       lon: 80.3577,
       category: "spiritual",
       description: "Dating from the 2nd century BCE to the 3rd century CE, this ancient Buddhist stupa was once larger than Sanchi, embellished with masterly limestone relief carvings depicting the life and miracles of Gautama Buddha.",
-      image: "/images/andhrapradesh/amaravati_stupa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Great Amaravati Mahachaitya.",
+      image: "/images/landmarks/andhra-pradesh/amaravati-stupa_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Guntur",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Great Amaravati Mahachaitya in Guntur.",
       gallery: [
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/amaravati-stupa_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Great Amaravati Mahachaitya — Iconic grand facade and architectural overview."
+                caption: "Great Amaravati Mahachaitya — Front elevation and iconic monumental facade in Guntur."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Great Amaravati Mahachaitya — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/andhra-pradesh/amaravati-stupa_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Great Amaravati Mahachaitya — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/amaravati-stupa_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Great Amaravati Mahachaitya — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Great Amaravati Mahachaitya — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/amaravati-stupa_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Great Amaravati Mahachaitya — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Great Amaravati Mahachaitya — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -196,31 +196,31 @@ export const andhraPradeshData: StateData = {
       lon: 80.5815,
       category: "monument",
       description: "Four-story monolithic rock-cut cave temple carved out of solid sandstone in the 7th century CE by the Vishnukundina kings, famous for its massive 5-meter-long reclining statue of Lord Vishnu (Anantasayana).",
-      image: "/images/andhrapradesh/amaravati_stupa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Undavalli Rock-Cut Caves.",
+      image: "/images/landmarks/andhra-pradesh/undavalli-caves_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Guntur",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Undavalli Rock-Cut Caves in Guntur.",
       gallery: [
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/undavalli-caves_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Undavalli Rock-Cut Caves — Iconic grand facade and architectural overview."
+                caption: "Undavalli Rock-Cut Caves — Front elevation and iconic monumental facade in Guntur."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Undavalli Rock-Cut Caves — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/andhra-pradesh/undavalli-caves_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Undavalli Rock-Cut Caves — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/undavalli-caves_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Undavalli Rock-Cut Caves — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Undavalli Rock-Cut Caves — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/undavalli-caves_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Undavalli Rock-Cut Caves — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Undavalli Rock-Cut Caves — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -232,31 +232,31 @@ export const andhraPradeshData: StateData = {
       lon: 82.8775,
       category: "nature",
       description: "Pristine hill station in the Eastern Ghats blanketed by aromatic organic coffee plantations, waterfalls, and the million-year-old Borra Caves containing striking naturally formed limestone speleothems.",
-      image: "/images/andhrapradesh/amaravati_stupa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Araku Valley & Borra Caves.",
+      image: "/images/landmarks/andhra-pradesh/araku-valley_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Alluri Sitharama Raju",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Araku Valley & Borra Caves in Alluri Sitharama Raju.",
       gallery: [
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/araku-valley_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Araku Valley & Borra Caves — Iconic grand facade and architectural overview."
+                caption: "Araku Valley & Borra Caves — Front elevation and iconic monumental facade in Alluri Sitharama Raju."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Araku Valley & Borra Caves — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/andhra-pradesh/araku-valley_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Araku Valley & Borra Caves — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/araku-valley_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Araku Valley & Borra Caves — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Araku Valley & Borra Caves — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/araku-valley_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Araku Valley & Borra Caves — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Araku Valley & Borra Caves — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -268,34 +268,34 @@ export const andhraPradeshData: StateData = {
       lon: 78.8685,
       category: "spiritual",
       description: "One of only three sacred pilgrim shrines in India that is simultaneously one of the 12 Shiva Jyotirlingas and one of the 18 Shakti Peethas (Bhramaramba), nestled deep in the Nallamala tiger forests.",
-      image: "/images/andhrapradesh/amaravati_stupa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Mallikarjuna Jyotirlinga (Srisailam).",
+      image: "/images/landmarks/andhra-pradesh/srisailam-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Nandyal",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Mallikarjuna Jyotirlinga (Srisailam) in Nandyal.",
       gallery: [
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/srisailam-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Mallikarjuna Jyotirlinga (Srisailam) — Iconic grand facade and architectural overview."
+                caption: "Mallikarjuna Jyotirlinga (Srisailam) — Front elevation and iconic monumental facade in Nandyal."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Mallikarjuna Jyotirlinga (Srisailam) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/andhra-pradesh/srisailam-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Mallikarjuna Jyotirlinga (Srisailam) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/srisailam-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Mallikarjuna Jyotirlinga (Srisailam) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Mallikarjuna Jyotirlinga (Srisailam) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/andhrapradesh/amaravati_stupa.jpg",
+                url: "/images/landmarks/andhra-pradesh/srisailam-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Mallikarjuna Jyotirlinga (Srisailam) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Mallikarjuna Jyotirlinga (Srisailam) — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

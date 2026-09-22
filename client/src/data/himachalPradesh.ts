@@ -88,31 +88,31 @@ export const himachalPradeshData: StateData = {
       lon: 77.1852,
       category: "spiritual",
       description: "Perched atop Shimla's highest hill peak at 2,455 meters, this ancient shrine is dedicated to Lord Hanuman, who is believed to have rested here while searching for the Sanjeevani herb, crowned by a majestic 108-foot-tall vermillion statue towering above pine canopies.",
-      image: "/images/himachalpradesh/babru_kachori.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Jakhu Temple & Colossal Hanuman Statue.",
+      image: "/images/landmarks/himachal-pradesh/jakhu-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Shimla",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Jakhu Temple & Colossal Hanuman Statue in Shimla.",
       gallery: [
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/jakhu-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Jakhu Temple & Colossal Hanuman Statue — Iconic grand facade and architectural overview."
+                caption: "Jakhu Temple & Colossal Hanuman Statue — Front elevation and iconic monumental facade in Shimla."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
-                angle: "Aerial Drone View",
-                caption: "Jakhu Temple & Colossal Hanuman Statue — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/himachal-pradesh/jakhu-temple_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Jakhu Temple & Colossal Hanuman Statue — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/jakhu-temple_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Jakhu Temple & Colossal Hanuman Statue — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Jakhu Temple & Colossal Hanuman Statue — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/jakhu-temple_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Jakhu Temple & Colossal Hanuman Statue — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Jakhu Temple & Colossal Hanuman Statue — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -124,31 +124,31 @@ export const himachalPradeshData: StateData = {
       lon: 77.1802,
       category: "spiritual",
       description: "Unique four-tiered wooden pagoda temple constructed in 1553 CE by Raja Bahadur Singh amidst a magnificent cedar (Deodar) forest in Manali, dedicated to Hidimba Devi, the forest goddess and wife of Pandava prince Bhima.",
-      image: "/images/himachalpradesh/babru_kachori.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Hidimba Devi Pagoda Temple.",
+      image: "/images/landmarks/himachal-pradesh/hidimba-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Kullu",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Hidimba Devi Pagoda Temple in Kullu.",
       gallery: [
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/hidimba-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Hidimba Devi Pagoda Temple — Iconic grand facade and architectural overview."
+                caption: "Hidimba Devi Pagoda Temple — Front elevation and iconic monumental facade in Kullu."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
-                angle: "Aerial Drone View",
-                caption: "Hidimba Devi Pagoda Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/himachal-pradesh/hidimba-temple_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Hidimba Devi Pagoda Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/hidimba-temple_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Hidimba Devi Pagoda Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Hidimba Devi Pagoda Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/hidimba-temple_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Hidimba Devi Pagoda Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Hidimba Devi Pagoda Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -160,31 +160,31 @@ export const himachalPradeshData: StateData = {
       lon: 78.3794,
       category: "spiritual",
       description: "Founded in 996 CE by Tibetan Buddhist translator Rinchen Zangpo, this historic mud-brick monastery preserves over a millennium of breathtaking stucco sculptures, Buddhist mandalas, and wall frescoes intact in cold dry desert air.",
-      image: "/images/himachalpradesh/babru_kachori.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Tabo Monastery (Ajanta of the Himalayas).",
+      image: "/images/landmarks/himachal-pradesh/tabo-monastery_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Lahaul and Spiti",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Tabo Monastery (Ajanta of the Himalayas) in Lahaul and Spiti.",
       gallery: [
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/tabo-monastery_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Tabo Monastery (Ajanta of the Himalayas) — Iconic grand facade and architectural overview."
+                caption: "Tabo Monastery (Ajanta of the Himalayas) — Front elevation and iconic monumental facade in Lahaul and Spiti."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
-                angle: "Aerial Drone View",
-                caption: "Tabo Monastery (Ajanta of the Himalayas) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/himachal-pradesh/tabo-monastery_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Tabo Monastery (Ajanta of the Himalayas) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/tabo-monastery_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Tabo Monastery (Ajanta of the Himalayas) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Tabo Monastery (Ajanta of the Himalayas) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/tabo-monastery_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Tabo Monastery (Ajanta of the Himalayas) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Tabo Monastery (Ajanta of the Himalayas) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -196,31 +196,31 @@ export const himachalPradeshData: StateData = {
       lon: 76.257,
       category: "monument",
       description: "One of the oldest documented forts in India built by the Katoch Rajput dynasty dating back to the Mahabharata era, perched dramatically on a narrow strip of land above the confluence of the Banganga and Majhi rivers.",
-      image: "/images/himachalpradesh/babru_kachori.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kangra Fort (Nagarkot).",
+      image: "/images/landmarks/himachal-pradesh/kangra-fort_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Kangra",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Kangra Fort (Nagarkot) in Kangra.",
       gallery: [
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/kangra-fort_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Kangra Fort (Nagarkot) — Iconic grand facade and architectural overview."
+                caption: "Kangra Fort (Nagarkot) — Front elevation and iconic monumental facade in Kangra."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kangra Fort (Nagarkot) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/himachal-pradesh/kangra-fort_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kangra Fort (Nagarkot) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/kangra-fort_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kangra Fort (Nagarkot) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kangra Fort (Nagarkot) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/kangra-fort_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kangra Fort (Nagarkot) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kangra Fort (Nagarkot) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -232,31 +232,31 @@ export const himachalPradeshData: StateData = {
       lon: 77.6163,
       category: "nature",
       description: "Crescent-shaped high-altitude glacial lake resting at 4,300 meters in the Spiti Valley, whose crystal-clear waters change colors from deep emerald to turquoise sapphire under pristine Himalayan starry skies.",
-      image: "/images/himachalpradesh/babru_kachori.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Chandratal (Lake of the Moon).",
+      image: "/images/landmarks/himachal-pradesh/chandratal-lake_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Lahaul and Spiti",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Chandratal (Lake of the Moon) in Lahaul and Spiti.",
       gallery: [
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/chandratal-lake_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Chandratal (Lake of the Moon) — Iconic grand facade and architectural overview."
+                caption: "Chandratal (Lake of the Moon) — Front elevation and iconic monumental facade in Lahaul and Spiti."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
-                angle: "Aerial Drone View",
-                caption: "Chandratal (Lake of the Moon) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/himachal-pradesh/chandratal-lake_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Chandratal (Lake of the Moon) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/chandratal-lake_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Chandratal (Lake of the Moon) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Chandratal (Lake of the Moon) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/chandratal-lake_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Chandratal (Lake of the Moon) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Chandratal (Lake of the Moon) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -268,34 +268,34 @@ export const himachalPradeshData: StateData = {
       lon: 77.067,
       category: "monument",
       description: "UNESCO World Heritage narrow-gauge mountain railway built in 1903, traveling 96 kilometers through 103 tunnels, 864 arched stone viaduct bridges, and breathtaking pine-clad mountain ridges.",
-      image: "/images/himachalpradesh/babru_kachori.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kalka-Shimla Mountain Toy Train.",
+      image: "/images/landmarks/himachal-pradesh/kalka-shimla-railway_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Solan / Shimla",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Kalka-Shimla Mountain Toy Train in Solan / Shimla.",
       gallery: [
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/kalka-shimla-railway_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Kalka-Shimla Mountain Toy Train — Iconic grand facade and architectural overview."
+                caption: "Kalka-Shimla Mountain Toy Train — Front elevation and iconic monumental facade in Solan / Shimla."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kalka-Shimla Mountain Toy Train — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/himachal-pradesh/kalka-shimla-railway_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kalka-Shimla Mountain Toy Train — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/kalka-shimla-railway_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kalka-Shimla Mountain Toy Train — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kalka-Shimla Mountain Toy Train — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/himachalpradesh/babru_kachori.jpg",
+                url: "/images/landmarks/himachal-pradesh/kalka-shimla-railway_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kalka-Shimla Mountain Toy Train — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kalka-Shimla Mountain Toy Train — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

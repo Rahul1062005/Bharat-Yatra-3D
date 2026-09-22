@@ -242,31 +242,31 @@ export const karnatakaData: StateData = {
       lon: 76.46,
       category: "monument",
       description: "Iconic symbol of Karnataka and UNESCO World Heritage Site; a monolithic stone shrine carved in the form of an ornate temple car dedicated to Garuda inside the Vijayanagara ruins.",
-      image: "/images/karnataka/belur_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Stone Chariot & Virupaksha Temple.",
+      image: "/images/landmarks/karnataka/hampi-stone-chariot_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Ballari",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Stone Chariot & Virupaksha Temple in Ballari.",
       gallery: [
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/hampi-stone-chariot_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Stone Chariot & Virupaksha Temple — Iconic grand facade and architectural overview."
+                caption: "Stone Chariot & Virupaksha Temple — Front elevation and iconic monumental facade in Ballari."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Stone Chariot & Virupaksha Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/karnataka/hampi-stone-chariot_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Stone Chariot & Virupaksha Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/hampi-stone-chariot_angle4.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Stone Chariot & Virupaksha Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Stone Chariot & Virupaksha Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/hampi-stone-chariot_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Stone Chariot & Virupaksha Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Stone Chariot & Virupaksha Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -278,31 +278,31 @@ export const karnatakaData: StateData = {
       lon: 76.6551,
       category: "monument",
       description: "One of India's most visited architectural landmarks, combining Indo-Saracenic, Rajput, and Gothic styles, glowing with 97,000 incandescent lamps on Dasara nights.",
-      image: "/images/karnataka/belur_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Mysuru Royal Palace (Amba Vilas).",
+      image: "/images/landmarks/karnataka/mysore-palace_angle1.jpg",
+      era: "1897–1912 CE (Wodeyar Dynasty)",
+      builtBy: "Architect Henry Irwin for Maharani Kempananjammanni Vani Vilasa Sannidhana",
+      architecturalStyle: "Indo-Saracenic Revival Architecture with Rose-Pink Domes",
+      significance: "One of India's most visited royal palaces, famous for illuminated Dasara celebrations.",
       gallery: [
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/mysore-palace_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Mysuru Royal Palace (Amba Vilas) — Iconic grand facade and architectural overview."
+                caption: "Mysuru Royal Palace (Amba Vilas) — Front elevation and iconic monumental facade in Mysuru."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Mysuru Royal Palace (Amba Vilas) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/karnataka/mysore-palace_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Mysuru Royal Palace (Amba Vilas) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/mysore-palace_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Mysuru Royal Palace (Amba Vilas) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Mysuru Royal Palace (Amba Vilas) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/mysore-palace_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Mysuru Royal Palace (Amba Vilas) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Mysuru Royal Palace (Amba Vilas) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -314,31 +314,31 @@ export const karnatakaData: StateData = {
       lon: 75.8596,
       category: "spiritual",
       description: "UNESCO World Heritage Hoysala soapstone temple constructed in 1117 CE by King Vishnuvardhana, renowned for 42 bracket figures of dancing damsels (Madanikas).",
-      image: "/images/karnataka/belur_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Chennakeshava Temple Belur (Hoysala).",
+      image: "/images/landmarks/karnataka/belur-chennakeshava_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Hassan",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Chennakeshava Temple Belur (Hoysala) in Hassan.",
       gallery: [
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/belur-chennakeshava_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Chennakeshava Temple Belur (Hoysala) — Iconic grand facade and architectural overview."
+                caption: "Chennakeshava Temple Belur (Hoysala) — Front elevation and iconic monumental facade in Hassan."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Chennakeshava Temple Belur (Hoysala) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/karnataka/belur-chennakeshava_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Chennakeshava Temple Belur (Hoysala) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/belur-chennakeshava_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Chennakeshava Temple Belur (Hoysala) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Chennakeshava Temple Belur (Hoysala) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/belur-chennakeshava_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Chennakeshava Temple Belur (Hoysala) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Chennakeshava Temple Belur (Hoysala) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -350,31 +350,31 @@ export const karnatakaData: StateData = {
       lon: 75.736,
       category: "monument",
       description: "Mausoleum of Mohammed Adil Shah featuring a unsupported circular dome 44 meters in diameter, with an acoustic whispering gallery where even a soft whisper echoes 11 times.",
-      image: "/images/karnataka/belur_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Gol Gumbaz of Vijayapura.",
+      image: "/images/landmarks/karnataka/gol-gumbaz_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Vijayapura",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Gol Gumbaz of Vijayapura in Vijayapura.",
       gallery: [
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/gol-gumbaz_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Gol Gumbaz of Vijayapura — Iconic grand facade and architectural overview."
+                caption: "Gol Gumbaz of Vijayapura — Front elevation and iconic monumental facade in Vijayapura."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Gol Gumbaz of Vijayapura — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/karnataka/gol-gumbaz_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Gol Gumbaz of Vijayapura — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/gol-gumbaz_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Gol Gumbaz of Vijayapura — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Gol Gumbaz of Vijayapura — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/gol-gumbaz_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Gol Gumbaz of Vijayapura — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Gol Gumbaz of Vijayapura — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -386,31 +386,31 @@ export const karnatakaData: StateData = {
       lon: 76.4851,
       category: "spiritual",
       description: "World's tallest monolithic free-standing statue (57 feet tall), carved out of a single block of granite atop Vindhyagiri hill in 981 CE by Ganga commander Chavundaraya.",
-      image: "/images/karnataka/belur_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Monolithic Gommateshwara Statue.",
+      image: "/images/landmarks/karnataka/shravanabelagola_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Hassan",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Monolithic Gommateshwara Statue in Hassan.",
       gallery: [
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/shravanabelagola_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Monolithic Gommateshwara Statue — Iconic grand facade and architectural overview."
+                caption: "Monolithic Gommateshwara Statue — Front elevation and iconic monumental facade in Hassan."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Monolithic Gommateshwara Statue — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/karnataka/shravanabelagola_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Monolithic Gommateshwara Statue — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/shravanabelagola_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Monolithic Gommateshwara Statue — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Monolithic Gommateshwara Statue — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/shravanabelagola_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Monolithic Gommateshwara Statue — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Monolithic Gommateshwara Statue — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -422,34 +422,34 @@ export const karnatakaData: StateData = {
       lon: 74.8114,
       category: "nature",
       description: "Spectacular natural wonder where the Sharavathi River plunges 253 meters in four distinct cascades named Raja, Roarer, Rocket, and Rani.",
-      image: "/images/karnataka/belur_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Jog Falls (Gerosoppa).",
+      image: "/images/landmarks/karnataka/jog-falls_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Shivamogga",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Jog Falls (Gerosoppa) in Shivamogga.",
       gallery: [
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/jog-falls_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Jog Falls (Gerosoppa) — Iconic grand facade and architectural overview."
+                caption: "Jog Falls (Gerosoppa) — Front elevation and iconic monumental facade in Shivamogga."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Jog Falls (Gerosoppa) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/karnataka/jog-falls_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Jog Falls (Gerosoppa) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/jog-falls_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Jog Falls (Gerosoppa) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Jog Falls (Gerosoppa) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/karnataka/belur_temple.jpg",
+                url: "/images/landmarks/karnataka/jog-falls_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Jog Falls (Gerosoppa) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Jog Falls (Gerosoppa) — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

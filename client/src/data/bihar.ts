@@ -116,31 +116,31 @@ export const biharData: StateData = {
       lon: 84.9914,
       category: "spiritual",
       description: "UNESCO World Heritage site where Gautama Buddha attained supreme enlightenment under the sacred Bodhi Tree.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
+      image: "/images/landmarks/bihar/bodhgaya_angle1.jpg",
       era: "3rd Century BCE – 6th Century CE",
       builtBy: "Emperor Ashoka & Gupta Dynasty",
-      architecturalStyle: "Classical Indian Brick Temple (Nagara predecessor)",
-      significance: "UNESCO World Heritage site where Gautama Buddha attained supreme enlightenment under the sacred Bodhi Tree.",
+      architecturalStyle: "Classical Indian Brick Temple Architecture",
+      significance: "UNESCO World Heritage site where Gautama Buddha attained supreme enlightenment.",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/bihar/bodhgaya_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Soaring 55-meter grand pyramidal shikhara rising above the Bodh Gaya sanctuary grounds."
+                caption: "Mahabodhi Temple — Front elevation and iconic monumental facade in Gaya."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Sacred Bodhi Tree & Vajrasana",
-                caption: "The direct descendant of the Sri Maha Bodhi tree and Emperor Ashoka's Diamond Throne."
+                url: "/images/landmarks/bihar/bodhgaya_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Mahabodhi Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Carved Stone Railings",
-                caption: "Intricate sandstone and granite balustrades dating back to the Sunga and Gupta periods."
+                url: "/images/landmarks/bihar/bodhgaya_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Mahabodhi Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Evening Illumination",
-                caption: "Golden temple lights shimmering against the evening sky with chanting monks."
+                url: "/images/landmarks/bihar/bodhgaya_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Mahabodhi Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -152,31 +152,31 @@ export const biharData: StateData = {
       lon: 85.4452,
       category: "university",
       description: "The world's earliest global residential university that housed over 10,000 scholars and 2,000 teachers in antiquity.",
-      image: "/images/bihar/nalanda_ruins.jpg",
+      image: "/images/landmarks/bihar/nalanda_angle1.jpg",
       era: "5th – 12th Century CE",
       builtBy: "Gupta Emperor Kumaragupta I & King Harshavardhana",
       architecturalStyle: "Ancient Buddhist Monastic Architecture (Vihara & Chaitya)",
-      significance: "World's foremost ancient residential university that housed 10,000 scholars from across Asia.",
+      significance: "World's foremost ancient residential university that housed 10,000 scholars.",
       gallery: [
         {
-                url: "/images/bihar/nalanda_ruins.jpg",
-                angle: "Sariputta Great Stupa",
-                caption: "Iconic multi-tiered votive stupa with stucco sculptures and stepped corner towers."
+                url: "/images/landmarks/bihar/nalanda_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Nalanda Mahavihara — Front elevation and iconic monumental facade in Nalanda."
         },
         {
-                url: "/images/bihar/nalanda_ruins.jpg",
-                angle: "Aerial Monastic Quadrangle",
-                caption: "Symmetrical layout of classrooms, dormitories, meditation cells, and central wells."
+                url: "/images/landmarks/bihar/nalanda_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Nalanda Mahavihara — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/nalanda_ruins.jpg",
-                angle: "Red Brick Corbelled Arches",
-                caption: "Masterful ancient burnt-brick masonry that has endured over 1,500 years."
+                url: "/images/landmarks/bihar/nalanda_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Nalanda Mahavihara — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/nalanda_ruins.jpg",
-                angle: "Sunset over Excavation Ruins",
-                caption: "Dusk spreading over the archaeological park and tranquil sacred ponds."
+                url: "/images/landmarks/bihar/nalanda_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Nalanda Mahavihara — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -188,31 +188,31 @@ export const biharData: StateData = {
       lon: 85.4217,
       category: "nature",
       description: "Ancient Magadhan hill retreat featuring Vishwa Shanti Stupa, hot sulfur springs, Vulture's Peak, and modern Glass Skywalk.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
-      era: "Ancient Magadhan / Modern Eco-Tourism",
-      builtBy: "Government of Bihar & Ancient Magadha Kings",
-      architecturalStyle: "Modern Glass Engineering & Buddhist Peace Pagoda",
-      significance: "Ancient mountain valley capital of King Bimbisara with hot springs and 85-foot cantilevered glass bridge.",
+      image: "/images/landmarks/bihar/rajgir_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Nalanda",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Rajgir & Glass Bridge in Nalanda.",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Glass Skywalk Canyon View",
-                caption: "Suspended glass platform overlooking the deep forested gorge of Rajgir hills."
+                url: "/images/landmarks/bihar/rajgir_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Rajgir & Glass Bridge — Front elevation and iconic monumental facade in Nalanda."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Vishwa Shanti Stupa",
-                caption: "White marble Japanese peace pagoda crowning the Ratnagiri hilltop."
+                url: "/images/landmarks/bihar/rajgir_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Rajgir & Glass Bridge — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Vulture's Peak (Gridhrakuta)",
-                caption: "Historic natural rock outcrop where Lord Buddha preached the Lotus Sutra."
+                url: "/images/landmarks/bihar/rajgir_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Rajgir & Glass Bridge — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Hot Springs of Brahmakund",
-                caption: "Sacred geo-thermal mineral springs flowing at the base of Vaibhava hill."
+                url: "/images/landmarks/bihar/rajgir_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Rajgir & Glass Bridge — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -224,31 +224,31 @@ export const biharData: StateData = {
       lon: 85.2289,
       category: "spiritual",
       description: "Birthplace of Sri Guru Gobind Singh Ji, the tenth Sikh Guru, and one of the five holy Takhts of Sikhism.",
-      image: "/images/bihar/patna_sahib.jpg",
+      image: "/images/landmarks/bihar/patna-sahib_angle1.jpg",
       era: "1666 CE / 1839 CE",
       builtBy: "Maharaja Ranjit Singh (Original shrine)",
       architecturalStyle: "Sikh Gurdwara Architecture with marble domes and gold accents",
-      significance: "Birthplace of Sri Guru Gobind Singh Ji, tenth Sikh Guru, and one of the five revered Takhts.",
+      significance: "Birthplace of Sri Guru Gobind Singh Ji, tenth Sikh Guru, and one of the five holy Takhts.",
       gallery: [
         {
-                url: "/images/bihar/patna_sahib.jpg",
-                angle: "White Marble Facade",
-                caption: "Pristine white marble structure adorned with gilded finials and ornamental jali work."
+                url: "/images/landmarks/bihar/patna-sahib_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Takht Sri Patna Sahib — Front elevation and iconic monumental facade in Patna."
         },
         {
-                url: "/images/bihar/patna_sahib.jpg",
-                angle: "Golden Sanctum Domes",
-                caption: "Gleaming ribbed dome commanding the historic skyline of Patna on the Ganga banks."
+                url: "/images/landmarks/bihar/patna-sahib_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Takht Sri Patna Sahib — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/patna_sahib.jpg",
-                angle: "Relic Chamber & Weapons",
-                caption: "Enshrined historical manuscripts, personal armaments, and holy relics of Guru Gobind Singh Ji."
+                url: "/images/landmarks/bihar/patna-sahib_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Takht Sri Patna Sahib — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/patna_sahib.jpg",
-                angle: "Evening Langar Courtyard",
-                caption: "Vibrant communal dining hall where thousands partake in egalitarian blessed langar daily."
+                url: "/images/landmarks/bihar/patna-sahib_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Takht Sri Patna Sahib — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -260,31 +260,31 @@ export const biharData: StateData = {
       lon: 85.1275,
       category: "monument",
       description: "A monumental monolithic lion pillar erected by Emperor Ashoka near Buddha's Relic Stupa in the world's first republic.",
-      image: "/images/bihar/nalanda_ruins.jpg",
+      image: "/images/landmarks/bihar/vaishali_angle1.jpg",
       era: "3rd Century BCE",
       builtBy: "Emperor Ashoka the Great",
       architecturalStyle: "Mauryan Monolithic Chunar Sandstone Column",
-      significance: "Completely intact monolithic pillar crowned with a seated lion facing north towards Buddha's final journey.",
+      significance: "Intact monolithic pillar crowned with a seated lion facing north.",
       gallery: [
         {
-                url: "/images/bihar/nalanda_ruins.jpg",
-                angle: "Intact Lion Capital",
-                caption: "Finely carved monolithic lion perched on an inverted lotus bell with Mauryan polish."
+                url: "/images/landmarks/bihar/vaishali_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Vaishali Ashokan Pillar — Front elevation and iconic monumental facade in Vaishali."
         },
         {
-                url: "/images/bihar/nalanda_ruins.jpg",
-                angle: "Ancient Brick Relic Stupa",
-                caption: "Excavated earthen and brick stupa that originally held one-eighth of Buddha's corporeal ashes."
+                url: "/images/landmarks/bihar/vaishali_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Vaishali Ashokan Pillar — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/nalanda_ruins.jpg",
-                angle: "Coronation Tank (Abhisheka Pushkarini)",
-                caption: "Sacred lake where Licchavi republican representatives were consecrated before oath."
+                url: "/images/landmarks/bihar/vaishali_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Vaishali Ashokan Pillar — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/nalanda_ruins.jpg",
-                angle: "Atmospheric Twilight",
-                caption: "Peaceful pastoral surroundings illuminated by the soft twilight of Vaishali."
+                url: "/images/landmarks/bihar/vaishali_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Vaishali Ashokan Pillar — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -296,34 +296,34 @@ export const biharData: StateData = {
       lon: 84.0163,
       category: "monument",
       description: "An architectural marvel of Indo-Islamic red sandstone rising serenely from the center of an artificial lake.",
-      image: "/images/bihar/sher_shah_tomb.jpg",
+      image: "/images/landmarks/bihar/sasaram_angle1.jpg",
       era: "1545 CE",
       builtBy: "Architect Aliwal Khan for Emperor Sher Shah Suri",
       architecturalStyle: "Indo-Islamic Octagonal Sandstone Mausoleum",
-      significance: "A masterpiece of medieval civil engineering rising 122 feet from the center of an expansive artificial lake.",
+      significance: "Masterpiece of medieval civil engineering rising 122 feet from an artificial lake.",
       gallery: [
         {
-                url: "/images/bihar/sher_shah_tomb.jpg",
-                angle: "Lake Island Reflection",
-                caption: "Majestic stepped plinth and arched kiosks mirrored perfectly in the surrounding lake waters."
+                url: "/images/landmarks/bihar/sasaram_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Sher Shah Suri Tomb — Front elevation and iconic monumental facade in Rohtas."
         },
         {
-                url: "/images/bihar/sher_shah_tomb.jpg",
-                angle: "Octagonal Dome & Chhatris",
-                caption: "Grand central dome spanning 22 meters flanked by 8 domed pillared pavilions."
+                url: "/images/landmarks/bihar/sasaram_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Sher Shah Suri Tomb — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/sher_shah_tomb.jpg",
-                angle: "Causeway & Entrance Gate",
-                caption: "Stone arched bridge connecting the mainland portal to the floating island tomb."
+                url: "/images/landmarks/bihar/sasaram_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Sher Shah Suri Tomb — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/sher_shah_tomb.jpg",
-                angle: "Sunset Glow on Chunar Sandstone",
-                caption: "Warm red and amber sandstone reflecting deep crimson light during sunset."
+                url: "/images/landmarks/bihar/sasaram_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Sher Shah Suri Tomb — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

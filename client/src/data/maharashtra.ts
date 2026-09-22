@@ -277,31 +277,31 @@ export const maharashtraData: StateData = {
       lon: 72.8347,
       category: "monument",
       description: "Iconic 26-meter basalt triumphal arch facing the Arabian Sea, built in Indo-Saracenic grandeur.",
-      image: "/images/maharashtra/ajanta_caves.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Gateway of India.",
+      image: "/images/landmarks/maharashtra/mh-gateway_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Mumbai",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Gateway of India in Mumbai.",
       gallery: [
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-gateway_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Gateway of India — Iconic grand facade and architectural overview."
+                caption: "Gateway of India — Front elevation and iconic monumental facade in Mumbai."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
-                angle: "Aerial Drone View",
-                caption: "Gateway of India — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/maharashtra/mh-gateway_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Gateway of India — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-gateway_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Gateway of India — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Gateway of India — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-gateway_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Gateway of India — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Gateway of India — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -313,31 +313,31 @@ export const maharashtraData: StateData = {
       lon: 75.179,
       category: "monument",
       description: "UNESCO Cave 16: The world's largest monolithic rock-cut monument, carved from top-to-bottom out of a single basalt cliff.",
-      image: "/images/maharashtra/ajanta_caves.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kailasa Temple, Ellora.",
+      image: "/images/landmarks/maharashtra/mh-kailasa_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Aurangabad",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Kailasa Temple, Ellora in Aurangabad.",
       gallery: [
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-kailasa_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Kailasa Temple, Ellora — Iconic grand facade and architectural overview."
+                caption: "Kailasa Temple, Ellora — Front elevation and iconic monumental facade in Aurangabad."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kailasa Temple, Ellora — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/maharashtra/mh-kailasa_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kailasa Temple, Ellora — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-kailasa_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kailasa Temple, Ellora — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kailasa Temple, Ellora — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-kailasa_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kailasa Temple, Ellora — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kailasa Temple, Ellora — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -349,31 +349,31 @@ export const maharashtraData: StateData = {
       lon: 75.7033,
       category: "monument",
       description: "UNESCO 30 rock-cut Buddhist cave temples dating from 2nd century BCE with exquisite ancient mural frescoes.",
-      image: "/images/maharashtra/ajanta_caves.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Ajanta Buddhist Caves.",
+      image: "/images/landmarks/maharashtra/mh-ajanta_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Aurangabad",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Ajanta Buddhist Caves in Aurangabad.",
       gallery: [
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-ajanta_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Ajanta Buddhist Caves — Iconic grand facade and architectural overview."
+                caption: "Ajanta Buddhist Caves — Front elevation and iconic monumental facade in Aurangabad."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
-                angle: "Aerial Drone View",
-                caption: "Ajanta Buddhist Caves — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/maharashtra/mh-ajanta_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Ajanta Buddhist Caves — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-ajanta_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Ajanta Buddhist Caves — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Ajanta Buddhist Caves — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-ajanta_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Ajanta Buddhist Caves — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Ajanta Buddhist Caves — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -385,31 +385,31 @@ export const maharashtraData: StateData = {
       lon: 73.4447,
       category: "monument",
       description: "The invincible hill citadel chosen by Chhatrapati Shivaji Maharaj as the capital of the sovereign Maratha Empire.",
-      image: "/images/maharashtra/ajanta_caves.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Fort Raigad.",
+      image: "/images/landmarks/maharashtra/mh-raigad_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Raigad",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Fort Raigad in Raigad.",
       gallery: [
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-raigad_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Fort Raigad — Iconic grand facade and architectural overview."
+                caption: "Fort Raigad — Front elevation and iconic monumental facade in Raigad."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
-                angle: "Aerial Drone View",
-                caption: "Fort Raigad — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/maharashtra/mh-raigad_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Fort Raigad — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-raigad_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Fort Raigad — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Fort Raigad — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-raigad_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Fort Raigad — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Fort Raigad — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -421,31 +421,31 @@ export const maharashtraData: StateData = {
       lon: 73.5308,
       category: "spiritual",
       description: "Ancient black stone Jyotirlinga temple at the source of sacred River Godavari in Brahmagiri hills.",
-      image: "/images/maharashtra/ajanta_caves.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Trimbakeshwar Shiva Jyotirlinga.",
+      image: "/images/landmarks/maharashtra/mh-trimbakeshwar_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Nashik",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Trimbakeshwar Shiva Jyotirlinga in Nashik.",
       gallery: [
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-trimbakeshwar_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Trimbakeshwar Shiva Jyotirlinga — Iconic grand facade and architectural overview."
+                caption: "Trimbakeshwar Shiva Jyotirlinga — Front elevation and iconic monumental facade in Nashik."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
-                angle: "Aerial Drone View",
-                caption: "Trimbakeshwar Shiva Jyotirlinga — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/maharashtra/mh-trimbakeshwar_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Trimbakeshwar Shiva Jyotirlinga — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-trimbakeshwar_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Trimbakeshwar Shiva Jyotirlinga — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Trimbakeshwar Shiva Jyotirlinga — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-trimbakeshwar_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Trimbakeshwar Shiva Jyotirlinga — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Trimbakeshwar Shiva Jyotirlinga — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -457,31 +457,31 @@ export const maharashtraData: StateData = {
       lon: 74.4767,
       category: "spiritual",
       description: "Sacred samadhi temple of revered saint Sai Baba, welcoming millions of global seekers of all faiths.",
-      image: "/images/maharashtra/ajanta_caves.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Shirdi Sai Baba Sansthan.",
+      image: "/images/landmarks/maharashtra/mh-shirdi_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Ahmednagar",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Shirdi Sai Baba Sansthan in Ahmednagar.",
       gallery: [
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-shirdi_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Shirdi Sai Baba Sansthan — Iconic grand facade and architectural overview."
+                caption: "Shirdi Sai Baba Sansthan — Front elevation and iconic monumental facade in Ahmednagar."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
-                angle: "Aerial Drone View",
-                caption: "Shirdi Sai Baba Sansthan — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/maharashtra/mh-shirdi_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Shirdi Sai Baba Sansthan — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-shirdi_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Shirdi Sai Baba Sansthan — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Shirdi Sai Baba Sansthan — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-shirdi_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Shirdi Sai Baba Sansthan — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Shirdi Sai Baba Sansthan — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -493,34 +493,34 @@ export const maharashtraData: StateData = {
       lon: 79.0664,
       category: "spiritual",
       description: "World's largest hollow Buddhist stupa where Dr. B.R. Ambedkar embraced Buddhism alongside 600,000 followers in 1956.",
-      image: "/images/maharashtra/ajanta_caves.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Deekshabhoomi.",
+      image: "/images/landmarks/maharashtra/mh-deekshabhoomi_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Nagpur",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Deekshabhoomi in Nagpur.",
       gallery: [
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-deekshabhoomi_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Deekshabhoomi — Iconic grand facade and architectural overview."
+                caption: "Deekshabhoomi — Front elevation and iconic monumental facade in Nagpur."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
-                angle: "Aerial Drone View",
-                caption: "Deekshabhoomi — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/maharashtra/mh-deekshabhoomi_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Deekshabhoomi — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-deekshabhoomi_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Deekshabhoomi — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Deekshabhoomi — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/maharashtra/ajanta_caves.jpg",
+                url: "/images/landmarks/maharashtra/mh-deekshabhoomi_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Deekshabhoomi — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Deekshabhoomi — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

@@ -88,31 +88,31 @@ export const uttarakhandData: StateData = {
       lon: 79.0669,
       category: "spiritual",
       description: "One of the twelve revered Jyotirlingas of Lord Shiva standing at 3,583 meters above sea level near the Mandakini River against the snow-bound Kedarnath mountain peak, built of massive interlocking grey stone slabs by Adi Shankaracharya in the 8th century CE.",
-      image: "/images/uttarakhand/aipan_folk_art.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kedarnath Jyotirlinga Temple.",
+      image: "/images/landmarks/uttarakhand/kedarnath-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Rudraprayag",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Kedarnath Jyotirlinga Temple in Rudraprayag.",
       gallery: [
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/kedarnath-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Kedarnath Jyotirlinga Temple — Iconic grand facade and architectural overview."
+                caption: "Kedarnath Jyotirlinga Temple — Front elevation and iconic monumental facade in Rudraprayag."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kedarnath Jyotirlinga Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttarakhand/kedarnath-temple_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kedarnath Jyotirlinga Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/kedarnath-temple_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kedarnath Jyotirlinga Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kedarnath Jyotirlinga Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/kedarnath-temple_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kedarnath Jyotirlinga Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kedarnath Jyotirlinga Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -124,31 +124,31 @@ export const uttarakhandData: StateData = {
       lon: 79.4938,
       category: "spiritual",
       description: "One of the four supreme Char Dham pilgrimage destinations in India, situated along the Alaknanda River between the Nar and Narayana mountain ranges, enshrining a black stone deity of Lord Badrinarayan under a brightly colored traditional facade.",
-      image: "/images/uttarakhand/aipan_folk_art.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Badrinath Dham Temple.",
+      image: "/images/landmarks/uttarakhand/badrinath-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Chamoli",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Badrinath Dham Temple in Chamoli.",
       gallery: [
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/badrinath-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Badrinath Dham Temple — Iconic grand facade and architectural overview."
+                caption: "Badrinath Dham Temple — Front elevation and iconic monumental facade in Chamoli."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
-                angle: "Aerial Drone View",
-                caption: "Badrinath Dham Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttarakhand/badrinath-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Badrinath Dham Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/badrinath-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Badrinath Dham Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Badrinath Dham Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/badrinath-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Badrinath Dham Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Badrinath Dham Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -160,31 +160,31 @@ export const uttarakhandData: StateData = {
       lon: 78.3308,
       category: "monument",
       description: "Historic iron suspension bridge spanning the emerald waters of the holy Ganga in Rishikesh, surrounded by ashrams, yoga meditation schools, and temples where spiritual seekers from across the globe gather at Triveni Ghat.",
-      image: "/images/uttarakhand/aipan_folk_art.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Laxman Jhula & Rishikesh Ghats.",
+      image: "/images/landmarks/uttarakhand/laxman-jhula-rishikesh_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Dehradun / Pauri Garhwal",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Laxman Jhula & Rishikesh Ghats in Dehradun / Pauri Garhwal.",
       gallery: [
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/laxman-jhula-rishikesh_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Laxman Jhula & Rishikesh Ghats — Iconic grand facade and architectural overview."
+                caption: "Laxman Jhula & Rishikesh Ghats — Front elevation and iconic monumental facade in Dehradun / Pauri Garhwal."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
-                angle: "Aerial Drone View",
-                caption: "Laxman Jhula & Rishikesh Ghats — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttarakhand/laxman-jhula-rishikesh_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Laxman Jhula & Rishikesh Ghats — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/laxman-jhula-rishikesh_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Laxman Jhula & Rishikesh Ghats — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Laxman Jhula & Rishikesh Ghats — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/laxman-jhula-rishikesh_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Laxman Jhula & Rishikesh Ghats — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Laxman Jhula & Rishikesh Ghats — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -196,31 +196,31 @@ export const uttarakhandData: StateData = {
       lon: 78.172,
       category: "spiritual",
       description: "The most sacred bathing ghat in Haridwar where the Ganga enters the Indo-Gangetic plains, believed to bear the divine footprint of Lord Vishnu on a stone wall, renowned for its daily sunset Ganga Aarti where thousands of floating leaf lamps illuminate the river.",
-      image: "/images/uttarakhand/aipan_folk_art.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Har Ki Pauri Ghats & Ganga Aarti.",
+      image: "/images/landmarks/uttarakhand/har-ki-pauri_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Haridwar",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Har Ki Pauri Ghats & Ganga Aarti in Haridwar.",
       gallery: [
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/har-ki-pauri_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Har Ki Pauri Ghats & Ganga Aarti — Iconic grand facade and architectural overview."
+                caption: "Har Ki Pauri Ghats & Ganga Aarti — Front elevation and iconic monumental facade in Haridwar."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
-                angle: "Aerial Drone View",
-                caption: "Har Ki Pauri Ghats & Ganga Aarti — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttarakhand/har-ki-pauri_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Har Ki Pauri Ghats & Ganga Aarti — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/har-ki-pauri_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Har Ki Pauri Ghats & Ganga Aarti — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Har Ki Pauri Ghats & Ganga Aarti — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/har-ki-pauri_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Har Ki Pauri Ghats & Ganga Aarti — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Har Ki Pauri Ghats & Ganga Aarti — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -232,31 +232,31 @@ export const uttarakhandData: StateData = {
       lon: 79.6053,
       category: "nature",
       description: "UNESCO World Heritage high-altitude alpine meadow nestled in the Garhwal Himalayas, carpeted with over 500 varieties of endemic alpine blooms including the rare Blue Poppy and Brahma Kamal during the monsoon months.",
-      image: "/images/uttarakhand/aipan_folk_art.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Valley of Flowers National Park.",
+      image: "/images/landmarks/uttarakhand/valley-of-flowers_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Chamoli",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Valley of Flowers National Park in Chamoli.",
       gallery: [
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/valley-of-flowers_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Valley of Flowers National Park — Iconic grand facade and architectural overview."
+                caption: "Valley of Flowers National Park — Front elevation and iconic monumental facade in Chamoli."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
-                angle: "Aerial Drone View",
-                caption: "Valley of Flowers National Park — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttarakhand/valley-of-flowers_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Valley of Flowers National Park — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/valley-of-flowers_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Valley of Flowers National Park — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Valley of Flowers National Park — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/valley-of-flowers_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Valley of Flowers National Park — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Valley of Flowers National Park — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -268,34 +268,34 @@ export const uttarakhandData: StateData = {
       lon: 79.2172,
       category: "spiritual",
       description: "The highest of the five sacred Panch Kedar temples, perched at an altitude of 3,680 meters (12,073 feet) just below the Chandrashila peak, with thousand-year-old stone architecture offering panoramic views of the Garhwal Himalayas.",
-      image: "/images/uttarakhand/aipan_folk_art.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Tungnath (Highest Shiva Shrine).",
+      image: "/images/landmarks/uttarakhand/tungnath-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Rudraprayag",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Tungnath (Highest Shiva Shrine) in Rudraprayag.",
       gallery: [
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/tungnath-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Tungnath (Highest Shiva Shrine) — Iconic grand facade and architectural overview."
+                caption: "Tungnath (Highest Shiva Shrine) — Front elevation and iconic monumental facade in Rudraprayag."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
-                angle: "Aerial Drone View",
-                caption: "Tungnath (Highest Shiva Shrine) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttarakhand/tungnath-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Tungnath (Highest Shiva Shrine) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/tungnath-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Tungnath (Highest Shiva Shrine) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Tungnath (Highest Shiva Shrine) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/uttarakhand/aipan_folk_art.jpg",
+                url: "/images/landmarks/uttarakhand/tungnath-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Tungnath (Highest Shiva Shrine) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Tungnath (Highest Shiva Shrine) — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

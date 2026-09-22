@@ -543,31 +543,31 @@ export const uttarPradeshData: StateData = {
       lon: 78.0421,
       category: "monument",
       description: "UNESCO World Heritage wonder of ivory-white marble, commissioned by Shah Jahan on the Yamuna riverbank.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of The Taj Mahal.",
+      image: "/images/landmarks/uttar-pradesh/up-taj_angle1.jpg",
+      era: "1631–1648 CE (Mughal Dynasty)",
+      builtBy: "Emperor Shah Jahan",
+      architecturalStyle: "Indo-Islamic White Makrana Marble Architecture",
+      significance: "UNESCO World Heritage Wonder of the World and pinnacle of Mughal symmetry on the Yamuna riverbank.",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-taj_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "The Taj Mahal — Iconic grand facade and architectural overview."
+                caption: "The Taj Mahal — Front elevation and iconic monumental facade in Agra."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "The Taj Mahal — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttar-pradesh/up-taj_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "The Taj Mahal — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-taj_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "The Taj Mahal — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "The Taj Mahal — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-taj_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "The Taj Mahal — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "The Taj Mahal — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -579,31 +579,31 @@ export const uttarPradeshData: StateData = {
       lon: 83.0107,
       category: "spiritual",
       description: "The holiest Jyotirlinga of Lord Shiva, crowned with golden spire and leading to the sacred 84 Ganga ghats.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kashi Vishwanath Temple & Ghats.",
+      image: "/images/landmarks/uttar-pradesh/up-kashi_angle1.jpg",
+      era: "1780 CE (Current Sanctum by Ahilyabai) / Millennium Antiquity",
+      builtBy: "Rani Ahilyabai Holkar & Corridor by GoI",
+      architecturalStyle: "Nagari Gold-Spire Temple & Classical Ganga Ghats",
+      significance: "Holiest Shiva Jyotirlinga and spiritual epicenter of ancient Kashi.",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-kashi_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Kashi Vishwanath Temple & Ghats — Iconic grand facade and architectural overview."
+                caption: "Kashi Vishwanath Temple & Ghats — Front elevation and iconic monumental facade in Varanasi."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kashi Vishwanath Temple & Ghats — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttar-pradesh/up-kashi_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kashi Vishwanath Temple & Ghats — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-kashi_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kashi Vishwanath Temple & Ghats — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kashi Vishwanath Temple & Ghats — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-kashi_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kashi Vishwanath Temple & Ghats — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kashi Vishwanath Temple & Ghats — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -615,31 +615,31 @@ export const uttarPradeshData: StateData = {
       lon: 82.1998,
       category: "spiritual",
       description: "Magnificent Nagara-style pink sandstone temple at the sacred birthplace of Lord Rama on the banks of Saryu.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Shri Ram Janmabhoomi Mandir.",
+      image: "/images/landmarks/uttar-pradesh/up-ram-mandir_angle1.jpg",
+      era: "Ancient Tirth / 2024 CE Consecration",
+      builtBy: "Shri Ram Janmabhoomi Teerth Kshetra Trust",
+      architecturalStyle: "Classical Nagara Sandstone Temple Architecture",
+      significance: "Sacred birthplace of Lord Rama on the banks of holy Saryu.",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-ram-mandir_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Shri Ram Janmabhoomi Mandir — Iconic grand facade and architectural overview."
+                caption: "Shri Ram Janmabhoomi Mandir — Front elevation and iconic monumental facade in Ayodhya."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Shri Ram Janmabhoomi Mandir — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttar-pradesh/up-ram-mandir_angle3.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Shri Ram Janmabhoomi Mandir — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-ram-mandir_angle4.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Shri Ram Janmabhoomi Mandir — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Shri Ram Janmabhoomi Mandir — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-ram-mandir_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Shri Ram Janmabhoomi Mandir — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Shri Ram Janmabhoomi Mandir — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -651,31 +651,31 @@ export const uttarPradeshData: StateData = {
       lon: 80.9129,
       category: "monument",
       description: "Built in 1784 by Nawab Asaf-ud-Daula, featuring the world's largest unsupported vaulted hall and the Bhool Bhulaiya labyrinth.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Bara Imambara & Rumi Darwaza.",
+      image: "/images/landmarks/uttar-pradesh/up-imambara_angle1.jpg",
+      era: "1784 CE (Awadh Dynasty)",
+      builtBy: "Nawab Asaf-ud-Daula",
+      architecturalStyle: "Awadhi Mughal Vaulted Architecture with Bhulbhulaiya",
+      significance: "World's largest unsupported vaulted brick hall with acoustic labyrinth.",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-imambara_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Bara Imambara & Rumi Darwaza — Iconic grand facade and architectural overview."
+                caption: "Bara Imambara & Rumi Darwaza — Front elevation and iconic monumental facade in Lucknow."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Bara Imambara & Rumi Darwaza — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttar-pradesh/up-imambara_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Bara Imambara & Rumi Darwaza — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-imambara_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Bara Imambara & Rumi Darwaza — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Bara Imambara & Rumi Darwaza — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-imambara_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Bara Imambara & Rumi Darwaza — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Bara Imambara & Rumi Darwaza — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -687,31 +687,31 @@ export const uttarPradeshData: StateData = {
       lon: 81.8841,
       category: "spiritual",
       description: "The sacred confluence of Ganga, Yamuna, and mythical Saraswati, host to the historic Maha Kumbh Mela.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Triveni Sangam.",
+      image: "/images/landmarks/uttar-pradesh/up-sangam_angle1.jpg",
+      era: "Vedic Antiquity / 1583 CE (Akbar Fort)",
+      builtBy: "Emperor Akbar (Fort) & Eternal River Confluence",
+      architecturalStyle: "Mughal Imperial Fortification & Sacred Kumbh Tirth",
+      significance: "Holy confluence of Ganga, Yamuna, and mythical Saraswati; host of the Kumbh Mela.",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-sangam_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Triveni Sangam — Iconic grand facade and architectural overview."
+                caption: "Triveni Sangam — Front elevation and iconic monumental facade in Prayagraj."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Triveni Sangam — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttar-pradesh/up-sangam_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Triveni Sangam — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-sangam_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Triveni Sangam — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Triveni Sangam — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-sangam_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Triveni Sangam — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Triveni Sangam — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -723,31 +723,31 @@ export const uttarPradeshData: StateData = {
       lon: 77.669,
       category: "spiritual",
       description: "The sanctum sanctorum prison cell where Lord Krishna manifested in human form over 5,000 years ago.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Shri Krishna Janmabhoomi.",
+      image: "/images/landmarks/uttar-pradesh/up-krishna_angle2.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Mathura",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Shri Krishna Janmabhoomi in Mathura.",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-krishna_angle2.jpg",
                 angle: "Front Elevation",
-                caption: "Shri Krishna Janmabhoomi — Iconic grand facade and architectural overview."
+                caption: "Shri Krishna Janmabhoomi — Front elevation and iconic monumental facade in Mathura."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Shri Krishna Janmabhoomi — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttar-pradesh/up-krishna_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Shri Krishna Janmabhoomi — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-krishna_angle2.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Shri Krishna Janmabhoomi — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Shri Krishna Janmabhoomi — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-krishna_angle2.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Shri Krishna Janmabhoomi — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Shri Krishna Janmabhoomi — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -759,34 +759,34 @@ export const uttarPradeshData: StateData = {
       lon: 83.0244,
       category: "monument",
       description: "Massive cylindrical brick stupa where Gautam Buddha delivered the historic Dhammacakkappavattana Sutta.",
-      image: "/images/bihar/mahabodhi_temple.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Sarnath Dhamek Stupa.",
+      image: "/images/landmarks/uttar-pradesh/up-sarnath_angle1.jpg",
+      era: "500 CE / 249 BCE (Mauryan Core)",
+      builtBy: "Emperor Ashoka & Gupta Dynasty",
+      architecturalStyle: "Solid Cylindrical Brick & Carved Sandstone Stupa",
+      significance: "Sacred site of Gautama Buddha's first sermon (Dhammacakkappavattana).",
       gallery: [
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-sarnath_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Sarnath Dhamek Stupa — Iconic grand facade and architectural overview."
+                caption: "Sarnath Dhamek Stupa — Front elevation and iconic monumental facade in Varanasi."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
-                angle: "Aerial Drone View",
-                caption: "Sarnath Dhamek Stupa — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/uttar-pradesh/up-sarnath_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Sarnath Dhamek Stupa — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-sarnath_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Sarnath Dhamek Stupa — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Sarnath Dhamek Stupa — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/bihar/mahabodhi_temple.jpg",
+                url: "/images/landmarks/uttar-pradesh/up-sarnath_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Sarnath Dhamek Stupa — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Sarnath Dhamek Stupa — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

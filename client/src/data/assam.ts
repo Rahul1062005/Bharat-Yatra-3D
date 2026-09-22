@@ -88,31 +88,31 @@ export const assamData: StateData = {
       lon: 91.7056,
       category: "spiritual",
       description: "One of the oldest and most revered of the 51 Shakti Peethas in India, situated atop Nilachal Hill in Guwahati, venerated as the sanctum of divine feminine creative power and famous for the annual Ambubachi Mela.",
-      image: "/images/assam/assamese_gamosa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Maa Kamakhya Devalaya.",
+      image: "/images/landmarks/assam/kamakhya-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Kamrup Metropolitan",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Maa Kamakhya Devalaya in Kamrup Metropolitan.",
       gallery: [
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/kamakhya-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Maa Kamakhya Devalaya — Iconic grand facade and architectural overview."
+                caption: "Maa Kamakhya Devalaya — Front elevation and iconic monumental facade in Kamrup Metropolitan."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Maa Kamakhya Devalaya — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/assam/kamakhya-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Maa Kamakhya Devalaya — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/kamakhya-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Maa Kamakhya Devalaya — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Maa Kamakhya Devalaya — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/kamakhya-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Maa Kamakhya Devalaya — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Maa Kamakhya Devalaya — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -124,31 +124,31 @@ export const assamData: StateData = {
       lon: 93.1711,
       category: "nature",
       description: "UNESCO World Heritage Site hosting two-thirds of the world's great one-horned rhinoceros population, alongside significant populations of Bengal tigers, wild water buffalo, Asian elephants, and diverse swamp deer in the Brahmaputra floodplains.",
-      image: "/images/assam/assamese_gamosa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kaziranga National Park.",
+      image: "/images/landmarks/assam/kaziranga-park_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Golaghat / Nagaon",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Kaziranga National Park in Golaghat / Nagaon.",
       gallery: [
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/kaziranga-park_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Kaziranga National Park — Iconic grand facade and architectural overview."
+                caption: "Kaziranga National Park — Front elevation and iconic monumental facade in Golaghat / Nagaon."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kaziranga National Park — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/assam/kaziranga-park_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kaziranga National Park — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/kaziranga-park_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kaziranga National Park — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kaziranga National Park — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/kaziranga-park_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kaziranga National Park — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kaziranga National Park — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -160,31 +160,31 @@ export const assamData: StateData = {
       lon: 94.6289,
       category: "monument",
       description: "Often considered Asia's oldest surviving royal sports pavilion, built in 1744–1750 CE by Ahom Swargadeo Pramatta Singha, with an inverted boat-shaped roof designed for royalty to observe buffalo fights and martial sports during Rongali Bihu.",
-      image: "/images/assam/assamese_gamosa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Rang Ghar Royal Pavilion.",
+      image: "/images/landmarks/assam/rang-ghar_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Sivasagar",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Rang Ghar Royal Pavilion in Sivasagar.",
       gallery: [
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/rang-ghar_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Rang Ghar Royal Pavilion — Iconic grand facade and architectural overview."
+                caption: "Rang Ghar Royal Pavilion — Front elevation and iconic monumental facade in Sivasagar."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Rang Ghar Royal Pavilion — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/assam/rang-ghar_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Rang Ghar Royal Pavilion — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/rang-ghar_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Rang Ghar Royal Pavilion — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Rang Ghar Royal Pavilion — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/rang-ghar_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Rang Ghar Royal Pavilion — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Rang Ghar Royal Pavilion — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -196,31 +196,31 @@ export const assamData: StateData = {
       lon: 94.6331,
       category: "monument",
       description: "A monumental seven-story 18th-century brick palace built by the Ahom kings, featuring three stories constructed below ground level with secret subterranean escape tunnels leading to the Dikhow River and Gargaon.",
-      image: "/images/assam/assamese_gamosa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Talatal Ghar Subterranean Citadel.",
+      image: "/images/landmarks/assam/talatal-ghar_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Sivasagar",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Talatal Ghar Subterranean Citadel in Sivasagar.",
       gallery: [
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/talatal-ghar_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Talatal Ghar Subterranean Citadel — Iconic grand facade and architectural overview."
+                caption: "Talatal Ghar Subterranean Citadel — Front elevation and iconic monumental facade in Sivasagar."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Talatal Ghar Subterranean Citadel — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/assam/talatal-ghar_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Talatal Ghar Subterranean Citadel — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/talatal-ghar_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Talatal Ghar Subterranean Citadel — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Talatal Ghar Subterranean Citadel — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/talatal-ghar_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Talatal Ghar Subterranean Citadel — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Talatal Ghar Subterranean Citadel — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -232,31 +232,31 @@ export const assamData: StateData = {
       lon: 94.2185,
       category: "nature",
       description: "A serene, mystical river island formed by the Brahmaputra and Kherkutia Xuti channels, celebrated as the world epicenter of Neo-Vaishnavite culture, traditional mask crafts, and classical Sattriya dance monasteries.",
-      image: "/images/assam/assamese_gamosa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Majuli River Island.",
+      image: "/images/landmarks/assam/majuli-island_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Majuli",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Majuli River Island in Majuli.",
       gallery: [
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/majuli-island_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Majuli River Island — Iconic grand facade and architectural overview."
+                caption: "Majuli River Island — Front elevation and iconic monumental facade in Majuli."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Majuli River Island — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/assam/majuli-island_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Majuli River Island — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/majuli-island_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Majuli River Island — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Majuli River Island — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/majuli-island_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Majuli River Island — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Majuli River Island — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -268,34 +268,34 @@ export const assamData: StateData = {
       lon: 94.7578,
       category: "monument",
       description: "India's longest rail-cum-road bridge spanning 4.94 kilometers across the turbulent waters of the Brahmaputra River, connecting Assam with Arunachal Pradesh, engineered to withstand extreme seismic activity.",
-      image: "/images/assam/assamese_gamosa.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Bogibeel Brahmaputra Bridge.",
+      image: "/images/landmarks/assam/bogibeel-bridge_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Dibrugarh",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Bogibeel Brahmaputra Bridge in Dibrugarh.",
       gallery: [
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/bogibeel-bridge_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Bogibeel Brahmaputra Bridge — Iconic grand facade and architectural overview."
+                caption: "Bogibeel Brahmaputra Bridge — Front elevation and iconic monumental facade in Dibrugarh."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
-                angle: "Aerial Drone View",
-                caption: "Bogibeel Brahmaputra Bridge — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/assam/bogibeel-bridge_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Bogibeel Brahmaputra Bridge — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/bogibeel-bridge_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Bogibeel Brahmaputra Bridge — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Bogibeel Brahmaputra Bridge — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/assam/assamese_gamosa.jpg",
+                url: "/images/landmarks/assam/bogibeel-bridge_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Bogibeel Brahmaputra Bridge — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Bogibeel Brahmaputra Bridge — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

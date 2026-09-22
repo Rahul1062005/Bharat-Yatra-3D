@@ -74,31 +74,31 @@ export const sikkimData: StateData = {
       lon: 88.5492,
       category: "spiritual",
       description: "Magnificent four-story monastery complex built in the 1960s by the 16th Gyalwa Karmapa as the main seat of the Karma Kagyu lineage in exile, housing sacred Buddhist golden stupas, rare Tibetan manuscripts, and priceless silk thangkas.",
-      image: "/images/sikkim/bakhu_dress.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Rumtek Dharma Chakra Center.",
+      image: "/images/landmarks/sikkim/rumtek-monastery_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Pakyong",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Rumtek Dharma Chakra Center in Pakyong.",
       gallery: [
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/rumtek-monastery_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Rumtek Dharma Chakra Center — Iconic grand facade and architectural overview."
+                caption: "Rumtek Dharma Chakra Center — Front elevation and iconic monumental facade in Pakyong."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
-                angle: "Aerial Drone View",
-                caption: "Rumtek Dharma Chakra Center — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/sikkim/rumtek-monastery_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Rumtek Dharma Chakra Center — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/rumtek-monastery_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Rumtek Dharma Chakra Center — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Rumtek Dharma Chakra Center — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/rumtek-monastery_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Rumtek Dharma Chakra Center — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Rumtek Dharma Chakra Center — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -110,31 +110,31 @@ export const sikkimData: StateData = {
       lon: 88.7119,
       category: "nature",
       description: "One of the highest lakes in the world situated at an elevation of 5,430 meters (17,800 feet) near the Tibetan border, considered sacred by Buddhists, Sikhs, and Hindus, whose central waters miraculously remain unfrozen even in sub-zero winter temperatures.",
-      image: "/images/sikkim/bakhu_dress.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Gurudongmar Holy Glacial Lake.",
+      image: "/images/landmarks/sikkim/gurudongmar-lake_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Mangan (North Sikkim)",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Gurudongmar Holy Glacial Lake in Mangan (North Sikkim).",
       gallery: [
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/gurudongmar-lake_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Gurudongmar Holy Glacial Lake — Iconic grand facade and architectural overview."
+                caption: "Gurudongmar Holy Glacial Lake — Front elevation and iconic monumental facade in Mangan (North Sikkim)."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
-                angle: "Aerial Drone View",
-                caption: "Gurudongmar Holy Glacial Lake — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/sikkim/gurudongmar-lake_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Gurudongmar Holy Glacial Lake — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/gurudongmar-lake_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Gurudongmar Holy Glacial Lake — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Gurudongmar Holy Glacial Lake — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/gurudongmar-lake_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Gurudongmar Holy Glacial Lake — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Gurudongmar Holy Glacial Lake — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -146,31 +146,31 @@ export const sikkimData: StateData = {
       lon: 88.8317,
       category: "monument",
       description: "Historic mountain pass on the ancient Old Silk Route at an altitude of 4,310 meters (14,140 feet), connecting India with the Tibet Autonomous Region of China, offering dramatic views of snow peaks and international border fences.",
-      image: "/images/sikkim/bakhu_dress.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Nathu La Himalayan Border Pass.",
+      image: "/images/landmarks/sikkim/nathula-pass_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Gangtok",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Nathu La Himalayan Border Pass in Gangtok.",
       gallery: [
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/nathula-pass_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Nathu La Himalayan Border Pass — Iconic grand facade and architectural overview."
+                caption: "Nathu La Himalayan Border Pass — Front elevation and iconic monumental facade in Gangtok."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
-                angle: "Aerial Drone View",
-                caption: "Nathu La Himalayan Border Pass — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/sikkim/nathula-pass_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Nathu La Himalayan Border Pass — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/nathula-pass_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Nathu La Himalayan Border Pass — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Nathu La Himalayan Border Pass — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/nathula-pass_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Nathu La Himalayan Border Pass — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Nathu La Himalayan Border Pass — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -182,31 +182,31 @@ export const sikkimData: StateData = {
       lon: 88.2525,
       category: "spiritual",
       description: "One of the oldest and most prestigious Nyingma Buddhist monasteries in Sikkim founded in 1705, renowned for housing the legendary seven-tiered intricately carved painted wooden model of Zandogpalri (the celestial abode of Guru Padmasambhava).",
-      image: "/images/sikkim/bakhu_dress.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Pemayangtse Monastery.",
+      image: "/images/landmarks/sikkim/pemayangtse-monastery_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Gyalshing",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Pemayangtse Monastery in Gyalshing.",
       gallery: [
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/pemayangtse-monastery_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Pemayangtse Monastery — Iconic grand facade and architectural overview."
+                caption: "Pemayangtse Monastery — Front elevation and iconic monumental facade in Gyalshing."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
-                angle: "Aerial Drone View",
-                caption: "Pemayangtse Monastery — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/sikkim/pemayangtse-monastery_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Pemayangtse Monastery — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/pemayangtse-monastery_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Pemayangtse Monastery — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Pemayangtse Monastery — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/pemayangtse-monastery_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Pemayangtse Monastery — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Pemayangtse Monastery — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -218,31 +218,31 @@ export const sikkimData: StateData = {
       lon: 88.7619,
       category: "nature",
       description: "Sacred oval-shaped high-altitude alpine lake at 3,753 meters fed by melting glaciers, whose surface reflects the surrounding jagged snowy peaks and changes colors with changing seasons, worshipped by local monks for prophecies.",
-      image: "/images/sikkim/bakhu_dress.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Tsomgo (Changu) Glacial Lake.",
+      image: "/images/landmarks/sikkim/tsomgo-lake_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Gangtok",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Tsomgo (Changu) Glacial Lake in Gangtok.",
       gallery: [
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/tsomgo-lake_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Tsomgo (Changu) Glacial Lake — Iconic grand facade and architectural overview."
+                caption: "Tsomgo (Changu) Glacial Lake — Front elevation and iconic monumental facade in Gangtok."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
-                angle: "Aerial Drone View",
-                caption: "Tsomgo (Changu) Glacial Lake — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/sikkim/tsomgo-lake_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Tsomgo (Changu) Glacial Lake — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/tsomgo-lake_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Tsomgo (Changu) Glacial Lake — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Tsomgo (Changu) Glacial Lake — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/tsomgo-lake_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Tsomgo (Changu) Glacial Lake — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Tsomgo (Changu) Glacial Lake — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -254,34 +254,34 @@ export const sikkimData: StateData = {
       lon: 88.2003,
       category: "spiritual",
       description: "Holy lake nestled in pristine subtropical forest, revered by Buddhists as the footprint of Goddess Tara and by Hindus as Lord Shiva's footprint, famous for the folk phenomenon where birds immediately remove any fallen leaf from the water's surface.",
-      image: "/images/sikkim/bakhu_dress.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Khecheopalri Sacred Wish-Fulfilling Lake.",
+      image: "/images/landmarks/sikkim/khecheopalri-lake_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Gyalshing",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Khecheopalri Sacred Wish-Fulfilling Lake in Gyalshing.",
       gallery: [
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/khecheopalri-lake_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Khecheopalri Sacred Wish-Fulfilling Lake — Iconic grand facade and architectural overview."
+                caption: "Khecheopalri Sacred Wish-Fulfilling Lake — Front elevation and iconic monumental facade in Gyalshing."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
-                angle: "Aerial Drone View",
-                caption: "Khecheopalri Sacred Wish-Fulfilling Lake — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/sikkim/khecheopalri-lake_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Khecheopalri Sacred Wish-Fulfilling Lake — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/khecheopalri-lake_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Khecheopalri Sacred Wish-Fulfilling Lake — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Khecheopalri Sacred Wish-Fulfilling Lake — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/sikkim/bakhu_dress.jpg",
+                url: "/images/landmarks/sikkim/khecheopalri-lake_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Khecheopalri Sacred Wish-Fulfilling Lake — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Khecheopalri Sacred Wish-Fulfilling Lake — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

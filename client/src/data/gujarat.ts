@@ -270,31 +270,31 @@ export const gujaratData: StateData = {
       lon: 73.7191,
       category: "monument",
       description: "The world's tallest statue (182 meters / 597 feet), honoring Sardar Vallabhbhai Patel who unified 562 princely states into the Indian Union.",
-      image: "/images/gujarat/bhavai_theatre.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Statue of Unity (Sardar Patel).",
+      image: "/images/landmarks/gujarat/statue-of-unity_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Narmada",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Statue of Unity (Sardar Patel) in Narmada.",
       gallery: [
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/statue-of-unity_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Statue of Unity (Sardar Patel) — Iconic grand facade and architectural overview."
+                caption: "Statue of Unity (Sardar Patel) — Front elevation and iconic monumental facade in Narmada."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
-                angle: "Aerial Drone View",
-                caption: "Statue of Unity (Sardar Patel) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/gujarat/statue-of-unity_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Statue of Unity (Sardar Patel) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/statue-of-unity_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Statue of Unity (Sardar Patel) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Statue of Unity (Sardar Patel) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/statue-of-unity_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Statue of Unity (Sardar Patel) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Statue of Unity (Sardar Patel) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -306,67 +306,67 @@ export const gujaratData: StateData = {
       lon: 70.4012,
       category: "spiritual",
       description: "First of the twelve sacred Shiva Jyotirlinga shrines of India, rising triumphantly along the seashore at Prabhas Patan.",
-      image: "/images/gujarat/bhavai_theatre.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Somnath Jyotirlinga Temple.",
+      image: "/images/landmarks/gujarat/somnath-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Gir Somnath",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Somnath Jyotirlinga Temple in Gir Somnath.",
       gallery: [
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/somnath-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Somnath Jyotirlinga Temple — Iconic grand facade and architectural overview."
+                caption: "Somnath Jyotirlinga Temple — Front elevation and iconic monumental facade in Gir Somnath."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
-                angle: "Aerial Drone View",
-                caption: "Somnath Jyotirlinga Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/gujarat/somnath-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Somnath Jyotirlinga Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/somnath-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Somnath Jyotirlinga Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Somnath Jyotirlinga Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/somnath-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Somnath Jyotirlinga Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Somnath Jyotirlinga Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
     {
       id: "rani-ki-vav",
-      name: "Rani ki Vav (Queen's Stepwell)",
+      name: "Rani ki Vav (Queen",
       district: "Patan",
       lat: 23.8589,
       lon: 72.1017,
       category: "monument",
       description: "UNESCO World Heritage subterranean stepwell constructed in 1063 CE by Queen Udayamati, boasting over 500 principal sculptures of Vishnu avatars.",
-      image: "/images/gujarat/bhavai_theatre.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Rani ki Vav (Queen.",
+      image: "/images/landmarks/gujarat/rani-ki-vav_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Patan",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Rani ki Vav (Queen in Patan.",
       gallery: [
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/rani-ki-vav_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Rani ki Vav (Queen — Iconic grand facade and architectural overview."
+                caption: "Rani ki Vav (Queen — Front elevation and iconic monumental facade in Patan."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
-                angle: "Aerial Drone View",
-                caption: "Rani ki Vav (Queen — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/gujarat/rani-ki-vav_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Rani ki Vav (Queen — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/rani-ki-vav_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Rani ki Vav (Queen — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Rani ki Vav (Queen — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/rani-ki-vav_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Rani ki Vav (Queen — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Rani ki Vav (Queen — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -378,31 +378,31 @@ export const gujaratData: StateData = {
       lon: 72.1331,
       category: "monument",
       description: "Architectural masterpiece built in 1026 CE by King Bhima I of the Solanki dynasty, oriented so the first rays of the equinox sun illuminate the inner sanctum.",
-      image: "/images/gujarat/bhavai_theatre.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Sun Temple of Modhera.",
+      image: "/images/landmarks/gujarat/modhera-sun-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Mehsana",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Sun Temple of Modhera in Mehsana.",
       gallery: [
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/modhera-sun-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Sun Temple of Modhera — Iconic grand facade and architectural overview."
+                caption: "Sun Temple of Modhera — Front elevation and iconic monumental facade in Mehsana."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
-                angle: "Aerial Drone View",
-                caption: "Sun Temple of Modhera — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/gujarat/modhera-sun-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Sun Temple of Modhera — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/modhera-sun-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Sun Temple of Modhera — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Sun Temple of Modhera — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/modhera-sun-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Sun Temple of Modhera — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Sun Temple of Modhera — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -414,31 +414,31 @@ export const gujaratData: StateData = {
       lon: 69.832,
       category: "nature",
       description: "One of the largest seasonal salt marshes in the world, spanning 7,500 sq km of pure white salt crystals glowing under full moonlight.",
-      image: "/images/gujarat/bhavai_theatre.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Great Rann of Kutch Salt Desert.",
+      image: "/images/landmarks/gujarat/white-rann_angle2.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Kutch",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Great Rann of Kutch Salt Desert in Kutch.",
       gallery: [
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/white-rann_angle2.jpg",
                 angle: "Front Elevation",
-                caption: "Great Rann of Kutch Salt Desert — Iconic grand facade and architectural overview."
+                caption: "Great Rann of Kutch Salt Desert — Front elevation and iconic monumental facade in Kutch."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
-                angle: "Aerial Drone View",
-                caption: "Great Rann of Kutch Salt Desert — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/gujarat/white-rann_angle3.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Great Rann of Kutch Salt Desert — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/white-rann_angle4.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Great Rann of Kutch Salt Desert — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Great Rann of Kutch Salt Desert — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/white-rann_angle2.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Great Rann of Kutch Salt Desert — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Great Rann of Kutch Salt Desert — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -450,34 +450,34 @@ export const gujaratData: StateData = {
       lon: 70.7942,
       category: "nature",
       description: "The sole wild refuge on planet Earth for the majestic Asiatic Lion (Panthera leo persica), rescued from the brink of extinction.",
-      image: "/images/gujarat/bhavai_theatre.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Gir Asiatic Lion Sanctuary.",
+      image: "/images/landmarks/gujarat/gir-national-park_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Gir Somnath",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Gir Asiatic Lion Sanctuary in Gir Somnath.",
       gallery: [
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/gir-national-park_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Gir Asiatic Lion Sanctuary — Iconic grand facade and architectural overview."
+                caption: "Gir Asiatic Lion Sanctuary — Front elevation and iconic monumental facade in Gir Somnath."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
-                angle: "Aerial Drone View",
-                caption: "Gir Asiatic Lion Sanctuary — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/gujarat/gir-national-park_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Gir Asiatic Lion Sanctuary — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/gir-national-park_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Gir Asiatic Lion Sanctuary — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Gir Asiatic Lion Sanctuary — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/gujarat/bhavai_theatre.jpg",
+                url: "/images/landmarks/gujarat/gir-national-park_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Gir Asiatic Lion Sanctuary — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Gir Asiatic Lion Sanctuary — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

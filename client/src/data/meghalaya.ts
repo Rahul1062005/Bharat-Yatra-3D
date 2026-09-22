@@ -74,31 +74,31 @@ export const meghalayaData: StateData = {
       lon: 91.6719,
       category: "nature",
       description: "A miracle of indigenous bio-engineering grown by the Khasi people over centuries in Nongriat village, where living aerial roots of the rubber fig tree (Ficus elastica) are guided through hollow betel-nut trunks across roaring mountain streams into a two-tiered living suspension bridge.",
-      image: "/images/meghalaya/dakmanda_garo.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Nongriat Double Decker Living Root Bridge.",
+      image: "/images/landmarks/meghalaya/double-decker-root-bridge_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of East Khasi Hills (Sohra)",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Nongriat Double Decker Living Root Bridge in East Khasi Hills (Sohra).",
       gallery: [
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/double-decker-root-bridge_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Nongriat Double Decker Living Root Bridge — Iconic grand facade and architectural overview."
+                caption: "Nongriat Double Decker Living Root Bridge — Front elevation and iconic monumental facade in East Khasi Hills (Sohra)."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
-                angle: "Aerial Drone View",
-                caption: "Nongriat Double Decker Living Root Bridge — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/meghalaya/double-decker-root-bridge_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Nongriat Double Decker Living Root Bridge — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/double-decker-root-bridge_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Nongriat Double Decker Living Root Bridge — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Nongriat Double Decker Living Root Bridge — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/double-decker-root-bridge_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Nongriat Double Decker Living Root Bridge — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Nongriat Double Decker Living Root Bridge — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -110,31 +110,31 @@ export const meghalayaData: StateData = {
       lon: 91.6853,
       category: "nature",
       description: "The tallest plunge waterfall in India dropping 340 meters (1,115 feet) straight off the cloud-shrouded Cherrapunji plateau into an ethereal turquoise-green mountain plunge pool amidst deep rainforests.",
-      image: "/images/meghalaya/dakmanda_garo.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Nohkalikai Waterfalls.",
+      image: "/images/landmarks/meghalaya/nohkalikai-falls_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of East Khasi Hills (Cherrapunji)",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Nohkalikai Waterfalls in East Khasi Hills (Cherrapunji).",
       gallery: [
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/nohkalikai-falls_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Nohkalikai Waterfalls — Iconic grand facade and architectural overview."
+                caption: "Nohkalikai Waterfalls — Front elevation and iconic monumental facade in East Khasi Hills (Cherrapunji)."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
-                angle: "Aerial Drone View",
-                caption: "Nohkalikai Waterfalls — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/meghalaya/nohkalikai-falls_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Nohkalikai Waterfalls — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/nohkalikai-falls_angle4.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Nohkalikai Waterfalls — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Nohkalikai Waterfalls — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/nohkalikai-falls_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Nohkalikai Waterfalls — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Nohkalikai Waterfalls — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -146,31 +146,31 @@ export const meghalayaData: StateData = {
       lon: 92.0169,
       category: "nature",
       description: "World-famous border river whose crystal-clear transparent waters make wooden boats appear as if they are floating in mid-air over the colorful pebbled riverbed, nestled along the India-Bangladesh border.",
-      image: "/images/meghalaya/dakmanda_garo.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Umngot River of Dawki.",
+      image: "/images/landmarks/meghalaya/umngot-river-dawki_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of West Jaintia Hills",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Umngot River of Dawki in West Jaintia Hills.",
       gallery: [
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/umngot-river-dawki_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Umngot River of Dawki — Iconic grand facade and architectural overview."
+                caption: "Umngot River of Dawki — Front elevation and iconic monumental facade in West Jaintia Hills."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
-                angle: "Aerial Drone View",
-                caption: "Umngot River of Dawki — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/meghalaya/umngot-river-dawki_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Umngot River of Dawki — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/umngot-river-dawki_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Umngot River of Dawki — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Umngot River of Dawki — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/umngot-river-dawki_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Umngot River of Dawki — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Umngot River of Dawki — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -182,31 +182,31 @@ export const meghalayaData: StateData = {
       lon: 91.8953,
       category: "nature",
       description: "A sprawling reservoir framed by rolling pine-covered hills just outside Shillong, offering scenic boating, kayaking, and tranquil sunset reflections across 220 square kilometers of freshwater catchment.",
-      image: "/images/meghalaya/dakmanda_garo.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Umiam Lake (Barapani).",
+      image: "/images/landmarks/meghalaya/umiam-lake_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Ri-Bhoi",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Umiam Lake (Barapani) in Ri-Bhoi.",
       gallery: [
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/umiam-lake_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Umiam Lake (Barapani) — Iconic grand facade and architectural overview."
+                caption: "Umiam Lake (Barapani) — Front elevation and iconic monumental facade in Ri-Bhoi."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
-                angle: "Aerial Drone View",
-                caption: "Umiam Lake (Barapani) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/meghalaya/umiam-lake_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Umiam Lake (Barapani) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/umiam-lake_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Umiam Lake (Barapani) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Umiam Lake (Barapani) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/umiam-lake_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Umiam Lake (Barapani) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Umiam Lake (Barapani) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -218,31 +218,31 @@ export const meghalayaData: StateData = {
       lon: 91.9161,
       category: "nature",
       description: "Award-winning eco-friendly village celebrated for 100% literacy, immaculate cobbled lanes lined with flowering orchids, bamboo dustbins (Khohs) placed every few paces, and community-wide environmental stewardship.",
-      image: "/images/meghalaya/dakmanda_garo.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Mawlynnong (Cleanest Village in Asia).",
+      image: "/images/landmarks/meghalaya/mawlynnong-village_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of East Khasi Hills",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Mawlynnong (Cleanest Village in Asia) in East Khasi Hills.",
       gallery: [
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/mawlynnong-village_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Mawlynnong (Cleanest Village in Asia) — Iconic grand facade and architectural overview."
+                caption: "Mawlynnong (Cleanest Village in Asia) — Front elevation and iconic monumental facade in East Khasi Hills."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
-                angle: "Aerial Drone View",
-                caption: "Mawlynnong (Cleanest Village in Asia) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/meghalaya/mawlynnong-village_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Mawlynnong (Cleanest Village in Asia) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/mawlynnong-village_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Mawlynnong (Cleanest Village in Asia) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Mawlynnong (Cleanest Village in Asia) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/mawlynnong-village_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Mawlynnong (Cleanest Village in Asia) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Mawlynnong (Cleanest Village in Asia) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -254,34 +254,34 @@ export const meghalayaData: StateData = {
       lon: 92.2158,
       category: "monument",
       description: "A historic ceremonial park housing the tallest standing stone monoliths (Moo Shynrang) in India erected between 1500 and 1835 CE by the Jaintia kings to commemorate martial victories and royal lineage.",
-      image: "/images/meghalaya/dakmanda_garo.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Nartiang Megalithic Garden.",
+      image: "/images/landmarks/meghalaya/nartiang-monoliths_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of West Jaintia Hills",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Nartiang Megalithic Garden in West Jaintia Hills.",
       gallery: [
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/nartiang-monoliths_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Nartiang Megalithic Garden — Iconic grand facade and architectural overview."
+                caption: "Nartiang Megalithic Garden — Front elevation and iconic monumental facade in West Jaintia Hills."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
-                angle: "Aerial Drone View",
-                caption: "Nartiang Megalithic Garden — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/meghalaya/nartiang-monoliths_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Nartiang Megalithic Garden — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/nartiang-monoliths_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Nartiang Megalithic Garden — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Nartiang Megalithic Garden — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/meghalaya/dakmanda_garo.jpg",
+                url: "/images/landmarks/meghalaya/nartiang-monoliths_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Nartiang Megalithic Garden — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Nartiang Megalithic Garden — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

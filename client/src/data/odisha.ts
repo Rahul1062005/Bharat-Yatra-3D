@@ -88,31 +88,31 @@ export const odishaData: StateData = {
       lon: 86.0945,
       category: "monument",
       description: "UNESCO World Heritage 13th-century stone architectural miracle built by King Narasimhadeva I, shaped as a colossal chariot of Surya with 24 exquisitely sculpted stone wheels functioning as sundials and pulled by seven straining stone horses.",
-      image: "/images/odisha/konark_sun_temple.jpg",
-      era: "1250 CE",
-      builtBy: "King Narasimhadeva I of Eastern Ganga Dynasty",
-      architecturalStyle: "Kalinga Deula Architecture (Colossal Stone Chariot)",
-      significance: "UNESCO World Heritage site conceived as the colossal stone chariot of Surya with 24 carved wheels and 7 galloping horses.",
+      image: "/images/landmarks/odisha/konark-sun-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Puri",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Konark Sun Temple (Black Pagoda) in Puri.",
       gallery: [
         {
-                url: "/images/odisha/konark_sun_temple.jpg",
-                angle: "The Great Sun Chariot Wheel",
-                caption: "Famous sundial wheel whose 8 major spokes accurately indicate time to the exact minute."
+                url: "/images/landmarks/odisha/konark-sun-temple_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Konark Sun Temple (Black Pagoda) — Front elevation and iconic monumental facade in Puri."
         },
         {
-                url: "/images/odisha/konark_sun_temple.jpg",
-                angle: "Jagamohana (Audience Hall) Elevation",
-                caption: "Magnificent stepped pyramidal roof adorned with musician apsaras playing drums and cymbals."
+                url: "/images/landmarks/odisha/konark-sun-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Konark Sun Temple (Black Pagoda) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/odisha/konark_sun_temple.jpg",
-                angle: "Galloping Horse Sculptures",
-                caption: "Monumental stone warrior horse crushing an opponent, symbolizing solar vitality and valor."
+                url: "/images/landmarks/odisha/konark-sun-temple_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Konark Sun Temple (Black Pagoda) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/odisha/konark_sun_temple.jpg",
-                angle: "Dawn Over the Bay of Bengal",
-                caption: "First golden rays of morning sunlight aligning with the eastern sea-facing sanctum."
+                url: "/images/landmarks/odisha/konark-sun-temple_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Konark Sun Temple (Black Pagoda) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -124,31 +124,31 @@ export const odishaData: StateData = {
       lon: 85.8179,
       category: "spiritual",
       description: "One of the sacred Char Dham pilgrimage centers of India built in the 12th century, housing Lord Jagannath, Balabhadra, and Subhadra, celebrated worldwide for its grand annual Ratha Yatra and the world's largest traditional temple kitchen.",
-      image: "/images/odisha/jagannath_temple.jpg",
-      era: "12th Century CE",
-      builtBy: "King Anantavarman Chodaganga Deva",
-      architecturalStyle: "Kalinga Rekha Deula Architecture",
-      significance: "One of the four sacred Char Dham pilgrimage centers and home to the world-famous annual Ratha Yatra.",
+      image: "/images/landmarks/odisha/jagannath-temple-puri_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Puri",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Shree Jagannath Temple of Puri in Puri.",
       gallery: [
         {
-                url: "/images/odisha/jagannath_temple.jpg",
-                angle: "Main 65-Meter Vimana Tower",
-                caption: "Soaring curvilinear spire crowned with the sacred Neela Chakra and fluttering Patita Pavana flag."
+                url: "/images/landmarks/odisha/jagannath-temple-puri_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Shree Jagannath Temple of Puri — Front elevation and iconic monumental facade in Puri."
         },
         {
-                url: "/images/odisha/jagannath_temple.jpg",
-                angle: "Singhadwara (Lion's Gate)",
-                caption: "Grand eastern entrance guarded by monumental seated lions and the monolithic Aruna Stambha."
+                url: "/images/landmarks/odisha/jagannath-temple-puri_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Shree Jagannath Temple of Puri — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/odisha/jagannath_temple.jpg",
-                angle: "Ananda Bazar & Mahaprasad Kitchen",
-                caption: "World's largest traditional kitchen where 56 sacred delicacies (Chhappan Bhog) are prepared."
+                url: "/images/landmarks/odisha/jagannath-temple-puri_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Shree Jagannath Temple of Puri — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/odisha/jagannath_temple.jpg",
-                angle: "Grand Ratha Yatra Procession",
-                caption: "Hundreds of thousands pulling the majestic wooden chariots down the sacred Bada Danda."
+                url: "/images/landmarks/odisha/jagannath-temple-puri_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Shree Jagannath Temple of Puri — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -160,31 +160,31 @@ export const odishaData: StateData = {
       lon: 85.8336,
       category: "spiritual",
       description: "The crown jewel of Kalinga temple architecture in Bhubaneswar dating to the 11th century, dedicated to Harihara (combined form of Shiva and Vishnu), featuring a soaring 180-foot deula tower adorned with intricate stone sculptures.",
-      image: "/images/odisha/lingaraj_temple.jpg",
-      era: "11th Century CE",
-      builtBy: "Somavamsi Dynasty & Ganga Kings",
-      architecturalStyle: "Quintessential Kalinga Architectural Style",
-      significance: "Tallest and most complete temple in Bhubaneswar, dedicated to Lord Harihara (unification of Shiva and Vishnu).",
+      image: "/images/landmarks/odisha/lingaraj-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Khordha",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Lingaraj Temple in Khordha.",
       gallery: [
         {
-                url: "/images/odisha/lingaraj_temple.jpg",
-                angle: "55-Meter Curvilinear Shikhara",
-                caption: "Grand fluted spire dominating the temple city of Bhubaneswar with intricate vertical fluting."
+                url: "/images/landmarks/odisha/lingaraj-temple_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Lingaraj Temple — Front elevation and iconic monumental facade in Khordha."
         },
         {
-                url: "/images/odisha/lingaraj_temple.jpg",
-                angle: "Bindu Sagar Sacred Tank",
-                caption: "Sacred lake believed to contain water from every sacred river and ocean across India."
+                url: "/images/landmarks/odisha/lingaraj-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Lingaraj Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/odisha/lingaraj_temple.jpg",
-                angle: "Intricate Natamandira Reliefs",
-                caption: "Hall of Dance with richly detailed sculptures of celestial dancers, guardians, and floral friezes."
+                url: "/images/landmarks/odisha/lingaraj-temple_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Lingaraj Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/odisha/lingaraj_temple.jpg",
-                angle: "Evening Sandhya Aarti Illumination",
-                caption: "Deep earthen oil lamps casting warm golden reflections on the ancient chlorite stone."
+                url: "/images/landmarks/odisha/lingaraj-temple_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Lingaraj Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -196,31 +196,31 @@ export const odishaData: StateData = {
       lon: 85.7865,
       category: "monument",
       description: "Partly natural and partly artificial rock-cut caves carved out in the 2nd century BCE by King Kharavela of the Mahameghavahana dynasty, containing the famous 17-line Hathigumpha Brahmi inscription.",
-      image: "/images/odisha/khandagiri_caves.jpg",
-      era: "2nd Century BCE",
-      builtBy: "Emperor Kharavela of Mahameghavahana Dynasty",
-      architecturalStyle: "Ancient Rock-Cut Jain Caves",
-      significance: "Famous for the 17-line Brahmi Hathigumpha inscription documenting Kharavela's military expeditions and civil works.",
+      image: "/images/landmarks/odisha/udayagiri-khandagiri-caves_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Khordha",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Udayagiri & Khandagiri Rock Caves in Khordha.",
       gallery: [
         {
-                url: "/images/odisha/khandagiri_caves.jpg",
-                angle: "Ranigumpha (Queen's Cave) Double Storey",
-                caption: "Vast two-tiered monastery with pillared verandahs and dramatic theatrical friezes."
+                url: "/images/landmarks/odisha/udayagiri-khandagiri-caves_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Udayagiri & Khandagiri Rock Caves — Front elevation and iconic monumental facade in Khordha."
         },
         {
-                url: "/images/odisha/khandagiri_caves.jpg",
-                angle: "Hathigumpha Elephant Cave",
-                caption: "Natural cavern housing the priceless historical epigraph of Emperor Kharavela."
+                url: "/images/landmarks/odisha/udayagiri-khandagiri-caves_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Udayagiri & Khandagiri Rock Caves — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/odisha/khandagiri_caves.jpg",
-                angle: "Tiger Cave (Vyaghra Gumpha)",
-                caption: "Intriguing rock shelter carved entirely in the shape of a roaring tiger's open maw."
+                url: "/images/landmarks/odisha/udayagiri-khandagiri-caves_angle1.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Udayagiri & Khandagiri Rock Caves — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/odisha/khandagiri_caves.jpg",
-                angle: "Hilltop Sunset View",
-                caption: "Sweeping vantage point overlooking the temple city and lush green Odisha landscape."
+                url: "/images/landmarks/odisha/udayagiri-khandagiri-caves_angle1.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Udayagiri & Khandagiri Rock Caves — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -232,31 +232,31 @@ export const odishaData: StateData = {
       lon: 85.3228,
       category: "nature",
       description: "Asia's largest brackish water lagoon spreading over 1,100 square kilometers, designated as India's first Ramsar wetland, sheltering endangered Irrawaddy dolphins and over a million migratory birds each winter.",
-      image: "/images/odisha/chhena_gaja.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Chilika Lake & Bird Sanctuary.",
+      image: "/images/landmarks/odisha/chilika-lake_angle2.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Puri / Khordha / Ganjam",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Chilika Lake & Bird Sanctuary in Puri / Khordha / Ganjam.",
       gallery: [
         {
-                url: "/images/odisha/chhena_gaja.jpg",
+                url: "/images/landmarks/odisha/chilika-lake_angle2.jpg",
                 angle: "Front Elevation",
-                caption: "Chilika Lake & Bird Sanctuary — Iconic grand facade and architectural overview."
+                caption: "Chilika Lake & Bird Sanctuary — Front elevation and iconic monumental facade in Puri / Khordha / Ganjam."
         },
         {
-                url: "/images/odisha/chhena_gaja.jpg",
-                angle: "Aerial Drone View",
-                caption: "Chilika Lake & Bird Sanctuary — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/odisha/chilika-lake_angle3.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Chilika Lake & Bird Sanctuary — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/odisha/chhena_gaja.jpg",
+                url: "/images/landmarks/odisha/chilika-lake_angle4.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Chilika Lake & Bird Sanctuary — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Chilika Lake & Bird Sanctuary — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/odisha/chhena_gaja.jpg",
+                url: "/images/landmarks/odisha/chilika-lake_angle2.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Chilika Lake & Bird Sanctuary — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Chilika Lake & Bird Sanctuary — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -268,34 +268,34 @@ export const odishaData: StateData = {
       lon: 83.8706,
       category: "nature",
       description: "One of the first major multipurpose river valley projects initiated after Indian independence, forming a vast 55-kilometer-long earthen embankment across the mighty Mahanadi River.",
-      image: "/images/odisha/chhena_gaja.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Hirakud Dam on the Mahanadi.",
+      image: "/images/odisha/hirakud-dam.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Sambalpur",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Hirakud Dam on the Mahanadi in Sambalpur.",
       gallery: [
         {
-                url: "/images/odisha/chhena_gaja.jpg",
+                url: "/images/odisha/hirakud-dam.jpg",
                 angle: "Front Elevation",
-                caption: "Hirakud Dam on the Mahanadi — Iconic grand facade and architectural overview."
+                caption: "Hirakud Dam on the Mahanadi — Front elevation and iconic monumental facade in Sambalpur."
         },
         {
-                url: "/images/odisha/chhena_gaja.jpg",
-                angle: "Aerial Drone View",
-                caption: "Hirakud Dam on the Mahanadi — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/odisha/hirakud-dam.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Hirakud Dam on the Mahanadi — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/odisha/chhena_gaja.jpg",
+                url: "/images/odisha/hirakud-dam.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Hirakud Dam on the Mahanadi — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Hirakud Dam on the Mahanadi — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/odisha/chhena_gaja.jpg",
+                url: "/images/odisha/hirakud-dam.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Hirakud Dam on the Mahanadi — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Hirakud Dam on the Mahanadi — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

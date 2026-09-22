@@ -291,31 +291,31 @@ export const tamilNaduData: StateData = {
       lon: 79.1318,
       category: "spiritual",
       description: "UNESCO World Heritage granite colossus built in 1010 CE by Emperor Raja Raja Chola I; its 216-foot vimana tower is capped by an 80-ton single granite stone dome.",
-      image: "/images/tamilnadu/bharatanatyam.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Brihadeeswarar Temple (Big Temple).",
+      image: "/images/landmarks/tamil-nadu/brihadeeswarar-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Thanjavur",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Brihadeeswarar Temple (Big Temple) in Thanjavur.",
       gallery: [
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/brihadeeswarar-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Brihadeeswarar Temple (Big Temple) — Iconic grand facade and architectural overview."
+                caption: "Brihadeeswarar Temple (Big Temple) — Front elevation and iconic monumental facade in Thanjavur."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
-                angle: "Aerial Drone View",
-                caption: "Brihadeeswarar Temple (Big Temple) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/tamil-nadu/brihadeeswarar-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Brihadeeswarar Temple (Big Temple) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/brihadeeswarar-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Brihadeeswarar Temple (Big Temple) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Brihadeeswarar Temple (Big Temple) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/brihadeeswarar-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Brihadeeswarar Temple (Big Temple) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Brihadeeswarar Temple (Big Temple) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -327,31 +327,31 @@ export const tamilNaduData: StateData = {
       lon: 78.1193,
       category: "spiritual",
       description: "Architectural wonder of the world spanning 14 acres with 14 multi-tiered gopuram gateway towers encrusted with over 33,000 brightly painted stone sculptures.",
-      image: "/images/tamilnadu/bharatanatyam.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Meenakshi Sundareswarar Temple.",
+      image: "/images/landmarks/tamil-nadu/meenakshi-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Madurai",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Meenakshi Sundareswarar Temple in Madurai.",
       gallery: [
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/meenakshi-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Meenakshi Sundareswarar Temple — Iconic grand facade and architectural overview."
+                caption: "Meenakshi Sundareswarar Temple — Front elevation and iconic monumental facade in Madurai."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
-                angle: "Aerial Drone View",
-                caption: "Meenakshi Sundareswarar Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/tamil-nadu/meenakshi-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Meenakshi Sundareswarar Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/meenakshi-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Meenakshi Sundareswarar Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Meenakshi Sundareswarar Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/meenakshi-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Meenakshi Sundareswarar Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Meenakshi Sundareswarar Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -363,31 +363,31 @@ export const tamilNaduData: StateData = {
       lon: 80.1983,
       category: "monument",
       description: "7th-century rock-cut monolithic complex built by Pallava king Narasimhavarman II on the Coromandel coast, battling sea salt and tides for over 1,300 years.",
-      image: "/images/tamilnadu/bharatanatyam.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Mahabalipuram Shore Temple & Rathas.",
+      image: "/images/landmarks/tamil-nadu/shore-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Chengalpattu",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Mahabalipuram Shore Temple & Rathas in Chengalpattu.",
       gallery: [
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/shore-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Mahabalipuram Shore Temple & Rathas — Iconic grand facade and architectural overview."
+                caption: "Mahabalipuram Shore Temple & Rathas — Front elevation and iconic monumental facade in Chengalpattu."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
-                angle: "Aerial Drone View",
-                caption: "Mahabalipuram Shore Temple & Rathas — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/tamil-nadu/shore-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Mahabalipuram Shore Temple & Rathas — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/shore-temple_angle4.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Mahabalipuram Shore Temple & Rathas — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Mahabalipuram Shore Temple & Rathas — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/shore-temple_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Mahabalipuram Shore Temple & Rathas — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Mahabalipuram Shore Temple & Rathas — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -399,31 +399,31 @@ export const tamilNaduData: StateData = {
       lon: 77.5555,
       category: "monument",
       description: "Perched on twin ocean rocks where the Indian Ocean, Arabian Sea, and Bay of Bengal converge, alongside the colossal 133-foot stone statue of Tamil sage Thiruvalluvar.",
-      image: "/images/tamilnadu/bharatanatyam.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Vivekananda Rock Memorial & Thiruvalluvar Statue.",
+      image: "/images/landmarks/tamil-nadu/vivekananda-rock_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Kanyakumari",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Vivekananda Rock Memorial & Thiruvalluvar Statue in Kanyakumari.",
       gallery: [
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/vivekananda-rock_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Vivekananda Rock Memorial & Thiruvalluvar Statue — Iconic grand facade and architectural overview."
+                caption: "Vivekananda Rock Memorial & Thiruvalluvar Statue — Front elevation and iconic monumental facade in Kanyakumari."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
-                angle: "Aerial Drone View",
-                caption: "Vivekananda Rock Memorial & Thiruvalluvar Statue — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/tamil-nadu/vivekananda-rock_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Vivekananda Rock Memorial & Thiruvalluvar Statue — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/vivekananda-rock_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Vivekananda Rock Memorial & Thiruvalluvar Statue — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Vivekananda Rock Memorial & Thiruvalluvar Statue — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/vivekananda-rock_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Vivekananda Rock Memorial & Thiruvalluvar Statue — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Vivekananda Rock Memorial & Thiruvalluvar Statue — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -435,31 +435,31 @@ export const tamilNaduData: StateData = {
       lon: 78.6901,
       category: "spiritual",
       description: "Largest functioning Hindu temple complex on Earth (156 acres enclosed within 7 concentric enclosures and 21 majestic gopurams).",
-      image: "/images/tamilnadu/bharatanatyam.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Sri Ranganathaswamy Temple Srirangam.",
+      image: "/images/landmarks/tamil-nadu/srirangam-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Tiruchirappalli",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Sri Ranganathaswamy Temple Srirangam in Tiruchirappalli.",
       gallery: [
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/srirangam-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Sri Ranganathaswamy Temple Srirangam — Iconic grand facade and architectural overview."
+                caption: "Sri Ranganathaswamy Temple Srirangam — Front elevation and iconic monumental facade in Tiruchirappalli."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
-                angle: "Aerial Drone View",
-                caption: "Sri Ranganathaswamy Temple Srirangam — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/tamil-nadu/srirangam-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Sri Ranganathaswamy Temple Srirangam — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/srirangam-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Sri Ranganathaswamy Temple Srirangam — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Sri Ranganathaswamy Temple Srirangam — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/srirangam-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Sri Ranganathaswamy Temple Srirangam — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Sri Ranganathaswamy Temple Srirangam — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -471,34 +471,34 @@ export const tamilNaduData: StateData = {
       lon: 79.4187,
       category: "monument",
       description: "A formidable fortress complex spread across three steep hills (Rajagiri, Krishnagiri, Chandrayandurg), deemed by Chhatrapati Shivaji as the most impregnable fort in India.",
-      image: "/images/tamilnadu/bharatanatyam.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Gingee Fort (Troy of the East).",
+      image: "/images/landmarks/tamil-nadu/gingee-fort_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Viluppuram",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Gingee Fort (Troy of the East) in Viluppuram.",
       gallery: [
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/gingee-fort_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Gingee Fort (Troy of the East) — Iconic grand facade and architectural overview."
+                caption: "Gingee Fort (Troy of the East) — Front elevation and iconic monumental facade in Viluppuram."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
-                angle: "Aerial Drone View",
-                caption: "Gingee Fort (Troy of the East) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/tamil-nadu/gingee-fort_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Gingee Fort (Troy of the East) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/gingee-fort_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Gingee Fort (Troy of the East) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Gingee Fort (Troy of the East) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/tamilnadu/bharatanatyam.jpg",
+                url: "/images/landmarks/tamil-nadu/gingee-fort_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Gingee Fort (Troy of the East) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Gingee Fort (Troy of the East) — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

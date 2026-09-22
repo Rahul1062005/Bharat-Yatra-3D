@@ -88,31 +88,31 @@ export const chhattisgarhData: StateData = {
       lon: 81.7011,
       category: "nature",
       description: "Often hailed as the 'Niagara of India', this colossal horse-shoe shaped waterfall on the Indravati River expands to over 300 meters in width during monsoon rains, plunging 29 meters into a roaring, misty gorge.",
-      image: "/images/chhattisgarh/bafauri.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Chitrakote Horseshoe Falls.",
+      image: "/images/landmarks/chhattisgarh/chitrakote-falls_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Bastar",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Chitrakote Horseshoe Falls in Bastar.",
       gallery: [
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/chitrakote-falls_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Chitrakote Horseshoe Falls — Iconic grand facade and architectural overview."
+                caption: "Chitrakote Horseshoe Falls — Front elevation and iconic monumental facade in Bastar."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
-                angle: "Aerial Drone View",
-                caption: "Chitrakote Horseshoe Falls — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/chhattisgarh/chitrakote-falls_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Chitrakote Horseshoe Falls — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/chitrakote-falls_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Chitrakote Horseshoe Falls — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Chitrakote Horseshoe Falls — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/chitrakote-falls_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Chitrakote Horseshoe Falls — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Chitrakote Horseshoe Falls — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -124,31 +124,31 @@ export const chhattisgarhData: StateData = {
       lon: 81.1542,
       category: "monument",
       description: "Exquisite 11th-century Nagar-style stone temple built by King Ramchandra of the Nagavanshi dynasty amidst the Maikal mountain range, embellished with detailed erotic and spiritual sculptures carved into ochre sandstone.",
-      image: "/images/chhattisgarh/bafauri.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Bhoramdeo Temple (Khajuraho of Chhattisgarh).",
+      image: "/images/landmarks/chhattisgarh/bhoramdeo-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Kabirdham",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Bhoramdeo Temple (Khajuraho of Chhattisgarh) in Kabirdham.",
       gallery: [
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/bhoramdeo-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Bhoramdeo Temple (Khajuraho of Chhattisgarh) — Iconic grand facade and architectural overview."
+                caption: "Bhoramdeo Temple (Khajuraho of Chhattisgarh) — Front elevation and iconic monumental facade in Kabirdham."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
-                angle: "Aerial Drone View",
-                caption: "Bhoramdeo Temple (Khajuraho of Chhattisgarh) — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/chhattisgarh/bhoramdeo-temple_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Bhoramdeo Temple (Khajuraho of Chhattisgarh) — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/bhoramdeo-temple_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Bhoramdeo Temple (Khajuraho of Chhattisgarh) — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Bhoramdeo Temple (Khajuraho of Chhattisgarh) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/bhoramdeo-temple_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Bhoramdeo Temple (Khajuraho of Chhattisgarh) — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Bhoramdeo Temple (Khajuraho of Chhattisgarh) — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -160,31 +160,31 @@ export const chhattisgarhData: StateData = {
       lon: 82.1772,
       category: "spiritual",
       description: "7th-century architectural marvel on the Mahanadi River, featuring the red-brick Lakshman Temple (one of India's finest surviving brick temples) and extensive Buddhist monasteries visited by Chinese traveler Xuanzang in 639 CE.",
-      image: "/images/chhattisgarh/bafauri.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Sirpur Archaeological Group.",
+      image: "/images/landmarks/chhattisgarh/sirpur-monuments_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Mahasamund",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Sirpur Archaeological Group in Mahasamund.",
       gallery: [
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/sirpur-monuments_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Sirpur Archaeological Group — Iconic grand facade and architectural overview."
+                caption: "Sirpur Archaeological Group — Front elevation and iconic monumental facade in Mahasamund."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
-                angle: "Aerial Drone View",
-                caption: "Sirpur Archaeological Group — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/chhattisgarh/sirpur-monuments_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Sirpur Archaeological Group — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/sirpur-monuments_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Sirpur Archaeological Group — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Sirpur Archaeological Group — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/sirpur-monuments_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Sirpur Archaeological Group — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Sirpur Archaeological Group — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -196,31 +196,31 @@ export const chhattisgarhData: StateData = {
       lon: 81.3508,
       category: "spiritual",
       description: "One of the 52 sacred Shakti Peethas of Goddess Sati, situated at the sacred confluence of the Shankini and Dankini rivers, serving as the presiding guardian deity of the Bastar tribal region.",
-      image: "/images/chhattisgarh/bafauri.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Maa Danteshwari Shakti Peetha.",
+      image: "/images/landmarks/chhattisgarh/danteshwari-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Dantewada",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Maa Danteshwari Shakti Peetha in Dantewada.",
       gallery: [
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/danteshwari-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Maa Danteshwari Shakti Peetha — Iconic grand facade and architectural overview."
+                caption: "Maa Danteshwari Shakti Peetha — Front elevation and iconic monumental facade in Dantewada."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
-                angle: "Aerial Drone View",
-                caption: "Maa Danteshwari Shakti Peetha — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/chhattisgarh/danteshwari-temple_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Maa Danteshwari Shakti Peetha — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/danteshwari-temple_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Maa Danteshwari Shakti Peetha — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Maa Danteshwari Shakti Peetha — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/danteshwari-temple_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Maa Danteshwari Shakti Peetha — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Maa Danteshwari Shakti Peetha — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -232,31 +232,31 @@ export const chhattisgarhData: StateData = {
       lon: 81.8644,
       category: "nature",
       description: "A breathtaking tiered cascade situated inside Kanger Valley National Park where the Mugabahar River divides into multiple milky streams sliding down 91 meters across stepped jagged rock surfaces.",
-      image: "/images/chhattisgarh/bafauri.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Tirathgarh Step Waterfalls.",
+      image: "/images/landmarks/chhattisgarh/tirathgarh-falls_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Bastar",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Tirathgarh Step Waterfalls in Bastar.",
       gallery: [
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/tirathgarh-falls_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Tirathgarh Step Waterfalls — Iconic grand facade and architectural overview."
+                caption: "Tirathgarh Step Waterfalls — Front elevation and iconic monumental facade in Bastar."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
-                angle: "Aerial Drone View",
-                caption: "Tirathgarh Step Waterfalls — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/chhattisgarh/tirathgarh-falls_angle1.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Tirathgarh Step Waterfalls — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/tirathgarh-falls_angle1.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Tirathgarh Step Waterfalls — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Tirathgarh Step Waterfalls — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/landmarks/chhattisgarh/tirathgarh-falls_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Tirathgarh Step Waterfalls — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Tirathgarh Step Waterfalls — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -268,34 +268,34 @@ export const chhattisgarhData: StateData = {
       lon: 81.9333,
       category: "nature",
       description: "Deep subterranean limestone cave extending 330 meters below ground in Kanger Valley, featuring spectacular naturally sculpted stalactites and stalagmites and a dark subterranean pool home to rare blind cave fish.",
-      image: "/images/chhattisgarh/bafauri.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kotumsar Subterranean Cave.",
+      image: "/images/chhattisgarh/kotumsar-cave.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Bastar",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Kotumsar Subterranean Cave in Bastar.",
       gallery: [
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/chhattisgarh/kotumsar-cave.jpg",
                 angle: "Front Elevation",
-                caption: "Kotumsar Subterranean Cave — Iconic grand facade and architectural overview."
+                caption: "Kotumsar Subterranean Cave — Front elevation and iconic monumental facade in Bastar."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kotumsar Subterranean Cave — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/chhattisgarh/kotumsar-cave.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kotumsar Subterranean Cave — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/chhattisgarh/kotumsar-cave.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kotumsar Subterranean Cave — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kotumsar Subterranean Cave — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/chhattisgarh/bafauri.jpg",
+                url: "/images/chhattisgarh/kotumsar-cave.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kotumsar Subterranean Cave — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kotumsar Subterranean Cave — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {

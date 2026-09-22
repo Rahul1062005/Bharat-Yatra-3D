@@ -88,31 +88,31 @@ export const telanganaData: StateData = {
       lon: 78.4747,
       category: "monument",
       description: "Iconic 16th-century monument and mosque built by Sultan Muhammad Quli Qutb Shah in 1591 to commemorate the eradication of a plague epidemic, featuring four grand triumphal arches and soaring 56-meter-high minarets overlooking bustling bazaars.",
-      image: "/images/telangana/bathukamma_festival.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of The Charminar.",
+      image: "/images/landmarks/telangana/charminar_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Hyderabad",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of The Charminar in Hyderabad.",
       gallery: [
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/charminar_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "The Charminar — Iconic grand facade and architectural overview."
+                caption: "The Charminar — Front elevation and iconic monumental facade in Hyderabad."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
-                angle: "Aerial Drone View",
-                caption: "The Charminar — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/telangana/charminar_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "The Charminar — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/charminar_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "The Charminar — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "The Charminar — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/charminar_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "The Charminar — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "The Charminar — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -124,31 +124,31 @@ export const telanganaData: StateData = {
       lon: 78.4011,
       category: "monument",
       description: "Colossal fortified granite citadel famous for its ingenious acoustic engineering where a hand-clap at the Fateh Darwaza entrance can be heard distinctly a kilometer away at the hilltop Bala Hissar pavilion, and as the vault of legendary diamonds including the Koh-i-Noor and Hope Diamond.",
-      image: "/images/telangana/bathukamma_festival.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Golconda Fortress.",
+      image: "/images/landmarks/telangana/golconda-fort_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Hyderabad",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Golconda Fortress in Hyderabad.",
       gallery: [
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/golconda-fort_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Golconda Fortress — Iconic grand facade and architectural overview."
+                caption: "Golconda Fortress — Front elevation and iconic monumental facade in Hyderabad."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
-                angle: "Aerial Drone View",
-                caption: "Golconda Fortress — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/telangana/golconda-fort_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Golconda Fortress — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/golconda-fort_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Golconda Fortress — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Golconda Fortress — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/golconda-fort_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Golconda Fortress — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Golconda Fortress — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -160,31 +160,31 @@ export const telanganaData: StateData = {
       lon: 79.9431,
       category: "spiritual",
       description: "UNESCO World Heritage 13th-century temple engineered with lightweight 'floating bricks' that float on water, resting on a sandbox foundation that has withstood major earthquakes, embellished with exquisite dancing bracket figures carved from dark polished dolerite.",
-      image: "/images/telangana/bathukamma_festival.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Kakatiya Rudreshwara (Ramappa) Temple.",
+      image: "/images/landmarks/telangana/ramappa-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Mulugu",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Kakatiya Rudreshwara (Ramappa) Temple in Mulugu.",
       gallery: [
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/ramappa-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Kakatiya Rudreshwara (Ramappa) Temple — Iconic grand facade and architectural overview."
+                caption: "Kakatiya Rudreshwara (Ramappa) Temple — Front elevation and iconic monumental facade in Mulugu."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
-                angle: "Aerial Drone View",
-                caption: "Kakatiya Rudreshwara (Ramappa) Temple — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/telangana/ramappa-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Kakatiya Rudreshwara (Ramappa) Temple — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/ramappa-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Kakatiya Rudreshwara (Ramappa) Temple — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Kakatiya Rudreshwara (Ramappa) Temple — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/ramappa-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Kakatiya Rudreshwara (Ramappa) Temple — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Kakatiya Rudreshwara (Ramappa) Temple — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -196,31 +196,31 @@ export const telanganaData: StateData = {
       lon: 78.4716,
       category: "monument",
       description: "The opulent official residence of the Asaf Jahi Nizams of Hyderabad, featuring neoclassical European courtyards, the grand Khilwat Mubarak durbar hall crowned by 19 Belgian crystal chandeliers, and vintage royal carriage collections.",
-      image: "/images/telangana/bathukamma_festival.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Chowmahalla Palace.",
+      image: "/images/landmarks/telangana/chowmahalla-palace_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Hyderabad",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Chowmahalla Palace in Hyderabad.",
       gallery: [
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/chowmahalla-palace_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Chowmahalla Palace — Iconic grand facade and architectural overview."
+                caption: "Chowmahalla Palace — Front elevation and iconic monumental facade in Hyderabad."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
-                angle: "Aerial Drone View",
-                caption: "Chowmahalla Palace — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/telangana/chowmahalla-palace_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Chowmahalla Palace — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/chowmahalla-palace_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Chowmahalla Palace — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Chowmahalla Palace — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/chowmahalla-palace_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Chowmahalla Palace — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Chowmahalla Palace — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -232,31 +232,31 @@ export const telanganaData: StateData = {
       lon: 79.5445,
       category: "spiritual",
       description: "Star-shaped trikuta architectural triumph built by Kakatiya King Rudra Deva in 1163 CE dedicated to Shiva, Vishnu, and Surya, containing 1,000 richly carved stone pillars positioned so none blocks the view of the deities from any angle.",
-      image: "/images/telangana/bathukamma_festival.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Thousand Pillar Temple of Hanamkonda.",
+      image: "/images/landmarks/telangana/thousand-pillar-temple_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Hanamkonda",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Thousand Pillar Temple of Hanamkonda in Hanamkonda.",
       gallery: [
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/thousand-pillar-temple_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Thousand Pillar Temple of Hanamkonda — Iconic grand facade and architectural overview."
+                caption: "Thousand Pillar Temple of Hanamkonda — Front elevation and iconic monumental facade in Hanamkonda."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
-                angle: "Aerial Drone View",
-                caption: "Thousand Pillar Temple of Hanamkonda — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/telangana/thousand-pillar-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Thousand Pillar Temple of Hanamkonda — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/thousand-pillar-temple_angle3.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Thousand Pillar Temple of Hanamkonda — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Thousand Pillar Temple of Hanamkonda — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/thousand-pillar-temple_angle4.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Thousand Pillar Temple of Hanamkonda — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Thousand Pillar Temple of Hanamkonda — Radiant sunset and evening twilight ambiance."
         }
 ]
     },
@@ -268,34 +268,34 @@ export const telanganaData: StateData = {
       lon: 78.8892,
       category: "monument",
       description: "An isolated, smooth, egg-shaped monolithic rock rising 500 feet above the surrounding plain, crowned by an impenetrable medieval fort built in the 10th century by Western Chalukya ruler Tribhuvanamalla Vikramaditya VI.",
-      image: "/images/telangana/bathukamma_festival.jpg",
-      era: "Historical & Living Heritage Era",
-      builtBy: "Historic Rulers & Architects of the Region",
-      architecturalStyle: "Indigenous Classical Indian Architecture",
-      significance: "Iconic monument embodying the timeless civilizational heritage of Bhongir Monolithic Hill Fort.",
+      image: "/images/landmarks/telangana/bhongir-fort_angle1.jpg",
+      era: "Historical & Living Heritage Epoch",
+      builtBy: "Historic Architects & Patrons of Yadadri Bhuvanagiri",
+      architecturalStyle: "Classical Heritage Indian Architecture",
+      significance: "Iconic historic landmark of Bhongir Monolithic Hill Fort in Yadadri Bhuvanagiri.",
       gallery: [
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/bhongir-fort_angle1.jpg",
                 angle: "Front Elevation",
-                caption: "Bhongir Monolithic Hill Fort — Iconic grand facade and architectural overview."
+                caption: "Bhongir Monolithic Hill Fort — Front elevation and iconic monumental facade in Yadadri Bhuvanagiri."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
-                angle: "Aerial Drone View",
-                caption: "Bhongir Monolithic Hill Fort — Expansive panoramic perspective capturing the surrounding heritage landscape."
+                url: "/images/landmarks/telangana/bhongir-fort_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Bhongir Monolithic Hill Fort — Broad panoramic context and surrounding heritage grounds."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/bhongir-fort_angle4.jpg",
                 angle: "Architectural Relief & Carvings",
-                caption: "Bhongir Monolithic Hill Fort — Intricate heritage craftsmanship and authentic design motifs."
+                caption: "Bhongir Monolithic Hill Fort — Intricate architectural motifs, craftsmanship, and historic stone masonry."
         },
         {
-                url: "/images/telangana/bathukamma_festival.jpg",
+                url: "/images/landmarks/telangana/bhongir-fort_angle1.jpg",
                 angle: "Golden Hour & Sunset",
-                caption: "Bhongir Monolithic Hill Fort — Bathed in radiant golden twilight showcasing its timeless cultural majesty."
+                caption: "Bhongir Monolithic Hill Fort — Radiant sunset and evening twilight ambiance."
         }
 ]
-    },
+    }
   ],
   cuisines: [
     {
