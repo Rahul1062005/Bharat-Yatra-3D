@@ -469,14 +469,14 @@ export default function BiharMap({
 
   const zoomIn = () => {
     if (controlsRef.current) {
-      controlsRef.current.dollyOut(1.25)
+      controlsRef.current.dollyIn(1.25)
       controlsRef.current.update()
     }
   }
 
   const zoomOut = () => {
     if (controlsRef.current) {
-      controlsRef.current.dollyIn(1.25)
+      controlsRef.current.dollyOut(1.25)
       controlsRef.current.update()
     }
   }

@@ -357,9 +357,9 @@ export default function StateDistrictMap({
   centerLon,
   centerLat,
   scale,
-  cameraPosition,
-  target,
-  fov,
+  cameraPosition: _cameraPosition,
+  target: _target,
+  fov: _fov,
   landmarks,
   districtsData,
   selectedDistrict: controlledDistrict,
@@ -439,10 +439,9 @@ export default function StateDistrictMap({
         const spanLat = maxLat - minLat
         const maxSpan = Math.max(spanLon, spanLat)
 
-        // Make state maps prominent & large (~6.4 units across, matching original grand scale)
-        const TARGET_SPAN_3D = 6.4
-        const calculatedScale = maxSpan > 0 ? TARGET_SPAN_3D / maxSpan : 1.0
-        const activeScale = Math.max(scale ? scale * 1.4 : 0, calculatedScale)
+        // Standard state 3D span: 3.5 units (ensures full state visibility with generous ~15-20% margin)
+        const TARGET_SPAN_3D = 3.5
+        const activeScale = maxSpan > 0 ? TARGET_SPAN_3D / maxSpan : 1.0
 
         setStateProjection({
           cLon: stateCenterLon,
@@ -552,23 +551,19 @@ export default function StateDistrictMap({
   }, [])
 
   const effectiveTarget = useMemo<[number, number, number]>(() => {
-    if (!isMobile) return [target ? target[0] : 0.75, target ? target[1] : 0, 0]
-    return [0, target ? target[1] : 0, 0]
-  }, [isMobile, target])
+    return [0, 0, 0]
+  }, [])
 
   const effectiveCamPos = useMemo<[number, number, number]>(() => {
-    if (!isMobile) {
-      const zDist = Math.min(cameraPosition ? cameraPosition[2] : 5.0, 5.2)
-      return [target ? target[0] : 0.75, target ? target[1] : 0, zDist]
-    }
+    if (!isMobile) return [0, 0, 5.8]
     const distMult = typeof window !== "undefined" && window.innerWidth < 480 ? 1.35 : 1.2
-    return [0, 0, 5.4 * distMult]
-  }, [isMobile, target, cameraPosition])
+    return [0, 0, 6.6 * distMult]
+  }, [isMobile])
 
   const effectiveFov = useMemo(() => {
-    if (!isMobile) return fov || 38
-    return typeof window !== "undefined" && window.innerWidth < 480 ? (fov ? fov + 8 : 46) : (fov ? fov + 4 : 42)
-  }, [isMobile, fov])
+    if (!isMobile) return 38
+    return typeof window !== "undefined" && window.innerWidth < 480 ? 46 : 42
+  }, [isMobile])
 
   const resetCamera = () => {
     if (controlsRef.current) {
@@ -580,14 +575,14 @@ export default function StateDistrictMap({
 
   const zoomIn = () => {
     if (controlsRef.current) {
-      controlsRef.current.dollyOut(1.25)
+      controlsRef.current.dollyIn(1.25)
       controlsRef.current.update()
     }
   }
 
   const zoomOut = () => {
     if (controlsRef.current) {
-      controlsRef.current.dollyIn(1.25)
+      controlsRef.current.dollyOut(1.25)
       controlsRef.current.update()
     }
   }
