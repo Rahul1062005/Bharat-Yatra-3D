@@ -421,7 +421,7 @@ export default function StatePage() {
           </div>
 
           <div className="hero-instruction-pill">
-            <span>Drag map to rotate • Click any district</span>
+            <span>Rotate 3D map • Tap or click any district</span>
           </div>
         </aside>
 
