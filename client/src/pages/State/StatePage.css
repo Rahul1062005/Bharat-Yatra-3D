@@ -570,23 +570,6 @@ html {
   transform: scale(1.08);
 }
 
-.bihar-compass-badge {
-  position: absolute;
-  left: 28px;
-  bottom: 28px;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background: #ffffff;
-  border: 1px solid rgba(180, 83, 9, 0.35);
-  padding: 6px 12px;
-  border-radius: 999px;
-  color: #b45309;
-  font-size: 11.5px;
-  font-weight: 800;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
 
 .bihar-map-tooltip {
   position: fixed;
@@ -737,11 +720,67 @@ html {
    GENERIC CONTENT SECTIONS (VIBRANT & COLORFUL)
 ========================================================= */
 
+/* Authentic Traditional Painting & Graffiti Watermark Backdrop across EVERY slide */
 .state-content-section {
   position: relative;
-  padding: 90px 24px;
-  border-bottom: 1px solid rgba(180, 83, 9, 0.15);
-  background-color: #fffdf9;
+  padding: 95px 24px;
+  border-bottom: 1px solid var(--state-border, rgba(180, 83, 9, 0.2));
+  background-color: var(--state-page-bg, #fffdf9);
+  overflow: hidden;
+}
+
+.state-content-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--state-art-pattern);
+  background-repeat: repeat;
+  background-size: 140px 140px;
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.state-content-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Rich, dynamic colorful slide transitions with radiant folk gradients */
+#heritage-section {
+  background: radial-gradient(circle at 15% 20%, rgba(217, 119, 6, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 85% 80%, rgba(180, 83, 9, 0.06) 0%, transparent 60%),
+              var(--state-page-bg, #fffdf9);
+}
+
+#cuisine-section {
+  background: radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.09) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
+              var(--state-section-bg, #fff7ed);
+}
+
+#art-section {
+  background: radial-gradient(circle at 20% 30%, rgba(190, 24, 93, 0.07) 0%, transparent 60%),
+              radial-gradient(circle at 80% 70%, rgba(217, 119, 6, 0.08) 0%, transparent 60%),
+              var(--state-page-bg, #fffdf9);
+}
+
+#monuments-section {
+  background: radial-gradient(circle at 85% 30%, rgba(180, 83, 9, 0.09) 0%, transparent 60%),
+              radial-gradient(circle at 15% 75%, rgba(202, 138, 4, 0.08) 0%, transparent 60%),
+              var(--state-section-bg, #fff7ed);
+}
+
+#languages-section {
+  background: radial-gradient(circle at 20% 25%, rgba(13, 148, 136, 0.07) 0%, transparent 60%),
+              radial-gradient(circle at 75% 75%, rgba(217, 119, 6, 0.08) 0%, transparent 60%),
+              var(--state-page-bg, #fffdf9);
+}
+
+#luminaries-section {
+  background: radial-gradient(circle at 80% 20%, rgba(180, 83, 9, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
+              var(--state-section-bg, #fff7ed);
 }
 
 .section-container {
@@ -1735,10 +1774,6 @@ html {
     height: 34px;
   }
 
-  .bihar-compass-badge {
-    left: 12px;
-    bottom: 14px;
-  }
 
   .scroll-down-cue {
     position: relative;

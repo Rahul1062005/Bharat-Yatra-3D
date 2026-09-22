@@ -391,7 +391,12 @@ export default function StatePage() {
         backgroundColor: stateTheme.pageBg,
         ["--state-primary" as string]: stateTheme.primaryColor,
         ["--state-secondary" as string]: stateTheme.secondaryColor,
+        ["--state-accent" as string]: stateTheme.accentColor,
         ["--state-border" as string]: stateTheme.borderColor,
+        ["--state-page-bg" as string]: stateTheme.pageBg,
+        ["--state-section-bg" as string]: stateTheme.sectionBg,
+        ["--state-card-bg" as string]: stateTheme.cardBg,
+        ["--state-art-pattern" as string]: `url("${stateTheme.artPatternSvg}")`,
       }}
     >
       {/* ================= STICKY TOP NAVBAR ================= */}
@@ -694,7 +699,6 @@ export default function StatePage() {
       <section
         className="state-content-section"
         id="heritage-section"
-        style={{ backgroundColor: stateTheme.sectionBg }}
       >
         <div className="section-container">
           <div className="section-header">

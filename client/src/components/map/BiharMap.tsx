@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei"
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib"
 import * as THREE from "three"
-import { Compass, RotateCcw, ZoomIn, ZoomOut } from "lucide-react"
+import { RotateCcw, ZoomIn, ZoomOut } from "lucide-react"
 
 import { biharData } from "../../data/bihar"
 import type { LandmarkPin } from "../../types/state"
@@ -553,11 +553,7 @@ export default function BiharMap({
         </button>
       </div>
 
-      {/* ================= COMPASS BADGE ================= */}
-      <div className="bihar-compass-badge">
-        <Compass size={18} />
-        <span>N</span>
-      </div>
+
 
       {/* ================= FLOATING TOOLTIP ================= */}
       {tooltip.visible && (

@@ -48,7 +48,43 @@ const KALAMKARI_SVG = `data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
 
 const TANJORE_SVG = `data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b91c1c' fill-opacity='0.05' stroke='%23d97706' stroke-width='1.2' stroke-opacity='0.12'%3E%3Cpolygon points='35,5 42,22 60,22 46,34 52,51 35,40 18,51 24,34 10,22 28,22'/%3E%3Ccircle cx='35' cy='35' r='12' fill='none'/%3E%3Ccircle cx='35' cy='35' r='5' fill='%23d97706' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E`
 
+const GOND_SVG = `data:image/svg+xml,%3Csvg width='90' height='90' viewBox='0 0 90 90' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ea580c' fill-opacity='0.07' stroke='%23b45309' stroke-width='1.2' stroke-opacity='0.12'%3E%3Cpath d='M45 10 C50 25 70 30 75 48 C70 65 52 75 45 82 C38 75 20 65 15 48 C20 30 40 25 45 10 Z'/%3E%3Ccircle cx='45' cy='38' r='10' stroke-dasharray='2 2' fill='none'/%3E%3Ccircle cx='45' cy='58' r='6' stroke-dasharray='2 2' fill='none'/%3E%3Ccircle cx='28' cy='48' r='3' fill='%23ea580c' fill-opacity='0.12'/%3E%3Ccircle cx='62' cy='48' r='3' fill='%23ea580c' fill-opacity='0.12'/%3E%3Cpath d='M35 25 Q45 35 55 25 M30 70 Q45 60 60 70' stroke-dasharray='3 3'/%3E%3C/g%3E%3C/svg%3E`
+
 const STATE_THEMES_CATALOG: Record<string, Partial<StateTheme>> = {
+  "madhya-pradesh": {
+    artName: "Gond Folk Painting & Pithora Murals",
+    artOrigin: "Patangarh & Dindori, Narmada Valley",
+    artSummary: "Sacred indigenous storytelling where signature dot and line textures depict Mahua trees, birds, forest deer, and river spirits in harmonious celebration.",
+    primaryColor: "#ea580c",
+    secondaryColor: "#b45309",
+    accentColor: "#d97706",
+    heroGradient: "radial-gradient(circle at 65% 50%, #fff7ed 0%, #ffedd5 45%, #fed7aa 95%)",
+    pageBg: "#fffdf9",
+    sectionBg: "#fff7ed",
+    cardBg: "#ffffff",
+    borderColor: "rgba(234, 88, 12, 0.35)",
+    borderGlow: "rgba(245, 158, 11, 0.45)",
+    textColor: "#0f172a",
+    textMuted: "#475569",
+    artPatternSvg: GOND_SVG,
+  },
+  mp: {
+    artName: "Gond Folk Painting & Pithora Murals",
+    artOrigin: "Patangarh & Dindori, Narmada Valley",
+    artSummary: "Sacred indigenous storytelling where signature dot and line textures depict Mahua trees, birds, forest deer, and river spirits in harmonious celebration.",
+    primaryColor: "#ea580c",
+    secondaryColor: "#b45309",
+    accentColor: "#d97706",
+    heroGradient: "radial-gradient(circle at 65% 50%, #fff7ed 0%, #ffedd5 45%, #fed7aa 95%)",
+    pageBg: "#fffdf9",
+    sectionBg: "#fff7ed",
+    cardBg: "#ffffff",
+    borderColor: "rgba(234, 88, 12, 0.35)",
+    borderGlow: "rgba(245, 158, 11, 0.45)",
+    textColor: "#0f172a",
+    textMuted: "#475569",
+    artPatternSvg: GOND_SVG,
+  },
   maharashtra: {
     artName: "Warli Folk Tribal Painting",
     artOrigin: "North Sahyadri & Palghar",

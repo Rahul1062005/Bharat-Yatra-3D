@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei"
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib"
 import * as THREE from "three"
-import { Compass, RotateCcw, ZoomIn, ZoomOut } from "lucide-react"
+import { RotateCcw, ZoomIn, ZoomOut } from "lucide-react"
 
 import type { DistrictInfo, LandmarkPin } from "../../types/state"
 
@@ -439,8 +439,9 @@ export default function StateDistrictMap({
         const spanLat = maxLat - minLat
         const maxSpan = Math.max(spanLon, spanLat)
 
-        // Standard state 3D span: 3.5 units (ensures full state visibility with generous ~15-20% margin)
-        const TARGET_SPAN_3D = 3.5
+        // Dynamic state 3D span: Wide states (like MP, Bihar, Maharashtra) scale to 4.3 units to fill the canvas; tall states scale to 3.6 units
+        const isWide = spanLon >= spanLat
+        const TARGET_SPAN_3D = isWide ? 4.3 : 3.6
         const activeScale = maxSpan > 0 ? TARGET_SPAN_3D / maxSpan : 1.0
 
         setStateProjection({
@@ -555,9 +556,9 @@ export default function StateDistrictMap({
   }, [])
 
   const effectiveCamPos = useMemo<[number, number, number]>(() => {
-    if (!isMobile) return [0, 0, 5.8]
+    if (!isMobile) return [0, 0, 5.4]
     const distMult = typeof window !== "undefined" && window.innerWidth < 480 ? 1.35 : 1.2
-    return [0, 0, 6.6 * distMult]
+    return [0, 0, 6.4 * distMult]
   }, [isMobile])
 
   const effectiveFov = useMemo(() => {
@@ -668,11 +669,6 @@ export default function StateDistrictMap({
         </button>
       </div>
 
-      {/* ================= COMPASS BADGE ================= */}
-      <div className="bihar-compass-badge">
-        <Compass size={18} />
-        <span>N</span>
-      </div>
 
       {/* ================= FLOATING TOOLTIP ================= */}
       {tooltip.visible && (
