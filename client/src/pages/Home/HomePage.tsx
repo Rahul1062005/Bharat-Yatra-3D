@@ -10,6 +10,7 @@ import {
   Route,
   Volume2,
   Utensils,
+  Globe,
 } from "lucide-react"
 
 import { preloadIndiaMapData } from "../../components/map/IndiaMap"
@@ -100,7 +101,7 @@ const FEATURED_STATES: ShowcaseState[] = [
     id: "delhi",
     name: "Delhi (NCT)",
     hindiName: "दिल्ली",
-    region: "National Capital",
+    region: "Northern Realm",
     capital: "New Delhi",
     tagline: "Seven Historical Imperial Cities & Seat of the Republic",
     artForm: "Mughal & Classical Jaali",
@@ -115,8 +116,52 @@ const FEATURED_STATES: ShowcaseState[] = [
     capital: "Kolkata",
     tagline: "Ganga Delta, Victoria Grandeur & Kalighat Traditions",
     artForm: "Kalighat & Patachitra",
-    image: "/images/bihar/nalanda_ruins.jpg",
+    image: "/images/westbengal/victoria_memorial.jpg",
     accentColor: "#be123c",
+  },
+  {
+    id: "tamil-nadu",
+    name: "Tamil Nadu",
+    hindiName: "तमिलनाडु",
+    region: "Southern Realm",
+    capital: "Chennai",
+    tagline: "Great Living Chola Temples & Classical Bharatanatyam",
+    artForm: "Tanjore Gold Paintings",
+    image: "/images/tamilnadu/brihadeeswarar_temple.jpg",
+    accentColor: "#b91c1c",
+  },
+  {
+    id: "karnataka",
+    name: "Karnataka",
+    hindiName: "कर्नाटक",
+    region: "Southern Realm",
+    capital: "Bengaluru",
+    tagline: "Hampi Ruins, Hoysala Carvings & Royal Mysore Regalia",
+    artForm: "Mysore Ganjifa & Painting",
+    image: "/images/karnataka/mysore_palace.jpg",
+    accentColor: "#7c2d12",
+  },
+  {
+    id: "madhya-pradesh",
+    name: "Madhya Pradesh",
+    hindiName: "मध्य प्रदेश",
+    region: "Central Realm",
+    capital: "Bhopal",
+    tagline: "The Heart of India, Khajuraho Sculptures & Sanchi Stupas",
+    artForm: "Gond Tribal Paintings",
+    image: "/images/madhyapradesh/khajuraho_temple.jpg",
+    accentColor: "#047857",
+  },
+  {
+    id: "uttarakhand",
+    name: "Uttarakhand",
+    hindiName: "उत्तराखंड",
+    region: "Northern Realm",
+    capital: "Dehradun",
+    tagline: "Sacred Devbhoomi, Himalayan Glaciers & Ganga Aartis",
+    artForm: "Aipan Ritual Floor Art",
+    image: "/images/uttarakhand/kedarnath_temple.jpg",
+    accentColor: "#0284c7",
   },
 ]
 
@@ -126,7 +171,7 @@ const DIMENSIONS = [
     number: "01",
     title: "Tactile 3D Extruded Maps",
     subtitle: "Elevation & District Boundaries",
-    desc: "Every state and union territory features genuine 3D extruded topography with hover lift effects and authentic district borders.",
+    desc: "Every state and union territory features genuine 3D extruded topography with smooth hover lift effects and authentic district borders.",
     icon: Compass,
     image: "/images/rajasthan/amber_fort.jpg",
     tag: "3D Spatial Tech",
@@ -185,7 +230,7 @@ const CURATED_CIRCUITS = [
     states: "Maharashtra • Goa • Karnataka • Kerala",
     highlight: "Lush tropical rainforests, spice hill plantations, and sea fortresses.",
     badge: "Eco-Spiritual",
-    image: "/images/kerala/backwaters.jpg",
+    image: "/images/kerala/bekal_fort.jpg",
   },
   {
     id: "sacred-ganga",
@@ -193,7 +238,7 @@ const CURATED_CIRCUITS = [
     states: "Uttarakhand • Uttar Pradesh • Bihar • West Bengal",
     highlight: "From glacial Himalayan sources down to timeless ghats and ancient Nalanda.",
     badge: "Civilizational",
-    image: "/images/bihar/mahabodhi_temple.jpg",
+    image: "/images/up/varanasi_ganga_aarti.jpg",
   },
 ]
 
@@ -216,11 +261,12 @@ export default function HomePage() {
     return () => clearInterval(timer)
   }, [])
 
+  // Navigates to 3D Earth Globe (/explore) where user sees glowing India and dives into the India Map
   const goToExplore = () => {
     if (isLeaving) return
     setIsLeaving(true)
     setTimeout(() => {
-      navigate("/india")
+      navigate("/explore")
     }, 320)
   }
 
@@ -241,7 +287,7 @@ export default function HomePage() {
 
   return (
     <main className={`home-page-fresh ${isLeaving ? "page-leaving" : ""}`}>
-      {/* Decorative Traditional Indian Folk Art Watermarks */}
+      {/* Decorative Global Background Radiance & Traditional Jaali Lattice */}
       <div className="home-fresco-backdrop" aria-hidden="true">
         <div className="home-aura-radiance" />
         <div className="home-jaali-lattice" />
@@ -266,13 +312,20 @@ export default function HomePage() {
           <a href="#circuits" className="nav-link-fresh">Curated Circuits</a>
         </nav>
 
-        <button type="button" className="nav-explore-btn-fresh" onClick={goToExplore}>
-          <span>Enter 3D Explorer</span>
+        {/* 3D Explorer Button opens 3D Earth Globe where user can click and dive into India */}
+        <button
+          type="button"
+          className="nav-explore-btn-fresh"
+          onClick={goToExplore}
+          title="Enter 3D Earth Globe and dive into India Map"
+        >
+          <Globe size={16} />
+          <span>Enter 3D Earth</span>
           <ArrowUpRight size={17} />
         </button>
       </header>
 
-      {/* ================= HERO SECTION ================= */}
+      {/* ================= HERO SECTION (FIRST SLIDE) ================= */}
       <section className="home-hero-fresh" id="hero-realm">
         <div className="hero-left-content">
           <div className="hero-kicker-pill">
@@ -287,20 +340,25 @@ export default function HomePage() {
           </h1>
 
           <p className="hero-description-fresh">
-            Step into India's living heritage through interactive Three.js 3D district maps,
-            multi-perspective architectural dossiers, millennia-old folk paintings, regional attires,
-            and authentic culinary legacies.
+            Experience India from cosmic orbit down to sacred earth. Rotate the interactive 3D Earth
+            globe, dive through atmospheric clouds into India, and explore 36 states with tactile 3D district maps,
+            multi-angle monument dossiers, and ancient folk murals.
           </p>
 
           <div className="hero-cta-group">
+            {/* Direct Launch to 3D Earth Globe */}
             <button
               type="button"
               className="primary-hero-btn"
               onClick={goToExplore}
               disabled={isLeaving}
+              title="Launch 3D Earth globe view, then click India to dive inside"
             >
-              <Compass size={19} />
-              <span>Launch 3D Bharat Explorer</span>
+              <Globe size={20} />
+              <div className="hero-btn-multiline">
+                <span className="hero-btn-title">Explore 3D Earth Globe</span>
+                <span className="hero-btn-hint">Orbit from Space → Dive into India</span>
+              </div>
               <ArrowRight size={18} className="cta-arrow" />
             </button>
 
@@ -407,7 +465,19 @@ export default function HomePage() {
       </section>
 
       {/* ================= 5 DIMENSIONS OF BHARAT YATRA ================= */}
-      <section className="home-section-fresh" id="dimensions">
+      {/* Enhanced with authentic Warli & Madhubani folk mural textures and graffiti friezes */}
+      <section className="home-section-fresh dimensions-fresco-section" id="dimensions">
+        {/* Living Indian Mural & Graffiti Canvas Background */}
+        <div className="fresco-canvas-backdrop" aria-hidden="true">
+          <div className="fresco-mural-layer mural-warli" />
+          <div className="fresco-mural-layer mural-madhubani" />
+          <div className="fresco-temple-cornice cornice-top" />
+          <div className="fresco-calligraphy-graffiti">
+            <span className="fresco-glyph glyph-left">॥ वसुधैव कुटुम्बकम् ॥</span>
+            <span className="fresco-glyph glyph-right">॥ सत्यमेव जयते ॥</span>
+          </div>
+        </div>
+
         <div className="section-header-centered">
           <span className="section-pre-tag">01 • MULTI-LAYERED CULTURAL DISCOVERY</span>
           <h2 className="section-title-fresh">Five Dimensions of Experience</h2>
@@ -444,7 +514,20 @@ export default function HomePage() {
       </section>
 
       {/* ================= EXPLORE THE 36 CULTURAL REALMS ================= */}
-      <section className="home-section-fresh realms-bg-fresh" id="state-realms">
+      {/* Enhanced with authentic Pattachitra, Sohrai mud-wall art & Rangoli graffiti watermarks */}
+      <section className="home-section-fresh realms-bg-fresh realms-fresco-section" id="state-realms">
+        {/* Living Folk Art & Temple Mural Canvas Backdrop */}
+        <div className="fresco-canvas-backdrop" aria-hidden="true">
+          <div className="fresco-mural-layer mural-pattachitra" />
+          <div className="fresco-mural-layer mural-sohrai" />
+          <div className="fresco-mandala-medallion medallion-left" />
+          <div className="fresco-mandala-medallion medallion-right" />
+          <div className="fresco-temple-cornice cornice-middle" />
+          <div className="fresco-calligraphy-graffiti">
+            <span className="fresco-glyph glyph-center">॥ अतिथि देवो भव • Sacred Hospitality of Bharat ॥</span>
+          </div>
+        </div>
+
         <div className="section-header-centered">
           <span className="section-pre-tag">02 • TAPESTRY OF 36 STATES & UNION TERRITORIES</span>
           <h2 className="section-title-fresh">Explore Iconic State Realms</h2>
@@ -456,7 +539,7 @@ export default function HomePage() {
           {/* Region Filter Tabs */}
           <div className="realms-filter-tabs">
             {[
-              { id: "all", label: "All Realms" },
+              { id: "all", label: "All Realms (36)" },
               { id: "Eastern", label: "Eastern" },
               { id: "Western", label: "Western" },
               { id: "Southern", label: "Southern" },
@@ -480,7 +563,7 @@ export default function HomePage() {
               key={st.id}
               className="realm-card-fresh"
               onClick={() => goToState(st.id)}
-              title={`Explore ${st.name}`}
+              title={`Explore ${st.name} in 3D`}
             >
               <div className="realm-card-image-wrap">
                 <img src={st.image} alt={st.name} className="realm-img" />
@@ -512,7 +595,15 @@ export default function HomePage() {
       </section>
 
       {/* ================= CURATED CIRCUITS (MY YATRA TEASER) ================= */}
-      <section className="home-section-fresh" id="circuits">
+      {/* Enhanced with ancient caravan trade routes, celestial compass rose & Gond tribal art */}
+      <section className="home-section-fresh circuits-fresco-section" id="circuits">
+        <div className="fresco-canvas-backdrop" aria-hidden="true">
+          <div className="fresco-mural-layer mural-gond" />
+          <div className="fresco-trade-routes-grid" />
+          <div className="fresco-compass-rose" />
+          <div className="fresco-temple-cornice cornice-bottom" />
+        </div>
+
         <div className="section-header-centered">
           <span className="section-pre-tag">03 • ITINERARY PLANNING</span>
           <h2 className="section-title-fresh">Curated Heritage Circuits</h2>
@@ -551,6 +642,8 @@ export default function HomePage() {
 
       {/* ================= INVITATION & GRAND FOOTER ================= */}
       <section className="home-footer-cta-fresh">
+        <div className="fresco-cta-halo" aria-hidden="true" />
+
         <div className="cta-emblem-fresh">
           <span>🇮🇳</span>
         </div>
@@ -560,7 +653,7 @@ export default function HomePage() {
           <h2 className="cta-title-fresh">Experience the Spirit of Bharat</h2>
           <p className="cta-desc-fresh">
             Embark on a digital pilgrimage through 36 realms, vibrant folk arts, and architectural
-            marvels.
+            marvels. Start from orbit around Earth or explore directly.
           </p>
         </div>
 
@@ -569,7 +662,8 @@ export default function HomePage() {
           className="cta-launch-button-fresh"
           onClick={goToExplore}
         >
-          <span>Launch 3D India Map</span>
+          <Globe size={19} />
+          <span>Launch 3D Earth Globe</span>
           <ArrowRight size={18} />
         </button>
       </section>

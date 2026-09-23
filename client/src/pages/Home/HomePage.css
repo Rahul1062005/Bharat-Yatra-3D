@@ -275,6 +275,26 @@
   transform: translateX(4px);
 }
 
+.hero-btn-multiline {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.hero-btn-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-btn-hint {
+  font-size: 11px;
+  font-weight: 600;
+  color: #fef08a;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
 .secondary-hero-btn {
   display: inline-flex;
   align-items: center;
@@ -544,16 +564,265 @@
 }
 
 /* =========================================================
-   COMMON SECTION STYLES
+   COMMON SECTION STYLES & LIVING FOLK ART FRESCO BACKDROPS
 ========================================================= */
 
 .home-section-fresh {
   position: relative;
   z-index: 10;
-  padding: 80px 64px;
+  padding: 88px 64px;
+  overflow: hidden;
+}
+
+/* Base Backdrop Container for Sections */
+.fresco-canvas-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Repeating / Positioned Folk Art Mural Layers */
+.fresco-mural-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
+  transition: opacity 0.3s ease;
+}
+
+/* 01: Dimensions Section - Warm Amber Sandstone with Warli & Madhubani Graffiti */
+.dimensions-fresco-section {
+  background: linear-gradient(180deg, #fffdf8 0%, #fbf3e4 50%, #f9eed9 100%);
+  border-top: 1px solid rgba(180, 83, 9, 0.18);
+  border-bottom: 1px solid rgba(180, 83, 9, 0.18);
+}
+
+.mural-warli {
+  background-image: url("/images/maharashtra/warli_painting.jpg");
+  background-size: 500px;
+  opacity: 0.085;
+  filter: contrast(1.15) saturate(1.2);
+}
+
+.mural-madhubani {
+  position: absolute;
+  right: -80px;
+  bottom: -60px;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-image: url("/images/bihar/madhubani_art.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.07;
+  filter: blur(0.5px);
+  mix-blend-mode: multiply;
+}
+
+/* 02: Realms Section - Warm Ochre Terracotta with Pattachitra & Sohrai Mud-Wall Graffiti */
+.realms-fresco-section {
+  background: linear-gradient(180deg, #fdf7ec 0%, #f7ece0 50%, #fdf8ef 100%);
+  border-top: 1px solid rgba(180, 83, 9, 0.18);
+  border-bottom: 1px solid rgba(180, 83, 9, 0.18);
+}
+
+.mural-pattachitra {
+  background-image: url("/images/odisha/pattachitra_art.jpg");
+  background-size: 680px;
+  opacity: 0.075;
+  filter: contrast(1.2);
+}
+
+.mural-sohrai {
+  position: absolute;
+  left: -40px;
+  top: 120px;
+  width: 480px;
+  height: 480px;
+  border-radius: 40px;
+  background-image: url("/images/jharkhand/sohrai_art.jpg");
+  background-size: cover;
+  opacity: 0.08;
+  mix-blend-mode: multiply;
+}
+
+/* 03: Circuits Section - Cartographic Ancient Trade Canvas with Gond Tribal Art */
+.circuits-fresco-section {
+  background: linear-gradient(180deg, #fffdfa 0%, #f6eee2 50%, #f9f2e7 100%);
+  border-top: 1px solid rgba(180, 83, 9, 0.18);
+  border-bottom: 1px solid rgba(180, 83, 9, 0.18);
+}
+
+.mural-gond {
+  background-image: url("/images/madhyapradesh/gond_painting.jpg");
+  background-size: 520px;
+  opacity: 0.07;
+  filter: contrast(1.1);
+}
+
+/* Ancient Silk & Spices Route Grid Watermark */
+.fresco-trade-routes-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(180, 83, 9, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(180, 83, 9, 0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* Antique Compass Rose Watermark */
+.fresco-compass-rose {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  width: 320px;
+  height: 320px;
+  opacity: 0.06;
+  background-image: radial-gradient(circle, transparent 40%, rgba(180, 83, 9, 0.5) 41%, transparent 43%),
+                    conic-gradient(from 0deg, rgba(180, 83, 9, 0.3) 0deg, transparent 45deg, rgba(180, 83, 9, 0.3) 90deg, transparent 135deg, rgba(180, 83, 9, 0.3) 180deg, transparent 225deg, rgba(180, 83, 9, 0.3) 270deg, transparent 315deg, rgba(180, 83, 9, 0.3) 360deg);
+  border-radius: 50%;
+  border: 2px dashed rgba(180, 83, 9, 0.25);
+  transform: rotate(22deg);
+}
+
+/* Ornamental Temple Cornice & Frieze Borders */
+.fresco-temple-cornice {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(180, 83, 9, 0.18) 0,
+    rgba(180, 83, 9, 0.18) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  border-top: 1px solid rgba(180, 83, 9, 0.22);
+  border-bottom: 1px solid rgba(180, 83, 9, 0.22);
+}
+
+.cornice-top {
+  top: 0;
+}
+
+.cornice-middle {
+  top: 0;
+}
+
+.cornice-bottom {
+  top: 0;
+}
+
+/* Calligraphic Sanskrit & Folk Graffiti Watermarks */
+.fresco-calligraphy-graffiti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  user-select: none;
+}
+
+.fresco-glyph {
+  font-family: serif;
+  font-size: clamp(22px, 3.2vw, 38px);
+  font-weight: 900;
+  color: rgba(180, 83, 9, 0.065);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.glyph-left {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+}
+
+.glyph-right {
+  position: absolute;
+  bottom: 24px;
+  right: 32px;
+}
+
+.glyph-center {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(16px, 2vw, 28px);
+  letter-spacing: 4px;
+}
+
+/* Intricate Kolam / Rangoli Mandala Medallions */
+.fresco-mandala-medallion {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.055;
+  background:
+    radial-gradient(circle, transparent 20%, rgba(180, 83, 9, 0.6) 21%, transparent 22%),
+    radial-gradient(circle, transparent 40%, rgba(180, 83, 9, 0.6) 41%, transparent 42%),
+    radial-gradient(circle, transparent 60%, rgba(180, 83, 9, 0.6) 61%, transparent 62%),
+    conic-gradient(
+      from 0deg,
+      rgba(180, 83, 9, 0.4) 0deg 15deg,
+      transparent 15deg 30deg,
+      rgba(180, 83, 9, 0.4) 30deg 45deg,
+      transparent 45deg 60deg,
+      rgba(180, 83, 9, 0.4) 60deg 75deg,
+      transparent 75deg 90deg,
+      rgba(180, 83, 9, 0.4) 90deg 105deg,
+      transparent 105deg 120deg,
+      rgba(180, 83, 9, 0.4) 120deg 135deg,
+      transparent 135deg 150deg,
+      rgba(180, 83, 9, 0.4) 150deg 165deg,
+      transparent 165deg 180deg,
+      rgba(180, 83, 9, 0.4) 180deg 195deg,
+      transparent 195deg 210deg,
+      rgba(180, 83, 9, 0.4) 210deg 225deg,
+      transparent 225deg 240deg,
+      rgba(180, 83, 9, 0.4) 240deg 255deg,
+      transparent 255deg 270deg,
+      rgba(180, 83, 9, 0.4) 270deg 285deg,
+      transparent 285deg 300deg,
+      rgba(180, 83, 9, 0.4) 300deg 315deg,
+      transparent 315deg 330deg,
+      rgba(180, 83, 9, 0.4) 330deg 345deg,
+      transparent 345deg 360deg
+    );
+  border: 1px dashed rgba(180, 83, 9, 0.3);
+}
+
+.medallion-left {
+  top: -60px;
+  left: -80px;
+}
+
+.medallion-right {
+  bottom: -80px;
+  right: -80px;
+}
+
+/* Halo behind Footer CTA */
+.fresco-cta-halo {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .section-header-centered {
+  position: relative;
+  z-index: 2;
   text-align: center;
   max-width: 720px;
   margin: 0 auto 52px;
@@ -591,6 +860,8 @@
 ========================================================= */
 
 .dimensions-grid-fresh {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 22px;
@@ -733,6 +1004,8 @@
 }
 
 .realms-cards-grid {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
@@ -873,6 +1146,8 @@
 ========================================================= */
 
 .circuits-grid-fresh {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 28px;
