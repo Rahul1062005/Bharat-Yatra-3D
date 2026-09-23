@@ -1609,12 +1609,14 @@ html {
   color: #b45309;
 }
 
+.monument-gallery-action-btn,
 .monument-inspect-3d-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin-top: 14px;
-  padding: 8px 14px;
+  padding: 9px 16px;
   background: rgba(217, 119, 6, 0.1);
   border: 1px solid rgba(180, 83, 9, 0.35);
   border-radius: 10px;
@@ -1623,8 +1625,10 @@ html {
   font-weight: 800;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 100%;
 }
 
+.monument-gallery-action-btn:hover,
 .monument-inspect-3d-btn:hover {
   background: #b45309;
   color: #ffffff;

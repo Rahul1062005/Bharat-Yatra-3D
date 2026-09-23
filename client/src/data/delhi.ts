@@ -100,6 +100,261 @@ export const delhiData: StateData = {
       famousSpot: "Historic Shahdara Gate",
     },
   },
+  landmarks: [
+    {
+        id: "delhi-red-fort",
+        name: "Red Fort (Lal Qila)",
+        district: "Central Delhi",
+        lat: 28.6562,
+        lon: 77.241,
+        category: "monument",
+        description: "UNESCO World Heritage imperial palace of the Mughal Empire and national symbol of Indian sovereignty.",
+        image: "/images/landmarks/delhi/delhi-red-fort_angle1.jpg",
+        era: "1638–1648 CE (Mughal Dynasty)",
+        builtBy: "Emperor Shah Jahan & Ustad Ahmad Lahori",
+        architecturalStyle: "Indo-Islamic Red Sandstone Fortification",
+        significance: "UNESCO World Heritage imperial palace of the Mughal Empire and national symbol of Indian sovereignty.",
+        gallery: [
+            {
+                url: "/images/landmarks/delhi/delhi-red-fort_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Red Fort (Lal Qila) — Front elevation and iconic monumental facade in Central Delhi."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-red-fort_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Red Fort (Lal Qila) — Broad panoramic context and surrounding heritage grounds."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-red-fort_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Red Fort (Lal Qila) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-red-fort_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Red Fort (Lal Qila) — Radiant sunset and evening twilight ambiance."
+            }
+        ]
+    },
+    {
+        id: "delhi-qutub-minar",
+        name: "Qutb Minar Complex",
+        district: "South Delhi",
+        lat: 28.5244,
+        lon: 77.1855,
+        category: "monument",
+        description: "UNESCO World Heritage site with the world's tallest brick minaret (72.5m) and ancient rust-resistant Iron Pillar.",
+        image: "/images/landmarks/delhi/delhi-qutub-minar_angle1.jpg",
+        era: "1192–1368 CE (Delhi Sultanate)",
+        builtBy: "Qutb-ud-din Aibak, Iltutmish & Firoz Shah Tughlaq",
+        architecturalStyle: "Indo-Islamic Fluted Red Sandstone Minaret",
+        significance: "UNESCO World Heritage site with the world's tallest brick minaret (72.5m) and ancient rust-resistant Iron Pillar.",
+        gallery: [
+            {
+                url: "/images/landmarks/delhi/delhi-qutub-minar_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Qutb Minar Complex — Front elevation and iconic monumental facade in South Delhi."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-qutub-minar_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Qutb Minar Complex — Broad panoramic context and surrounding heritage grounds."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-qutub-minar_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Qutb Minar Complex — Intricate architectural motifs, craftsmanship, and historic stone masonry."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-qutub-minar_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Qutb Minar Complex — Radiant sunset and evening twilight ambiance."
+            }
+        ]
+    },
+    {
+        id: "delhi-humayuns-tomb",
+        name: "Humayun's Tomb",
+        district: "South East Delhi",
+        lat: 28.5933,
+        lon: 77.2507,
+        category: "monument",
+        description: "UNESCO World Heritage garden-tomb that pioneered the Charbagh layout and inspired the Taj Mahal.",
+        image: "/images/landmarks/delhi/delhi-humayuns-tomb_angle1.jpg",
+        era: "1565–1572 CE (Mughal Dynasty)",
+        builtBy: "Empress Bega Begum & Architect Mirak Mirza Ghiyas",
+        architecturalStyle: "Mughal Garden Tomb & Red Sandstone-Marble Architecture",
+        significance: "UNESCO World Heritage garden-tomb that pioneered the Charbagh layout and inspired the Taj Mahal.",
+        gallery: [
+            {
+                url: "/images/landmarks/delhi/delhi-humayuns-tomb_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Humayun's Tomb — Front elevation and iconic monumental facade in South East Delhi."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-humayuns-tomb_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Humayun's Tomb — Broad panoramic context and surrounding heritage grounds."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-humayuns-tomb_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Humayun's Tomb — Intricate architectural motifs, craftsmanship, and historic stone masonry."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-humayuns-tomb_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Humayun's Tomb — Radiant sunset and evening twilight ambiance."
+            }
+        ]
+    },
+    {
+        id: "delhi-india-gate",
+        name: "India Gate & Kartavya Path",
+        district: "New Delhi",
+        lat: 28.6129,
+        lon: 77.2295,
+        category: "monument",
+        description: "National war memorial honoring 13,300 fallen soldiers, anchored on the majestic ceremonial boulevard of Bharat.",
+        image: "/images/landmarks/delhi/delhi-india-gate_angle1.jpg",
+        era: "1921–1931 CE (British Era / Modern Republic)",
+        builtBy: "Architect Sir Edwin Lutyens",
+        architecturalStyle: "Classical Sandstone Triumphal Arch Architecture",
+        significance: "National war memorial honoring 13,300 fallen soldiers, anchored on the majestic ceremonial boulevard of Bharat.",
+        gallery: [
+            {
+                url: "/images/landmarks/delhi/delhi-india-gate_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "India Gate & Kartavya Path — Front elevation and iconic monumental facade in New Delhi."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-india-gate_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "India Gate & Kartavya Path — Broad panoramic context and surrounding heritage grounds."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-india-gate_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "India Gate & Kartavya Path — Intricate architectural motifs, craftsmanship, and historic stone masonry."
+            },
+            {
+                url: "/images/delhi/india_gate.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "India Gate & Kartavya Path — Radiant sunset and evening twilight ambiance."
+            }
+        ]
+    },
+    {
+        id: "delhi-lotus-temple",
+        name: "Lotus Temple (Bahá'í House of Worship)",
+        district: "South East Delhi",
+        lat: 28.5535,
+        lon: 77.2588,
+        category: "spiritual",
+        description: "World-renowned temple formed of 27 free-standing marble petals welcoming all faiths in silent contemplation.",
+        image: "/images/delhi/red_fort.jpg",
+        era: "1986 CE (Modern Republic)",
+        builtBy: "Architect Fariborz Sahba",
+        architecturalStyle: "Expressionist Petal-Form White Marble Architecture",
+        significance: "World-renowned temple formed of 27 free-standing marble petals welcoming all faiths in silent contemplation.",
+        gallery: [
+            {
+                url: "/images/delhi/red_fort.jpg",
+                angle: "Front Elevation",
+                caption: "Lotus Temple (Bahá'í House of Worship) — Front elevation and iconic monumental facade in South East Delhi."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-lotus-temple_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Lotus Temple (Bahá'í House of Worship) — Broad panoramic context and surrounding heritage grounds."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-lotus-temple_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Lotus Temple (Bahá'í House of Worship) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-lotus-temple_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Lotus Temple (Bahá'í House of Worship) — Radiant sunset and evening twilight ambiance."
+            }
+        ]
+    },
+    {
+        id: "delhi-akshardham",
+        name: "Swaminarayan Akshardham",
+        district: "East Delhi",
+        lat: 28.6127,
+        lon: 77.2773,
+        category: "spiritual",
+        description: "Colossal Hindu cultural temple campus with 234 ornate pillars, 9 domes, and Gajendra Pith honoring Indian spirituality.",
+        image: "/images/landmarks/delhi/delhi-akshardham_angle1.jpg",
+        era: "2005 CE (Modern Era)",
+        builtBy: "Pramukh Swami Maharaj & 11,000 Artisans",
+        architecturalStyle: "Traditional Hindu Sandstone & Carrara Marble Vastu Architecture",
+        significance: "Colossal Hindu cultural temple campus with 234 ornate pillars, 9 domes, and Gajendra Pith honoring Indian spirituality.",
+        gallery: [
+            {
+                url: "/images/landmarks/delhi/delhi-akshardham_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Swaminarayan Akshardham — Front elevation and iconic monumental facade in East Delhi."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-akshardham_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Swaminarayan Akshardham — Broad panoramic context and surrounding heritage grounds."
+            },
+            {
+                url: "/images/delhi/red_fort.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Swaminarayan Akshardham — Intricate architectural motifs, craftsmanship, and historic stone masonry."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-akshardham_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Swaminarayan Akshardham — Radiant sunset and evening twilight ambiance."
+            }
+        ]
+    },
+    {
+        id: "delhi-jama-masjid",
+        name: "Jama Masjid (Masjid-i-Jahan-Numa)",
+        district: "Central Delhi",
+        lat: 28.6507,
+        lon: 77.2334,
+        category: "spiritual",
+        description: "One of India's largest congregational mosques built by Shah Jahan commanding the historic skyline of Old Delhi.",
+        image: "/images/landmarks/delhi/delhi-jama-masjid_angle1.jpg",
+        era: "1650–1656 CE (Mughal Dynasty)",
+        builtBy: "Emperor Shah Jahan",
+        architecturalStyle: "Classical Mughal Striped Marble & Sandstone Mosque",
+        significance: "One of India's largest congregational mosques built by Shah Jahan commanding the historic skyline of Old Delhi.",
+        gallery: [
+            {
+                url: "/images/landmarks/delhi/delhi-jama-masjid_angle1.jpg",
+                angle: "Front Elevation",
+                caption: "Jama Masjid (Masjid-i-Jahan-Numa) — Front elevation and iconic monumental facade in Central Delhi."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-jama-masjid_angle2.jpg",
+                angle: "Aerial & Panoramic View",
+                caption: "Jama Masjid (Masjid-i-Jahan-Numa) — Broad panoramic context and surrounding heritage grounds."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-jama-masjid_angle3.jpg",
+                angle: "Architectural Relief & Carvings",
+                caption: "Jama Masjid (Masjid-i-Jahan-Numa) — Intricate architectural motifs, craftsmanship, and historic stone masonry."
+            },
+            {
+                url: "/images/landmarks/delhi/delhi-jama-masjid_angle4.jpg",
+                angle: "Golden Hour & Sunset",
+                caption: "Jama Masjid (Masjid-i-Jahan-Numa) — Radiant sunset and evening twilight ambiance."
+            }
+        ]
+    }
+],
+
   cuisines: [
     {
       name: "Old Delhi Paranthe (Paranthe Wali Gali)",

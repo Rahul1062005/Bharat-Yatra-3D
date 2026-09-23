@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useParams, useNavigate } from "react-router-dom"
 import {
   ArrowLeft,
@@ -25,12 +25,10 @@ import { getStateById } from "../../data/states"
 import { getStateGreeting } from "../../data/greetings"
 import { playGreetingAudio, stopGreetingAudio } from "../../utils/greetingSpeech"
 import { heritageAudio, type HeritageAudioState } from "../../utils/ambientHeritageAudio"
-import type { LandmarkPin } from "../../types/state"
+import type { LandmarkPin, LandmarkAngleImage } from "../../types/state"
 import StateQuizSection from "../../components/quiz/StateQuizSection"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
-import Monument3DViewerModal from "../../components/monuments/Monument3DViewerModal"
 import LandmarkGalleryModal from "../../components/landmarks/LandmarkGalleryModal"
-import { MONUMENTS_3D_CATALOG } from "../../data/monumentsData"
 import { getStateTheme } from "../../data/stateThemes"
 import "./StatePage.css"
 
@@ -274,11 +272,38 @@ export default function StatePage() {
   const [isSpeakingGreeting, setIsSpeakingGreeting] = useState(false)
   const [activeSpeakingLang, setActiveSpeakingLang] = useState<string | null>(null)
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
-  const [isMonumentOpen, setIsMonumentOpen] = useState(false)
-  const [active3DMonumentId, setActive3DMonumentId] = useState("taj-mahal")
   const [audioState, setAudioState] = useState<HeritageAudioState>(heritageAudio.getState())
   const stateGreeting = getStateGreeting(stateData.id)
   const stateTheme = getStateTheme(stateData.id)
+
+  const landmarkToastRef = useRef<HTMLElement>(null)
+
+  // Disappear pinned monument dialog when clicking outside
+  useEffect(() => {
+    if (!selectedLandmark) return
+
+    const handleOutsideClick = (e: MouseEvent | TouchEvent | PointerEvent) => {
+      if (
+        landmarkToastRef.current &&
+        !landmarkToastRef.current.contains(e.target as Node)
+      ) {
+        setSelectedLandmark(null)
+      }
+    }
+
+    const timer = setTimeout(() => {
+      document.addEventListener("pointerdown", handleOutsideClick)
+      document.addEventListener("mousedown", handleOutsideClick)
+      document.addEventListener("touchstart", handleOutsideClick)
+    }, 60)
+
+    return () => {
+      clearTimeout(timer)
+      document.removeEventListener("pointerdown", handleOutsideClick)
+      document.removeEventListener("mousedown", handleOutsideClick)
+      document.removeEventListener("touchstart", handleOutsideClick)
+    }
+  }, [selectedLandmark])
 
   // Ambient Heritage Indian Classical Audio lifecycle
   useEffect(() => {
@@ -309,23 +334,58 @@ export default function StatePage() {
     }
   }, [])
 
-  const handleOpen3DMonument = (monumentName?: string) => {
-    if (monumentName) {
-      const match = MONUMENTS_3D_CATALOG.find(
-        (m) =>
-          monumentName.toLowerCase().includes(m.name.toLowerCase()) ||
-          m.name.toLowerCase().includes(monumentName.toLowerCase()) ||
-          m.stateId === stateData.id
-      )
-      if (match) {
-        setActive3DMonumentId(match.id)
-      } else {
-        // Fallback to state's monument if available, else first in catalog
-        const stateMatch = MONUMENTS_3D_CATALOG.find((m) => m.stateId === stateData.id)
-        if (stateMatch) setActive3DMonumentId(stateMatch.id)
-      }
+  const handleOpenLandmarkGallery = (mon: any) => {
+    // 1. Try to find matching landmark in stateData.landmarks
+    const monNameClean = (mon.name || "").toLowerCase().replace(/[^a-z0-9]/g, "")
+    const match = (stateData.landmarks || []).find((l) => {
+      const lNameClean = l.name.toLowerCase().replace(/[^a-z0-9]/g, "")
+      return lNameClean.includes(monNameClean) || monNameClean.includes(lNameClean)
+    })
+
+    if (match) {
+      setSelectedLandmark(match)
+    } else {
+      // 2. Synthesize a LandmarkPin with multi-angle gallery
+      const galleryItems: LandmarkAngleImage[] = [
+        {
+          url: mon.image,
+          angle: "Front Elevation",
+          caption: `${mon.name} — Front elevation and monumental architectural facade.`
+        },
+        {
+          url: mon.image,
+          angle: "Aerial & Panoramic View",
+          caption: `${mon.name} — Broad panoramic context and heritage surroundings.`
+        },
+        {
+          url: mon.image,
+          angle: "Architectural Relief & Carvings",
+          caption: `${mon.name} — Intricate heritage craftsmanship and authentic design motifs.`
+        },
+        {
+          url: mon.image,
+          angle: "Golden Hour & Sunset",
+          caption: `${mon.name} — Bathed in radiant golden twilight showcasing its timeless cultural majesty.`
+        }
+      ]
+
+      setSelectedLandmark({
+        id: mon.name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+        name: mon.name,
+        district: mon.location || stateData.capital || stateData.name,
+        lat: 0,
+        lon: 0,
+        category: "monument",
+        description: mon.description || mon.significance,
+        image: mon.image,
+        era: mon.era || mon.period || "Historical Epoch",
+        builtBy: mon.builtBy || mon.patron || "Historic Architects & Patrons",
+        architecturalStyle: mon.architecturalStyle || "Classical Indian Architecture",
+        significance: mon.significance || mon.description,
+        gallery: galleryItems
+      })
     }
-    setIsMonumentOpen(true)
+    setIsGalleryOpen(true)
   }
 
   // Synchronize when route / stateId changes
@@ -642,14 +702,21 @@ export default function StatePage() {
             landmarks={stateData.landmarks || []}
             districtsData={stateData.districts}
             selectedDistrict={selectedDistrict}
-            onDistrictSelect={(district) => setSelectedDistrict(district)}
+            onDistrictSelect={(district) => {
+              setSelectedDistrict(district)
+              setSelectedLandmark(null)
+            }}
             onLandmarkSelect={(pin) => setSelectedLandmark(pin)}
           />
         </div>
 
         {/* Selected Landmark Floating Dialog */}
         {selectedLandmark && (
-          <aside className="selected-landmark-toast" aria-label="Landmark Details">
+          <aside
+            ref={landmarkToastRef}
+            className="selected-landmark-toast"
+            aria-label="Landmark Details"
+          >
             {selectedLandmark.image && (
               <div className="toast-image-wrap">
                 <img
@@ -956,11 +1023,11 @@ export default function StatePage() {
                   )}
                   <button
                     type="button"
-                    className="monument-inspect-3d-btn"
-                    onClick={() => handleOpen3DMonument(mon.name)}
+                    className="monument-gallery-action-btn"
+                    onClick={() => handleOpenLandmarkGallery(mon)}
                   >
-                    <Sparkles size={13} />
-                    <span>Inspect Architecture in 3D</span>
+                    <Camera size={14} />
+                    <span>Explore Multi-Angle Gallery & Story</span>
                   </button>
                 </div>
               </div>
@@ -1143,12 +1210,6 @@ export default function StatePage() {
         onClose={() => setIsMasteryOpen(false)}
       />
 
-      {/* ================= 3D ARCHITECTURAL MONUMENT INSPECTOR ================= */}
-      <Monument3DViewerModal
-        isOpen={isMonumentOpen}
-        onClose={() => setIsMonumentOpen(false)}
-        initialMonumentId={active3DMonumentId}
-      />
 
       {/* ================= LANDMARK MULTI-ANGLE GALLERY MODAL ================= */}
       <LandmarkGalleryModal
