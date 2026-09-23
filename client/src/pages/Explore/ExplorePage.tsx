@@ -23,6 +23,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
   const navigate = useNavigate()
   const [stage, setStage] = useState<ExploreStage>(initialStage)
   const [cloudWashActive, setCloudWashActive] = useState(false)
+  const [isDivingIntoState, setIsDivingIntoState] = useState(false)
   const [isGreetingsOpen, setIsGreetingsOpen] = useState(false)
   const [isQuizOpen, setIsQuizOpen] = useState(false)
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
@@ -44,10 +45,10 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
     if (stage !== "globe") return
     setStage("diving")
 
-    // After 450ms into camera zoom, the atmospheric mist/cloud wash rushes in
+    // After 520ms into deep camera zoom, the atmospheric mist/cloud wash rushes in
     setTimeout(() => {
       setCloudWashActive(true)
-    }, 450)
+    }, 520)
   }
 
   // Camera dive reaches India on the globe
@@ -56,10 +57,10 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
     setStage("india")
     window.history.pushState(null, "", "/india")
 
-    // Atmospheric mist smoothly clears and reveals India Map
+    // Atmospheric mist smoothly clears and reveals India Map with zoom arrival
     setTimeout(() => {
       setCloudWashActive(false)
-    }, 280)
+    }, 320)
   }
 
   // Reverse transition from India Map back out to the Earth Globe
@@ -115,15 +116,17 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
     else if (/dadra/i.test(stateName) || /daman/i.test(stateName) || /diu/i.test(stateName)) slug = "dadra-nagar-haveli-daman-diu"
 
     if (slug) {
-      // Atmospheric mist / cloud wash rushes in as camera swoops in
+      setIsDivingIntoState(true)
+
+      // Atmospheric mist / cloud wash rushes in as camera swoops deep into state coordinates
       setTimeout(() => {
         setCloudWashActive(true)
-      }, 360)
+      }, 420)
 
-      // Navigate to dedicated 3D State page
+      // Navigate to dedicated 3D State page with zoom landing
       setTimeout(() => {
         navigate(`/state/${slug}`)
-      }, 850)
+      }, 920)
     }
   }
 
@@ -360,7 +363,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
           />
         </div>
       ) : (
-        <div className="india-container">
+        <div className={`india-container ${isDivingIntoState ? "diving-state-active" : ""}`}>
           <IndiaSearchBar
             onSelectState={handleStateDive}
             onOpenGreetings={() => setIsGreetingsOpen(true)}

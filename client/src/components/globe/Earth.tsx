@@ -123,9 +123,9 @@ function CameraDiveController({
       completedRef.current = false
       startPosRef.current = camera.position.clone()
 
-      // Calculate camera arrival position just 0.35 units in front of India
+      // Calculate camera arrival position just 0.08 units in front of India for deep zoom-in
       const normal = targetWorldPos.clone().normalize()
-      targetCamPosRef.current = targetWorldPos.clone().add(normal.multiplyScalar(0.35))
+      targetCamPosRef.current = targetWorldPos.clone().add(normal.multiplyScalar(0.08))
       startLookAtRef.current = new THREE.Vector3(0, 0, 0)
       targetLookAtRef.current = targetWorldPos.clone()
     }
@@ -135,14 +135,20 @@ function CameraDiveController({
     if (!isDiving || completedRef.current) return
     if (!startPosRef.current || !targetCamPosRef.current || !targetLookAtRef.current) return
 
-    // ~1.25s duration
-    progressRef.current = Math.min(progressRef.current + delta * 0.85, 1)
+    // Smooth ~1.3s cinematic dive
+    progressRef.current = Math.min(progressRef.current + delta * 0.76, 1)
     const t = progressRef.current
 
-    // Smooth cubic in-out easing
-    const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+    // Quintic in-out easing for high-velocity forward rush
+    const ease = t < 0.5 ? 16 * t * t * t * t * t : 1 - Math.pow(-2 * t + 2, 5) / 2
 
     camera.position.lerpVectors(startPosRef.current, targetCamPosRef.current, ease)
+
+    // Dynamic dolly zoom effect: zoom FOV from 40 down to 22
+    if (camera instanceof THREE.PerspectiveCamera) {
+      camera.fov = THREE.MathUtils.lerp(40, 22, ease)
+      camera.updateProjectionMatrix()
+    }
 
     const look = new THREE.Vector3().lerpVectors(
       startLookAtRef.current || new THREE.Vector3(),

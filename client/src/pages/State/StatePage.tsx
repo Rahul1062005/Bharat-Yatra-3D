@@ -18,6 +18,7 @@ import {
   Share2,
   Check,
   Camera,
+  Play,
 } from "lucide-react"
 
 import StateDistrictMap from "../../components/map/StateDistrictMap"
@@ -29,6 +30,7 @@ import type { LandmarkPin, LandmarkAngleImage } from "../../types/state"
 import StateQuizSection from "../../components/quiz/StateQuizSection"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import LandmarkGalleryModal from "../../components/landmarks/LandmarkGalleryModal"
+import StateCinematicModal from "../../components/video/StateCinematicModal"
 import { getStateTheme } from "../../data/stateThemes"
 import "./StatePage.css"
 
@@ -272,6 +274,7 @@ export default function StatePage() {
   const [isSpeakingGreeting, setIsSpeakingGreeting] = useState(false)
   const [activeSpeakingLang, setActiveSpeakingLang] = useState<string | null>(null)
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
   const [audioState, setAudioState] = useState<HeritageAudioState>(heritageAudio.getState())
   const stateGreeting = getStateGreeting(stateData.id)
   const stateTheme = getStateTheme(stateData.id)
@@ -709,6 +712,25 @@ export default function StatePage() {
             onLandmarkSelect={(pin) => setSelectedLandmark(pin)}
           />
         </div>
+
+        {/* Floating Cultural State Video Reel Button (Top-Right of Map) */}
+        <button
+          type="button"
+          className="state-hero-cinematic-btn"
+          onClick={() => setIsVideoModalOpen(true)}
+          title={`Watch 1-minute cultural film of ${stateData.name}`}
+          aria-label={`Watch 1-minute cultural film of ${stateData.name}`}
+        >
+          <div className="cinematic-btn-icon-wrap">
+            <Play size={14} className="cinematic-play-icon" />
+            <span className="cinematic-btn-pulse-ring" />
+          </div>
+          <div className="cinematic-btn-text">
+            <span className="cinematic-btn-label">State Film • 1 Min</span>
+            <span className="cinematic-btn-sub">Soothing Cultural Odyssey</span>
+          </div>
+          <Sparkles size={14} className="cinematic-btn-sparkle" />
+        </button>
 
         {/* Selected Landmark Floating Dialog */}
         {selectedLandmark && (
@@ -1217,6 +1239,14 @@ export default function StatePage() {
         onClose={() => setIsGalleryOpen(false)}
         landmark={selectedLandmark}
         stateName={stateData.name}
+      />
+
+      {/* ================= 1-MINUTE CULTURAL FILM & SOOTHING VOICEOVER MODAL ================= */}
+      <StateCinematicModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        stateData={stateData}
+        stateTheme={stateTheme}
       />
     </div>
   )

@@ -1047,9 +1047,10 @@ function StateDiveCamera({
       progressRef.current = 0
       startPosRef.current = camera.position.clone()
 
-      targetCamPosRef.current = new THREE.Vector3(targetX, 2.2, 1.35)
+      // Zoom deeply into the state's exact coordinates for a seamless transition
+      targetCamPosRef.current = new THREE.Vector3(targetX, targetY + 0.14, 0.65)
       startLookRef.current = new THREE.Vector3(0, 0, 0)
-      targetLookRef.current = new THREE.Vector3(targetX, targetY, 0.1)
+      targetLookRef.current = new THREE.Vector3(targetX, targetY, 0.05)
     }
   }, [divingState, camera])
 
@@ -1062,12 +1063,19 @@ function StateDiveCamera({
     )
       return
 
-    progressRef.current = Math.min(progressRef.current + delta * 1.15, 1)
+    progressRef.current = Math.min(progressRef.current + delta * 1.05, 1)
     const t = progressRef.current
-    // Smooth cubic in-out ease
-    const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+    // Smooth quintic in-out ease for dynamic zoom-in acceleration
+    const ease = t < 0.5 ? 16 * t * t * t * t * t : 1 - Math.pow(-2 * t + 2, 5) / 2
 
     camera.position.lerpVectors(startPosRef.current, targetCamPosRef.current, ease)
+
+    // Dynamic zoom-in FOV narrowing
+    if (camera instanceof THREE.PerspectiveCamera) {
+      camera.fov = THREE.MathUtils.lerp(45, 24, ease)
+      camera.updateProjectionMatrix()
+    }
+
     const currentLook = new THREE.Vector3().lerpVectors(
       startLookRef.current || new THREE.Vector3(),
       targetLookRef.current,

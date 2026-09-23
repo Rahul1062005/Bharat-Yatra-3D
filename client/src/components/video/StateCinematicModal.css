@@ -1,0 +1,620 @@
+/* =========================================================
+   STATE CINEMATIC MODAL (1-MINUTE CULTURAL ODYSSEY)
+========================================================= */
+
+.state-cinematic-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(3, 7, 18, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: cinematicFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes cinematicFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.state-cinematic-modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  background: #090e1a;
+  border: 1.5px solid rgba(245, 158, 11, 0.45);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.8),
+    0 0 60px rgba(245, 158, 11, 0.25),
+    inset 0 1px 0 rgba(254, 240, 138, 0.2);
+  display: flex;
+  flex-direction: column;
+  animation: cinematicScaleUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes cinematicScaleUp {
+  from {
+    transform: scale(0.94) translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.cinematic-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 26px;
+  background: linear-gradient(180deg, rgba(26, 18, 11, 0.95) 0%, rgba(10, 14, 26, 0.9) 100%);
+  border-bottom: 1px solid rgba(180, 83, 9, 0.25);
+  gap: 16px;
+}
+
+.cinematic-header-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.cinematic-modal-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #f59e0b;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.cinematic-film-icon {
+  color: #fbbf24;
+}
+
+.cinematic-state-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: #f8fafc;
+  letter-spacing: -0.5px;
+}
+
+.cinematic-state-title .hindi-title {
+  font-size: 15px;
+  color: #fbbf24;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+/* Tab Switcher */
+.cinematic-tab-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(15, 23, 42, 0.85);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cinematic-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cinematic-tab-btn.active {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.35);
+}
+
+.cinematic-modal-close-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cinematic-modal-close-btn:hover {
+  background: rgba(239, 68, 68, 0.8);
+  border-color: #ef4444;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+/* =========================================================
+   CINEMATIC SCREEN / VIEWPORT
+========================================================= */
+
+.cinematic-screen-viewport {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  max-height: 60vh;
+  background: #020617;
+  overflow: hidden;
+}
+
+.cinematic-storyboard-player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cinematic-image-stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.cinematic-ken-burns-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: kenBurnsZoom 8s ease-in-out infinite alternate;
+}
+
+@keyframes kenBurnsZoom {
+  0% {
+    transform: scale(1.02) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.12) translate(-1.5%, -1%);
+  }
+  100% {
+    transform: scale(1.18) translate(1.5%, 1%);
+  }
+}
+
+.cinematic-vignette-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, transparent 40%, rgba(2, 6, 23, 0.85) 100%),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.6) 0%, transparent 30%, rgba(2, 6, 23, 0.95) 90%);
+  pointer-events: none;
+}
+
+/* Meta Pill */
+.cinematic-scene-meta {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.scene-act-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fef08a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  backdrop-filter: blur(8px);
+}
+
+.scene-time-cue {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Captions / Narrative Box */
+.cinematic-captions-box {
+  position: absolute;
+  bottom: 24px;
+  left: 28px;
+  right: 28px;
+  z-index: 10;
+  background: rgba(9, 14, 26, 0.82);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 18px 24px;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  animation: captionRise 0.4s ease both;
+}
+
+@keyframes captionRise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scene-caption-title {
+  margin: 0 0 3px;
+  font-size: 17px;
+  font-weight: 900;
+  color: #fef08a;
+  letter-spacing: -0.3px;
+}
+
+.scene-caption-subtitle {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #f59e0b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.scene-caption-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #f1f5f9;
+  font-weight: 500;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Voiceover Active Wave */
+.voiceover-wave-indicator {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  background: rgba(180, 83, 9, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  border-radius: 999px;
+  z-index: 10;
+}
+
+.wave-bar {
+  width: 2.5px;
+  background: #f59e0b;
+  border-radius: 999px;
+  animation: wavePulse 0.8s ease-in-out infinite alternate;
+}
+
+.bar-1 {
+  height: 6px;
+  animation-delay: 0s;
+}
+
+.bar-2 {
+  height: 14px;
+  animation-delay: 0.2s;
+}
+
+.bar-3 {
+  height: 9px;
+  animation-delay: 0.4s;
+}
+
+@keyframes wavePulse {
+  from {
+    transform: scaleY(0.4);
+  }
+  to {
+    transform: scaleY(1.2);
+  }
+}
+
+.wave-label {
+  font-size: 10.5px;
+  font-weight: 800;
+  color: #fef08a;
+  letter-spacing: 0.5px;
+  margin-left: 4px;
+}
+
+/* Official Video Wrap */
+.official-video-iframe-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.official-youtube-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* =========================================================
+   CINEMATIC CONTROLS BAR
+========================================================= */
+
+.cinematic-controls-bar {
+  display: flex;
+  flex-direction: column;
+  background: #090e1a;
+  padding: 12px 24px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cinematic-progress-track {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  overflow: visible;
+}
+
+.cinematic-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+  border-radius: 999px;
+  transition: width 0.15s linear;
+}
+
+.chapter-marker {
+  position: absolute;
+  top: -2px;
+  width: 3px;
+  height: 10px;
+  background: rgba(254, 240, 138, 0.7);
+  border-radius: 999px;
+  transform: translateX(-50%);
+}
+
+.cinematic-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cinematic-play-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #0f172a;
+  border: none;
+  font-size: 12.5px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cinematic-play-btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+}
+
+.cinematic-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cinematic-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.cinematic-icon-btn.muted {
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.controls-center {
+  display: flex;
+  align-items: center;
+}
+
+.controls-time-display {
+  font-size: 12px;
+  font-weight: 700;
+  color: #94a3b8;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls-right {
+  display: flex;
+  align-items: center;
+}
+
+.cinematic-heritage-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+/* =========================================================
+   FLOATING BUTTON ON STATE HERO MAP
+========================================================= */
+
+.state-hero-cinematic-btn {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 18px 10px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(26, 16, 8, 0.94), rgba(15, 23, 42, 0.95));
+  border: 1.5px solid rgba(245, 158, 11, 0.6);
+  color: #ffffff;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.35),
+    0 0 20px rgba(245, 158, 11, 0.25);
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.state-hero-cinematic-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(135deg, rgba(38, 22, 10, 0.98), rgba(20, 30, 55, 0.98));
+  border-color: #fbbf24;
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(245, 158, 11, 0.4);
+}
+
+.cinematic-btn-icon-wrap {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+}
+
+.cinematic-play-icon {
+  margin-left: 2px;
+}
+
+.cinematic-btn-pulse-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(245, 158, 11, 0.8);
+  animation: pulseRing 2s ease-out infinite;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.cinematic-btn-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cinematic-btn-label {
+  font-size: 13px;
+  font-weight: 800;
+  color: #fef08a;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+.cinematic-btn-sub {
+  font-size: 10px;
+  font-weight: 600;
+  color: #cbd5e1;
+  letter-spacing: 0.2px;
+}
+
+.cinematic-btn-sparkle {
+  color: #f59e0b;
+  margin-left: 2px;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 768px) {
+  .state-hero-cinematic-btn {
+    top: auto;
+    bottom: 24px;
+    right: 20px;
+    padding: 8px 14px;
+  }
+
+  .cinematic-btn-sub {
+    display: none;
+  }
+
+  .cinematic-screen-viewport {
+    height: 360px;
+  }
+
+  .cinematic-captions-box {
+    padding: 12px 16px;
+    bottom: 12px;
+    left: 14px;
+    right: 14px;
+  }
+
+  .scene-caption-title {
+    font-size: 15px;
+  }
+
+  .scene-caption-text {
+    font-size: 12px;
+  }
+}

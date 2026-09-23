@@ -277,6 +277,21 @@ html {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  animation: stateMapArrivalZoom 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: transform, opacity, filter;
+}
+
+@keyframes stateMapArrivalZoom {
+  from {
+    transform: scale(1.06);
+    opacity: 0;
+    filter: blur(4px);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 /* Authentic Traditional Painting Watermark Backdrop */
