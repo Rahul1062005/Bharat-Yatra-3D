@@ -15,7 +15,6 @@ import {
 
 import { preloadIndiaMapData } from "../../components/map/IndiaMap"
 import PwaInstallButton from "../../components/pwa/PwaInstallButton"
-import BharatUtsavModal from "../../components/festivals/BharatUtsavModal"
 import "../../App.css"
 import "./HomePage.css"
 
@@ -249,7 +248,6 @@ export default function HomePage() {
   const [activeStateIndex, setActiveStateIndex] = useState(0)
   const [selectedFilter, setSelectedFilter] = useState("all")
   const [isLeaving, setIsLeaving] = useState(false)
-  const [isUtsavOpen, setIsUtsavOpen] = useState(false)
 
   // Preload India GeoJSON data on mount
   useEffect(() => {
@@ -313,26 +311,9 @@ export default function HomePage() {
           <a href="#dimensions" className="nav-link-fresh">5 Dimensions</a>
           <a href="#state-realms" className="nav-link-fresh">Cultural Realms</a>
           <a href="#circuits" className="nav-link-fresh">Curated Circuits</a>
-          <button
-            type="button"
-            className="nav-link-fresh-btn"
-            onClick={() => navigate("/my-yatra")}
-            title="Custom Route Planner with Google Maps & PDF export"
-          >
-            My Yatra (Maps & PDF)
-          </button>
         </nav>
 
         <div className="home-nav-right-cluster">
-          <button
-            type="button"
-            className="home-utsav-nav-btn"
-            onClick={() => setIsUtsavOpen(true)}
-            title="Explore Festivals, 6 Seasons & Best Time to Visit India"
-          >
-            <Sparkles size={14} className="home-utsav-nav-icon" />
-            <span>Festivals & Seasons</span>
-          </button>
           <PwaInstallButton className="home-pwa-btn" />
           {/* 3D Explorer Button opens 3D Earth Globe where user can click and dive into India */}
           <button
@@ -701,16 +682,6 @@ export default function HomePage() {
           <span>Crafted with Three.js • React • Vanilla CSS</span>
         </div>
       </footer>
-
-      {/* Bharat Utsav & Seasons Modal */}
-      <BharatUtsavModal
-        isOpen={isUtsavOpen}
-        onClose={() => setIsUtsavOpen(false)}
-        onExploreState={(st) => {
-          const slug = st.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
-          goToState(slug)
-        }}
-      />
     </main>
   )
 }
