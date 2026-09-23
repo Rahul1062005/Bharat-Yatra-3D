@@ -283,6 +283,7 @@
 .home-back-button,
 .quiz-launcher-btn,
 .greetings-launcher-btn,
+.heritage-ai-dock-btn,
 .journey-launcher-btn,
 .monuments-launcher-btn,
 .mastery-launcher-btn {
@@ -309,6 +310,7 @@
 .home-back-button:hover,
 .quiz-launcher-btn:hover,
 .greetings-launcher-btn:hover,
+.heritage-ai-dock-btn:hover,
 .journey-launcher-btn:hover,
 .monuments-launcher-btn:hover,
 .mastery-launcher-btn:hover {
@@ -413,6 +415,35 @@
 }
 
 .greetings-launcher-text {
+  letter-spacing: 0.3px;
+}
+
+/* National Heritage AI Companion Launcher */
+.heritage-ai-dock-btn {
+  border: 1.5px solid rgba(245, 158, 11, 0.65);
+  background: linear-gradient(135deg, rgba(38, 18, 5, 0.95), rgba(24, 10, 2, 0.96));
+  color: #fef3c7;
+}
+
+.heritage-ai-dock-btn:hover {
+  border-color: rgba(245, 158, 11, 0.95);
+  box-shadow: 0 10px 28px rgba(245, 158, 11, 0.45), 0 0 20px rgba(245, 158, 11, 0.35);
+}
+
+.heritage-ai-dock-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+  box-shadow: 0 3px 12px rgba(245, 158, 11, 0.5);
+  flex-shrink: 0;
+}
+
+.heritage-ai-dock-text {
   letter-spacing: 0.3px;
 }
 
@@ -615,6 +646,7 @@
 @media (max-width: 1280px) {
   .quiz-launcher-text,
   .greetings-launcher-text,
+  .heritage-ai-dock-text,
   .journey-launcher-text,
   .monuments-launcher-text,
   .mastery-launcher-text,
@@ -624,6 +656,7 @@
 
   .quiz-launcher-btn,
   .greetings-launcher-btn,
+  .heritage-ai-dock-btn,
   .journey-launcher-btn,
   .monuments-launcher-btn,
   .mastery-launcher-btn,

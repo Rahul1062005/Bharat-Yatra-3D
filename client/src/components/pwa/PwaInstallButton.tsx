@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
+import { createPortal } from "react-dom"
 import { Download, Check, Smartphone, X } from "lucide-react"
+import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./PwaInstallButton.css"
 
 interface BeforeInstallPromptEvent extends Event {
@@ -11,6 +13,8 @@ export default function PwaInstallButton({ className = "" }: { className?: strin
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
   const [isInstalled, setIsInstalled] = useState(false)
   const [showInfoModal, setShowInfoModal] = useState(false)
+
+  useBodyScrollLock(showInfoModal)
 
   useEffect(() => {
     // Check if already in standalone mode (installed PWA)
@@ -77,8 +81,8 @@ export default function PwaInstallButton({ className = "" }: { className?: strin
         <span className="pwa-btn-text">Install App</span>
       </button>
 
-      {/* Instructional helper popup when browser native prompt is not directly triggered */}
-      {showInfoModal && (
+      {/* Instructional helper popup rendered via Portal to escape any navbar styling/transforms */}
+      {showInfoModal && typeof document !== "undefined" && createPortal(
         <div className="pwa-modal-backdrop" onClick={() => setShowInfoModal(false)}>
           <div className="pwa-modal-card" onClick={(e) => e.stopPropagation()}>
             <button
@@ -118,7 +122,8 @@ export default function PwaInstallButton({ className = "" }: { className?: strin
               Got It!
             </button>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   )

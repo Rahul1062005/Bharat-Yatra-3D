@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft, Globe, MessageCircle, Gamepad2, Route, Award } from "lucide-react"
+import { ArrowLeft, Globe, MessageCircle, Gamepad2, Route, Award, Sparkles } from "lucide-react"
 
 import Earth from "../../components/globe/Earth"
 import IndiaMap, { preloadIndiaMapData } from "../../components/map/IndiaMap"
@@ -10,7 +10,7 @@ import GuessTheStateModal from "../../components/game/GuessTheStateModal"
 import IndiaGeoTelemetry from "../../components/telemetry/IndiaGeoTelemetry"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import JourneyPlannerModal from "../../components/itinerary/JourneyPlannerModal"
-import PwaInstallButton from "../../components/pwa/PwaInstallButton"
+import HeritageCompanionModal from "../../components/ai/HeritageCompanionModal"
 import { getStateTheme } from "../../data/stateThemes"
 import "./ExplorePage.css"
 
@@ -29,6 +29,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
   const [isQuizOpen, setIsQuizOpen] = useState(false)
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
   const [isJourneyOpen, setIsJourneyOpen] = useState(false)
+  const [isAiCompanionOpen, setIsAiCompanionOpen] = useState(false)
   const [hoveredStateName, setHoveredStateName] = useState<string | null>(null)
 
   // Sync if initialStage changes externally
@@ -308,6 +309,18 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
           <div className="explore-top-right-dock">
             <button
               type="button"
+              className="heritage-ai-dock-btn"
+              onClick={() => setIsAiCompanionOpen(true)}
+              title="Ask Bharat Heritage AI Companion about India in general"
+            >
+              <span className="heritage-ai-dock-icon">
+                <Sparkles size={15} />
+              </span>
+              <span className="heritage-ai-dock-text">Heritage AI</span>
+            </button>
+
+            <button
+              type="button"
               className="journey-launcher-btn"
               onClick={() => setIsJourneyOpen(true)}
               title="Plan your custom route, Export to Google Maps or save PDF"
@@ -329,8 +342,6 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               </span>
               <span className="mastery-launcher-text">Mastery Tracker</span>
             </button>
-
-            <PwaInstallButton className="explore-pwa-dock-btn" />
           </div>
         </>
       )}
@@ -406,6 +417,11 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
       <JourneyPlannerModal
         isOpen={isJourneyOpen}
         onClose={() => setIsJourneyOpen(false)}
+      />
+
+      <HeritageCompanionModal
+        isOpen={isAiCompanionOpen}
+        onClose={() => setIsAiCompanionOpen(false)}
       />
     </main>
   )

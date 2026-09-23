@@ -19,7 +19,6 @@ import {
   Check,
   Camera,
   Play,
-  Printer,
   ExternalLink,
 } from "lucide-react"
 
@@ -493,10 +492,6 @@ export default function StatePage() {
     window.open(mapsUrl, '_blank', 'noopener,noreferrer')
   }
 
-  const handlePrintStatePDF = () => {
-    window.print()
-  }
-
   return (
     <div
       className={`state-page state-theme-${stateData.id}`}
@@ -810,22 +805,6 @@ export default function StatePage() {
               <span className="maps-btn-title">Google Maps</span>
             </div>
             <ExternalLink size={12} className="maps-btn-ext-icon" />
-          </button>
-
-          <button
-            type="button"
-            onClick={handlePrintStatePDF}
-            className="state-hero-pdf-btn"
-            title={`Save or Print ${stateData.name} Heritage Guide (PDF)`}
-            aria-label={`Save or Print ${stateData.name} Heritage Guide (PDF)`}
-          >
-            <div className="pdf-btn-icon-wrap">
-              <Printer size={15} />
-            </div>
-            <div className="pdf-btn-text-col">
-              <span className="pdf-btn-kicker">TRAVEL GUIDE</span>
-              <span className="pdf-btn-title">Export PDF</span>
-            </div>
           </button>
         </div>
 
