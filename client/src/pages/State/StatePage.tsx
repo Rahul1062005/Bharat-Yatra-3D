@@ -19,6 +19,7 @@ import {
   Check,
   Camera,
   Play,
+  ExternalLink,
 } from "lucide-react"
 
 import StateDistrictMap from "../../components/map/StateDistrictMap"
@@ -32,6 +33,7 @@ import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import LandmarkGalleryModal from "../../components/landmarks/LandmarkGalleryModal"
 import StateCinematicModal from "../../components/video/StateCinematicModal"
 import { getStateTheme } from "../../data/stateThemes"
+import { getStateYoutubeUrl } from "../../data/stateVideos"
 import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./StatePage.css"
 
@@ -734,24 +736,25 @@ export default function StatePage() {
           />
         </div>
 
-        {/* Floating Official Tourism Video Reel Button (Top-Right of Map) */}
-        <button
-          type="button"
-          className="state-hero-cinematic-btn"
-          onClick={() => setIsVideoModalOpen(true)}
-          title={`Watch official tourism film of ${stateData.name}`}
-          aria-label={`Watch official tourism film of ${stateData.name}`}
+        {/* Floating Official Tourism Video Button (Top-Right of Map in Empty Space) */}
+        <a
+          href={getStateYoutubeUrl(stateData.id, stateData.name)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="state-hero-yt-reel-btn"
+          title={`Watch Official ${stateData.name} Tourism Reel on YouTube`}
+          aria-label={`Watch Official ${stateData.name} Tourism Reel on YouTube`}
         >
-          <div className="cinematic-btn-icon-wrap">
-            <Play size={14} className="cinematic-play-icon" />
-            <span className="cinematic-btn-pulse-ring" />
+          <div className="yt-reel-play-icon-wrap">
+            <Play size={15} fill="currentColor" className="yt-reel-play-icon" />
+            <span className="yt-reel-pulse-ring" />
           </div>
-          <div className="cinematic-btn-text">
-            <span className="cinematic-btn-label">Official Tourism Film</span>
-            <span className="cinematic-btn-sub">Watch {stateData.name} Video</span>
+          <div className="yt-reel-text-col">
+            <span className="yt-reel-kicker">OFFICIAL TOURISM REEL</span>
+            <span className="yt-reel-title">Watch {stateData.name} on YouTube</span>
           </div>
-          <Sparkles size={14} className="cinematic-btn-sparkle" />
-        </button>
+          <ExternalLink size={14} className="yt-reel-external-icon" />
+        </a>
 
         {/* Selected Landmark Floating Dialog */}
         {selectedLandmark && (
