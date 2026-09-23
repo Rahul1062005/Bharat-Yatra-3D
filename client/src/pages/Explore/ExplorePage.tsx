@@ -11,6 +11,7 @@ import IndiaGeoTelemetry from "../../components/telemetry/IndiaGeoTelemetry"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import JourneyPlannerModal from "../../components/itinerary/JourneyPlannerModal"
 import HeritageCompanionModal from "../../components/ai/HeritageCompanionModal"
+import BharatUtsavModal from "../../components/festivals/BharatUtsavModal"
 import { getStateTheme } from "../../data/stateThemes"
 import "./ExplorePage.css"
 
@@ -30,6 +31,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
   const [isJourneyOpen, setIsJourneyOpen] = useState(false)
   const [isAiCompanionOpen, setIsAiCompanionOpen] = useState(false)
+  const [isUtsavOpen, setIsUtsavOpen] = useState(false)
   const [hoveredStateName, setHoveredStateName] = useState<string | null>(null)
 
   // Sync if initialStage changes externally
@@ -393,6 +395,17 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
 
           {/* India Geographic Telemetry (Collapsible dock in bottom-left) */}
           <IndiaGeoTelemetry />
+
+          {/* Bharat Utsav & Seasons Guide (Radiant launcher button in bottom-right) */}
+          <button
+            type="button"
+            className="utsav-floating-dock-btn"
+            onClick={() => setIsUtsavOpen(true)}
+            title="Explore Festivals, 6 Seasons & Best Time to Visit India"
+          >
+            <Sparkles size={16} className="utsav-floating-icon" />
+            <span>Festivals & Seasons</span>
+          </button>
         </div>
       )}
 
@@ -422,6 +435,12 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
       <HeritageCompanionModal
         isOpen={isAiCompanionOpen}
         onClose={() => setIsAiCompanionOpen(false)}
+      />
+
+      <BharatUtsavModal
+        isOpen={isUtsavOpen}
+        onClose={() => setIsUtsavOpen(false)}
+        onExploreState={handleStateDive}
       />
     </main>
   )

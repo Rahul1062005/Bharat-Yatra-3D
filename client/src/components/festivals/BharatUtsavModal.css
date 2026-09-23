@@ -1,0 +1,1128 @@
+/* =========================================================
+   BHARAT UTSAV & RITU GUIDE (FESTIVALS & SEASONS OF INDIA)
+   Radiant, warm aesthetic with authentic Indian folk painting background.
+   NO dark/gloomy colors.
+========================================================= */
+
+/* Backdrop Overlay */
+.bharat-utsav-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(120, 53, 15, 0.38);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: utsavFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bharat-utsav-backdrop.is-fullscreen-backdrop {
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Card Container */
+.bharat-utsav-card {
+  position: relative;
+  width: min(95vw, 1180px);
+  height: min(92vh, 850px);
+  max-height: 92vh;
+  border-radius: 24px;
+  background: #fffdf7;
+  border: 1.5px solid rgba(217, 119, 6, 0.38);
+  box-shadow:
+    0 25px 60px -15px rgba(180, 83, 9, 0.3),
+    0 0 0 1px rgba(251, 191, 36, 0.4),
+    0 0 35px rgba(245, 158, 11, 0.18);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: inherit;
+  transition: all 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: utsavCardPop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Fullscreen Mode Expansion */
+.bharat-utsav-card.is-fullscreen-card {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Radiant Indian Folk Painting Background Layer */
+.utsav-painting-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/festivals/bharat_festival_painting.jpg");
+  background-size: cover;
+  background-position: center 25%;
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 0;
+  filter: saturate(1.4) contrast(1.05);
+}
+
+/* Luminous Warm Saffron & Gold Radiance */
+.utsav-painting-radiance {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(254, 240, 138, 0.45), transparent 45%),
+    radial-gradient(circle at 85% 90%, rgba(253, 186, 116, 0.35), transparent 45%),
+    linear-gradient(135deg, rgba(255, 253, 247, 0.94) 0%, rgba(255, 250, 235, 0.96) 50%, rgba(255, 252, 242, 0.94) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ================= MODAL HEADER ================= */
+.utsav-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 28px 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(254, 243, 199, 0.5) 100%);
+  border-bottom: 1.5px solid rgba(217, 119, 6, 0.22);
+  flex-shrink: 0;
+}
+
+.utsav-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.utsav-header-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b45309;
+}
+
+.utsav-sparkle-icon {
+  color: #f59e0b;
+  animation: utsavPulse 2s ease-in-out infinite;
+}
+
+.utsav-header-title {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #7c2d12;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.utsav-header-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #92400e;
+  font-weight: 500;
+}
+
+.utsav-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.utsav-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(254, 243, 199, 0.85);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  color: #92400e;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.utsav-action-btn:hover {
+  background: #fef3c7;
+  border-color: #d97706;
+  color: #7c2d12;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);
+}
+
+.utsav-close-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(254, 226, 226, 0.8);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #b91c1c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.utsav-close-btn:hover {
+  background: #fee2e2;
+  border-color: #dc2626;
+  transform: rotate(90deg) scale(1.05);
+}
+
+/* ================= NAVIGATION TABS ================= */
+.utsav-nav-tabs {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+  padding: 10px 28px;
+  background: rgba(255, 251, 235, 0.85);
+  border-bottom: 1.5px solid rgba(217, 119, 6, 0.18);
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.utsav-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid rgba(217, 119, 6, 0.22);
+  color: #78350f;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.utsav-tab-btn:hover {
+  background: #ffffff;
+  border-color: #d97706;
+  color: #b45309;
+}
+
+.utsav-tab-btn.active {
+  background: linear-gradient(135deg, #d97706 0%, #ea580c 100%);
+  border-color: #b45309;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
+}
+
+.utsav-tab-count {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(180, 83, 9, 0.12);
+  color: #78350f;
+}
+
+.utsav-tab-btn.active .utsav-tab-count {
+  background: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+}
+
+/* ================= TAB PANEL (SCROLLABLE BODY) ================= */
+.utsav-tab-panel {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ================= TAB 1: FILTERS BAR ================= */
+.utsav-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(180, 83, 9, 0.06);
+}
+
+.utsav-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.utsav-search-icon {
+  position: absolute;
+  left: 14px;
+  color: #b45309;
+}
+
+.utsav-search-input {
+  width: 100%;
+  padding: 10px 38px 10px 38px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(217, 119, 6, 0.3);
+  background: #fffdfa;
+  color: #451a03;
+  font-size: 13.5px;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.utsav-search-input:focus {
+  border-color: #ea580c;
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.15);
+  background: #ffffff;
+}
+
+.utsav-clear-search {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #92400e;
+  cursor: pointer;
+}
+
+.utsav-month-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.utsav-month-pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(254, 243, 199, 0.6);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  color: #78350f;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.18s ease;
+}
+
+.utsav-month-pill:hover {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.utsav-month-pill.active {
+  background: #b45309;
+  border-color: #78350f;
+  color: #ffffff;
+}
+
+.utsav-category-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.utsav-filter-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #92400e;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.utsav-cat-pill {
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(217, 119, 6, 0.22);
+  color: #78350f;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.utsav-cat-pill.active {
+  background: #ea580c;
+  color: #ffffff;
+  border-color: #c2410c;
+}
+
+/* ================= FESTIVALS GRID ================= */
+.utsav-festivals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 18px;
+}
+
+.utsav-card-item {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1.5px solid rgba(217, 119, 6, 0.26);
+  border-radius: 18px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow:
+    0 6px 18px rgba(180, 83, 9, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.22s ease;
+  position: relative;
+}
+
+.utsav-card-item:hover {
+  transform: translateY(-3px);
+  border-color: #d97706;
+  box-shadow:
+    0 12px 28px rgba(180, 83, 9, 0.16),
+    0 0 15px rgba(245, 158, 11, 0.12);
+}
+
+.utsav-card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.utsav-category-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1.5px solid currentColor;
+  background: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.utsav-month-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #92400e;
+  background: #fef3c7;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.utsav-card-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.utsav-fest-name {
+  margin: 0;
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #451a03;
+  line-height: 1.25;
+}
+
+.utsav-hindi-script {
+  font-size: 13px;
+  font-weight: 700;
+  color: #b45309;
+}
+
+.utsav-fest-tagline {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  font-style: italic;
+  color: #78350f;
+  line-height: 1.4;
+}
+
+.utsav-states-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #047857;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.utsav-pin-icon {
+  color: #059669;
+  flex-shrink: 0;
+}
+
+.utsav-highlights-box {
+  background: rgba(255, 251, 235, 0.85);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 12px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.utsav-box-title {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #b45309;
+  letter-spacing: 0.04em;
+}
+
+.utsav-highlights-list {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  color: #451a03;
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.utsav-prasad-row {
+  font-size: 12px;
+  color: #78350f;
+  line-height: 1.4;
+  padding-top: 4px;
+}
+
+.utsav-prasad-label {
+  font-weight: 800;
+  color: #92400e;
+  margin-right: 4px;
+}
+
+.utsav-prasad-value {
+  font-weight: 600;
+  color: #451a03;
+}
+
+.utsav-travel-tip {
+  margin-top: auto;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.6) 0%, rgba(253, 230, 138, 0.4) 100%);
+  border-left: 3px solid #f59e0b;
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.utsav-tip-badge {
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #b45309;
+}
+
+.utsav-tip-text {
+  margin: 0;
+  font-size: 11.5px;
+  color: #78350f;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* Empty State */
+.utsav-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  border: 1.5px dashed rgba(217, 119, 6, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #92400e;
+}
+
+.utsav-reset-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #ea580c;
+  color: #ffffff;
+  border: none;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ================= TAB 2: SEASONS LAYOUT ================= */
+.utsav-seasons-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 22px;
+}
+
+.utsav-seasons-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.utsav-sidebar-title {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #92400e;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.utsav-season-btn {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(217, 119, 6, 0.22);
+  border-left: 4px solid transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.utsav-season-btn:hover {
+  background: #ffffff;
+  border-color: #d97706;
+}
+
+.utsav-season-btn.active {
+  background: #ffffff;
+  border-color: #d97706;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.15);
+}
+
+.utsav-season-btn-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.utsav-season-name {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #451a03;
+}
+
+.utsav-season-sanskrit {
+  font-size: 13px;
+  font-weight: 700;
+  color: #b45309;
+}
+
+.utsav-season-months {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #78350f;
+}
+
+.utsav-season-detail-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1.5px solid rgba(217, 119, 6, 0.28);
+  border-radius: 20px;
+  padding: 26px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 8px 25px rgba(180, 83, 9, 0.1);
+}
+
+.utsav-season-element-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.utsav-season-hero-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #451a03;
+}
+
+.utsav-season-hero-months {
+  font-size: 13px;
+  font-weight: 700;
+  color: #92400e;
+}
+
+.utsav-season-poetic {
+  margin: 0;
+  padding: 14px 18px;
+  border-left: 3.5px solid #d97706;
+  background: rgba(254, 243, 199, 0.4);
+  border-radius: 0 12px 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  color: #78350f;
+  line-height: 1.5;
+}
+
+.utsav-climate-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fffdf7;
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.utsav-climate-icon {
+  color: #ea580c;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.utsav-climate-label {
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #92400e;
+}
+
+.utsav-climate-desc {
+  margin: 2px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #451a03;
+}
+
+.utsav-destinations-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.utsav-dest-title {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #7c2d12;
+}
+
+.utsav-dest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.utsav-dest-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #451a03;
+}
+
+.utsav-check-icon {
+  color: #059669;
+  flex-shrink: 0;
+}
+
+/* ================= TAB 3: STATE TRAVEL WEATHER ================= */
+.utsav-states-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 22px;
+}
+
+.utsav-states-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.utsav-states-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 480px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.utsav-state-select-btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.18s ease;
+}
+
+.utsav-state-select-btn:hover {
+  background: #ffffff;
+  border-color: #d97706;
+}
+
+.utsav-state-select-btn.active {
+  background: #fef3c7;
+  border-color: #ea580c;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.15);
+}
+
+.utsav-st-name {
+  font-size: 13px;
+  font-weight: 800;
+  color: #451a03;
+}
+
+.utsav-st-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #b45309;
+}
+
+.utsav-state-weather-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1.5px solid rgba(217, 119, 6, 0.28);
+  border-radius: 20px;
+  padding: 26px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 8px 25px rgba(180, 83, 9, 0.1);
+}
+
+.utsav-st-header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1.5px solid rgba(217, 119, 6, 0.18);
+  padding-bottom: 14px;
+}
+
+.utsav-st-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #b45309;
+  text-transform: uppercase;
+}
+
+.utsav-st-title {
+  margin: 2px 0 0;
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #451a03;
+}
+
+.utsav-st-temp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: #fef3c7;
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #92400e;
+}
+
+.utsav-st-details-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.utsav-st-metric-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.utsav-st-metric {
+  background: rgba(255, 251, 235, 0.85);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.utsav-metric-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #92400e;
+}
+
+.utsav-metric-value {
+  font-size: 14px;
+  font-weight: 800;
+  color: #451a03;
+}
+
+.utsav-peak-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.utsav-peak-chip {
+  padding: 3px 8px;
+  background: #d97706;
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.utsav-st-why-box {
+  background: #fffdfa;
+  border-left: 3.5px solid #ea580c;
+  border-radius: 0 12px 12px 0;
+  padding: 12px 16px;
+}
+
+.utsav-why-label {
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ea580c;
+}
+
+.utsav-why-text {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #451a03;
+  line-height: 1.45;
+}
+
+.utsav-st-fest-highlight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(234, 88, 12, 0.08);
+  border: 1px dashed rgba(234, 88, 12, 0.35);
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.utsav-fest-chip-label {
+  font-weight: 800;
+  color: #c2410c;
+}
+
+.utsav-fest-chip-val {
+  font-weight: 700;
+  color: #7c2d12;
+}
+
+.utsav-dive-state-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #d97706 0%, #ea580c 100%);
+  color: #ffffff;
+  border: none;
+  font-size: 13.5px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  box-shadow: 0 6px 16px rgba(234, 88, 12, 0.28);
+}
+
+.utsav-dive-state-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(234, 88, 12, 0.38);
+}
+
+/* ================= LAUNCHER BUTTONS (BOTTOM RIGHT & NAVBAR) ================= */
+
+/* Floating Launcher Button for Indian Map Page (Bottom-Right Dock) */
+.utsav-floating-dock-btn {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border: 1.5px solid rgba(217, 119, 6, 0.45);
+  border-radius: 999px;
+  color: #78350f;
+  font-size: 12.5px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow:
+    0 8px 24px rgba(180, 83, 9, 0.25),
+    0 0 15px rgba(245, 158, 11, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: auto;
+}
+
+.utsav-floating-dock-btn:hover {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-color: #d97706;
+  color: #451a03;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 12px 28px rgba(180, 83, 9, 0.35),
+    0 0 22px rgba(245, 158, 11, 0.35);
+}
+
+.utsav-floating-icon {
+  color: #ea580c;
+  animation: utsavPulse 2s ease-in-out infinite;
+}
+
+/* Home Page Nav Launcher Button */
+.home-utsav-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 15px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255, 251, 235, 0.95) 0%, rgba(254, 243, 199, 0.95) 100%);
+  border: 1px solid rgba(217, 119, 6, 0.38);
+  color: #78350f;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.12);
+}
+
+.home-utsav-nav-btn:hover {
+  background: #fef3c7;
+  border-color: #d97706;
+  color: #451a03;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(180, 83, 9, 0.22);
+}
+
+.home-utsav-nav-icon {
+  color: #ea580c;
+}
+
+/* Animations */
+@keyframes utsavFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes utsavCardPop {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes utsavPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* ================= MOBILE & TABLET RESPONSIVENESS ================= */
+@media (max-width: 860px) {
+  .bharat-utsav-card {
+    width: 98vw;
+    height: 94vh;
+    border-radius: 16px;
+  }
+
+  .utsav-header {
+    padding: 16px 18px 14px;
+  }
+
+  .utsav-header-title {
+    font-size: 1.2rem;
+  }
+
+  .utsav-nav-tabs {
+    padding: 8px 16px;
+  }
+
+  .utsav-tab-panel {
+    padding: 14px 16px;
+  }
+
+  .utsav-festivals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .utsav-seasons-layout,
+  .utsav-states-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .utsav-states-list {
+    max-height: 180px;
+  }
+
+  .utsav-st-metric-row {
+    grid-template-columns: 1fr;
+  }
+}
