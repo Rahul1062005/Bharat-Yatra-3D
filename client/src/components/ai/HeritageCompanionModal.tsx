@@ -142,10 +142,84 @@ export default function HeritageCompanionModal({
     }
 
     // 2. National / All-India mode (from 3D Explore map)
+    // Specific check: How many states?
+    if (
+      q.includes("how many state") ||
+      q.includes("number of state") ||
+      q.includes("total state") ||
+      q === "states" ||
+      q === "state" ||
+      q.includes("how many states in india") ||
+      q.includes("states count") ||
+      q.includes("how many states are there")
+    ) {
+      return "India officially has 28 States (along with 8 Union Territories, making 36 administrative entities in total). Each of the 28 states has its own elected state government, Chief Minister, and legislative assembly. Would you like to see the list of all 28 states, or explore a specific state?"
+    }
+
+    // Specific check: How many union territories?
+    if (
+      q.includes("how many union territor") ||
+      q.includes("how many ut") ||
+      q.includes("union territor") ||
+      q.includes("list of ut")
+    ) {
+      return "India has 8 Union Territories: 1. Andaman & Nicobar Islands, 2. Chandigarh, 3. Dadra & Nagar Haveli and Daman & Diu, 4. Delhi (National Capital Territory), 5. Jammu & Kashmir, 6. Ladakh, 7. Lakshadweep, and 8. Puducherry. Union Territories are administered directly by the Central Government via Lieutenant Governors or Administrators."
+    }
+
+    // List of states
+    if (
+      q.includes("list of state") ||
+      q.includes("name of state") ||
+      q.includes("all state") ||
+      q.includes("which states") ||
+      q.includes("name all states") ||
+      q.includes("list all states")
+    ) {
+      return "The 28 States of India across regions are:\n• Northern: Himachal Pradesh, Punjab, Haryana, Uttarakhand, Uttar Pradesh.\n• Western: Rajasthan, Gujarat, Maharashtra, Goa.\n• Central: Madhya Pradesh, Chhattisgarh.\n• Eastern: Bihar, Jharkhand, West Bengal, Odisha.\n• Southern: Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, Telangana.\n• North-Eastern (Eight Sisters): Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura.\nWhich state would you like to explore?"
+    }
+
+    // Largest / Smallest states
+    if (q.includes("largest state") || q.includes("biggest state")) {
+      return "By geographic area, the largest state in India is Rajasthan (342,239 sq km), followed by Madhya Pradesh and Maharashtra. By population, the largest state is Uttar Pradesh (over 240 million citizens), followed by Maharashtra and Bihar."
+    }
+
+    if (q.includes("smallest state")) {
+      return "By geographic area, the smallest state in India is Goa (3,702 sq km). By population, the smallest state is Sikkim (approximately 690,000 citizens)."
+    }
+
+    // Capital of India or capital of a state
+    if (q.includes("capital of india") || q === "capital") {
+      return "The national capital of India is New Delhi. The historic metropolis serves as the seat of the Government of India, the Rashtrapati Bhavan, Parliament House, and the Supreme Court."
+    }
+
+    if (q.includes("capital of")) {
+      for (const [, bundle] of Object.entries(statesRegistry)) {
+        if (q.includes(bundle.data.name.toLowerCase())) {
+          return `The capital of ${bundle.data.name} is ${bundle.data.capital}.`
+        }
+      }
+    }
+
+    // National symbols
+    if (q.includes("national symbol") || q.includes("national animal") || q.includes("national bird") || q.includes("national flower") || q.includes("national anthem")) {
+      return "India's National Symbols are:\n• National Animal: Royal Bengal Tiger\n• National Bird: Indian Peacock\n• National Flower: Sacred Lotus\n• National Tree: Indian Banyan\n• National Aquatic Animal: Ganges River Dolphin\n• National Anthem: 'Jana Gana Mana' by Rabindranath Tagore\n• National Song: 'Vande Mataram' by Bankim Chandra Chatterjee\n• National Motto: 'Satyameva Jayate' (Truth Alone Triumphs)"
+    }
+
+    // Rivers of India
+    if (q.includes("river") || q.includes("ganga") || q.includes("ganges") || q.includes("yamuna") || q.includes("brahmaputra")) {
+      return "The sacred rivers of Bharat are the lifeblood of Indian civilization. The longest river is the Ganga (2,525 km), originating from Gomukh in the Himalayas. Other sacred lifelines include the Yamuna, the mighty Brahmaputra in Assam, Godavari (Dakshin Ganga), Narmada, Krishna, and Kaveri. Along these rivers, spiritual traditions like the Kumbh Mela and Ganga Aarti have flourished for millennia."
+    }
+
+    // UNESCO World Heritage Sites
+    if (q.includes("unesco") || q.includes("heritage site")) {
+      return "India is home to 42 UNESCO World Heritage Sites (34 Cultural, 7 Natural, and 1 Mixed). Famous world landmarks include the Taj Mahal, Ajanta & Ellora Caves, Sun Temple Konark, Mahabodhi Temple, Hampi, Brihadisvara Temple, Kaziranga National Park, and Sundarbans."
+    }
+
     // Check if user is asking about a specific state from national view
     for (const [key, bundle] of Object.entries(statesRegistry)) {
       const sName = bundle.data.name.toLowerCase()
-      if (q.includes(sName) || (key.length > 3 && q.includes(key))) {
+      const regex = new RegExp(`\\b${sName}\\b`, "i")
+      if (regex.test(q) || (key.length > 3 && new RegExp(`\\b${key}\\b`, "i").test(q))) {
         const topMonuments = (bundle.data.monuments || bundle.data.landmarks || []).slice(0, 3).map((m: any) => m.name).join(", ")
         const topCuisine = (bundle.data.cuisines || []).slice(0, 3).map((c: any) => c.name).join(", ")
         return `${bundle.data.name} (${bundle.data.hindiName || ""}) is renowned as "${bundle.data.tagline}". Key architectural highlights include ${topMonuments || "historic forts and ancient shrines"}, while famous culinary treasures include ${topCuisine || "heirloom specialties"}. You can dive into its 3D state map right from the Indian map for full district exploration!`
@@ -183,7 +257,7 @@ export default function HeritageCompanionModal({
     }
 
     // General default national query
-    return `India is a living civilizational matrix spanning 36 States & Union Territories, each with its own language, monumental architecture, and distinct cultural soul. Ask me about why India is called Bharat, legendary monuments like Kailasa or Konark, classical cuisines, or inquire about any specific state like Bihar, Rajasthan, Kerala, or Maharashtra!`
+    return `India is a living civilizational matrix spanning 28 States & 8 Union Territories (36 entities in total). Each region offers its own language, monumental architecture, and distinct cultural soul. Ask me about why India is called Bharat, how many states India has, legendary monuments like Kailasa or Konark, classical cuisines, or inquire about any specific state like Bihar, Rajasthan, Assam, or Kerala!`
   }
 
   const handleSendMessage = (textToSend?: string) => {
