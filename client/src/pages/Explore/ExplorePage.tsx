@@ -10,6 +10,7 @@ import GuessTheStateModal from "../../components/game/GuessTheStateModal"
 import IndiaGeoTelemetry from "../../components/telemetry/IndiaGeoTelemetry"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import JourneyPlannerModal from "../../components/itinerary/JourneyPlannerModal"
+import { getStateTheme } from "../../data/stateThemes"
 import "./ExplorePage.css"
 
 export type ExploreStage = "globe" | "diving" | "india"
@@ -26,6 +27,7 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
   const [isQuizOpen, setIsQuizOpen] = useState(false)
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
   const [isJourneyOpen, setIsJourneyOpen] = useState(false)
+  const [hoveredStateName, setHoveredStateName] = useState<string | null>(null)
 
   // Sync if initialStage changes externally
   useEffect(() => {
@@ -125,8 +127,113 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
     }
   }
 
+  const activeTheme = hoveredStateName
+    ? getStateTheme(hoveredStateName.toLowerCase().replace(/[^a-z0-9]/g, "-"))
+    : null
+
   return (
-    <main className={`explore-page stage-${stage}`}>
+    <main
+      className={`explore-page stage-${stage} ${hoveredStateName ? "has-hovered-state" : ""}`}
+      style={{
+        ["--hover-primary" as string]: activeTheme?.primaryColor || "#f59e0b",
+        ["--hover-secondary" as string]: activeTheme?.secondaryColor || "#d97706",
+      }}
+    >
+      {/* ================= ROYAL INDIAN HERITAGE PAINTINGS & VINTAGE GRAFFITI BACKDROP ================= */}
+      <div className="heritage-paintings-backdrop" aria-hidden="true">
+        {/* Dynamic Radiant State Aura Wash */}
+        <div className="heritage-aura-wash" />
+
+        {/* Ancient Stone Wall / Fresco Graffiti Texture */}
+        <div className="heritage-fresco-graffiti-texture" />
+
+        {/* Corner Murals & Vintage Folk Art Paintings */}
+        <div className="heritage-corner-art corner-top-left madhubani-mural">
+          <svg viewBox="0 0 200 200" className="heritage-art-svg">
+            <g fill="none" stroke="currentColor" strokeWidth="1.6" opacity="0.65">
+              <circle cx="70" cy="70" r="55" strokeDasharray="3 3" />
+              <circle cx="70" cy="70" r="42" />
+              <circle cx="70" cy="70" r="28" fill="rgba(245, 158, 11, 0.15)" />
+              {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((deg) => (
+                <line
+                  key={deg}
+                  x1="70"
+                  y1="70"
+                  x2={70 + 64 * Math.cos((deg * Math.PI) / 180)}
+                  y2={70 + 64 * Math.sin((deg * Math.PI) / 180)}
+                  strokeWidth="1.2"
+                />
+              ))}
+              <path d="M70 135 C110 135 140 100 140 60 C100 60 70 95 70 135 Z" fill="rgba(225, 29, 72, 0.12)" />
+              <path d="M140 60 Q170 30 190 50 Q160 80 140 60 Z" fill="rgba(13, 148, 136, 0.16)" />
+              <circle cx="120" cy="80" r="3" fill="currentColor" />
+            </g>
+          </svg>
+          <span className="heritage-art-label">मिथिला मधुबनी • MADHUBANI FRESCO</span>
+        </div>
+
+        <div className="heritage-corner-art corner-top-right pichwai-mural">
+          <svg viewBox="0 0 200 200" className="heritage-art-svg">
+            <g fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.65">
+              <path d="M190 10 Q100 20 100 110" strokeDasharray="4 3" />
+              <path d="M130 60 C145 30 165 30 180 60 C165 90 145 90 130 60 Z" fill="rgba(244, 63, 94, 0.18)" />
+              <path d="M110 90 C125 60 145 60 160 90 C145 120 125 120 110 90 Z" fill="rgba(245, 158, 11, 0.16)" />
+              <path d="M150 110 C165 80 185 80 200 110 C185 140 165 140 150 110 Z" fill="rgba(225, 29, 72, 0.15)" />
+              <circle cx="155" cy="85" r="8" fill="rgba(251, 191, 36, 0.28)" />
+            </g>
+          </svg>
+          <span className="heritage-art-label">पिचवाई मेवाड़ • PICHWAI TEMPLE ART</span>
+        </div>
+
+        <div className="heritage-corner-art corner-bottom-left warli-graffiti">
+          <svg viewBox="0 0 220 220" className="heritage-art-svg">
+            <g fill="none" stroke="currentColor" strokeWidth="1.6" opacity="0.65">
+              <circle cx="80" cy="140" r="50" strokeDasharray="5 4" />
+              <circle cx="80" cy="140" r="28" strokeDasharray="3 3" />
+              <circle cx="80" cy="132" r="5" fill="currentColor" />
+              <polygon points="80,137 73,148 87,148" fill="currentColor" opacity="0.8" />
+              <polygon points="80,158 73,148 87,148" fill="currentColor" opacity="0.8" />
+              {[0, 45, 90, 135, 180, 225, 270, 315].map((deg) => {
+                const cx = 80 + 44 * Math.cos((deg * Math.PI) / 180)
+                const cy = 140 + 44 * Math.sin((deg * Math.PI) / 180)
+                return (
+                  <g key={deg} transform={`translate(${cx - 8}, ${cy - 8}) scale(0.4)`}>
+                    <circle cx="20" cy="8" r="5" fill="currentColor" />
+                    <polygon points="20,14 12,28 28,28" fill="currentColor" />
+                    <polygon points="20,40 12,28 28,28" fill="currentColor" />
+                    <line x1="12" y1="28" x2="4" y2="18" strokeWidth="2" />
+                    <line x1="28" y1="28" x2="36" y2="18" strokeWidth="2" />
+                  </g>
+                )
+              })}
+            </g>
+          </svg>
+          <span className="heritage-art-label">वारली भित्तिचित्र • WARLI TRIBAL GRAFFITI</span>
+        </div>
+
+        <div className="heritage-corner-art corner-bottom-right ajanta-tanjore">
+          <svg viewBox="0 0 220 220" className="heritage-art-svg">
+            <g fill="none" stroke="currentColor" strokeWidth="1.6" opacity="0.65">
+              <path d="M120 210 L120 120 Q165 80 210 120 L210 210" strokeWidth="1.8" />
+              <path d="M135 210 L135 130 Q165 98 195 130 L195 210" strokeDasharray="3 3" />
+              <polygon points="165,70 175,90 195,90 180,102 185,120 165,108 145,120 150,102 135,90 155,90" fill="rgba(245, 158, 11, 0.18)" />
+              <circle cx="165" cy="140" r="14" fill="rgba(225, 29, 72, 0.15)" />
+            </g>
+          </svg>
+          <span className="heritage-art-label">अजंता व तंजावुर • AJANTA FRESCO & JAALI</span>
+        </div>
+
+        {/* Floating State Cultural Art Badge when a state is hovered */}
+        {hoveredStateName && activeTheme && (
+          <div className="heritage-hovered-badge-floating">
+            <span className="badge-flourish">✦</span>
+            <span className="badge-state-name">{hoveredStateName}</span>
+            <span className="badge-divider">•</span>
+            <span className="badge-art-name">{activeTheme.artName}</span>
+          </div>
+        )}
+      </div>
+
       {/* ================= ATMOSPHERIC DIVE VFX OVERLAY ================= */}
       <div
         className={`atmosphere-dive-overlay ${
@@ -261,7 +368,11 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
             onOpenJourneyPlanner={() => setIsJourneyOpen(true)}
             onOpenMasteryTracker={() => setIsMasteryOpen(true)}
           />
-          <IndiaMap animateEntrance={true} onStateDive={handleStateDive} />
+          <IndiaMap
+            animateEntrance={true}
+            onStateDive={handleStateDive}
+            onHoverState={setHoveredStateName}
+          />
 
           {/* India Geographic Telemetry (Collapsible dock in bottom-left) */}
           <IndiaGeoTelemetry />

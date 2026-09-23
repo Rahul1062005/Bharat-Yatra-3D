@@ -12,16 +12,33 @@
 
   background:
     radial-gradient(
-      ellipse at 72% 18%,
-      rgba(35, 66, 135, 0.22),
-      transparent 38%
+      ellipse at 50% 35%,
+      rgba(245, 158, 11, 0.18) 0%,
+      rgba(194, 65, 12, 0.12) 32%,
+      transparent 70%
     ),
     radial-gradient(
-      ellipse at 20% 55%,
-      rgba(20, 45, 100, 0.12),
+      circle at 14% 18%,
+      rgba(225, 29, 72, 0.16) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 86% 82%,
+      rgba(13, 148, 136, 0.16) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 84% 18%,
+      rgba(245, 158, 11, 0.18) 0%,
       transparent 40%
     ),
-    #02050d;
+    linear-gradient(
+      180deg,
+      #1f102f 0%,
+      #160a24 35%,
+      #0e0618 70%,
+      #07020d 100%
+    );
 
   color: #ffffff;
 }

@@ -1,27 +1,51 @@
 /* ===================================================== */
-/* BHARAT YATRA — EXPLORE PAGE */
+/* BHARAT YATRA — VIBRANT CULTURAL HERITAGE EXPLORE PAGE */
 /* ===================================================== */
 
 .explore-page {
   position: relative;
-
   width: 100%;
   height: 100vh;
   min-height: 100vh;
-
   overflow: hidden;
 
+  /* Radiant multi-chromatic Indian royal twilight palette (vibrant, rich & festive) */
   background:
     radial-gradient(
-      circle at 50% 42%,
-      #101f42 0%,
-      #07142d 35%,
-      #020918 70%,
-      #01040b 100%
+      ellipse at 50% 40%,
+      rgba(245, 158, 11, 0.22) 0%,
+      rgba(194, 65, 12, 0.15) 32%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 12% 16%,
+      rgba(225, 29, 72, 0.18) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 88% 84%,
+      rgba(13, 148, 136, 0.18) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 85% 18%,
+      rgba(245, 158, 11, 0.2) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 14% 82%,
+      rgba(217, 119, 6, 0.18) 0%,
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #1f102f 0%,
+      #160a24 35%,
+      #0e0618 70%,
+      #07020d 100%
     );
 
   color: white;
-
   animation: explorePageFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -36,182 +60,200 @@
   }
 }
 
-
 /* ===================================================== */
-/* REALISTIC STARFIELD */
+/* VINTAGE INDIAN PAINTINGS & GRAFFITI BACKDROP */
 /* ===================================================== */
 
+.heritage-paintings-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Dynamic State Aura Wash */
+.heritage-aura-wash {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 48%,
+    var(--hover-primary, rgba(245, 158, 11, 0.15)) 0%,
+    transparent 65%
+  );
+  opacity: 0.65;
+  transition: background 0.45s ease, opacity 0.45s ease;
+}
+
+.has-hovered-state .heritage-aura-wash {
+  opacity: 1;
+  background: radial-gradient(
+    circle at 50% 48%,
+    var(--hover-primary) 0%,
+    var(--hover-secondary) 38%,
+    transparent 70%
+  );
+}
+
+/* Distressed Ancient Stone Wall & Fresco Graffiti Texture */
+.heritage-fresco-graffiti-texture {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(245, 158, 11, 0.035) 0px,
+      rgba(245, 158, 11, 0.035) 1px,
+      transparent 1px,
+      transparent 36px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(245, 158, 11, 0.035) 0px,
+      rgba(245, 158, 11, 0.035) 1px,
+      transparent 1px,
+      transparent 36px
+    );
+  opacity: 0.85;
+}
+
+/* Corner Folk Art Paintings & Historic Graffiti Murals */
+.heritage-corner-art {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0.82;
+}
+
+.heritage-corner-art:hover,
+.has-hovered-state .heritage-corner-art {
+  opacity: 0.95;
+}
+
+.heritage-art-svg {
+  width: 175px;
+  height: 175px;
+  filter: drop-shadow(0 4px 22px rgba(245, 158, 11, 0.28));
+}
+
+.heritage-art-label {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: rgba(254, 240, 138, 0.8);
+  text-transform: uppercase;
+  margin-top: 4px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  font-family: inherit;
+  background: rgba(18, 9, 28, 0.65);
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.corner-top-left {
+  top: 76px;
+  left: 24px;
+  color: #fbbf24;
+}
+
+.corner-top-right {
+  top: 76px;
+  right: 24px;
+  color: #f43f5e;
+}
+
+.corner-bottom-left {
+  bottom: 58px;
+  left: 24px;
+  color: #fb923c;
+}
+
+.corner-bottom-right {
+  bottom: 58px;
+  right: 24px;
+  color: #38bdf8;
+}
+
+/* Floating State Cultural Art Badge */
+.heritage-hovered-badge-floating {
+  position: absolute;
+  top: 76px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 20px;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    rgba(38, 18, 10, 0.94),
+    rgba(22, 10, 6, 0.96)
+  );
+  border: 1.5px solid rgba(245, 158, 11, 0.75);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(245, 158, 11, 0.35);
+  color: #fef08a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  animation: badgePopUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  z-index: 20;
+}
+
+@keyframes badgePopUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -8px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+.badge-flourish {
+  color: #f59e0b;
+  font-size: 14px;
+}
+
+.badge-state-name {
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.badge-divider {
+  color: rgba(245, 158, 11, 0.6);
+}
+
+.badge-art-name {
+  color: #fed7aa;
+  font-size: 12px;
+}
+
+/* Traditional Mandala Watermark Overlay */
 .explore-page::before {
   content: "";
-
   position: absolute;
-
   inset: 0;
-
   z-index: 0;
-
   pointer-events: none;
-
   background-image:
-    radial-gradient(
-      circle at 8% 12%,
-      rgba(255, 255, 255, 0.9) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 17% 38%,
-      rgba(255, 255, 255, 0.65) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 27% 8%,
-      rgba(255, 255, 255, 0.75) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 38% 28%,
-      rgba(255, 255, 255, 0.5) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 48% 10%,
-      rgba(255, 255, 255, 0.85) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 57% 34%,
-      rgba(255, 255, 255, 0.6) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 68% 13%,
-      rgba(255, 255, 255, 0.8) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 78% 30%,
-      rgba(255, 255, 255, 0.55) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 89% 9%,
-      rgba(255, 255, 255, 0.85) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 94% 45%,
-      rgba(255, 255, 255, 0.55) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 5% 70%,
-      rgba(255, 255, 255, 0.55) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 18% 82%,
-      rgba(255, 255, 255, 0.8) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 33% 67%,
-      rgba(255, 255, 255, 0.45) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 47% 88%,
-      rgba(255, 255, 255, 0.7) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 63% 74%,
-      rgba(255, 255, 255, 0.55) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 79% 86%,
-      rgba(255, 255, 255, 0.8) 0 1px,
-      transparent 1.5px
-    ),
-    radial-gradient(
-      circle at 92% 72%,
-      rgba(255, 255, 255, 0.6) 0 1px,
-      transparent 1.5px
-    );
-
-  opacity: 0.8;
+    radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.05) 0 32%, transparent 68%),
+    radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.85) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 90% 25%, rgba(251, 191, 36, 0.85) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 85% 80%, rgba(245, 158, 11, 0.75) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 15% 85%, rgba(251, 191, 36, 0.75) 0 1px, transparent 1.5px);
+  opacity: 0.9;
 }
-
-
-/* ===================================================== */
-/* SMALLER STAR LAYER */
-/* ===================================================== */
-
-.explore-page::after {
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  z-index: 0;
-
-  pointer-events: none;
-
-  background-image:
-    radial-gradient(
-      circle at 12% 24%,
-      rgba(255, 255, 255, 0.4) 0 0.7px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 22% 58%,
-      rgba(255, 255, 255, 0.35) 0 0.7px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 31% 18%,
-      rgba(255, 255, 255, 0.5) 0 0.7px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 43% 52%,
-      rgba(255, 255, 255, 0.35) 0 0.7px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 54% 22%,
-      rgba(255, 255, 255, 0.45) 0 0.7px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 66% 57%,
-      rgba(255, 255, 255, 0.35) 0 0.7px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 73% 19%,
-      rgba(255, 255, 255, 0.45) 0 0.7px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 84% 63%,
-      rgba(255, 255, 255, 0.35) 0 0.7px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 97% 28%,
-      rgba(255, 255, 255, 0.5) 0 0.7px,
-      transparent 1px
-    );
-
-  opacity: 0.65;
-}
-
-
-/* ===================================================== */
-/* HOME BUTTON */
-/* ===================================================== */
 
 /* ===================================================== */
 /* TOP NAVIGATION DOCKS (BALANCED LEFT & RIGHT) */
@@ -224,7 +266,7 @@
   z-index: 60;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .explore-top-right-dock {
@@ -234,7 +276,7 @@
   z-index: 60;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 /* Base Pill Launcher Button */
@@ -247,23 +289,20 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  height: 40px;
-  padding: 3px 14px 3px 5px;
+  height: 42px;
+  padding: 4px 16px 4px 6px;
   border-radius: 999px;
   font-family: inherit;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  transition:
-    transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.22s ease,
-    box-shadow 0.22s ease,
-    background 0.22s ease;
+    0 8px 24px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 12px rgba(245, 158, 11, 0.1);
+  transition: all 0.24s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
 }
 
@@ -273,7 +312,10 @@
 .journey-launcher-btn:hover,
 .monuments-launcher-btn:hover,
 .mastery-launcher-btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.55),
+    0 0 22px rgba(245, 158, 11, 0.3);
 }
 
 /* Home / Earth Button */
@@ -282,9 +324,9 @@
   top: 20px;
   left: 20px;
   z-index: 100;
-  border: 1px solid rgba(96, 165, 250, 0.45);
-  background: linear-gradient(135deg, rgba(15, 35, 70, 0.95), rgba(5, 15, 35, 0.95));
-  color: #e2e8f0;
+  border: 1.5px solid rgba(56, 189, 248, 0.55);
+  background: linear-gradient(135deg, rgba(14, 30, 64, 0.95), rgba(6, 15, 34, 0.96));
+  color: #e0f2fe;
 }
 
 .explore-top-left-dock .home-back-button {
@@ -295,8 +337,8 @@
 }
 
 .home-back-button:hover {
-  border-color: rgba(96, 165, 250, 0.85);
-  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.3), 0 0 20px rgba(59, 130, 246, 0.2);
+  border-color: rgba(56, 189, 248, 0.95);
+  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.45), 0 0 20px rgba(56, 189, 248, 0.3);
 }
 
 .home-button-icon {
@@ -306,26 +348,26 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, #60a5fa, #2563eb);
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
   color: white;
-  box-shadow: 0 3px 12px rgba(37, 99, 235, 0.45);
+  box-shadow: 0 3px 12px rgba(2, 132, 199, 0.5);
   flex-shrink: 0;
 }
 
 .home-button-text {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 /* Quiz Launcher Button */
 .quiz-launcher-btn {
-  border: 1px solid rgba(16, 185, 129, 0.45);
-  background: linear-gradient(135deg, rgba(6, 32, 22, 0.95), rgba(4, 18, 12, 0.95));
-  color: #6ee7b7;
+  border: 1.5px solid rgba(16, 185, 129, 0.55);
+  background: linear-gradient(135deg, rgba(6, 36, 24, 0.95), rgba(4, 18, 12, 0.96));
+  color: #a7f3d0;
 }
 
 .quiz-launcher-btn:hover {
-  border-color: rgba(16, 185, 129, 0.85);
-  box-shadow: 0 10px 28px rgba(16, 185, 129, 0.3), 0 0 20px rgba(16, 185, 129, 0.2);
+  border-color: rgba(16, 185, 129, 0.95);
+  box-shadow: 0 10px 28px rgba(16, 185, 129, 0.45), 0 0 20px rgba(16, 185, 129, 0.3);
 }
 
 .quiz-launcher-icon {
@@ -335,26 +377,26 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, #10b981, #059669);
+  background: linear-gradient(135deg, #10b981, #047857);
   color: #ffffff;
-  box-shadow: 0 3px 12px rgba(5, 150, 105, 0.45);
+  box-shadow: 0 3px 12px rgba(4, 120, 87, 0.5);
   flex-shrink: 0;
 }
 
 .quiz-launcher-text {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 /* Greetings Launcher Button */
 .greetings-launcher-btn {
-  border: 1px solid rgba(245, 158, 11, 0.45);
-  background: linear-gradient(135deg, rgba(35, 24, 10, 0.95), rgba(18, 14, 8, 0.95));
+  border: 1.5px solid rgba(245, 158, 11, 0.65);
+  background: linear-gradient(135deg, rgba(42, 24, 8, 0.95), rgba(22, 12, 4, 0.96));
   color: #fef08a;
 }
 
 .greetings-launcher-btn:hover {
-  border-color: rgba(245, 158, 11, 0.85);
-  box-shadow: 0 10px 28px rgba(245, 158, 11, 0.3), 0 0 20px rgba(245, 158, 11, 0.2);
+  border-color: rgba(245, 158, 11, 0.95);
+  box-shadow: 0 10px 28px rgba(245, 158, 11, 0.45), 0 0 22px rgba(245, 158, 11, 0.35);
 }
 
 .greetings-launcher-icon {
@@ -364,26 +406,26 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #f59e0b, #b45309);
   color: #ffffff;
-  box-shadow: 0 3px 12px rgba(217, 119, 6, 0.45);
+  box-shadow: 0 3px 12px rgba(180, 83, 9, 0.5);
   flex-shrink: 0;
 }
 
 .greetings-launcher-text {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 /* Journey Planner Launcher */
 .journey-launcher-btn {
-  border: 1px solid rgba(56, 189, 248, 0.45);
-  background: linear-gradient(135deg, rgba(8, 28, 48, 0.95), rgba(4, 16, 30, 0.95));
+  border: 1.5px solid rgba(14, 165, 233, 0.55);
+  background: linear-gradient(135deg, rgba(8, 30, 52, 0.95), rgba(4, 16, 28, 0.96));
   color: #bae6fd;
 }
 
 .journey-launcher-btn:hover {
-  border-color: rgba(56, 189, 248, 0.85);
-  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.3), 0 0 20px rgba(56, 189, 248, 0.2);
+  border-color: rgba(14, 165, 233, 0.95);
+  box-shadow: 0 10px 28px rgba(14, 165, 233, 0.45), 0 0 20px rgba(14, 165, 233, 0.3);
 }
 
 .journey-launcher-icon {
@@ -395,53 +437,24 @@
   border-radius: 50%;
   background: linear-gradient(135deg, #0284c7, #0369a1);
   color: #ffffff;
-  box-shadow: 0 3px 12px rgba(2, 132, 199, 0.45);
+  box-shadow: 0 3px 12px rgba(2, 132, 199, 0.5);
   flex-shrink: 0;
 }
 
 .journey-launcher-text {
-  letter-spacing: 0.2px;
-}
-
-/* 3D Monuments Inspector Launcher */
-.monuments-launcher-btn {
-  border: 1px solid rgba(244, 63, 94, 0.45);
-  background: linear-gradient(135deg, rgba(42, 14, 24, 0.95), rgba(22, 6, 12, 0.95));
-  color: #fecdd3;
-}
-
-.monuments-launcher-btn:hover {
-  border-color: rgba(244, 63, 94, 0.85);
-  box-shadow: 0 10px 28px rgba(244, 63, 94, 0.3), 0 0 20px rgba(244, 63, 94, 0.2);
-}
-
-.monuments-launcher-icon {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #f43f5e, #be123c);
-  color: #ffffff;
-  box-shadow: 0 3px 12px rgba(244, 63, 94, 0.45);
-  flex-shrink: 0;
-}
-
-.monuments-launcher-text {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 /* National Mastery Tracker Launcher */
 .mastery-launcher-btn {
-  border: 1px solid rgba(168, 85, 247, 0.45);
-  background: linear-gradient(135deg, rgba(32, 14, 48, 0.95), rgba(16, 6, 26, 0.95));
-  color: #e9d5ff;
+  border: 1.5px solid rgba(168, 85, 247, 0.55);
+  background: linear-gradient(135deg, rgba(34, 12, 48, 0.95), rgba(18, 6, 26, 0.96));
+  color: #f3e8ff;
 }
 
 .mastery-launcher-btn:hover {
-  border-color: rgba(168, 85, 247, 0.85);
-  box-shadow: 0 10px 28px rgba(168, 85, 247, 0.3), 0 0 20px rgba(168, 85, 247, 0.2);
+  border-color: rgba(168, 85, 247, 0.95);
+  box-shadow: 0 10px 28px rgba(168, 85, 247, 0.45), 0 0 20px rgba(168, 85, 247, 0.3);
 }
 
 .mastery-launcher-icon {
@@ -453,12 +466,12 @@
   border-radius: 50%;
   background: linear-gradient(135deg, #a855f7, #7e22ce);
   color: #ffffff;
-  box-shadow: 0 3px 12px rgba(168, 85, 247, 0.45);
+  box-shadow: 0 3px 12px rgba(126, 34, 206, 0.5);
   flex-shrink: 0;
 }
 
 .mastery-launcher-text {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 

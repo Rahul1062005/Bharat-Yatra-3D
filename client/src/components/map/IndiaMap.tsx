@@ -21,6 +21,8 @@ import {
 } from "@react-three/drei"
 
 import * as THREE from "three"
+import { statesRegistry } from "../../data/states"
+import { getStateTheme } from "../../data/stateThemes"
 
 
 /* =========================================================
@@ -89,61 +91,83 @@ const CENTER_LAT = 22
 
 
 /* =========================================================
-   MAP COLORS
+   MAP COLORS — VIBRANT CULTURAL TAPESTRY OF BHARAT
 ========================================================= */
 
-const TOP_COLOR = "#f4f7fb"
+export const DEFAULT_TOP_COLOR = "#fef3c7"
+const SIDE_COLOR = "#1c2b45"
+const HOVER_COLOR = "#f59e0b"
+const HOVER_EMISSIVE = "#ea580c"
+const HOVER_SIDE_COLOR = "#92400e"
 
-const SIDE_COLOR = "#172b4d"
+// Cultural pastel base colors for all 36 Indian states & union territories
+export const STATE_BASE_COLORS: Record<string, string> = {
+  bihar: "#fef3c7",              // Mithila Ochre Sandstone
+  maharashtra: "#ffedd5",        // Sahyadri Saffron Apricot
+  "uttar-pradesh": "#fed7aa",    // Awadhi Golden Sandstone
+  rajasthan: "#fce7f3",          // Jaipur Rose Pink
+  kerala: "#dcfce7",             // Malabar Backwater Mint
+  gujarat: "#ccfbf1",            // Kutch Seafoam Turquoise
+  "west-bengal": "#ffe4e6",      // Kalighat Coral-Terracotta
+  "tamil-nadu": "#fef08a",       // Thanjavur Temple Turmeric
+  karnataka: "#ede9fe",          // Mysore Lavender-Indigo
+  punjab: "#fef9c3",             // Mustard Gold Wheat
+  "madhya-pradesh": "#fed7aa",   // Narmada Clay Sandstone
+  odisha: "#ffedd5",             // Puri Golden Sand
+  "andhra-pradesh": "#fef08a",   // Coastal Amber Gold
+  telangana: "#fde68a",          // Kakatiya Warm Saffron
+  assam: "#d1fae5",              // Brahmaputra Tea Valley Green
+  haryana: "#fef08a",            // Wheatland Gold
+  "himachal-pradesh": "#e0f2fe", // Himalayan Pine Sky Blue
+  uttarakhand: "#dbeafe",        // Devbhoomi Snow Peak Blue
+  goa: "#fef3c7",                // Mandovi Coastal Sand
+  "jammu-kashmir": "#ede9fe",    // Kashmir Saffron Orchid
+  jharkhand: "#fed7aa",          // Chota Nagpur Ochre
+  chhattisgarh: "#ffedd5",       // Bastar Teak Clay
+  sikkim: "#dcfce7",             // Kanchenjunga Alpine Green
+  meghalaya: "#ccfbf1",          // Khasi Cloud Mist
+  manipur: "#fbcfe8",            // Loktak Lotus Pink
+  nagaland: "#fef08a",           // Hornbill Ochre
+  tripura: "#d1fae5",            // Bamboo Grove Mint
+  mizoram: "#e0e7ff",            // Blue Mountain Fog
+  "arunachal-pradesh": "#dbeafe",// Dawnlit Peak Glacier Blue
+  ladakh: "#e2e8f0",             // High Pass Slate Sand
+  delhi: "#fde68a",              // Imperial Sandstone Gold
+  "andaman-nicobar": "#99f6e4",  // Coral Reef Turquoise
+  lakshadweep: "#a5f3fc",        // Lagoon Aquamarine
+  puducherry: "#ffe4e6",         // French Quarter Pastel
+  chandigarh: "#fef9c3",         // Modernist Sunbeam
+  "dadra-nagar-haveli-daman-diu": "#fef3c7"
+}
 
-const HOVER_COLOR = "#f5b82e"
+const STATE_FALLBACK_PALETTE = [
+  "#fef3c7", "#ffedd5", "#fce7f3", "#ccfbf1", "#dcfce7",
+  "#ffe4e6", "#fef08a", "#ede9fe", "#fed7aa", "#dbeafe",
+  "#d1fae5", "#e0f2fe", "#fbcfe8", "#e0e7ff", "#99f6e4"
+]
 
+export function getStateBaseColor(stateName: string, stateIndex: number): string {
+  const slug = stateName.toLowerCase().replace(/[^a-z0-9]/g, "-")
+  if (STATE_BASE_COLORS[slug]) return STATE_BASE_COLORS[slug]
+  for (const [key, color] of Object.entries(STATE_BASE_COLORS)) {
+    if (slug.includes(key) || key.includes(slug)) return color
+  }
+  return STATE_FALLBACK_PALETTE[stateIndex % STATE_FALLBACK_PALETTE.length]
+}
 
-/*
- * These colors are used for the individual
- * state boundaries.
- *
- * The colors are intentionally muted rather
- * than extremely bright so the map still
- * looks premium.
- */
 const STATE_BORDER_COLORS = [
-  "#264f8f",
-  "#3b6db3",
-  "#496f9f",
-  "#5b82b5",
-  "#385d8a",
-  "#6c8fb8",
-  "#4f759f",
-  "#315c9b",
-  "#587ca8",
-  "#416b9c",
-  "#6a88a8",
-  "#2e568c",
-  "#4c78a8",
-  "#668bb0",
-  "#385f91",
-  "#567da5",
-  "#31558a",
-  "#7193b8",
-  "#426a96",
-  "#5d82a9",
-  "#355d91",
-  "#6f8faf",
-  "#4770a0",
-  "#547aa5",
-  "#3d6393",
-  "#6686aa",
-  "#2d5287",
-  "#7896b8",
-  "#416791",
-  "#5c80a6",
-  "#345a8d",
-  "#6a8bad",
-  "#486f9c",
-  "#597fa7",
-  "#3a6090",
-  "#718fb0",
+  "#d97706",
+  "#c2410c",
+  "#b45309",
+  "#0d9488",
+  "#047857",
+  "#b91c1c",
+  "#be185d",
+  "#ca8a04",
+  "#2563eb",
+  "#4f46e5",
+  "#0891b2",
+  "#ea580c"
 ]
 
 
@@ -702,216 +726,111 @@ function StateShape({
 
 
   /* =======================================================
-     HOVER
+     HOVER & ELEVATION DAMPING (3D POP-UP EFFECT)
   ======================================================= */
 
-  const [
-    hovered,
-    setHovered,
-  ] = useState(false)
+  const [hovered, setHovered] = useState(false)
+  const groupRef = useRef<THREE.Group>(null)
 
+  // Smooth pop-up 3D elevation animation on hover or selection
+  useFrame((_, delta) => {
+    if (!groupRef.current) return
+    const isElevated = hovered || selected
+    const targetY = isElevated ? (isIsland ? 0.22 : 0.38) : 0
+    groupRef.current.position.y = THREE.MathUtils.damp(
+      groupRef.current.position.y,
+      targetY,
+      14,
+      delta
+    )
+  })
 
   /* =======================================================
      CLEANUP
   ======================================================= */
 
   useEffect(() => {
-
     return () => {
-
       geometry?.dispose()
-
     }
-
-  }, [
-    geometry,
-  ])
-
+  }, [geometry])
 
   if (!geometry) {
     return null
   }
 
-
   /* =======================================================
-     TOP COLOR
+     COLOR & THEME
   ======================================================= */
 
-  const currentColor =
-    hovered ||
-    selected
-      ? HOVER_COLOR
-      : TOP_COLOR
-
-
-  /* =======================================================
-     THIS STATE'S BORDER COLOR
-  ======================================================= */
+  const baseColor = getStateBaseColor(state.name, stateIndex)
+  const currentColor = (hovered || selected) ? HOVER_COLOR : baseColor
 
   const borderColor =
     STATE_BORDER_COLORS[
-      stateIndex %
-        STATE_BORDER_COLORS.length
+      stateIndex % STATE_BORDER_COLORS.length
     ]
 
-
   return (
-    <group>
-
+    <group ref={groupRef}>
       {/* =================================================
-         STATE BODY
+         STATE BODY (WITH DYNAMIC CAST SHADOW ON POP-UP)
       ================================================= */}
-
       <mesh
-        geometry={
-          geometry
-        }
-
-        castShadow={
-          !isIsland
-        }
-
+        geometry={geometry}
+        castShadow
         receiveShadow
-
-        onPointerEnter={(
-          event,
-        ) => {
-
+        onPointerEnter={(event) => {
           event.stopPropagation()
-
-          setHovered(
-            true,
-          )
-
-          onHover(
-            event,
-            state.name,
-          )
+          setHovered(true)
+          onHover(event, state.name)
         }}
-
-        onPointerMove={(
-          event,
-        ) => {
-
+        onPointerMove={(event) => {
           event.stopPropagation()
-
-          onHover(
-            event,
-            state.name,
-          )
+          onHover(event, state.name)
         }}
-
-        onPointerLeave={(
-          event,
-        ) => {
-
+        onPointerLeave={(event) => {
           event.stopPropagation()
-
-          setHovered(
-            false,
-          )
-
+          setHovered(false)
           onLeave()
         }}
-
-        onClick={(
-          event,
-        ) => {
-
+        onClick={(event) => {
           event.stopPropagation()
-
-          onSelect(
-            event,
-            state.name,
-          )
+          onSelect(event, state.name)
         }}
       >
-
-        {/* =================================================
-           TOP SURFACE
-        ================================================= */}
-
+        {/* TOP SURFACE */}
         <meshStandardMaterial
           attach="material-0"
-
-          color={
-            currentColor
-          }
-
-          roughness={
-            0.48
-          }
-
-          metalness={
-            0.025
-          }
-
-          side={
-            THREE.DoubleSide
-          }
-
-          polygonOffset={
-            true
-          }
-
-          polygonOffsetFactor={
-            1
-          }
-
-          polygonOffsetUnits={
-            1
-          }
+          color={currentColor}
+          roughness={hovered || selected ? 0.3 : 0.46}
+          metalness={hovered || selected ? 0.08 : 0.02}
+          emissive={hovered || selected ? HOVER_EMISSIVE : "#000000"}
+          emissiveIntensity={hovered || selected ? 0.42 : 0}
+          side={THREE.DoubleSide}
+          polygonOffset
+          polygonOffsetFactor={1}
+          polygonOffsetUnits={1}
         />
 
-
-        {/* =================================================
-           3D SIDES
-        ================================================= */}
-
+        {/* 3D SIDES - ELEGANT BRONZE/AMBER ON POP-UP */}
         <meshStandardMaterial
           attach="material-1"
-
-          color={
-            SIDE_COLOR
-          }
-
-          roughness={
-            0.68
-          }
-
-          metalness={
-            0.12
-          }
-
-          side={
-            THREE.DoubleSide
-          }
+          color={hovered || selected ? HOVER_SIDE_COLOR : SIDE_COLOR}
+          roughness={0.62}
+          metalness={0.15}
+          side={THREE.DoubleSide}
         />
-
       </mesh>
 
-
       {/* =================================================
-         STATE BOUNDARIES
+         STATE BOUNDARIES (ELEVATE TOGETHER WITH STATE)
       ================================================= */}
-
       <StateBorderLines
-        borderRings={
-          borderRings
-        }
-
-        surfaceHeight={
-          surfaceHeight
-        }
-
-        color={
-          hovered ||
-          selected
-            ? "#c2410c"
-            : borderColor
-        }
+        borderRings={borderRings}
+        surfaceHeight={surfaceHeight}
+        color={hovered || selected ? "#c2410c" : borderColor}
       />
-
     </group>
   )
 }
@@ -1711,12 +1630,14 @@ export interface IndiaMapProps {
   animateEntrance?: boolean
   onStateSelect?: (stateName: string) => void
   onStateDive?: (stateName: string) => void
+  onHoverState?: (stateName: string | null) => void
 }
 
 export default function IndiaMap({
   animateEntrance = false,
   onStateSelect,
   onStateDive,
+  onHoverState,
 }: IndiaMapProps) {
 
   /* =======================================================
@@ -1911,43 +1832,21 @@ export default function IndiaMap({
     event: ThreeEvent<PointerEvent>,
     name: string,
   ) {
-
     setTooltip({
-      visible:
-        true,
-
-      name:
-        name,
-
-      x:
-        event.clientX +
-        18,
-
-      y:
-        event.clientY +
-        18,
+      visible: true,
+      name: name,
+      x: event.clientX + 18,
+      y: event.clientY + 18,
     })
-
+    onHoverState?.(name)
   }
 
-
-  /* =======================================================
-     LEAVE
-  ======================================================= */
-
   function handleLeave() {
-
-    setTooltip(
-      (
-        previous,
-      ) => ({
-        ...previous,
-
-        visible:
-          false,
-      }),
-    )
-
+    setTooltip((previous) => ({
+      ...previous,
+      visible: false,
+    }))
+    onHoverState?.(null)
   }
 
 
@@ -2409,68 +2308,54 @@ export default function IndiaMap({
          TOOLTIP
       ================================================= */}
 
-      {tooltip.visible && (
+      {tooltip.visible && (() => {
+        const slug = tooltip.name.toLowerCase().replace(/[^a-z0-9]/g, "-")
+        const bundle = statesRegistry[slug]
+        const theme = getStateTheme(slug)
+        const hindiName = bundle?.data?.hindiName
+        const artName = theme?.artName || bundle?.data?.tagline || "Cultural Heritage"
 
-        <div
-          style={{
-            position:
-              "fixed",
-
-            left:
-              tooltip.x,
-
-            top:
-              tooltip.y,
-
-            zIndex:
-              1000,
-
-            pointerEvents:
-              "none",
-
-            padding:
-              "11px 17px",
-
-            borderRadius:
-              "11px",
-
-            border:
-              "1px solid rgba(245, 184, 46, 0.7)",
-
-            background:
-              "rgba(17, 35, 70, 0.94)",
-
-            color:
-              "#f8fafc",
-
-            fontSize:
-              "13px",
-
-            fontWeight:
-              800,
-
-            letterSpacing:
-              "0.3px",
-
-            boxShadow:
-              "0 12px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(245, 184, 46, 0.08)",
-
-            backdropFilter:
-              "blur(12px)",
-
-            WebkitBackdropFilter:
-              "blur(12px)",
-
-            whiteSpace:
-              "nowrap",
-          }}
-        >
-          {
-            tooltip.name
-          }
-        </div>
-
-      )}
+        return (
+          <div
+            style={{
+              position: "fixed",
+              left: tooltip.x,
+              top: tooltip.y,
+              zIndex: 1000,
+              pointerEvents: "none",
+              padding: "10px 16px",
+              borderRadius: "14px",
+              border: "1.5px solid rgba(245, 158, 11, 0.8)",
+              background: "linear-gradient(135deg, rgba(22, 14, 8, 0.95), rgba(38, 20, 12, 0.96))",
+              color: "#f8fafc",
+              boxShadow: "0 14px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(245, 158, 11, 0.22)",
+              backdropFilter: "blur(14px)",
+              WebkitBackdropFilter: "blur(14px)",
+              whiteSpace: "nowrap",
+              display: "flex",
+              flexDirection: "column",
+              gap: "3px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "14px", fontWeight: 800, color: "#fef08a", letterSpacing: "0.5px" }}>
+                {tooltip.name.toUpperCase()}
+              </span>
+              {hindiName && (
+                <span style={{ fontSize: "12.5px", color: "rgba(254, 240, 138, 0.85)", fontFamily: "serif" }}>
+                  • {hindiName}
+                </span>
+              )}
+            </div>
+            <div style={{ fontSize: "11px", color: "#fdba74", fontWeight: 600 }}>
+              🎨 {artName}
+            </div>
+            <div style={{ fontSize: "10.5px", color: "rgba(254, 215, 170, 0.8)", fontStyle: "italic", marginTop: "2px" }}>
+              Click to step inside 3D State Yatra →
+            </div>
+          </div>
+        )
+      })()}
 
 
       {/* =================================================
