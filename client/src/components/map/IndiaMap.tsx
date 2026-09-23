@@ -732,11 +732,11 @@ function StateShape({
   const [hovered, setHovered] = useState(false)
   const groupRef = useRef<THREE.Group>(null)
 
-  // Smooth pop-up 3D elevation animation on hover or selection
+  // Smooth pop-up 3D elevation animation on hover or selection (subtle & tactile)
   useFrame((_, delta) => {
     if (!groupRef.current) return
     const isElevated = hovered || selected
-    const targetY = isElevated ? (isIsland ? 0.22 : 0.38) : 0
+    const targetY = isElevated ? (isIsland ? 0.05 : 0.09) : 0
     groupRef.current.position.y = THREE.MathUtils.damp(
       groupRef.current.position.y,
       targetY,
