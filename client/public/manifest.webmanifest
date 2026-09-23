@@ -1,0 +1,19 @@
+{
+  "name": "Bharat Yatra 3D - Interactive Indian Heritage Expedition",
+  "short_name": "Bharat Yatra",
+  "description": "Explore India's 36 States & UTs in interactive 3D, ancient architecture, cultures, and heritage.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090e1a",
+  "theme_color": "#b45309",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "education", "culture"]
+}

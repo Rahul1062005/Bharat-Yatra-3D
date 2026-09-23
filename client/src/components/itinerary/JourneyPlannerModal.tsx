@@ -13,6 +13,8 @@ import {
   ArrowRight,
   PlaneTakeoff,
   Maximize2,
+  ExternalLink,
+  Printer,
 } from "lucide-react"
 import { statesRegistry } from "../../data/states"
 import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
@@ -166,6 +168,21 @@ export default function JourneyPlannerModal({ isOpen, onClose }: JourneyPlannerM
       onClose()
       navigate(`/state/${selectedStops[0]}`)
     }
+  }
+
+  const handleOpenGoogleMaps = () => {
+    if (selectedStops.length === 0) return
+    const destinations = selectedStops.map((id) => {
+      const s = statesRegistry[id]?.data
+      return encodeURIComponent(`${s?.name || id}, India`)
+    })
+    const url = `https://www.google.com/maps/dir/${destinations.join("/")}`
+    window.open(url, "_blank", "noopener,noreferrer")
+  }
+
+  const handlePrintPDF = () => {
+    if (selectedStops.length === 0) return
+    window.print()
   }
 
   return (
@@ -351,24 +368,49 @@ export default function JourneyPlannerModal({ isOpen, onClose }: JourneyPlannerM
 
         {/* Footer Actions */}
         <div className="journey-modal-footer">
-          <button
-            type="button"
-            className="share-route-btn"
-            onClick={handleCopyItinerary}
-            disabled={selectedStops.length === 0}
-          >
-            {copied ? (
-              <>
-                <Check size={16} className="text-emerald" />
-                <span>Copied to Clipboard!</span>
-              </>
-            ) : (
-              <>
-                <Share2 size={16} />
-                <span>Copy Yatra Summary</span>
-              </>
-            )}
-          </button>
+          <div className="journey-footer-export-group">
+            <button
+              type="button"
+              className="export-gmaps-btn"
+              onClick={handleOpenGoogleMaps}
+              disabled={selectedStops.length === 0}
+              title="Open multi-stop route directions in Google Maps"
+            >
+              <MapPin size={15} className="gmaps-pin-icon" />
+              <span>Google Maps</span>
+              <ExternalLink size={12} />
+            </button>
+
+            <button
+              type="button"
+              className="export-pdf-btn"
+              onClick={handlePrintPDF}
+              disabled={selectedStops.length === 0}
+              title="Save or print royal itinerary PDF"
+            >
+              <Printer size={15} />
+              <span>Save / Print PDF</span>
+            </button>
+
+            <button
+              type="button"
+              className="share-route-btn"
+              onClick={handleCopyItinerary}
+              disabled={selectedStops.length === 0}
+            >
+              {copied ? (
+                <>
+                  <Check size={16} className="text-emerald" />
+                  <span>Copied!</span>
+                </>
+              ) : (
+                <>
+                  <Share2 size={16} />
+                  <span>Copy Summary</span>
+                </>
+              )}
+            </button>
+          </div>
 
           <button
             type="button"

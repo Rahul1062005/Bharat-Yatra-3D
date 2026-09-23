@@ -31,6 +31,7 @@ import StateQuizSection from "../../components/quiz/StateQuizSection"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import LandmarkGalleryModal from "../../components/landmarks/LandmarkGalleryModal"
 import StateCinematicModal from "../../components/video/StateCinematicModal"
+import HeritageCompanionModal from "../../components/ai/HeritageCompanionModal"
 import { getStateTheme } from "../../data/stateThemes"
 import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./StatePage.css"
@@ -277,6 +278,7 @@ export default function StatePage() {
   const [activeSpeakingLang, setActiveSpeakingLang] = useState<string | null>(null)
   const [isMasteryOpen, setIsMasteryOpen] = useState(false)
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
+  const [isAIOpen, setIsAIOpen] = useState(false)
   const [audioState, setAudioState] = useState<HeritageAudioState>(heritageAudio.getState())
   const stateGreeting = getStateGreeting(stateData.id)
   const stateTheme = getStateTheme(stateData.id)
@@ -292,7 +294,7 @@ export default function StatePage() {
 
     const handleOutsideClick = (e: MouseEvent | TouchEvent) => {
       // 1. If any full modal dialog is open, do not dismiss
-      if (isGalleryOpen || isVideoModalOpen || isMasteryOpen) return
+      if (isGalleryOpen || isVideoModalOpen || isMasteryOpen || isAIOpen) return
 
       const target = e.target as HTMLElement | null
 
@@ -304,7 +306,7 @@ export default function StatePage() {
       // 3. If click happened inside any modal dialog or backdrop, do nothing
       if (
         target?.closest?.(
-          ".landmark-modal-backdrop, .landmark-modal-dialog, .state-cinematic-modal-overlay, .state-cinematic-modal-container, .mastery-modal-overlay, .journey-modal-overlay, .quiz-modal-backdrop, .greetings-modal-backdrop, [role='dialog']"
+          ".landmark-modal-backdrop, .landmark-modal-dialog, .state-cinematic-modal-overlay, .state-cinematic-modal-container, .mastery-modal-overlay, .journey-modal-overlay, .quiz-modal-backdrop, .greetings-modal-backdrop, .heritage-ai-modal-overlay, .heritage-ai-modal-dialog, [role='dialog']"
         )
       ) {
         return
@@ -734,24 +736,42 @@ export default function StatePage() {
           />
         </div>
 
-        {/* Floating Official Tourism Video Button (Top-Right of Map in Empty Space) */}
-        <button
-          type="button"
-          onClick={() => setIsVideoModalOpen(true)}
-          className="state-hero-yt-reel-btn"
-          title={`Watch Official ${stateData.name} Tourism Reel`}
-          aria-label={`Watch Official ${stateData.name} Tourism Reel`}
-        >
-          <div className="yt-reel-play-icon-wrap">
-            <Play size={15} fill="currentColor" className="yt-reel-play-icon" />
-            <span className="yt-reel-pulse-ring" />
-          </div>
-          <div className="yt-reel-text-col">
-            <span className="yt-reel-kicker">OFFICIAL TOURISM REEL</span>
-            <span className="yt-reel-title">Watch {stateData.name} Video</span>
-          </div>
-          <Sparkles size={14} className="yt-reel-sparkle-icon" />
-        </button>
+        {/* Floating Action Buttons (Top-Right of Map in Empty Space) */}
+        <div className="state-hero-actions-cluster">
+          <button
+            type="button"
+            onClick={() => setIsAIOpen(true)}
+            className="state-hero-ai-guide-btn"
+            title={`Ask Bharat Heritage AI Companion about ${stateData.name}`}
+            aria-label={`Ask Bharat Heritage AI Companion about ${stateData.name}`}
+          >
+            <div className="ai-btn-icon-wrap">
+              <Sparkles size={15} className="ai-btn-sparkle" />
+            </div>
+            <div className="ai-btn-text-col">
+              <span className="ai-btn-kicker">HERITAGE AI</span>
+              <span className="ai-btn-title">Ask AI Guide</span>
+            </div>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setIsVideoModalOpen(true)}
+            className="state-hero-yt-reel-btn"
+            title={`Watch Official ${stateData.name} Tourism Reel`}
+            aria-label={`Watch Official ${stateData.name} Tourism Reel`}
+          >
+            <div className="yt-reel-play-icon-wrap">
+              <Play size={15} fill="currentColor" className="yt-reel-play-icon" />
+              <span className="yt-reel-pulse-ring" />
+            </div>
+            <div className="yt-reel-text-col">
+              <span className="yt-reel-kicker">OFFICIAL TOURISM REEL</span>
+              <span className="yt-reel-title">Watch {stateData.name} Video</span>
+            </div>
+            <Sparkles size={14} className="yt-reel-sparkle-icon" />
+          </button>
+        </div>
 
         {/* Selected Landmark Floating Dialog */}
         {selectedLandmark && (
@@ -1274,6 +1294,14 @@ export default function StatePage() {
         onClose={() => setIsVideoModalOpen(false)}
         stateData={stateData}
         stateTheme={stateTheme}
+      />
+
+      {/* ================= BHARAT HERITAGE AI COMPANION MODAL ================= */}
+      <HeritageCompanionModal
+        isOpen={isAIOpen}
+        onClose={() => setIsAIOpen(false)}
+        stateData={stateData}
+        currentDistrict={selectedDistrict}
       />
     </div>
   )

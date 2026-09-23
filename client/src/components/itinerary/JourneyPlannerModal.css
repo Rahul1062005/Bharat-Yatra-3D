@@ -537,6 +537,77 @@
   box-shadow: none;
 }
 
+.journey-footer-export-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.export-gmaps-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #b91c1c;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.export-gmaps-btn:hover:not(:disabled) {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+}
+
+.export-gmaps-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.gmaps-pin-icon {
+  color: #dc2626;
+}
+
+.export-gmaps-btn:hover:not(:disabled) .gmaps-pin-icon {
+  color: #ffffff;
+}
+
+.export-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(180, 83, 9, 0.08);
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  color: #78350f;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.export-pdf-btn:hover:not(:disabled) {
+  background: #b45309;
+  color: #ffffff;
+  border-color: #92400e;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.25);
+}
+
+.export-pdf-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .journey-modal-overlay {
@@ -561,9 +632,45 @@
     flex-direction: column;
   }
 
+  .journey-footer-export-group {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .export-gmaps-btn,
+  .export-pdf-btn,
   .share-route-btn,
   .start-yatra-btn {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ================= PRINT / PDF EXPORT STYLING ================= */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .journey-modal-overlay {
+    position: static !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+
+  .journey-modal-content {
+    box-shadow: none !important;
+    border: 2px solid #b45309 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .journey-close-btn,
+  .journey-fullpage-btn,
+  .journey-modal-footer,
+  .state-picker-section,
+  .curated-trails-section {
+    display: none !important;
   }
 }
