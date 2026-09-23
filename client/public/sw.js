@@ -1,12 +1,14 @@
-// Bharat Yatra 3D Service Worker - Offline PWA Cache
-const CACHE_NAME = 'bharat-yatra-v1';
+// Bharat Yatra Service Worker - Offline PWA Cache
+const CACHE_NAME = 'bharat-yatra-v2';
 
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.webmanifest',
-  '/favicon.svg',
-  '/icons.svg'
+  '/icon-192.png',
+  '/icon-512.png',
+  '/app-icon.png',
+  '/favicon.svg'
 ];
 
 self.addEventListener('install', (event) => {

@@ -760,15 +760,15 @@ export default function StatePage() {
             type="button"
             onClick={() => setIsAIOpen(true)}
             className="state-hero-ai-guide-btn"
-            title={`Ask Bharat Heritage AI Companion about ${stateData.name}`}
-            aria-label={`Ask Bharat Heritage AI Companion about ${stateData.name}`}
+            title={`Ask AI Guide about ${stateData.name}`}
+            aria-label={`Ask AI Guide about ${stateData.name}`}
           >
             <div className="ai-btn-icon-wrap">
               <Sparkles size={15} className="ai-btn-sparkle" />
             </div>
             <div className="ai-btn-text-col">
-              <span className="ai-btn-kicker">HERITAGE AI</span>
-              <span className="ai-btn-title">Ask AI Guide</span>
+              <span className="ai-btn-kicker">SMART ASSISTANT</span>
+              <span className="ai-btn-title">AI Guide</span>
             </div>
           </button>
 

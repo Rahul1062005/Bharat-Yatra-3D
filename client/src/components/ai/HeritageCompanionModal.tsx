@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react"
+import { createPortal } from "react-dom"
 import {
   X,
   Sparkles,
@@ -48,7 +49,7 @@ export default function HeritageCompanionModal({
 
   const isNationalMode = !stateData
 
-  // Initialize companion with context when opened
+  // Initialize AI Guide with context when opened
   useEffect(() => {
     if (isOpen) {
       if (stateData) {
@@ -56,7 +57,7 @@ export default function HeritageCompanionModal({
         const welcomeMessage: Message = {
           id: "welcome-1",
           sender: "ai",
-          text: `Namaskar, traveler! I am your Bharat Heritage AI Companion. I have walked the sacred paths of ${stateData.name} (${stateData.hindiName || ""}) across millennia. Currently, you are traversing ${activeDistrict}. Ask me about untold historical lore, traditional cuisine, sacred architecture, or master artisans!`,
+          text: `Namaskar, traveler! I am your Bharat AI Guide for ${stateData.name} (${stateData.hindiName || ""}). Currently traversing ${activeDistrict}. Ask me about untold historical lore, authentic cuisine, sacred architecture, or master artisans!`,
           timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         }
         setMessages([welcomeMessage])
@@ -64,7 +65,7 @@ export default function HeritageCompanionModal({
         const nationalWelcome: Message = {
           id: "welcome-national",
           sender: "ai",
-          text: `Namaskar, explorer! I am your National Bharat Heritage AI Companion. Across 5,000 years of living antiquity, 36 States & Union Territories, and thousands of cultural realms, I am here to guide your odyssey through India. Ask me about India's sacred monuments, ancient civilizations, why India is called Bharat, unity in diversity, regional cuisines, or any specific state you wish to explore!`,
+          text: `Namaskar! I am your Bharat AI Guide across India's 36 States & Union Territories. Ask me about India's sacred monuments, why India is called Bharat, ancient history and science, unity in diversity, regional cuisines, or any specific state you wish to explore!`,
           timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         }
         setMessages([nationalWelcome])
@@ -227,7 +228,10 @@ export default function HeritageCompanionModal({
         { label: "Iconic Cuisines of India", icon: Utensils, query: "What defines the culinary traditions across different regions of India?" },
       ]
 
-  return (
+  // Render via React Portal directly into document.body to ensure 100% viewport centering
+  if (typeof document === "undefined") return null
+
+  return createPortal(
     <div
       className="heritage-ai-modal-overlay"
       onClick={(e) => {
@@ -241,17 +245,17 @@ export default function HeritageCompanionModal({
         onPointerDown={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
-        aria-label="Bharat Heritage AI Companion"
+        aria-label="Bharat AI Guide"
       >
         {/* Header */}
         <div className="heritage-ai-modal-header">
           <div className="heritage-ai-header-left">
             <div className="heritage-ai-kicker">
               <Sparkles size={13} className="sparkle-gold" />
-              <span>{isNationalMode ? "NATIONAL BHARAT HERITAGE AI" : "BHARAT HERITAGE AI COMPANION"}</span>
+              <span>{isNationalMode ? "NATIONAL BHARAT AI GUIDE" : "BHARAT AI GUIDE"}</span>
             </div>
             <h3 className="heritage-ai-title">
-              {stateData ? `Guidance for ${stateData.name}` : "Wisdom of Incredible India"}
+              {stateData ? `AI Guide • ${stateData.name}` : "AI Guide • Incredible India"}
               <span className="heritage-ai-district-badge">
                 <Compass size={11} /> {stateData ? (currentDistrict || stateData.capital) : "36 States & UTs"}
               </span>
@@ -279,7 +283,7 @@ export default function HeritageCompanionModal({
               type="button"
               className="heritage-ai-close-btn"
               onClick={onClose}
-              title="Close AI Companion"
+              title="Close AI Guide"
               aria-label="Close"
             >
               <X size={18} />
@@ -313,7 +317,7 @@ export default function HeritageCompanionModal({
               className={`heritage-ai-chat-bubble-row ${msg.sender === "ai" ? "row-ai" : "row-user"}`}
             >
               {msg.sender === "ai" && (
-                <div className="ai-avatar-badge" title="Bharat Heritage AI Guide">
+                <div className="ai-avatar-badge" title="Bharat AI Guide">
                   🕉️
                 </div>
               )}
@@ -341,21 +345,22 @@ export default function HeritageCompanionModal({
             onChange={(e) => setInputText(e.target.value)}
             placeholder={
               stateData
-                ? `Ask about ${stateData.name}'s history, monuments, foods, crafts...`
-                : "Ask about India's history, monuments, why called Bharat, any state, foods..."
+                ? `Ask AI Guide about ${stateData.name}'s history, monuments, foods, crafts...`
+                : "Ask AI Guide about India's history, monuments, why called Bharat, any state, foods..."
             }
           />
           <button
             type="submit"
             className="heritage-ai-send-btn"
             disabled={!inputText.trim()}
-            title="Send query to AI Companion"
+            title="Send query to AI Guide"
             aria-label="Send"
           >
             <Send size={16} />
           </button>
         </form>
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }

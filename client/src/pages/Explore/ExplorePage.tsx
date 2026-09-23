@@ -311,12 +311,12 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               type="button"
               className="heritage-ai-dock-btn"
               onClick={() => setIsAiCompanionOpen(true)}
-              title="Ask Bharat Heritage AI Companion about India in general"
+              title="Ask AI Guide about India in general"
             >
               <span className="heritage-ai-dock-icon">
                 <Sparkles size={15} />
               </span>
-              <span className="heritage-ai-dock-text">Heritage AI</span>
+              <span className="heritage-ai-dock-text">AI Guide</span>
             </button>
 
             <button
