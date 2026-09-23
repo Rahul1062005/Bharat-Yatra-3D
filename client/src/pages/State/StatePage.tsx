@@ -269,6 +269,7 @@ export default function StatePage() {
 
   const [activeSection, setActiveSection] = useState("map-section")
   const [selectedLandmark, setSelectedLandmark] = useState<LandmarkPin | null>(null)
+  const [galleryLandmark, setGalleryLandmark] = useState<LandmarkPin | null>(null)
   const [isGalleryOpen, setIsGalleryOpen] = useState(false)
   const [copiedGreeting, setCopiedGreeting] = useState<string | null>(null)
   const [selectedDistrict, setSelectedDistrict] = useState<string>(stateConfig.defaultDistrict)
@@ -285,32 +286,47 @@ export default function StatePage() {
   // Lock body scrolling when pinned monument toast or any dialog is active
   useBodyScrollLock(Boolean(selectedLandmark))
 
-  // Disappear pinned monument dialog when clicking outside
+  // Dismiss pinned monument card when clicking outside on the map/background
   useEffect(() => {
     if (!selectedLandmark) return
 
-    const handleOutsideClick = (e: MouseEvent | TouchEvent | PointerEvent) => {
-      if (
-        landmarkToastRef.current &&
-        !landmarkToastRef.current.contains(e.target as Node)
-      ) {
-        setSelectedLandmark(null)
+    const handleOutsideClick = (e: MouseEvent | TouchEvent) => {
+      // 1. If any full modal dialog is open, do not dismiss
+      if (isGalleryOpen || isVideoModalOpen || isMasteryOpen) return
+
+      const target = e.target as HTMLElement | null
+
+      // 2. If click happened inside the pinned landmark toast, do nothing
+      if (landmarkToastRef.current && landmarkToastRef.current.contains(target as Node)) {
+        return
       }
+
+      // 3. If click happened inside any modal dialog or backdrop, do nothing
+      if (
+        target?.closest?.(
+          ".landmark-modal-backdrop, .landmark-modal-dialog, .state-cinematic-modal-overlay, .state-cinematic-modal-container, .mastery-modal-overlay, .journey-modal-overlay, .quiz-modal-backdrop, .greetings-modal-backdrop, [role='dialog']"
+        )
+      ) {
+        return
+      }
+
+      // 4. If clicked on a landmark pin marker or map control buttons, let them handle it
+      if (target?.closest?.(".landmark-pin, .leaflet-marker-icon, .map-control-btn, button")) {
+        return
+      }
+
+      setSelectedLandmark(null)
     }
 
     const timer = setTimeout(() => {
-      document.addEventListener("pointerdown", handleOutsideClick)
-      document.addEventListener("mousedown", handleOutsideClick)
-      document.addEventListener("touchstart", handleOutsideClick)
-    }, 60)
+      document.addEventListener("click", handleOutsideClick)
+    }, 120)
 
     return () => {
       clearTimeout(timer)
-      document.removeEventListener("pointerdown", handleOutsideClick)
-      document.removeEventListener("mousedown", handleOutsideClick)
-      document.removeEventListener("touchstart", handleOutsideClick)
+      document.removeEventListener("click", handleOutsideClick)
     }
-  }, [selectedLandmark])
+  }, [selectedLandmark, isGalleryOpen, isVideoModalOpen, isMasteryOpen])
 
   // Ambient Heritage Indian Classical Audio lifecycle
   useEffect(() => {
@@ -350,7 +366,7 @@ export default function StatePage() {
     })
 
     if (match) {
-      setSelectedLandmark(match)
+      setGalleryLandmark(match)
     } else {
       // 2. Synthesize a LandmarkPin with multi-angle gallery
       const galleryItems: LandmarkAngleImage[] = [
@@ -376,7 +392,7 @@ export default function StatePage() {
         }
       ]
 
-      setSelectedLandmark({
+      setGalleryLandmark({
         id: mon.name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
         name: mon.name,
         district: mon.location || stateData.capital || stateData.name,
@@ -399,6 +415,7 @@ export default function StatePage() {
   useEffect(() => {
     setSelectedDistrict(stateConfig.defaultDistrict)
     setSelectedLandmark(null)
+    setGalleryLandmark(null)
     setIsGalleryOpen(false)
     stopGreetingAudio()
     setIsSpeakingGreeting(false)
@@ -717,21 +734,21 @@ export default function StatePage() {
           />
         </div>
 
-        {/* Floating Cultural State Video Reel Button (Top-Right of Map) */}
+        {/* Floating Official Tourism Video Reel Button (Top-Right of Map) */}
         <button
           type="button"
           className="state-hero-cinematic-btn"
           onClick={() => setIsVideoModalOpen(true)}
-          title={`Watch 1-minute cultural film of ${stateData.name}`}
-          aria-label={`Watch 1-minute cultural film of ${stateData.name}`}
+          title={`Watch official tourism film of ${stateData.name}`}
+          aria-label={`Watch official tourism film of ${stateData.name}`}
         >
           <div className="cinematic-btn-icon-wrap">
             <Play size={14} className="cinematic-play-icon" />
             <span className="cinematic-btn-pulse-ring" />
           </div>
           <div className="cinematic-btn-text">
-            <span className="cinematic-btn-label">State Film • 1 Min</span>
-            <span className="cinematic-btn-sub">Soothing Cultural Odyssey</span>
+            <span className="cinematic-btn-label">Official Tourism Film</span>
+            <span className="cinematic-btn-sub">Watch {stateData.name} Video</span>
           </div>
           <Sparkles size={14} className="cinematic-btn-sparkle" />
         </button>
@@ -790,7 +807,10 @@ export default function StatePage() {
             <button
               type="button"
               className="toast-gallery-btn"
-              onClick={() => setIsGalleryOpen(true)}
+              onClick={() => {
+                setGalleryLandmark(selectedLandmark)
+                setIsGalleryOpen(true)
+              }}
               title="Explore real photos from multiple perspectives"
             >
               <Camera size={14} />
@@ -1240,8 +1260,11 @@ export default function StatePage() {
       {/* ================= LANDMARK MULTI-ANGLE GALLERY MODAL ================= */}
       <LandmarkGalleryModal
         isOpen={isGalleryOpen}
-        onClose={() => setIsGalleryOpen(false)}
-        landmark={selectedLandmark}
+        onClose={() => {
+          setIsGalleryOpen(false)
+          setGalleryLandmark(null)
+        }}
+        landmark={galleryLandmark}
         stateName={stateData.name}
       />
 

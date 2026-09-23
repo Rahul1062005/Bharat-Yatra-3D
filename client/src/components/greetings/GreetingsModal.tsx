@@ -97,10 +97,19 @@ export default function GreetingsModal({
   if (!isOpen) return null
 
   return (
-    <div className="greetings-modal-backdrop" onClick={onClose}>
+    <div
+      className="greetings-modal-backdrop"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose()
+        }
+      }}
+    >
       <div
         className="greetings-modal-dialog"
         onClick={(e) => e.stopPropagation()}
+        onMouseDown={(e) => e.stopPropagation()}
+        onPointerDown={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
         aria-labelledby="greetings-modal-title"

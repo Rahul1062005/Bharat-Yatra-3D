@@ -169,10 +169,19 @@ export default function JourneyPlannerModal({ isOpen, onClose }: JourneyPlannerM
   }
 
   return (
-    <div className="journey-modal-overlay" onClick={onClose}>
+    <div
+      className="journey-modal-overlay"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose()
+        }
+      }}
+    >
       <div
         className="journey-modal-content"
         onClick={(e) => e.stopPropagation()}
+        onMouseDown={(e) => e.stopPropagation()}
+        onPointerDown={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
       >

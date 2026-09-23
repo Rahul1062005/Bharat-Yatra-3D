@@ -59,10 +59,19 @@ export default function NationalMasteryModal({ isOpen, onClose }: NationalMaster
   }
 
   return (
-    <div className="mastery-modal-overlay" onClick={onClose}>
+    <div
+      className="mastery-modal-overlay"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose()
+        }
+      }}
+    >
       <div
         className="mastery-modal-content"
         onClick={(e) => e.stopPropagation()}
+        onMouseDown={(e) => e.stopPropagation()}
+        onPointerDown={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
       >
