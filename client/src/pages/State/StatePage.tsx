@@ -19,6 +19,8 @@ import {
   Check,
   Camera,
   Play,
+  Printer,
+  ExternalLink,
 } from "lucide-react"
 
 import StateDistrictMap from "../../components/map/StateDistrictMap"
@@ -474,6 +476,27 @@ export default function StatePage() {
     setTimeout(() => setCopiedGreeting(null), 2000)
   }
 
+  const handleOpenStateGoogleMaps = () => {
+    if (!stateData.monuments || stateData.monuments.length === 0) {
+      window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(stateData.name + ' tourism attractions')}`, '_blank', 'noopener,noreferrer')
+      return
+    }
+    const topMonuments = stateData.monuments.slice(0, 5).map(m => `${m.name}, ${m.location}, ${stateData.name}`)
+    const origin = encodeURIComponent(topMonuments[0])
+    if (topMonuments.length === 1) {
+      window.open(`https://www.google.com/maps/search/?api=1&query=${origin}`, '_blank', 'noopener,noreferrer')
+      return
+    }
+    const destination = encodeURIComponent(topMonuments[topMonuments.length - 1])
+    const waypoints = topMonuments.slice(1, -1).map(w => encodeURIComponent(w)).join('|')
+    const mapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}${waypoints ? `&waypoints=${waypoints}` : ''}`
+    window.open(mapsUrl, '_blank', 'noopener,noreferrer')
+  }
+
+  const handlePrintStatePDF = () => {
+    window.print()
+  }
+
   return (
     <div
       className={`state-page state-theme-${stateData.id}`}
@@ -770,6 +793,39 @@ export default function StatePage() {
               <span className="yt-reel-title">Watch {stateData.name} Video</span>
             </div>
             <Sparkles size={14} className="yt-reel-sparkle-icon" />
+          </button>
+
+          <button
+            type="button"
+            onClick={handleOpenStateGoogleMaps}
+            className="state-hero-maps-btn"
+            title={`Open ${stateData.name} Heritage Route in Google Maps`}
+            aria-label={`Open ${stateData.name} Heritage Route in Google Maps`}
+          >
+            <div className="maps-btn-icon-wrap">
+              <MapPin size={15} />
+            </div>
+            <div className="maps-btn-text-col">
+              <span className="maps-btn-kicker">TURNKEY ROUTE</span>
+              <span className="maps-btn-title">Google Maps</span>
+            </div>
+            <ExternalLink size={12} className="maps-btn-ext-icon" />
+          </button>
+
+          <button
+            type="button"
+            onClick={handlePrintStatePDF}
+            className="state-hero-pdf-btn"
+            title={`Save or Print ${stateData.name} Heritage Guide (PDF)`}
+            aria-label={`Save or Print ${stateData.name} Heritage Guide (PDF)`}
+          >
+            <div className="pdf-btn-icon-wrap">
+              <Printer size={15} />
+            </div>
+            <div className="pdf-btn-text-col">
+              <span className="pdf-btn-kicker">TRAVEL GUIDE</span>
+              <span className="pdf-btn-title">Export PDF</span>
+            </div>
           </button>
         </div>
 
@@ -1087,14 +1143,27 @@ export default function StatePage() {
                       <strong>Significance:</strong> {mon.significance}
                     </div>
                   )}
-                  <button
-                    type="button"
-                    className="monument-gallery-action-btn"
-                    onClick={() => handleOpenLandmarkGallery(mon)}
-                  >
-                    <Camera size={14} />
-                    <span>Explore Multi-Angle Gallery & Story</span>
-                  </button>
+                  <div className="monument-action-btns-row">
+                    <button
+                      type="button"
+                      className="monument-gallery-action-btn"
+                      onClick={() => handleOpenLandmarkGallery(mon)}
+                    >
+                      <Camera size={14} />
+                      <span>Explore Multi-Angle Gallery & Story</span>
+                    </button>
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${mon.name} ${mon.location} ${stateData.name}`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="monument-maps-quick-btn"
+                      title={`Open ${mon.name} in Google Maps`}
+                    >
+                      <MapPin size={14} />
+                      <span>Maps</span>
+                      <ExternalLink size={11} />
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

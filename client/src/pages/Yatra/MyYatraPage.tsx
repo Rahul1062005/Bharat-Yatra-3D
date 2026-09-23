@@ -18,6 +18,8 @@ import {
   MoveDown,
   Calendar,
   Layers,
+  ExternalLink,
+  Printer,
 } from "lucide-react"
 import { statesRegistry } from "../../data/states"
 import "./MyYatraPage.css"
@@ -188,6 +190,21 @@ export default function MyYatraPage() {
     if (selectedStops.length > 0) {
       navigate(`/state/${selectedStops[0]}`)
     }
+  }
+
+  const handleOpenGoogleMaps = () => {
+    if (selectedStops.length === 0) return
+    const destinations = selectedStops.map((id) => {
+      const s = statesRegistry[id]?.data
+      return encodeURIComponent(`${s?.name || id}, India`)
+    })
+    const url = `https://www.google.com/maps/dir/${destinations.join("/")}`
+    window.open(url, "_blank", "noopener,noreferrer")
+  }
+
+  const handlePrintPDF = () => {
+    if (selectedStops.length === 0) return
+    window.print()
   }
 
   const filteredAvailable = availableStates.filter(
@@ -376,6 +393,27 @@ export default function MyYatraPage() {
               </div>
 
               <div className="telemetry-actions">
+                <button
+                  type="button"
+                  className="yatra-gmaps-btn"
+                  onClick={handleOpenGoogleMaps}
+                  title="Open turnkey navigation in Google Maps"
+                >
+                  <MapPin size={16} className="text-red-maps" />
+                  <span>Google Maps</span>
+                  <ExternalLink size={13} />
+                </button>
+
+                <button
+                  type="button"
+                  className="yatra-pdf-btn"
+                  onClick={handlePrintPDF}
+                  title="Save or print royal itinerary PDF"
+                >
+                  <Printer size={16} />
+                  <span>Save / Print PDF</span>
+                </button>
+
                 <button
                   type="button"
                   className="yatra-share-btn"

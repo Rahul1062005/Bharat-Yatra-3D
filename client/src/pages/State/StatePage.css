@@ -747,6 +747,139 @@ html {
   transform: scale(1.15) rotate(10deg);
 }
 
+/* Google Maps Action Button */
+.state-hero-maps-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px 10px 12px;
+  background: rgba(255, 255, 255, 0.94);
+  background-image: linear-gradient(135deg, rgba(254, 242, 242, 0.7) 0%, rgba(255, 255, 255, 0.98) 100%);
+  border: 1.5px solid rgba(239, 68, 68, 0.35);
+  border-radius: 999px;
+  box-shadow:
+    0 10px 25px -4px rgba(239, 68, 68, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.state-hero-maps-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: #ffffff;
+  border-color: #dc2626;
+  box-shadow:
+    0 16px 32px -4px rgba(239, 68, 68, 0.3),
+    0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.maps-btn-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+  flex-shrink: 0;
+}
+
+.maps-btn-text-col {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.maps-btn-kicker {
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  color: #dc2626;
+  text-transform: uppercase;
+}
+
+.maps-btn-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+}
+
+.maps-btn-ext-icon {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+/* Print PDF Action Button */
+.state-hero-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px 10px 12px;
+  background: rgba(255, 255, 255, 0.94);
+  background-image: linear-gradient(135deg, rgba(239, 246, 255, 0.7) 0%, rgba(255, 255, 255, 0.98) 100%);
+  border: 1.5px solid rgba(59, 130, 246, 0.35);
+  border-radius: 999px;
+  box-shadow:
+    0 10px 25px -4px rgba(59, 130, 246, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.state-hero-pdf-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow:
+    0 16px 32px -4px rgba(59, 130, 246, 0.3),
+    0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.pdf-btn-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.4);
+  flex-shrink: 0;
+}
+
+.pdf-btn-text-col {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.pdf-btn-kicker {
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  color: #2563eb;
+  text-transform: uppercase;
+}
+
+.pdf-btn-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+}
+
 /* Map Controls Overlay on State Canvas */
 .bihar-map-controls {
   position: absolute;
@@ -1847,6 +1980,44 @@ html {
   box-shadow: 0 4px 16px rgba(180, 83, 9, 0.25);
 }
 
+.monument-action-btns-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.monument-action-btns-row .monument-gallery-action-btn {
+  margin-top: 0;
+  flex: 1;
+}
+
+.monument-maps-quick-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 9px 14px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  border-radius: 10px;
+  color: #dc2626;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.monument-maps-quick-btn:hover {
+  background: #dc2626;
+  color: #ffffff;
+  border-color: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.25);
+}
+
 /* =========================================================
    SECTION 5: LANGUAGES & DIALECTS
 ========================================================= */
@@ -2362,22 +2533,30 @@ html {
     top: 14px;
     right: 14px;
     gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .state-hero-ai-guide-btn,
-  .state-hero-yt-reel-btn {
+  .state-hero-yt-reel-btn,
+  .state-hero-maps-btn,
+  .state-hero-pdf-btn {
     padding: 8px 12px 8px 10px;
     gap: 8px;
   }
 
   .ai-btn-icon-wrap,
-  .yt-reel-play-icon-wrap {
+  .yt-reel-play-icon-wrap,
+  .maps-btn-icon-wrap,
+  .pdf-btn-icon-wrap {
     width: 28px;
     height: 28px;
   }
 
   .ai-btn-title,
-  .yt-reel-title {
+  .yt-reel-title,
+  .maps-btn-title,
+  .pdf-btn-title {
     font-size: 11px;
   }
 }

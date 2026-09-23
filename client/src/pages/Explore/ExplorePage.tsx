@@ -10,6 +10,7 @@ import GuessTheStateModal from "../../components/game/GuessTheStateModal"
 import IndiaGeoTelemetry from "../../components/telemetry/IndiaGeoTelemetry"
 import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import JourneyPlannerModal from "../../components/itinerary/JourneyPlannerModal"
+import PwaInstallButton from "../../components/pwa/PwaInstallButton"
 import { getStateTheme } from "../../data/stateThemes"
 import "./ExplorePage.css"
 
@@ -309,12 +310,12 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               type="button"
               className="journey-launcher-btn"
               onClick={() => setIsJourneyOpen(true)}
-              title="Plan your custom route across Bharat"
+              title="Plan your custom route, Export to Google Maps or save PDF"
             >
               <span className="journey-launcher-icon">
                 <Route size={15} />
               </span>
-              <span className="journey-launcher-text">My Yatra</span>
+              <span className="journey-launcher-text">Route & Maps</span>
             </button>
 
             <button
@@ -328,6 +329,8 @@ function ExplorePage({ initialStage = "globe" }: ExplorePageProps) {
               </span>
               <span className="mastery-launcher-text">Mastery Tracker</span>
             </button>
+
+            <PwaInstallButton className="explore-pwa-dock-btn" />
           </div>
         </>
       )}

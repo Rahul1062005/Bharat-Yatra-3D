@@ -14,6 +14,7 @@ import {
 } from "lucide-react"
 
 import { preloadIndiaMapData } from "../../components/map/IndiaMap"
+import PwaInstallButton from "../../components/pwa/PwaInstallButton"
 import "../../App.css"
 import "./HomePage.css"
 
@@ -310,19 +311,30 @@ export default function HomePage() {
           <a href="#dimensions" className="nav-link-fresh">5 Dimensions</a>
           <a href="#state-realms" className="nav-link-fresh">Cultural Realms</a>
           <a href="#circuits" className="nav-link-fresh">Curated Circuits</a>
+          <button
+            type="button"
+            className="nav-link-fresh-btn"
+            onClick={() => navigate("/my-yatra")}
+            title="Custom Route Planner with Google Maps & PDF export"
+          >
+            My Yatra (Maps & PDF)
+          </button>
         </nav>
 
-        {/* 3D Explorer Button opens 3D Earth Globe where user can click and dive into India */}
-        <button
-          type="button"
-          className="nav-explore-btn-fresh"
-          onClick={goToExplore}
-          title="Enter 3D Earth Globe and dive into India Map"
-        >
-          <Globe size={16} />
-          <span>Enter 3D Earth</span>
-          <ArrowUpRight size={17} />
-        </button>
+        <div className="home-nav-right-cluster">
+          <PwaInstallButton className="home-pwa-btn" />
+          {/* 3D Explorer Button opens 3D Earth Globe where user can click and dive into India */}
+          <button
+            type="button"
+            className="nav-explore-btn-fresh"
+            onClick={goToExplore}
+            title="Enter 3D Earth Globe and dive into India Map"
+          >
+            <Globe size={16} />
+            <span>Enter 3D Earth</span>
+            <ArrowUpRight size={17} />
+          </button>
+        </div>
       </header>
 
       {/* ================= HERO SECTION (FIRST SLIDE) ================= */}

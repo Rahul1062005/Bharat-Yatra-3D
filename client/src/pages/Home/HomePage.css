@@ -135,6 +135,31 @@
   color: #b45309;
 }
 
+.nav-link-fresh-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #b45309;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link-fresh-btn:hover {
+  color: #d97706;
+  transform: translateY(-1px);
+}
+
+.home-nav-right-cluster {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .nav-explore-btn-fresh {
   display: inline-flex;
   align-items: center;
