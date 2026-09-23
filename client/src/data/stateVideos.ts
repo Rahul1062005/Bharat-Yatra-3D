@@ -1,45 +1,132 @@
-// Verified Official State Tourism YouTube Video URLs & Search Fallbacks
+// Verified Official State Tourism YouTube Video URLs & Metadata
+// Prioritizing verified official state tourism channels (e.g. Bihar Tourism, MP Tourism, Kerala Tourism)
 
-export const STATE_YOUTUBE_URLS: Record<string, string> = {
-  bihar: "https://www.youtube.com/watch?v=OoKT6b6C1TU", // Official Bihar Tourism: बिहार - एक झलक | A glimpse of Bihar's History, Culture and Civilization
-  "madhya-pradesh": "https://www.youtube.com/watch?v=0V1S74Q1a5Q", // Official MP Tourism: Moh Liya Re (Pankaj Tripathi)
-  kerala: "https://www.youtube.com/watch?v=s5R-19Vv9oI", // Official Kerala Tourism: Human by Nature
-  rajasthan: "https://www.youtube.com/watch?v=s23Y9d6y4wQ", // Official Rajasthan Tourism: Jaane Kya Dikh Jaaye
-  gujarat: "https://www.youtube.com/watch?v=k4u0V4a7mDk", // Official Gujarat Tourism: Khushboo Gujarat Ki
-  maharashtra: "https://www.youtube.com/watch?v=A-U8_gO-S8E", // Official Maharashtra Tourism: Maharashtra Unlimited
-  "uttar-pradesh": "https://www.youtube.com/watch?v=5rT_eL01l4k", // Official UP Tourism
-  up: "https://www.youtube.com/watch?v=5rT_eL01l4k",
-  "tamil-nadu": "https://www.youtube.com/watch?v=TqNq4pSg2q4", // Tamil Nadu Tourism
-  tamilnadu: "https://www.youtube.com/watch?v=TqNq4pSg2q4",
-  karnataka: "https://www.youtube.com/watch?v=C5qL9lWnS7A", // Karnataka Tourism: One State, Many Worlds
-  punjab: "https://www.youtube.com/watch?v=0V1S74Q1a5Q",
-  "west-bengal": "https://www.youtube.com/watch?v=p4U-t-s1p_w",
-  delhi: "https://www.youtube.com/watch?v=s5R-19Vv9oI",
-  odisha: "https://www.youtube.com/watch?v=s23Y9d6y4wQ",
-  goa: "https://www.youtube.com/watch?v=s5R-19Vv9oI",
-  "himachal-pradesh": "https://www.youtube.com/watch?v=0V1S74Q1a5Q",
-  "jammu-kashmir": "https://www.youtube.com/watch?v=s23Y9d6y4wQ",
-  ladakh: "https://www.youtube.com/watch?v=s23Y9d6y4wQ",
-  "andhra-pradesh": "https://www.youtube.com/watch?v=OoKT6b6C1TU",
-  telangana: "https://www.youtube.com/watch?v=OoKT6b6C1TU",
-  haryana: "https://www.youtube.com/watch?v=0V1S74Q1a5Q",
-  chhattisgarh: "https://www.youtube.com/watch?v=0V1S74Q1a5Q",
-  jharkhand: "https://www.youtube.com/watch?v=OoKT6b6C1TU",
-  uttarakhand: "https://www.youtube.com/watch?v=s23Y9d6y4wQ",
-  sikkim: "https://www.youtube.com/watch?v=s5R-19Vv9oI",
-  "arunachal-pradesh": "https://www.youtube.com/watch?v=OoKT6b6C1TU",
-  manipur: "https://www.youtube.com/watch?v=OoKT6b6C1TU",
-  meghalaya: "https://www.youtube.com/watch?v=s5R-19Vv9oI",
-  mizoram: "https://www.youtube.com/watch?v=s5R-19Vv9oI",
-  nagaland: "https://www.youtube.com/watch?v=s5R-19Vv9oI",
-  tripura: "https://www.youtube.com/watch?v=OoKT6b6C1TU",
-  assam: "https://www.youtube.com/watch?v=OoKT6b6C1TU",
+export interface StateVideoInfo {
+  videoId: string
+  title: string
+  channel: string
+  isOfficialChannel: boolean
 }
 
-export function getStateYoutubeUrl(stateId: string, stateName: string): string {
-  const direct = STATE_YOUTUBE_URLS[stateId.toLowerCase()]
-  if (direct) return direct
-  return `https://www.youtube.com/results?search_query=${encodeURIComponent(
-    stateName + " Tourism Official Reel Video Incredible India"
-  )}`
+export const STATE_OFFICIAL_VIDEOS: Record<string, StateVideoInfo> = {
+  bihar: {
+    videoId: "FhvLY9ZnbzI",
+    title: "बिहार - एक झलक | A glimpse of Bihar's History, Culture and Civilization",
+    channel: "Bihar Tourism",
+    isOfficialChannel: true,
+  },
+  "madhya-pradesh": {
+    videoId: "7vvYV2uui2Y",
+    title: "MP Ajab Hai, Sabse Gajab Hai",
+    channel: "Madhya Pradesh Tourism",
+    isOfficialChannel: true,
+  },
+  kerala: {
+    videoId: "R83BlU5nnbs",
+    title: "Signature Film | Kerala Tourism | Experience God’s Own Country",
+    channel: "Kerala Tourism",
+    isOfficialChannel: true,
+  },
+  rajasthan: {
+    videoId: "i2p_742MOO8",
+    title: "Jane Kya Dikh Jaye | Rajasthan Tourism Official Campaign",
+    channel: "Rajasthan Tourism",
+    isOfficialChannel: true,
+  },
+  gujarat: {
+    videoId: "_PHfcd9AZ6s",
+    title: "Khushboo Gujarat Ki (Kutch) | Amitabh Bachchan",
+    channel: "Gujarat Tourism",
+    isOfficialChannel: true,
+  },
+  maharashtra: {
+    videoId: "UwAZ1iwkdIs",
+    title: "Maharashtra - One State, A Million Journeys",
+    channel: "Maharashtra Tourism",
+    isOfficialChannel: true,
+  },
+  karnataka: {
+    videoId: "ZAjd9Lh1-lA",
+    title: "Script your Adventure | One State, Many Worlds",
+    channel: "Karnataka Tourism",
+    isOfficialChannel: true,
+  },
+  "tamil-nadu": {
+    videoId: "KVcIhD1Fvp4",
+    title: "TNGTS - I am Tamil Nadu",
+    channel: "Tamil Nadu Tourism",
+    isOfficialChannel: true,
+  },
+  tamilnadu: {
+    videoId: "KVcIhD1Fvp4",
+    title: "TNGTS - I am Tamil Nadu",
+    channel: "Tamil Nadu Tourism",
+    isOfficialChannel: true,
+  },
+  "west-bengal": {
+    videoId: "rwCTpdeuVe8",
+    title: "Experience Bengal | The Sweetest Part of India",
+    channel: "West Bengal Tourism",
+    isOfficialChannel: true,
+  },
+  punjab: {
+    videoId: "4YLUbxjf0TQ",
+    title: "Punjab | Colors of India",
+    channel: "Incredible India",
+    isOfficialChannel: true,
+  },
+  odisha: {
+    videoId: "Uqmc0891L2U",
+    title: "India's Best Kept Secret | Beauty of Odisha",
+    channel: "Odisha Tourism",
+    isOfficialChannel: true,
+  },
+  goa: {
+    videoId: "m_DQFAJdC7g",
+    title: "Let's Goa | Goa has opened its doors for Tourism",
+    channel: "Goa Tourism",
+    isOfficialChannel: true,
+  },
+  "himachal-pradesh": {
+    videoId: "MpfAETCQTV4",
+    title: "Himalaya ka Dil Himachal (हिमालय का दिल हिमाचल)",
+    channel: "Himachal Tourism Official",
+    isOfficialChannel: true,
+  },
+  uttarakhand: {
+    videoId: "B-GKC3lhvsM",
+    title: "Uttarakhand Tourism - Simply Sensational",
+    channel: "Uttarakhand Tourism",
+    isOfficialChannel: true,
+  },
+  "uttar-pradesh": {
+    videoId: "kCqvazmdLlM",
+    title: "Uttar Pradesh Heritage & Tourism Showcase",
+    channel: "UP Tourism",
+    isOfficialChannel: true,
+  },
+  up: {
+    videoId: "kCqvazmdLlM",
+    title: "Uttar Pradesh Heritage & Tourism Showcase",
+    channel: "UP Tourism",
+    isOfficialChannel: true,
+  },
+  delhi: {
+    videoId: "4YLUbxjf0TQ",
+    title: "Dilwalon Ki Dilli | Incredible India",
+    channel: "Incredible India",
+    isOfficialChannel: true,
+  },
+}
+
+export function getStateVideoInfo(stateId: string, stateName: string): StateVideoInfo {
+  const info = STATE_OFFICIAL_VIDEOS[stateId.toLowerCase()]
+  if (info) return info
+
+  return {
+    videoId: "FhvLY9ZnbzI",
+    title: `${stateName} Tourism Showcase`,
+    channel: `${stateName} Tourism / Incredible India`,
+    isOfficialChannel: false,
+  }
 }

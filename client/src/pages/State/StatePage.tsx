@@ -19,7 +19,6 @@ import {
   Check,
   Camera,
   Play,
-  ExternalLink,
 } from "lucide-react"
 
 import StateDistrictMap from "../../components/map/StateDistrictMap"
@@ -33,7 +32,6 @@ import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import LandmarkGalleryModal from "../../components/landmarks/LandmarkGalleryModal"
 import StateCinematicModal from "../../components/video/StateCinematicModal"
 import { getStateTheme } from "../../data/stateThemes"
-import { getStateYoutubeUrl } from "../../data/stateVideos"
 import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./StatePage.css"
 
@@ -737,13 +735,12 @@ export default function StatePage() {
         </div>
 
         {/* Floating Official Tourism Video Button (Top-Right of Map in Empty Space) */}
-        <a
-          href={getStateYoutubeUrl(stateData.id, stateData.name)}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
+          onClick={() => setIsVideoModalOpen(true)}
           className="state-hero-yt-reel-btn"
-          title={`Watch Official ${stateData.name} Tourism Reel on YouTube`}
-          aria-label={`Watch Official ${stateData.name} Tourism Reel on YouTube`}
+          title={`Watch Official ${stateData.name} Tourism Reel`}
+          aria-label={`Watch Official ${stateData.name} Tourism Reel`}
         >
           <div className="yt-reel-play-icon-wrap">
             <Play size={15} fill="currentColor" className="yt-reel-play-icon" />
@@ -751,10 +748,10 @@ export default function StatePage() {
           </div>
           <div className="yt-reel-text-col">
             <span className="yt-reel-kicker">OFFICIAL TOURISM REEL</span>
-            <span className="yt-reel-title">Watch {stateData.name} on YouTube</span>
+            <span className="yt-reel-title">Watch {stateData.name} Video</span>
           </div>
-          <ExternalLink size={14} className="yt-reel-external-icon" />
-        </a>
+          <Sparkles size={14} className="yt-reel-sparkle-icon" />
+        </button>
 
         {/* Selected Landmark Floating Dialog */}
         {selectedLandmark && (

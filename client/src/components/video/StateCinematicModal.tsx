@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { Film, X, ExternalLink, Compass, Search, CheckCircle2 } from "lucide-react"
 import type { StateData } from "../../types/state"
 import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
+import { getStateVideoInfo } from "../../data/stateVideos"
 import "./StateCinematicModal.css"
 
 interface StateCinematicModalProps {
@@ -9,43 +10,6 @@ interface StateCinematicModalProps {
   onClose: () => void
   stateData: StateData
   stateTheme?: any
-}
-
-// Curated verified official state tourism YouTube video IDs
-const STATE_VIDEO_IDS: Record<string, string> = {
-  bihar: "OoKT6b6C1TU", // Official Bihar Tourism: बिहार - एक झलक | A glimpse of Bihar's History, Culture and Civilization
-  "madhya-pradesh": "0V1S74Q1a5Q", // Official MP Tourism: Moh Liya Re (Pankaj Tripathi)
-  kerala: "s5R-19Vv9oI", // Official Kerala Tourism: Human by Nature
-  rajasthan: "s23Y9d6y4wQ", // Official Rajasthan Tourism: Jaane Kya Dikh Jaaye
-  gujarat: "k4u0V4a7mDk", // Official Gujarat Tourism: Khushboo Gujarat Ki
-  maharashtra: "A-U8_gO-S8E", // Official Maharashtra Tourism: Maharashtra Unlimited
-  "uttar-pradesh": "5rT_eL01l4k", // Official UP Tourism: Swagatam Bada
-  up: "5rT_eL01l4k",
-  "tamil-nadu": "TqNq4pSg2q4", // Tamil Nadu Tourism Showcase
-  tamilnadu: "TqNq4pSg2q4",
-  karnataka: "C5qL9lWnS7A", // Karnataka Tourism: One State, Many Worlds
-  punjab: "0V1S74Q1a5Q",
-  "west-bengal": "p4U-t-s1p_w",
-  delhi: "s5R-19Vv9oI",
-  odisha: "s23Y9d6y4wQ",
-  goa: "s5R-19Vv9oI",
-  "himachal-pradesh": "0V1S74Q1a5Q",
-  "jammu-kashmir": "s23Y9d6y4wQ",
-  ladakh: "s23Y9d6y4wQ",
-  "andhra-pradesh": "OoKT6b6C1TU",
-  telangana: "OoKT6b6C1TU",
-  haryana: "0V1S74Q1a5Q",
-  chhattisgarh: "0V1S74Q1a5Q",
-  jharkhand: "OoKT6b6C1TU",
-  uttarakhand: "s23Y9d6y4wQ",
-  sikkim: "s5R-19Vv9oI",
-  "arunachal-pradesh": "OoKT6b6C1TU",
-  manipur: "OoKT6b6C1TU",
-  meghalaya: "s5R-19Vv9oI",
-  mizoram: "s5R-19Vv9oI",
-  nagaland: "s5R-19Vv9oI",
-  tripura: "OoKT6b6C1TU",
-  assam: "OoKT6b6C1TU",
 }
 
 export default function StateCinematicModal({
@@ -67,10 +31,10 @@ export default function StateCinematicModal({
 
   if (!isOpen) return null
 
-  const videoId = STATE_VIDEO_IDS[stateData.id] || "OoKT6b6C1TU"
-  const directWatchUrl = `https://www.youtube.com/watch?v=${videoId}`
+  const videoInfo = getStateVideoInfo(stateData.id, stateData.name)
+  const directWatchUrl = `https://www.youtube.com/watch?v=${videoInfo.videoId}`
   const officialYoutubeSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(
-    stateData.name + " Tourism Official Video Incredible India"
+    stateData.name + " Tourism Official Channel Reel Video Incredible India"
   )}`
 
   return (
@@ -113,7 +77,7 @@ export default function StateCinematicModal({
               target="_blank"
               rel="noopener noreferrer"
               className="cinematic-yt-header-btn"
-              title="Open directly in YouTube app or tab"
+              title="Open directly in YouTube app or new tab"
             >
               <span>Watch on YouTube</span>
               <ExternalLink size={13} />
@@ -134,8 +98,8 @@ export default function StateCinematicModal({
         {/* ================= VIDEO THEATER SCREEN ================= */}
         <div className="cinematic-screen-viewport">
           <iframe
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&enablejsapi=1`}
-            title={`${stateData.name} Official Tourism Film`}
+            src={`https://www.youtube.com/embed/${videoInfo.videoId}?autoplay=1&rel=0&modestbranding=1&enablejsapi=1`}
+            title={videoInfo.title || `${stateData.name} Official Tourism Film`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="official-youtube-frame"
@@ -147,8 +111,10 @@ export default function StateCinematicModal({
           <div className="cinematic-footer-channel-info">
             <div className="channel-badge">
               <CheckCircle2 size={14} className="channel-verified-icon" />
-              <span>Official {stateData.name} Tourism Channel</span>
+              <span>{videoInfo.channel}</span>
             </div>
+            <span className="cinematic-footer-sep">•</span>
+            <span className="cinematic-video-title-hint">{videoInfo.title}</span>
             <span className="cinematic-footer-sep">•</span>
             <span className="cinematic-heritage-cue">
               <Compass size={13} />
@@ -162,10 +128,10 @@ export default function StateCinematicModal({
               target="_blank"
               rel="noopener noreferrer"
               className="cinematic-search-more-btn"
-              title="Search more travel reels & documentaries"
+              title="Search more official state tourism videos"
             >
               <Search size={13} />
-              <span>Explore More {stateData.name} Videos</span>
+              <span>More {stateData.name} Videos</span>
             </a>
           </div>
         </div>

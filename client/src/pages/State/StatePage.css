@@ -657,15 +657,17 @@ html {
   white-space: nowrap;
 }
 
-.yt-reel-external-icon {
-  color: #94a3b8;
+.yt-reel-external-icon,
+.yt-reel-sparkle-icon {
+  color: #f59e0b;
   margin-left: 4px;
   transition: all 0.2s ease;
 }
 
-.state-hero-yt-reel-btn:hover .yt-reel-external-icon {
+.state-hero-yt-reel-btn:hover .yt-reel-external-icon,
+.state-hero-yt-reel-btn:hover .yt-reel-sparkle-icon {
   color: #b45309;
-  transform: translate(2px, -2px);
+  transform: scale(1.15) rotate(10deg);
 }
 
 /* Map Controls Overlay on State Canvas */
