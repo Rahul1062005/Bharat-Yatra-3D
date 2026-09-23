@@ -6,6 +6,9 @@
   z-index: 99999;
   background: rgba(15, 23, 42, 0.72);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overscroll-behavior: contain;
+  touch-action: none;
   display: flex;
   align-items: center;
   justify-content: center;

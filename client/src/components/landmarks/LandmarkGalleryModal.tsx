@@ -16,6 +16,7 @@ import {
   Info
 } from "lucide-react"
 import type { LandmarkPin, LandmarkAngleImage } from "../../types/state"
+import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./LandmarkGalleryModal.css"
 
 interface LandmarkGalleryModalProps {
@@ -31,6 +32,7 @@ export const LandmarkGalleryModal: React.FC<LandmarkGalleryModalProps> = ({
   landmark,
   stateName,
 }) => {
+  useBodyScrollLock(isOpen)
   const [selectedAngleIndex, setSelectedAngleIndex] = useState<number>(0)
   const [activeTab, setActiveTab] = useState<"overview" | "architecture" | "significance">("overview")
 

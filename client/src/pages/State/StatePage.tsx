@@ -32,6 +32,7 @@ import NationalMasteryModal from "../../components/tracker/NationalMasteryModal"
 import LandmarkGalleryModal from "../../components/landmarks/LandmarkGalleryModal"
 import StateCinematicModal from "../../components/video/StateCinematicModal"
 import { getStateTheme } from "../../data/stateThemes"
+import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./StatePage.css"
 
 const HERITAGE_HIGHLIGHTS: Record<
@@ -280,6 +281,9 @@ export default function StatePage() {
   const stateTheme = getStateTheme(stateData.id)
 
   const landmarkToastRef = useRef<HTMLElement>(null)
+
+  // Lock body scrolling when pinned monument toast or any dialog is active
+  useBodyScrollLock(Boolean(selectedLandmark))
 
   // Disappear pinned monument dialog when clicking outside
   useEffect(() => {

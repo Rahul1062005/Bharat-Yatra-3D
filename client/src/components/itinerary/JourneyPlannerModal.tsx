@@ -15,6 +15,7 @@ import {
   Maximize2,
 } from "lucide-react"
 import { statesRegistry } from "../../data/states"
+import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./JourneyPlannerModal.css"
 
 interface JourneyPlannerModalProps {
@@ -41,11 +42,11 @@ const CURATED_TRAILS: CuratedTrail[] = [
     stateIds: ["delhi", "uttar-pradesh", "rajasthan"],
   },
   {
-    id: "western-ghats",
-    name: "Western Ghats & Arabian Coast",
+    id: "coastal-malabar",
+    name: "Konkan & Malabar Spice Coast",
     subtitle: "Maharashtra • Goa • Karnataka • Kerala",
     icon: "🌴",
-    description: "Biodiversity hotspots, lush rainforests, spices, and serene Arabian Sea coastlines.",
+    description: "Arabian Sea shorelines, Portuguese cathedrals, spice plantations, and serene lagoons.",
     stateIds: ["maharashtra", "goa", "karnataka", "kerala"],
   },
   {
@@ -90,6 +91,7 @@ function calculateHaversineKm(lat1: number, lon1: number, lat2: number, lon2: nu
 }
 
 export default function JourneyPlannerModal({ isOpen, onClose }: JourneyPlannerModalProps) {
+  useBodyScrollLock(isOpen)
   const navigate = useNavigate()
   const [selectedStops, setSelectedStops] = useState<string[]>([
     "delhi",

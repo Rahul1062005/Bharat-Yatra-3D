@@ -13,6 +13,7 @@ import {
 } from "lucide-react"
 import { getMasteryStats } from "../../utils/masteryStorage"
 import { statesRegistry } from "../../data/states"
+import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./NationalMasteryModal.css"
 
 interface NationalMasteryModalProps {
@@ -21,6 +22,7 @@ interface NationalMasteryModalProps {
 }
 
 export default function NationalMasteryModal({ isOpen, onClose }: NationalMasteryModalProps) {
+  useBodyScrollLock(isOpen)
   const navigate = useNavigate()
   const [filter, setFilter] = useState<"all" | "mastered" | "pending">("all")
 

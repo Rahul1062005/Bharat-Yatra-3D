@@ -9,9 +9,11 @@ import {
   Sparkles,
   Film,
   Compass,
+  ExternalLink,
 } from "lucide-react"
 
 import type { StateData } from "../../types/state"
+import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./StateCinematicModal.css"
 
 interface StateCinematicModalProps {
@@ -30,25 +32,14 @@ interface ChapterScene {
   badge: string
 }
 
-// Curated official state documentary video IDs (Incredible India & State Tourism official reels)
+// Curated verified official state documentary & TVC video IDs
 const STATE_VIDEO_IDS: Record<string, string> = {
-  bihar: "wQj5y1j4nZk",
-  rajasthan: "K2E5H2B9vYk",
-  maharashtra: "Qk7J7yD8n3g",
-  kerala: "R83BlU5nnbs",
-  punjab: "x7k9J2b5Z1w",
-  gujarat: "z5X7K9q1n4w",
-  delhi: "Y1n8J5k2v7M",
-  "west-bengal": "b7J5K9m2q1Z",
-  "tamil-nadu": "v2K5J9n8m1Q",
-  karnataka: "q8K2J5n1v7M",
-  "madhya-pradesh": "m5K9J2b7v1Z",
-  uttarakhand: "n1K7J5q2v8M",
-  odisha: "k9J2B5q7v1M",
-  assam: "j2K7B5q1v8M",
-  "jammu-kashmir": "v8K2J5q7m1M",
-  ladakh: "m1K7J5q8v2M",
-  goa: "q2K5J7b1v8M",
+  "madhya-pradesh": "knCV_6YOFXQ", // Official MP Tourism TVC (Hindustan Ka Dil Dekho)
+  kerala: "s5R-19Vv9oI", // Official Kerala Tourism (Human by Nature)
+  rajasthan: "s23Y9d6y4wQ", // Official Rajasthan Tourism (Jaane Kya Dikh Jaaye)
+  gujarat: "knCV_6YOFXQ", // Fallback to national high-res tourism reel
+  bihar: "knCV_6YOFXQ",
+  maharashtra: "knCV_6YOFXQ",
 }
 
 export default function StateCinematicModal({
@@ -56,6 +47,9 @@ export default function StateCinematicModal({
   onClose,
   stateData,
 }: StateCinematicModalProps) {
+  // Lock background body scroll whenever modal is open
+  useBodyScrollLock(isOpen)
+
   const [isPlaying, setIsPlaying] = useState(true)
   const [isVoiceoverMuted, setIsVoiceoverMuted] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
@@ -219,10 +213,15 @@ export default function StateCinematicModal({
     return `${m}:${s < 10 ? "0" : ""}${s}`
   }
 
-  const officialVideoId = STATE_VIDEO_IDS[stateData.id] || "bJzGk7B6C8k"
+  const officialVideoId = STATE_VIDEO_IDS[stateData.id] || "knCV_6YOFXQ"
+  const officialYoutubeSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(stateData.name + " Tourism Official Ad Incredible India")}`
 
   return (
-    <div className="state-cinematic-modal-overlay" onClick={onClose}>
+    <div
+      className="state-cinematic-modal-overlay"
+      onClick={onClose}
+      onWheel={(e) => e.stopPropagation()}
+    >
       <div
         className="state-cinematic-modal-container"
         onClick={(e) => e.stopPropagation()}
@@ -321,8 +320,26 @@ export default function StateCinematicModal({
             </div>
           ) : (
             <div className="official-video-iframe-wrap">
+              {/* Top Direct Launch Bar for Official Reel */}
+              <div className="official-yt-top-banner">
+                <div className="official-banner-left">
+                  <Film size={14} className="banner-film-icon" />
+                  <span>{stateData.name} Tourism Official Campaign</span>
+                </div>
+                <a
+                  href={officialYoutubeSearchUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="official-yt-external-btn"
+                  title="Watch official state films in 4K on YouTube"
+                >
+                  <span>Watch 4K on YouTube</span>
+                  <ExternalLink size={12} />
+                </a>
+              </div>
+
               <iframe
-                src={`https://www.youtube-nocookie.com/embed/${officialVideoId}?autoplay=1&mute=0&rel=0&modestbranding=1&color=white`}
+                src={`https://www.youtube-nocookie.com/embed/${officialVideoId}?autoplay=1&mute=0&rel=0&modestbranding=1&enablejsapi=1`}
                 title={`${stateData.name} Official Tourism Documentary`}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

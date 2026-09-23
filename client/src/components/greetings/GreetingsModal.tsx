@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from "react"
 import { X, Search, Volume2, ArrowRight, Sparkles, MapPin } from "lucide-react"
 import { GREETINGS_DATA, type StateGreeting } from "../../data/greetings"
 import { playGreetingAudio, stopGreetingAudio } from "../../utils/greetingSpeech"
+import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./GreetingsModal.css"
 
 interface GreetingsModalProps {
@@ -26,6 +27,7 @@ export default function GreetingsModal({
   onClose,
   onSelectState,
 }: GreetingsModalProps) {
+  useBodyScrollLock(isOpen)
   const [searchQuery, setSearchQuery] = useState("")
   const [activeTab, setActiveTab] = useState("all")
   const [speakingId, setSpeakingId] = useState<string | null>(null)

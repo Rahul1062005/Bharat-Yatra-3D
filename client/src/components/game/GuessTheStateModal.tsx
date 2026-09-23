@@ -23,6 +23,7 @@ import {
   getSoundMuted,
   setSoundMuted,
 } from "../../utils/soundEffects"
+import { useBodyScrollLock } from "../../utils/useBodyScrollLock"
 import "./GuessTheStateModal.css"
 
 interface GuessTheStateModalProps {
@@ -36,6 +37,7 @@ export default function GuessTheStateModal({
   onClose,
   onExploreState,
 }: GuessTheStateModalProps) {
+  useBodyScrollLock(isOpen)
   const [questions, setQuestions] = useState<QuizQuestion[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedStateId, setSelectedStateId] = useState<string | null>(null)
